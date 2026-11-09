@@ -1,4 +1,4 @@
-# Mister Download Manager in Scottish Gaelic (Gàidhlig): tools/i18n/translate.py
+# tnctr download manager in Scottish Gaelic (Gàidhlig): tools/i18n/translate.py
 # writes the rows marked '#, machine'; a native speaker deletes that line after checking.
 # context	source	translation (craft-i18n format, rows as in en.tsv)
 @id	language.name	Gàidhlig
@@ -11,7 +11,7 @@
 #. never shown for a single download
 #. {n} = a number (keep the braces as they are)
 #, machine
-@plural	Are you sure you want to delete {n} download from Mister Download Manager list of downloads?|Are you sure you want to delete these {n} downloads from Mister Download Manager list of downloads?	A bheil thu cinnteach gu bheil thu airson an luchdachadh a-nuas {n} a sguabadh às bho liosta luchdachaidhean a-nuas Mister Download Manager?|A bheil thu cinnteach gu bheil thu airson na luchdachaidhean a-nuas {n} seo a sguabadh às bho liosta luchdachaidhean a-nuas Mister Download Manager?|A bheil thu cinnteach gu bheil thu airson na luchdachaidhean a-nuas {n} seo a sguabadh às bho liosta luchdachaidhean a-nuas Mister Download Manager?|A bheil thu cinnteach gu bheil thu airson na luchdachaidhean a-nuas {n} seo a sguabadh às bho liosta luchdachaidhean a-nuas Mister Download Manager?
+@plural	Are you sure you want to delete {n} download from tnctr download manager list of downloads?|Are you sure you want to delete these {n} downloads from tnctr download manager list of downloads?	A bheil thu cinnteach gu bheil thu airson an luchdachadh a-nuas {n} a sguabadh às bho liosta luchdachaidhean a-nuas tnctr download manager?|A bheil thu cinnteach gu bheil thu airson na luchdachaidhean a-nuas {n} seo a sguabadh às bho liosta luchdachaidhean a-nuas tnctr download manager?|A bheil thu cinnteach gu bheil thu airson na luchdachaidhean a-nuas {n} seo a sguabadh às bho liosta luchdachaidhean a-nuas tnctr download manager?|A bheil thu cinnteach gu bheil thu airson na luchdachaidhean a-nuas {n} seo a sguabadh às bho liosta luchdachaidhean a-nuas tnctr download manager?
 #. count in the Add torrent window
 #. while a magnet link's file list is fetched; {n} = peers that answered
 #. {n} = a number (keep the braces as they are)
@@ -226,7 +226,7 @@
 	a volume of it is missing	tha tomhas-lìonaidh dheth a dhìth
 #. window title in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	About Mister Download Manager	Mu Mister Download Manager
+	About tnctr download manager	Mu tnctr download manager
 #. text in whereis.rs
 #. a download's server's round trip: {ms} a number of milliseconds, {reach} near, medium or far
 #, machine
@@ -280,7 +280,7 @@
 #. window title in extension.rs
 #. title of the window that offers the browser extension
 #, machine
-	Add Mister Download Manager to your browser	Cuir Mister Download Manager ris a’ bhrabhsair agad
+	Add tnctr download manager to your browser	Cuir tnctr download manager ris a’ bhrabhsair agad
 #. message or event log entry in the main window; text in the tray icon's menu
 #. link in the empty download list: opens Add URL
 #, machine
@@ -447,7 +447,7 @@
 	Always into a folder named after it	An-còmhnaidh ann am pasgan air a bheil an t-ainm aige
 #. checkbox in a dialog box
 #, machine
-	Always turn on Speed Limiter on Mister Download Manager startup	Cuir an Luathadair-cuingeachaidh air an-còmhnaidh nuair a thòisicheas Mister Download Manager
+	Always turn on Speed Limiter on tnctr download manager startup	Cuir an Luathadair-cuingeachaidh air an-còmhnaidh nuair a thòisicheas tnctr download manager
 #. text in regional.rs; text in the Scheduler window
 #. before noon, after a time of day (12-hour clock). Its pair is "PM": write both the same way (this language's own short marks, or both kept as AM and PM)
 #, machine
@@ -513,7 +513,7 @@
 #. text in a dialog box
 #. {name} = a file name (keep the braces as they are)
 #, machine
-	Are you sure you want to delete "{name}" from Mister Download Manager list of downloads?	A bheil thu cinnteach gu bheil thu airson “{name}” a sguabadh às liosta nan luchdadh a-nuas aig Mister Download Manager?
+	Are you sure you want to delete "{name}" from tnctr download manager list of downloads?	A bheil thu cinnteach gu bheil thu airson “{name}” a sguabadh às liosta nan luchdadh a-nuas aig tnctr download manager?
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -682,7 +682,7 @@
 	Browse...	Brabhsaich...
 #. text in extension.rs
 #, machine
-	Browser integration isn't set up on this computer, so no browser can reach Mister Download Manager yet.	Chan eil amalachadh brabhsair air a stèidheachadh air a’ choimpiutair seo, mar sin chan urrainn do bhrabhsair sam bith Mister Download Manager a ruighinn fhathast.
+	Browser integration isn't set up on this computer, so no browser can reach tnctr download manager yet.	Chan eil amalachadh brabhsair air a stèidheachadh air a’ choimpiutair seo, mar sin chan urrainn do bhrabhsair sam bith tnctr download manager a ruighinn fhathast.
 #. page title in the Options window
 #, machine
 	Browser/System Integration	Amalachadh Brabhsair/Siostam
@@ -874,7 +874,7 @@
 	Choose a language	Tagh cànan
 #. text in langpick.rs
 #, machine
-	Choose the language Mister Download Manager shows its windows in:	Tagh an cànan anns am bi Mister Download Manager a’ sealltainn nan uinneagan aige:
+	Choose the language tnctr download manager shows its windows in:	Tagh an cànan anns am bi tnctr download manager a’ sealltainn nan uinneagan aige:
 #. text in the Options window
 #. Options → Sites Logins → Cookies for video sites: the title of the window, and the tooltip of the button, that pick a browser profile's folder
 #, machine
@@ -1493,7 +1493,7 @@
 	Exit	Fàg
 #. checkbox in a download's progress window; checkbox in the Scheduler window
 #, machine
-	Exit Mister Download Manager when done	Fàg Mister Download Manager nuair a bhios e deiseil
+	Exit tnctr download manager when done	Fàg tnctr download manager nuair a bhios e deiseil
 #. text in the Checksum window
 #, machine
 	Expected checksum (MD5, SHA-1, SHA-256, SHA-512 or CRC32):	Suim-dearbhaidh ris a bheil dùil (MD5, SHA-1, SHA-256, SHA-512 no CRC32):
@@ -1924,7 +1924,7 @@
 	Hide web pages	Falaich duilleagan-lìn
 #. text in the Options window
 #, machine
-	Hold Alt while clicking a link to let the browser download it instead of Mister Download Manager.	Cùm Alt fhad ’s a bhriogas tu air ceangal gus am brabhsair a leigeil ga luchdachadh a-nuas an àite Mister Download Manager.
+	Hold Alt while clicking a link to let the browser download it instead of tnctr download manager.	Cùm Alt fhad ’s a bhriogas tu air ceangal gus am brabhsair a leigeil ga luchdachadh a-nuas an àite tnctr download manager.
 #. link (opens a web page) in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Home page	Duilleag-dachaigh
@@ -1960,7 +1960,7 @@
 	Hungary	An Ungair
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	I download with Mister Download Manager: fast, free, and it looks like the download manager you already know. {link}	Bidh mi a’ luchdadh a-nuas le Mister Download Manager: luath, saor, agus tha e coltach ris a’ mhanaidsear luchdadh a-nuas air a bheil thu eòlach mu thràth. {link}
+	I download with tnctr download manager: fast, free, and it looks like the download manager you already know. {link}	Bidh mi a’ luchdadh a-nuas le tnctr download manager: luath, saor, agus tha e coltach ris a’ mhanaidsear luchdadh a-nuas air a bheil thu eòlach mu thràth. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2231,7 +2231,7 @@
 	Latvia	An Laitbhe
 #. text in the Options window
 #, machine
-	Launch Mister Download Manager on startup	Cuir Mister Download Manager air bhog aig àm tòiseachaidh
+	Launch tnctr download manager on startup	Cuir tnctr download manager air bhog aig àm tòiseachaidh
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2518,54 +2518,54 @@
 	Missing	A dhìth
 #. message or event log entry in the main window; window title in a dialog box; text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	Mister Download Manager	Mister Download Manager
+	tnctr download manager	tnctr download manager
 #. text in unix.rs
 #. Linux, at start, on the terminal and in a message box: a library the window needs isn't installed; {libraries} = its file names (libxkbcommon-x11.so.0…), left as they are
 #, machine
-	Mister Download Manager can't open its window: this system lacks {libraries}.	Chan urrainn do Mister Download Manager an uinneag aige fhosgladh: tha {libraries} a dhìth air an t-siostam seo.
+	tnctr download manager can't open its window: this system lacks {libraries}.	Chan urrainn do tnctr download manager an uinneag aige fhosgladh: tha {libraries} a dhìth air an t-siostam seo.
 #. text in crashui.rs
 #. crash report window heading: MDM crashed and is gone
 #, machine
-	Mister Download Manager closed unexpectedly	Dhùin Mister Download Manager gun dùil
+	tnctr download manager closed unexpectedly	Dhùin tnctr download manager gun dùil
 #. window title in the Options window
 #, machine
-	Mister Download Manager Configuration	Rèiteachadh Mister Download Manager
+	tnctr download manager Configuration	Rèiteachadh tnctr download manager
 #. text in crashui.rs
 #, machine
-	Mister Download Manager crash report	Aithisg tubaist Mister Download Manager
+	tnctr download manager crash report	Aithisg tubaist tnctr download manager
 #. text in crashui.rs
 #. crash report window heading: an internal error, MDM still running
 #, machine
-	Mister Download Manager hit an internal error	Bhuail Mister Download Manager air mearachd a-staigh
+	tnctr download manager hit an internal error	Bhuail tnctr download manager air mearachd a-staigh
 #. text in wake.rs
 #. why the computer isn't going to sleep, in the system's list of programs that keep it awake; {queue} = the queue's name
 #. {queue} = a queue name such as "Main queue" (keep the braces as they are)
 #, machine
-	Mister Download Manager is running the queue "{queue}"	Tha Mister Download Manager a' ruith a' chiutha "{queue}"
+	tnctr download manager is running the queue "{queue}"	Tha tnctr download manager a' ruith a' chiutha "{queue}"
 #. text in crashui.rs
 #. crash report window heading: MDM's window doesn't answer (frozen)
 #, machine
-	Mister Download Manager stopped responding	Sguir Mister Download Manager de fhreagairt
+	tnctr download manager stopped responding	Sguir tnctr download manager de fhreagairt
 #. text in crashui.rs
 #, machine
-	Mister Download Manager stopped responding for a while	Sguir Mister Download Manager de fhreagairt airson greis
+	tnctr download manager stopped responding for a while	Sguir tnctr download manager de fhreagairt airson greis
 #. text in the Options window
 #. \\n starts a new line: break lines where they fit the translation
 #, machine
-	Mister Download Manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.	Bidh Mister Download Manager a’ sgrìobhadh gach ceangal dìreach a-steach don fhaidhle dheireannach\n(faidhle pàirt gann ri thaobh), mar sin chan eil feum air eòlaire sealach no ceum cruinneachaidh.
+	tnctr download manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.	Bidh tnctr download manager a’ sgrìobhadh gach ceangal dìreach a-steach don fhaidhle dheireannach\n(faidhle pàirt gann ri thaobh), mar sin chan eil feum air eòlaire sealach no ceum cruinneachaidh.
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	Mister Download Manager {version} is available (released {date}).	Tha Mister Download Manager {version} ri fhaighinn (air a leigeil ma sgaoil {date}).
+	tnctr download manager {version} is available (released {date}).	Tha tnctr download manager {version} ri fhaighinn (air a leigeil ma sgaoil {date}).
 #. text in helpers.rs
 #. Video helpers: {version} = the version of MDM's own copy
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	Mister Download Manager's own copy, version {version}	Leth-bhreac Mister Download Manager fhèin, tionndadh {version}
+	tnctr download manager's own copy, version {version}	Leth-bhreac tnctr download manager fhèin, tionndadh {version}
 #. text in unix.rs
 #. Linux, at start, on the terminal: the libraries an X11 window needs aren't installed, so the window opens through Wayland instead, where menus can't be placed under what was clicked; {libraries} = their file names, left as they are
 #, machine
-	Mister Download Manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.	Feumaidh uinneag X11 Mister Download Manager {libraries}, nach eil aig an t-siostam seo: fosglaidh i air Wayland na àite, far am faod na clàran-bìdh fosgladh air falbh bho na tiotalan aca.
+	tnctr download manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.	Feumaidh uinneag X11 tnctr download manager {libraries}, nach eil aig an t-siostam seo: fosglaidh i air Wayland na àite, far am faod na clàran-bìdh fosgladh air falbh bho na tiotalan aca.
 #. text in the Scheduler window
 #. Monday, as short as a calendar's column head (two letters in English)
 #, machine
@@ -3070,10 +3070,10 @@
 	Open folder	Fosgail am pasgan
 #. checkbox in the Add torrent window
 #, machine
-	Open magnet links and .torrent files with Mister Download Manager	Fosgail ceanglaichean magnet agus faidhlichean .torrent le Mister Download Manager
+	Open magnet links and .torrent files with tnctr download manager	Fosgail ceanglaichean magnet agus faidhlichean .torrent le tnctr download manager
 #. text in the tray icon's menu
 #, machine
-	Open Mister Download Manager	Fosgail Mister Download Manager
+	Open tnctr download manager	Fosgail tnctr download manager
 #. text in extension.rs
 #. step 2 of turning on the Safari extension; Cmd is the Command key
 #, machine
@@ -3144,7 +3144,7 @@
 #. text in remote.rs
 #. remote control page (on a phone): title of the pairing screen
 #, machine
-	Pair with Mister Download Manager	Pèar le Mister Download Manager
+	Pair with tnctr download manager	Pèar le tnctr download manager
 #. text in the Options window
 #. column title: when the device was paired
 #, machine
@@ -3630,7 +3630,7 @@
 	Select or unselect the download with the dotted outline	Tagh no dì-thaghadh an luchdachadh a-nuas leis an iomall dotagach
 #. group box title in the Options window
 #, machine
-	Select sounds for Mister Download Manager events	Tagh fuaimean airson tachartasan Mister Download Manager
+	Select sounds for tnctr download manager events	Tagh fuaimean airson tachartasan tnctr download manager
 #. what a keyboard shortcut does in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Select the downloads in the box	Tagh na luchdachaidhean a-nuas sa bhogsa
@@ -3955,7 +3955,7 @@
 	Start download at	Tòisich an luchdadh a-nuas aig
 #. checkbox in the Scheduler window
 #, machine
-	Start download on Mister Download Manager startup	Tòisich an luchdadh a-nuas nuair a thòisicheas Mister Download Manager
+	Start download on tnctr download manager startup	Tòisich an luchdadh a-nuas nuair a thòisicheas tnctr download manager
 #. checkbox in the Options window
 #, machine
 	Start downloading immediately while displaying "Download File Info" dialog	Tòisich a’ luchdadh a-nuas sa bhad fhad ’s a tha an còmhradh “Fiosrachadh faidhle luchdaich a-nuas” air a thaisbeanadh
@@ -3990,7 +3990,7 @@
 #, machine
 	Started with the computer, it starts minimized: no notification area shows its icon here	Nuair a thòisicheas e leis a’ choimpiutair, tòisichidh e air a lughdachadh: chan eil raon fiosrachaidh a’ sealltainn an ìomhaigh aige an seo
 #. text in the Options window
-#. tooltip of "Launch Mister Download Manager on startup": started with the computer, MDM's window stays hidden, its icon in the notification area (system tray)
+#. tooltip of "Launch tnctr download manager on startup": started with the computer, MDM's window stays hidden, its icon in the notification area (system tray)
 #, machine
 	Started with the computer, it waits in the notification area	Nuair a thòisicheas e leis a’ choimpiutair, bidh e a’ feitheamh ann an raon nam brathan
 #. message or event log entry in the main window
@@ -4211,7 +4211,7 @@
 #. text in extension.rs
 #. a check of Test browser integration: the browsers find MDM's helper program
 #, machine
-	The browsers can find Mister Download Manager	’S urrainn dha na brabhsairean Mister Download Manager a lorg
+	The browsers can find tnctr download manager	’S urrainn dha na brabhsairean tnctr download manager a lorg
 #. text in the Options window
 #. Options → Remote → Status: the settings were changed; they apply on OK
 #, machine
@@ -4235,7 +4235,7 @@
 #. text in the Scheduler window
 #. tooltip on the Scheduler's "Wake the computer to run this queue"
 #, machine
-	The computer is woken a minute before the start time and kept awake while the queue runs. Mister Download Manager has to be running (it can wait in the notification area).	Thèid an coimpiutair a dhùsgadh mionaid ron àm tòiseachaidh agus a chumail dùisgte fhad ’s a bhios an ciudha a’ ruith. Feumaidh Mister Download Manager a bhith a’ ruith (faodaidh e feitheamh san raon fiosrachaidh).
+	The computer is woken a minute before the start time and kept awake while the queue runs. tnctr download manager has to be running (it can wait in the notification area).	Thèid an coimpiutair a dhùsgadh mionaid ron àm tòiseachaidh agus a chumail dùisgte fhad ’s a bhios an ciudha a’ ruith. Feumaidh tnctr download manager a bhith a’ ruith (faodaidh e feitheamh san raon fiosrachaidh).
 #. text in the Scheduler window
 #. the Scheduler, under "Wake the computer to run this queue": when it will happen; {date} = e.g. 06/11/2026, {time} = e.g. 22:59:00
 #. {time} = a time of day (keep the braces as they are)
@@ -4406,7 +4406,7 @@
 #. text in a dialog box
 #. \\n starts a new line: break lines where they fit the translation
 #, machine
-	The selected download is not complete. Are you sure you want to delete\nit from Mister Download Manager list of downloads?	Chan eil an luchdadh a-nuas taghte deiseil. A bheil thu cinnteach gu bheil thu airson a sguabadh às\nbho liosta nan luchdadh a-nuas aig Mister Download Manager?
+	The selected download is not complete. Are you sure you want to delete\nit from tnctr download manager list of downloads?	Chan eil an luchdadh a-nuas taghte deiseil. A bheil thu cinnteach gu bheil thu airson a sguabadh às\nbho liosta nan luchdadh a-nuas aig tnctr download manager?
 #. text in errors.rs
 #, machine
 	the server answered {status}	fhreagair am frithealaiche {status}
@@ -4765,7 +4765,7 @@
 #. text in extension.rs
 #. step 8 of turning on the Safari extension
 #, machine
-	Turn on "Mister Download Manager" and allow it on all websites.	Cuir air “Mister Download Manager” agus ceadaich e air a h-uile làrach-lìn.
+	Turn on "tnctr download manager" and allow it on all websites.	Cuir air “tnctr download manager” agus ceadaich e air a h-uile làrach-lìn.
 #. text in extension.rs
 #. step 4 of turning on the Safari extension; the quoted switch name is what Safari's settings show in this language: use Apple's own words for it, or keep the English name when unsure
 #, machine
@@ -5178,7 +5178,7 @@
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	You have the latest version of Mister Download Manager ({version}).	Tha an tionndadh as ùire de Mister Download Manager ({version}) agad.
+	You have the latest version of tnctr download manager ({version}).	Tha an tionndadh as ùire de tnctr download manager ({version}) agad.
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. Check for updates, under the new version's line, when MDM was installed by the Linux system's package manager (pacman, ...), which MDM can't update itself
 #. {version} = a version number (keep the braces as they are)
@@ -5557,15 +5557,15 @@ column	Time left	Ùine air fhàgail
 #, machine
 column	Transfer rate	Ìre gluasaid
 #. text in the browser extension
-#. choice under Send downloads to: an MDM running on another computer of the network, such as a home server; keep the name Mister Download Manager as it is
+#. choice under Send downloads to: an MDM running on another computer of the network, such as a home server; keep the name tnctr download manager as it is
 #, machine
-extension	Another Mister Download Manager (a server)	Mister Download Manager eile (frithealaiche)
+extension	Another tnctr download manager (a server)	tnctr download manager eile (frithealaiche)
 #. text in the browser extension
 #. the name this browser gets in the other MDM's list of paired devices
 #, machine
 extension	Browser extension	Leudachan brabhsair
 #. text in the browser extension
-#. menu command of the download button over a video: opens its settings in Mister Download Manager
+#. menu command of the download button over a video: opens its settings in tnctr download manager
 #. the trailing ... means it is still going on: keep it
 #, machine
 extension	Button settings...	Roghainnean a' phutan...
@@ -5574,34 +5574,34 @@ extension	Button settings...	Roghainnean a' phutan...
 #, machine
 extension	Can't tell which video this is: open its own page and try there	Chan urrainn dhuinn innse dè am video a tha seo: fosgail an duilleag aige fhèin agus feuch ann an sin e
 #. text in the browser extension
-#. the toolbar button's status when the browser reaches the app; keep the name Mister Download Manager as it is
+#. the toolbar button's status when the browser reaches the app; keep the name tnctr download manager as it is
 #, machine
-extension	Connected to Mister Download Manager	Ceangailte ri Mister Download Manager
+extension	Connected to tnctr download manager	Ceangailte ri tnctr download manager
 #. text in the browser extension
-#. the toolbar button's status when the browser reaches the app, with the app's version number; keep the name Mister Download Manager as it is
+#. the toolbar button's status when the browser reaches the app, with the app's version number; keep the name tnctr download manager as it is
 #. {version} = a version number (keep the braces as they are)
 #, machine
-extension	Connected to Mister Download Manager {version}	Ceangailte ri Mister Download Manager {version}
+extension	Connected to tnctr download manager {version}	Ceangailte ri tnctr download manager {version}
 #. text in the browser extension
 #. button beside a video, sound or stream in the toolbar button's popup: download it with the app; verb; short
 #, machine
 extension	Download	Luchdaich sìos
 #. text in the browser extension
-#. command in the browser's right-click menu on a page: download the links of the whole page; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on a page: download the links of the whole page; keep the name tnctr download manager as it is
 #, machine
-extension	Download all links with Mister Download Manager	Luchdaich a-nuas a h-uile ceangal le Mister Download Manager
+extension	Download all links with tnctr download manager	Luchdaich a-nuas a h-uile ceangal le tnctr download manager
 #. text in the browser extension
-#. command in the browser's right-click menu on selected text: download the links in the selection; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on selected text: download the links in the selection; keep the name tnctr download manager as it is
 #, machine
-extension	Download selected links with Mister Download Manager	Luchdaich a-nuas ceanglaichean taghte le Mister Download Manager
+extension	Download selected links with tnctr download manager	Luchdaich a-nuas ceanglaichean taghte le tnctr download manager
 #. text in the browser extension
 #. the button over a video on a web page that downloads it; verb; short (it sits on the video)
 #, machine
 extension	Download video	Luchdaich sìos bhidio
 #. text in the browser extension
-#. command in the browser's right-click menu on a link, picture, video or sound; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on a link, picture, video or sound; keep the name tnctr download manager as it is
 #, machine
-extension	Download with Mister Download Manager	Luchdaich sìos le Mister Download Manager
+extension	Download with tnctr download manager	Luchdaich sìos le tnctr download manager
 #. text in the browser extension
 #. shown in the toolbar button's popup after the site was excluded
 #. {site} = a web site's name such as "example.com" (keep the braces as they are)
@@ -5620,9 +5620,9 @@ extension	Drag to move it along the video's edge	Slaod gus a ghluasad air iomall
 #, machine
 extension	Enter its https:// address.	Cuir a-steach an seòladh https:// aige.
 #. text in the browser extension
-#. the extension's description in the browser's list of extensions; keep the name Mister Download Manager as it is
+#. the extension's description in the browser's list of extensions; keep the name tnctr download manager as it is
 #, machine
-extension	Hands downloads from the browser to Mister Download Manager.	A’ toirt seachad luchdaidhean bhon bhrobhsair gu Mister Download Manager.
+extension	Hands downloads from the browser to tnctr download manager.	A’ toirt seachad luchdaidhean bhon bhrobhsair gu tnctr download manager.
 #. text in the browser extension
 #. link in the toolbar button's popup to the help page
 #, machine
@@ -5677,33 +5677,33 @@ extension	Live	Beò
 #, machine
 extension	Media on this page	Meadhanan air an duilleag seo
 #. text in the browser extension
-#. the extension's name in the browser's list of extensions and on its toolbar button; keep the name Mister Download Manager as it is
+#. the extension's name in the browser's list of extensions and on its toolbar button; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager	Mister Download Manager
+extension	tnctr download manager	tnctr download manager
 #. text in the browser extension
-#. status when the app was started for a download but didn't answer in time; keep the name Mister Download Manager as it is
+#. status when the app was started for a download but didn't answer in time; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager didn't start in time	Cha do thòisich Mister Download Manager ann an tìde
+extension	tnctr download manager didn't start in time	Cha do thòisich tnctr download manager ann an tìde
 #. text in the browser extension
-#. status when the app refuses this copy of the extension (another copy is installed, or it came from another store); keep the name Mister Download Manager as it is
+#. status when the app refuses this copy of the extension (another copy is installed, or it came from another store); keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager doesn't accept this copy of the extension	Chan eil Mister Download Manager a’ gabhail ris an leth-bhreac seo den leudachan
+extension	tnctr download manager doesn't accept this copy of the extension	Chan eil tnctr download manager a’ gabhail ris an leth-bhreac seo den leudachan
 #. text in the browser extension
-#. shown briefly on the download button when the app could not be reached; keep the name Mister Download Manager as it is
+#. shown briefly on the download button when the app could not be reached; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager isn't installed or didn't start	Chan eil Mister Download Manager air a stàladh no cha do thòisich e
+extension	tnctr download manager isn't installed or didn't start	Chan eil tnctr download manager air a stàladh no cha do thòisich e
 #. text in the browser extension
-#. status when the browser can't find the app's connection; keep the name Mister Download Manager as it is
+#. status when the browser can't find the app's connection; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager isn't installed, or its browser integration isn't set up	Chan eil Mister Download Manager air a stàladh, no chan eil amalachadh a’ bhrabhsair air a stèidheachadh
+extension	tnctr download manager isn't installed, or its browser integration isn't set up	Chan eil tnctr download manager air a stàladh, no chan eil amalachadh a’ bhrabhsair air a stèidheachadh
 #. text in the browser extension
-#. tooltip of the switch Send downloads through this browser's proxy or VPN extension; keep the name Mister Download Manager as it is
+#. tooltip of the switch Send downloads through this browser's proxy or VPN extension; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager then downloads through the same proxy as this browser. The browser asks you once to allow it; turning this off takes that back.	An uairsin, luchdaichidh Mister Download Manager sìos tron aon proxy ris a’ bhrabhsair seo. Iarraidh am brabhsair ort aon turas cead a thoirt dha; ma chuireas tu seo dheth, thèid sin air ais.
+extension	tnctr download manager then downloads through the same proxy as this browser. The browser asks you once to allow it; turning this off takes that back.	An uairsin, luchdaichidh tnctr download manager sìos tron aon proxy ris a’ bhrabhsair seo. Iarraidh am brabhsair ort aon turas cead a thoirt dha; ma chuireas tu seo dheth, thèid sin air ais.
 #. text in the browser extension
-#. tooltip of the switch Send downloads through this browser's proxy or VPN extension in Chrome, Edge and the other Chromium browsers (they ask for no permission at the switch); keep the name Mister Download Manager as it is
+#. tooltip of the switch Send downloads through this browser's proxy or VPN extension in Chrome, Edge and the other Chromium browsers (they ask for no permission at the switch); keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager then downloads through the same proxy as this browser. While this is off, the extension doesn't read the browser's proxy.	Luchdaichidh Mister Download Manager a-nuas an uairsin tron aon proxy ris a’ bhrabhsair seo. Fhad ’s a tha seo dheth, cha leugh an leudachan proxy a’ bhrabhsair.
+extension	tnctr download manager then downloads through the same proxy as this browser. While this is off, the extension doesn't read the browser's proxy.	Luchdaichidh tnctr download manager a-nuas an uairsin tron aon proxy ris a’ bhrabhsair seo. Fhad ’s a tha seo dheth, cha leugh an leudachan proxy a’ bhrabhsair.
 #. text in the browser extension
 #. the small arrow next to the Download video button that opens its menu (read aloud by screen readers)
 #, machine
@@ -5735,9 +5735,9 @@ extension	Open it	Fosgail e
 #, machine
 extension	Open its address once and accept its certificate, then enter a code from its Options, Remote, Pair a device (or misterdownloadmanager-cli pair).	Fosgail an seòladh aige aon turas agus gabh ris an teisteanas aige, an uair sin cuir a-steach còd bho na Options, Remote, Pair a device aige (no misterdownloadmanager-cli pair).
 #. text in the browser extension
-#. button in the toolbar button's popup; keep the name Mister Download Manager as it is
+#. button in the toolbar button's popup; keep the name tnctr download manager as it is
 #, machine
-extension	Open Mister Download Manager	Fosgail Mister Download Manager
+extension	Open tnctr download manager	Fosgail tnctr download manager
 #. text in the browser extension
 #. button in the toolbar button's popup: open the app's Options
 #. the trailing ... means it is still going on: keep it
@@ -5772,9 +5772,9 @@ extension	Send downloads through this browser's proxy or VPN extension	Cuir luch
 #, machine
 extension	Send downloads to	Cuir luchdaidhean sìos gu
 #. text in the browser extension
-#. shown briefly on the download button after it was clicked; keep the name Mister Download Manager as it is
+#. shown briefly on the download button after it was clicked; keep the name tnctr download manager as it is
 #, machine
-extension	Sent to Mister Download Manager	Chaidh a chur gu Mister Download Manager
+extension	Sent to tnctr download manager	Chaidh a chur gu tnctr download manager
 #. text in the browser extension
 #. link at the foot of the toolbar button's popup to the creator's GitHub Sponsors page (MDM is free; this is an optional donation)
 #, machine
@@ -5788,9 +5788,9 @@ extension	Take downloads from this browser	Gabh luchdadh a-nuas bhon bhrabhsair 
 #, machine
 extension	The Chrome Web Store's rules keep this copy of the add-on away from this site's videos. Help says what you can do.	Chan eil riaghailtean Chrome Web Store a’ leigeil leis an lethbhreac seo dhen leudachan obrachadh air videothan na làraich seo. Tha Cobhair ag innse dè as urrainn dhut a dhèanamh.
 #. text in the browser extension
-#. status when the connection to the app broke off (often security software blocking it); keep the name Mister Download Manager as it is
+#. status when the connection to the app broke off (often security software blocking it); keep the name tnctr download manager as it is
 #, machine
-extension	The connection to Mister Download Manager failed	Dh’fhàillig an ceangal ri Mister Download Manager
+extension	The connection to tnctr download manager failed	Dh’fhàillig an ceangal ri tnctr download manager
 #. text in the browser extension
 #. shown briefly on the download button over a video when the app's settings keep the button off on this web site
 #, machine
@@ -5808,7 +5808,7 @@ extension	The last download was left to the browser.	Chaidh an luchdachadh sìos
 #, machine
 extension	This browser isn't ticked in Options → General.	Chan eil am brabhsair seo air a chomharrachadh ann an Roghainnean → Coitcheann.
 #. text in the browser extension
-#. choice under Send downloads to: the Mister Download Manager on this computer
+#. choice under Send downloads to: the tnctr download manager on this computer
 #, machine
 extension	This computer	An coimpiutair seo
 #. text in the browser extension
@@ -5820,9 +5820,9 @@ extension	This download's details were too large to hand over	Bha mion-fhiosrach
 #, machine
 extension	This page's player streams its video in pieces, so there's no file to list. Point at the video and use its Download video button.	Bidh cluicheadair na duilleige seo a’ sruthadh a video ann am pìosan, mar sin chan eil faidhle ri liostadh. Dèan puing air a’ video agus cleachd am putan Luchdaich a-nuas video aige.
 #. text in the browser extension
-#. status when the app is older than the extension; keep the name Mister Download Manager as it is
+#. status when the app is older than the extension; keep the name tnctr download manager as it is
 #, machine
-extension	Update Mister Download Manager to use everything this extension offers	Ùraich Mister Download Manager gus gach rud a tha an leudachan seo a’ tabhann a chleachdadh
+extension	Update tnctr download manager to use everything this extension offers	Ùraich tnctr download manager gus gach rud a tha an leudachan seo a’ tabhann a chleachdadh
 #. text in the browser extension
 #. why a download stayed with the browser: the app's setting 'Use advanced browser integration' is off; keep the setting's name as the app shows it
 #, machine
@@ -5938,7 +5938,7 @@ key	Up / Down	Suas / Sìos
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
-menu	&About Mister Download Manager	Mu dheidhinn Mister Download Manager(&A)
+menu	&About tnctr download manager	Mu dheidhinn tnctr download manager(&A)
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
@@ -6290,7 +6290,7 @@ menu	Metro	Metro
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
-menu	Mister Download Manager &Home Page	Duilleag-dachaigh &Mister Download Manager
+menu	tnctr download manager &Home Page	Duilleag-dachaigh &tnctr download manager
 #. menu command in the main window
 #, machine
 menu	Move/Rename (Ctrl-M)	Gluais/Ath-ainmich (Ctrl-M)
@@ -6403,7 +6403,7 @@ menu	Select &all	Tagh &na h-uile
 menu	Show &drop target	Seall &targaid leigeil sìos
 #. menu command in the main window
 #, machine
-menu	Show Mister Download Manager	Seall Mister Download Manager
+menu	Show tnctr download manager	Seall tnctr download manager
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine

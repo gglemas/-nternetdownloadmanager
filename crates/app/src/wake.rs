@@ -284,7 +284,7 @@ impl Waker {
         }
         let reason = crate::i18n::fmt(
             // i18n: why the computer isn't going to sleep, in the system's list of programs that keep it awake; {queue} = the queue's name
-            crate::i18n::t("Mister Download Manager is running the queue \"{queue}\""),
+            crate::i18n::t("tnctr download manager is running the queue \"{queue}\""),
             &[("queue", crate::i18n::t(queue))],
         );
         if !self.holder.hold(reason) {
@@ -613,7 +613,7 @@ mod tests {
             ..Waker::default()
         };
         // The translations are read once, on the first text (the app has read them long before).
-        let _ = crate::i18n::t("Mister Download Manager is running the queue \"{queue}\"");
+        let _ = crate::i18n::t("tnctr download manager is running the queue \"{queue}\"");
         (w, asked)
     }
 
