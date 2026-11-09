@@ -35,12 +35,12 @@ and the Scheduler can start it at night. See [Queues and the Scheduler](queues-a
 ## A list of links from a file
 
 Have the links already, in a text file? **Tasks → Import → From text file** reads every web
-address in it, and you untick the ones you don't want. **From IDM export file** reads an `.ef2`
-list, with each download's referrer and cookies, so a list exported from IDM comes over with
+address in it, and you untick the ones you don't want. **From .ef2 export file** reads an `.ef2`
+list, with each download's referrer and cookies, so an exported list comes over with
 what its downloads need. You can also drop a `.txt` or `.ef2` list on the download list.
 
 The other way works too: **Tasks → Export → To text file** writes one address per line, and
-**To IDM export file** writes an `.ef2` list.
+**To .ef2 export file** writes an `.ef2` list.
 
 When an address is already in the list, MDM asks what to do, or follows the answer you chose in
 **Options → Downloads → If a duplicate download link is added**.

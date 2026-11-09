@@ -8,77 +8,50 @@ web
 
 ## Users
 
-The website's primary visitor is a Windows user who uses, or used, Internet Download Manager
-(IDM), often on a trial that ran out or a cracked copy, and is looking for a free replacement
-that works the same way. Many are not technical. Many arrive by searching "IDM alternative" in
-their own language: the site is published in 21 languages, Arabic and Persian right to left.
+The website serves people looking for a free, open-source download manager for Windows. Many are not technical and want clear setup instructions, accurate feature descriptions, and a dependable download. The site is published in 21 languages, including Arabic and Persian right to left.
 
-Secondary visitors: Linux users (supported, tested on GNOME, KDE Plasma, Xfce and Cinnamon), Mac
-users (experimental builds), people reading the help pages
-while using the app, and contributors (code, translations, bug reports) arriving from GitHub.
+Secondary visitors include Linux users (supported, tested on GNOME, KDE Plasma, Xfce and Cinnamon), Mac users (experimental builds), people reading help pages while using the app, and contributors (code, translations, bug reports) arriving from GitHub.
 
 ## Product Purpose
 
-Mister Download Manager (MDM) is a free, open-source (GPL-3.0) download manager for Windows and Linux,
-laid out the way IDM users expect: same windows, menus and workflow, rebuilt from scratch in
-Rust. The website's job is to get the right visitor to download it with confidence, then to
-help them use it (help pages, FAQ, tutorials).
+Mister Download Manager (MDM) is a free, open-source (GPL-3.0) download manager for Windows and Linux, built in Rust. The website helps visitors understand its capabilities, choose the right build, download it with confidence, and find help through tutorials and the FAQ.
 
-Success: an IDM user recognizes the window, believes it is faster and genuinely free, and
-downloads it; a user with a question finds the answer in the help.
+Success means visitors understand what MDM does, find an appropriate build, and can answer their questions in the help pages.
 
 ## Positioning
 
-IDM's window, but faster and free. The layout is the one the visitor already knows; the speed
-is measured, not claimed (a public, reproducible benchmark against IDM 6.42); the price is
-nothing, with no ads, no trial and no sign-up. Torrents and video downloads are built in, and
-the app speaks 86 languages.
+MDM combines a clear Windows desktop workflow with multi-connection downloads, crash-safe resume, built-in torrents and video downloads, browser integration, and 86 interface languages. It is free, with no ads, trial, or sign-up. macOS builds are experimental.
 
-MDM is a separate program, written from scratch. It is never presented as IDM, as made by IDM's
-maker (Tonec), or as a crack or copy of it.
+MDM is independently written in Rust. Product names and marks belonging to third parties remain attributed where legally required; the website does not imply affiliation.
 
 ## Operating Context
 
-- Visitors compare against IDM, often with IDM installed or remembered.
-- Download is from GitHub Releases: a Windows installer, a portable zip, a plain zip; Linux
-  packages (.deb, .rpm, AppImage, tar.gz); macOS builds marked experimental. The browser extension ships for Chrome, Edge, Brave, Opera,
-  Vivaldi and Firefox.
+- Visitors may be new to download managers and need straightforward descriptions of capabilities and limitations.
+- Downloads are from GitHub Releases: a Windows installer, portable zip, plain zip; Linux packages (.deb, .rpm, AppImage, tar.gz); macOS builds marked experimental. The browser extension ships for Chrome, Edge, Brave, Opera, Vivaldi and Firefox.
 - Help pages are read alongside the running app, often to find a menu or setting.
 - Contact and support happen on GitHub only (issues, discussions); there is no email or form.
 
 ## Capabilities and Constraints
 
-- Static site: `tools/website/build.py` builds `website/`, `docs/` (help) and `CHANGELOG.md`
-  (news) into `target/site`; GitHub Pages serves it at misterdownloadmanager.com. Plain HTML,
-  CSS and JavaScript, no framework, no external scripts except the Statcounter visit counter.
-- Every page exists in 21 languages (`tools/website/sitei18n.py`, catalogs in `i18n/site/`);
-  layout must hold for long German words, CJK, Thai, Bengali and right-to-left Arabic/Persian.
-  Text in scripts is translated through `window.MDM_I18N`.
+- Static site: `tools/website/build.py` builds `website/`, `docs/` (help) and `CHANGELOG.md` (news) into `target/site`; GitHub Pages serves it at misterdownloadmanager.com. Plain HTML, CSS and JavaScript, no framework, no external scripts except the Statcounter visit counter.
+- Every page exists in 21 languages (`tools/website/sitei18n.py`, catalogs in `i18n/site/`); layout must hold for long German words, CJK, Thai, Bengali and right-to-left Arabic/Persian. Text in scripts is translated through `window.MDM_I18N`.
 - Light and dark themes; the visitor's system choice is the default.
-- Clean room: nothing from IDM (code, artwork, icons, text) appears; IDM is named only to
-  compare.
+- Describe capabilities accurately, use real app screenshots, and respect third-party attribution.
 
 ## Evidence on Hand
 
-- Real, unretouched screenshots of the app: `website/assets/screens/` (light and dark) and
-  `docs/images/`.
-- Benchmark results, final, 2026-10-29: `website/bench/results.json` (seven scenarios, alternating
-  runs, IDM 6.42 vs MDM at defaults); the methodology is on the benchmark page.
-- The app's logo (`website/assets/logo-*`), its 71 flag icons (`crates/app/assets/flags/`, lipis
-  flag-icons, MIT), browser logos for the extension (`website/assets/browsers/`).
-- No testimonials, reviews, user counts, press or customer logos exist; none may be invented.
-  GitHub stars are few and shown only as the live count.
+- Real, unretouched screenshots of the app: `website/assets/screens/` (light and dark) and `docs/images/`.
+- The app's logo (`website/assets/logo-*`), its 71 flag icons (`crates/app/assets/flags/`, lipis flag-icons, MIT), browser logos for the extension (`website/assets/browsers/`).
+- No testimonials, reviews, user counts, press or customer logos exist; none may be invented. GitHub stars are shown only as a live count.
 
 ## Product Principles
 
-1. Familiar first: the visitor should recognize the window before reading a word.
-2. Prove, don't claim: every speed statement points to the benchmark; every image is the real app.
+1. Clear first: visitors should understand the app and its workflow from the real interface.
+2. Accurate, not inflated: describe capabilities and limits precisely; use real screenshots.
 3. Free means free: no dark patterns, no upsell, no data collection beyond the visit counter.
 4. Every language is first-class: no page reads as a translation of an English layout.
-5. Honest about limits: experimental builds (macOS), what Linux lacks yet, missing features and IDM's own strengths are stated
-   plainly.
+5. Honest about limits: experimental builds (macOS), what Linux lacks yet, and missing features are stated plainly.
 
 ## Accessibility & Inclusion
 
-Non-technical visitors in many languages and scripts: plain words, readable sizes, full keyboard
-use, right-to-left layouts that mirror properly, WCAG AA contrast in both themes.
+Non-technical visitors in many languages and scripts: plain words, readable sizes, full keyboard use, right-to-left layouts that mirror properly, WCAG AA contrast in both themes.

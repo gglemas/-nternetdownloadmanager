@@ -140,8 +140,8 @@ fn load_from(p: &Path, empty: Loaded) -> Loaded {
                 }
             }
             if f.version < 2 {
-                // Before version 2 nothing could set "files at the same time" (no Scheduler),
-                // so every 1 there is the old default: IDM's (and our) default is 4.
+                // Before version 2, the concurrency setting was not user-configurable; migrate
+                // queues with its old default to the current default.
                 for q in f.queues.iter_mut().filter(|q| q.files_at_once == 1) {
                     q.files_at_once = 4;
                 }
@@ -554,7 +554,7 @@ mod tests {
             "files_at_once":1,"items":[],"sync":false}]}"#;
         std::fs::write(&p, old).unwrap();
         assert_eq!(load_from(&p, empty()).queues[0].files_at_once, 4);
-        // Written as version 2, a 1 chosen in the Scheduler stays.
+        // In version 2, preserve an explicitly saved concurrency value of 1.
         let mut q = Queue::new("Main download queue", false);
         q.files_at_once = 1;
         let layout = crate::list::ListState::default().layout();

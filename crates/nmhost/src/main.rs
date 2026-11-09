@@ -94,7 +94,6 @@ struct Message {
     proxy_pac: Option<String>,
     proxy_login: bool,
     /// The user asked for this download (right-click → Download with tnctr download manager):
-    /// Options' automatic-capture rules don't apply, as IDM's "Download with IDM" takes any link.
     explicit: bool,
     /// May the download button show over videos on page `url`?
     panel: bool,
