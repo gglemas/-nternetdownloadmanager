@@ -1,5 +1,4 @@
 //! The main window (notes/ui-spec/main-window.md): menu bar, toolbar, Categories tree and the
-//! download list at IDM 6.42's measured positions, plus the download actions behind them.
 
 use std::collections::HashMap;
 use std::path::PathBuf;
@@ -73,7 +72,7 @@ enum Cmd {
     /// Tasks → Show drop target (shown / hidden); the drop target's Show main window.
     ToggleDropTarget,
     ShowMain,
-    /// Tasks → Export / Import (D-021): IDM's export file (.ef2) or a text file.
+    /// Tasks → Export / Import (D-021): legacy export format (.ef2) or a text file.
     Export {
         ef2: bool,
     },
@@ -159,9 +158,7 @@ enum Cmd {
     RssFeeds(bool),
     /// Right-click → Refresh download address: open the source page, edit the address.
     RefreshAddress,
-    /// Right-click → Verify checksum… (beyond IDM).
     VerifyChecksum,
-    /// Right-click → Extract (beyond IDM, #37): a finished archive, into its folder.
     Extract,
     /// Tasks → Link grabber… (#37): the window, empty (links pasted in) or as it is.
     LinkGrabber,
@@ -496,7 +493,6 @@ pub struct App {
     /// "Show warning before stopping downloads": the notice, while open.
     limit_notice: Option<dialogs::LimitNotice>,
     /// The notification-area icon (created on the first frame), the window hidden in it, and
-    /// a real exit under way (closing the window otherwise only hides it, as IDM does).
     tray: Option<crate::tray::Tray>,
     tray_limiter: Option<bool>,
     hidden: bool,
@@ -704,7 +700,6 @@ fn file_icon(name: &str) -> IconKey {
     }
 }
 
-/// Sort key for list column col: numbers where IDM sorts numerically, else text.
 /// `queued`: the download is in a queue (the Q column's mark).
 fn sort_key(it: &Item, col: usize, queued: bool) -> (f64, String) {
     let frac = it
@@ -746,7 +741,6 @@ fn sort_key(it: &Item, col: usize, queued: bool) -> (f64, String) {
     }
 }
 
-/// Silk icons standing in for IDM's XP-era category icons.
 /// A theme's icon set may replace them (`crate::themeicons`).
 fn category_icon(c: Category) -> IconKey {
     let (need, silk) = match c {
@@ -1146,7 +1140,6 @@ impl App {
     }
 
     /// The strip under the list: how many downloads are shown and selected, how many run and
-    /// how fast in all (beyond IDM, which has no status bar).
     fn status_strip(&self, ui: &Ui, o: Pos2, w: f32, h: f32, shown: usize) {
         let p = ui.painter();
         let top = o.y + h - STRIP_H;
@@ -1341,7 +1334,6 @@ impl App {
             }
             self.start(id, true);
         } else {
-            // "Download Later": the main download queue (IDM's default), or the one picked.
             self.queue_later(vec![id], self.settings.queue_panel_later);
         }
         self.dirty = true;
@@ -2149,7 +2141,6 @@ impl App {
             .filter(mdm_engine::supported);
         let Some(url) = url else {
             if !cmd.start_queue {
-                // A plain second launch brings the window to the front, as IDM does.
                 self.show_window(ctx);
             }
             return;
@@ -2280,7 +2271,6 @@ impl App {
         RequestParts { headers, opts }
     }
 
-    /// Start or resume a download; `show` opens its progress dialog (IDM's default).
     fn start(&mut self, id: u64, show: bool) {
         self.stopped_by_hand.remove(&id);
         let rt = self.rt.clone();
@@ -3988,7 +3978,6 @@ impl App {
         }
     }
 
-    /// Batch download → OK: every address goes to the main download queue (IDM's default; its
     /// queue selection panel is not built yet).
     fn add_batch(&mut self, added: crate::batch::Added) {
         let mut ids = Vec::new();
@@ -4884,7 +4873,6 @@ impl App {
                 }
             }
             Cmd::RefreshAddress => {
-                // As IDM: the page the link came from opens, so a fresh link can be taken
                 // there; Properties takes the new address and the download resumes from it.
                 if let Some(id) = target {
                     let page = self
@@ -5270,7 +5258,6 @@ impl App {
 
     // ---- menus -----------------------------------------------------------------------------
 
-    /// IDM 6.42's menus (notes/ui-spec/menus.md); unbuilt features are greyed out.
     fn menu_entries(&self, index: usize) -> Vec<MenuEntry<Cmd>> {
         use MenuEntry::{Item as I, Sep, Sub};
         let sel = self.selected_item();
@@ -5318,7 +5305,7 @@ impl App {
                     !self.items.is_empty(),
                     vec![
                         I(
-                            "To &IDM export file...",
+                            "To &legacy export file...",
                             Cmd::Export { ef2: true },
                             true,
                             false,
@@ -5332,7 +5319,7 @@ impl App {
                     true,
                     vec![
                         I(
-                            "From &IDM export file...",
+                            "From &legacy export file...",
                             Cmd::Import { ef2: true },
                             true,
                             false,
@@ -5443,12 +5430,9 @@ impl App {
                 // i18n: noun: the list's font (submenu)
                 Sub("Font", false, vec![]),
                 Sep,
-                // IDM's place for it; a window rather than IDM's submenu, which 86 languages
                 // would make taller than the screen (langpick.rs).
                 I("&Language...", Cmd::ChooseLanguage, true, false),
             ],
-            // IDM's Help menu, ours (D-020): pages of the user guide (docs/); "Video downloads" stands
-            // where IDM has "Grabber Help"; "Report a problem" where "Contact IDM Support";
             // Keyboard shortcuts added; no Tip of the Day.
             _ => vec![
                 I("H&elp contents", Cmd::HelpPage("README.md"), true, false),
@@ -5479,7 +5463,6 @@ impl App {
                 Sep,
                 I("&About tnctr download manager", Cmd::About, true, false),
                 I("Tell a &friend", Cmd::TellFriend, true, false),
-                // MDM's, not IDM's: the creator's GitHub Sponsors page, asked for only.
                 I("Support &MDM", Cmd::Support, true, false),
             ],
         };
@@ -5505,7 +5488,6 @@ impl App {
         let mut items = Vec::new();
         let mut files = false;
         let on = |id: &str| chosen == id;
-        // i18n: View → Theme: MDM's own look, the default (IDM's layout, Windows 11's controls)
         items.push(Radio("Classic", Cmd::Theme("classic"), true, on("classic")));
         // i18n: View → Theme: the system's own colours (its accent colour, its high contrast)
         items.push(Radio("Native", Cmd::Theme("native"), true, on("native")));
@@ -5672,7 +5654,6 @@ impl App {
             .collect()
     }
 
-    /// IDM 6.42's list menu (notes/ui-spec/menus.md "Context menus"): on a row, or on blank
     /// space (`None`: nothing selected, almost everything greyed).
     /// The list's right-click menu. With several downloads selected it acts on all of them
     /// (Resume, Stop, Remove, queues); commands for one download need one.
@@ -5700,7 +5681,6 @@ impl App {
         })
     }
 
-    /// Right-click on the list's blank space: what applies to the whole list (IDM greys the
     /// download menu there).
     fn blank_entries(&self) -> Vec<MenuEntry<Cmd>> {
         use MenuEntry::{Item as I, Sep};
@@ -5985,7 +5965,6 @@ impl App {
             count: None,
         };
         let mut rows = Vec::new();
-        // Silk icons in IDM's roles: folder, folder + green arrow, folder + tick, page stacks.
         let mut branch =
             |label, open: bool, icon, badge, view: View, b: Branch, child: fn(Category) -> View| {
                 rows.push((
@@ -6056,7 +6035,6 @@ impl App {
             Branch::Queues,
         ));
         if self.queues_open {
-            // Every queue, the user's too (IDM lists them all here).
             for (q, queue) in self.queues.iter().enumerate() {
                 let view = Some(View::Queue(q));
                 rows.push((
@@ -6319,7 +6297,6 @@ impl App {
             }
         }
 
-        // Toolbar — full labels (IDM truncates "Delete Co...", "Start Qu...": user decision).
         let picked = self.chosen(None);
         let running = picked.iter().any(|i| i.live.is_some());
         let resumable = picked.iter().any(|i| i.can_start());
@@ -6529,7 +6506,6 @@ impl App {
         if let Some(i) = r.properties {
             self.properties(ids[i]);
         }
-        // A finished download: Open or Properties (IDM's default), as the context menu sets.
         if let Some(i) = r.double_clicked {
             let id = ids[i];
             let complete = self
@@ -6574,7 +6550,6 @@ impl App {
         }
         if let Some((kind, pos, serial)) = self.popup {
             let (entries, target) = match kind {
-                // Column chooser (IDM: right-click on the header). File Name always stays.
                 Popup::Columns => {
                     let mut e: Vec<MenuEntry<Cmd>> = list::TITLES
                         .iter()
@@ -6653,7 +6628,6 @@ impl App {
             }
         }
         // Ctrl+F finds, F3 finds the next match (Downloads menu); Ctrl+N adds a download (not
-        // in IDM). The full list: Help → Keyboard shortcuts (`shortcuts.rs`).
         if chosen.is_none() && self.popup.is_none() && self.open_menu.is_none() {
             let (find, next, add) = ctx.input_mut(|i| {
                 (
@@ -6662,7 +6636,6 @@ impl App {
                     i.consume_key(egui::Modifiers::COMMAND, egui::Key::N),
                 )
             });
-            // Ctrl+M as IDM; F2 as renaming in Explorer.
             if ctx.input_mut(|i| {
                 i.consume_key(egui::Modifiers::COMMAND, egui::Key::M)
                     || i.consume_key(egui::Modifiers::NONE, egui::Key::F2)
@@ -6888,7 +6861,6 @@ impl App {
         self.open_popup(Popup::DropTarget, screen - origin.to_vec2());
     }
 
-    /// Tasks → Export: every download's address, as an IDM export file or plain text.
     fn export(&mut self, ef2: bool) {
         let (ext, name) = if ef2 {
             ("ef2", "downloads.ef2")
@@ -7239,7 +7211,6 @@ impl App {
 
     /// Link grabber's ticked links: each package's to its folder, tagged with the package (its
     /// archives are extracted when all are in), into the main queue; started too on Start (else
-    /// only queued, as IDM's import).
     fn add_grabbed(&mut self, start: bool, packages: Vec<crate::grabber::Picked>) {
         // Package numbers after those in the list.
         let last = self
@@ -7412,7 +7383,6 @@ impl App {
         self.dirty = true;
     }
 
-    /// IDM looks for a new version once a week; so do we (off: the switch in Check for updates). Found: the
     /// update window says so; otherwise nothing shows.
     /// The automatic update check: a few seconds after every start, then once a day while MDM
     /// runs (it was at most once a week). A new version's window comes to the front, as apps
@@ -8320,8 +8290,6 @@ impl App {
         self.drop_target(&ctx);
         self.main_drops(&ctx);
         self.remember_layout(&ctx);
-        // Light or dark: IDM follows Windows' app mode (checked every 2 s) unless View → Dark
-        // Mode support is off. Switches live (IDM asks to restart). On Linux the desktop's own
         // change wakes a frame, and the check runs in it rather than at its next 2 s (#156).
         let desktop_changed = crate::theme::system_changed();
         if desktop_changed

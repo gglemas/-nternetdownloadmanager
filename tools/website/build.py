@@ -355,7 +355,6 @@ NAV = [
     ("Download", "/download.html", "download"),
     ("Help", "/help/", "help"),
     ("FAQ", "/faq/", "faq"),
-    ("Benchmark", "/benchmark.html", "bench"),
     ("News", "/news.html", "news"),
 ]
 
@@ -510,8 +509,6 @@ def footer() -> str:
             <li><a href="/download.html#extension">Browser extension</a></li>
             <li><a href="/features/">Features</a></li>
             <li><a href="/themes.html">Themes</a></li>
-            <li><a href="/benchmark.html">Benchmark</a></li>
-            <li><a href="/idm-alternative.html">Free IDM alternative</a></li>
           </ul>
         </div>
         <div>
@@ -552,7 +549,7 @@ def footer() -> str:
         <p>GPL-3.0 · built in the open on <a href="{REPO}">GitHub</a></p>
         <p>© {year} Ahmed Nefzaoui and contributors</p>
       </div>
-      <p class="legal">Not affiliated with Tonec Inc.; Internet Download Manager and IDM are trademarks of their owner, named here only to compare.</p>
+      <p class="legal">Not affiliated with Tonec Inc.; Internet Download Manager and IDM are trademarks of their owner.</p>
     </div>
   </footer>
   {stats_code()}"""
@@ -686,7 +683,6 @@ def waybill_fields() -> str:
     size = f' <small>{SETUP_SIZE}</small>' if SETUP_SIZE else ""
     return (f'<dl class="fields">'
             f'<div><dt>Postage</dt><dd>Free</dd></div>'
-            f'<div><dt>Delivery</dt><dd><a href="/benchmark.html">1 GiB in 1.0 s</a> <small>IDM: 5.5 s</small></dd></div>'
             f'<div><dt>System</dt><dd>Windows 10 and 11</dd></div>'
             f'<div><dt>Version</dt><dd><a href="/news.html">{VERSION}</a>{size}</dd></div></dl>')
 
@@ -729,8 +725,6 @@ ON_SITE = {
     "SECURITY.md": "/security.html",
     "LICENSE": "/license.html",
     "CHANGELOG.md": "/news.html",
-    "docs/bench/run5/REPORT.md": "/benchmark.html#report",
-    "docs/bench": "/benchmark.html",
     "docs/automation-api.schema.json": "/automation-api.schema.json",
 }
 
@@ -990,7 +984,7 @@ def build_faq() -> None:
                         "acceptedAnswer": {"@type": "Answer", "text": md(a)}} for question, _, a in allq],
     }]
     write("/faq/", f"Questions and answers — {NAME}",
-          f"Answers about {NAME}: is it free, is it safe, how it compares with IDM, browsers, videos, torrents, speed, Mac and Linux, and more.",
+          f"Answers about {NAME}: downloads, browsers, videos, torrents, speed, privacy, automation, and more.",
           f"""{page_head("Questions and answers", "Short answers to what people ask most, each with a link to the full guide.", trail)}
     <div class="wrap narrow prose page-body">
       {"".join(parts)}
@@ -1207,13 +1201,6 @@ def build_repo_pages() -> None:
           body, jsonld=[crumbs_ld(trail)], priority="0.5")
 
 
-def bench_report() -> str:
-    """docs/bench/run5/REPORT.md's table, for the benchmark page."""
-    text = (ROOT / "docs" / "bench" / "run5" / "REPORT.md").read_text("utf-8")
-    table = "\n".join(l for l in text.splitlines() if l.startswith("|"))
-    env = next((l for l in text.splitlines()[1:] if l.strip()), "")
-    return md(table) + f'<p class="fine">{esc(env)}</p>'
-
 
 # ---- Pages written as Markdown (legal) -----------------------------------------------------------
 
@@ -1255,13 +1242,11 @@ def third_party_table() -> str:
             f'{len(rows)} libraries.')
 
 
-# ---- Hand-written pages: the home page, download, comparison, 404 --------------------------------
+# ---- Hand-written pages: the home page, download, and 404 --------------------------------
 
 def fill(text: str) -> str:
     for k, v in FILES.items():
         text = text.replace("{{FILE_" + k.upper() + "}}", v)
-    if "{{BENCH_REPORT}}" in text:
-        text = text.replace("{{BENCH_REPORT}}", bench_report())
     for k in ("stars", "forks", "issues", "watchers"):
         text = text.replace("{{" + k.upper() + "}}", STATS.get(k, "–"))
     text = text.replace("<!--@split-->", split_button()).replace("<!--@gh-->", gh_pill("btn btn-ghost btn-big gh-big"))
@@ -1681,11 +1666,10 @@ def copy_static() -> None:
 
 
 def bust_caches() -> None:
-    """Every page asks for /styles.css, /main.js and /bench.js by their content hash, so a
-    browser never pairs a new page with an old cached stylesheet."""
+    """Fingerprint shared website assets so browsers do not pair new pages with stale files."""
     import hashlib
     tags = {}
-    for name in ("styles.css", "main.js", "bench.js"):
+    for name in ("styles.css", "main.js"):
         tags[name] = hashlib.sha256((OUT / name).read_bytes()).hexdigest()[:10]
     for page in OUT.rglob("*.html"):
         text = page.read_text("utf-8")
@@ -1703,14 +1687,29 @@ def finish(available: dict[str, list[str]]) -> None:
     (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n", "utf-8")
 
 
+def write_import_redirects() -> None:
+    routes = [("", "en")] + [(f"/{code}", locale) for code, locale, *_ in sitei18n.LANGS]
+    for prefix, language in routes:
+        target = f"{prefix}/features/import-lists.html"
+        path = OUT / prefix.lstrip("/") / "features" / "import-idm.html"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        page = (
+            f'<!doctype html><html lang="{esc(language)}"><head><meta charset="utf-8">'
+            f'<meta http-equiv="refresh" content="0;url={esc(target)}">'
+            f'<link rel="canonical" href="{SITE}{esc(target)}"><title>Page moved</title>'
+            f'<script>location.replace({json.dumps(target)});</script></head><body>'
+            f'<p>This page has moved. <a href="{esc(target)}">Import a download list</a>.</p>'
+            f'</body></html>\n'
+        )
+        path.write_text(page, "utf-8", newline="\n")
+
+
 def main() -> None:
     STATS.update(repo_stats())
     load_crew()
     copy_static()
     build_templated("index.html", "/", "home", "1.0")
     build_templated("download.html", "/download.html", "download", "0.9")
-    build_templated("benchmark.html", "/benchmark.html", "bench", "0.8")
-    build_templated("idm-alternative.html", "/idm-alternative.html", "compare", "0.9")
     build_templated("404.html", "/404.html", "", "0")
     build_help()
     build_faq()
@@ -1729,6 +1728,7 @@ def main() -> None:
     # MDM_SITE_PREVIEW=1: the English pages with their language picker, nothing translated (fast).
     available = sitei18n.localize(OUT, SITE, only, translated=os.environ.get("MDM_SITE_PREVIEW") != "1")
     finish(available)
+    write_import_redirects()
     langs = len({c for v in available.values() for c in v})
     print(f"{len(PAGES)} pages in {langs} language(s) -> {OUT}")
     if "--serve" in sys.argv:
