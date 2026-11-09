@@ -1,4 +1,4 @@
-# Mister Download Manager in Japanese (日本語): tools/i18n/translate.py
+# tnctr download manager in Japanese (日本語): tools/i18n/translate.py
 # writes the rows marked '#, machine'; a native speaker deletes that line after checking.
 # context	source	translation (craft-i18n format, rows as in en.tsv)
 @id	language.name	日本語
@@ -11,7 +11,7 @@
 #. never shown for a single download
 #. {n} = a number (keep the braces as they are)
 #, machine
-@plural	Are you sure you want to delete {n} download from Mister Download Manager list of downloads?|Are you sure you want to delete these {n} downloads from Mister Download Manager list of downloads?	Mister Download Manager のダウンロード リストから {n} 個のダウンロードを削除してもよろしいですか?
+@plural	Are you sure you want to delete {n} download from tnctr download manager list of downloads?|Are you sure you want to delete these {n} downloads from tnctr download manager list of downloads?	tnctr download manager のダウンロード リストから {n} 個のダウンロードを削除してもよろしいですか?
 #. count in the Add torrent window
 #. while a magnet link's file list is fetched; {n} = peers that answered
 #. {n} = a number (keep the braces as they are)
@@ -226,7 +226,7 @@
 	a volume of it is missing	ボリュームの 1 つが見つかりません
 #. window title in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	About Mister Download Manager	Mister Download Manager について
+	About tnctr download manager	tnctr download manager について
 #. text in whereis.rs
 #. a download's server's round trip: {ms} a number of milliseconds, {reach} near, medium or far
 #, machine
@@ -280,7 +280,7 @@
 #. window title in extension.rs
 #. title of the window that offers the browser extension
 #, machine
-	Add Mister Download Manager to your browser	Mister Download Manager をブラウザーに追加する
+	Add tnctr download manager to your browser	tnctr download manager をブラウザーに追加する
 #. message or event log entry in the main window; text in the tray icon's menu
 #. link in the empty download list: opens Add URL
 #, machine
@@ -447,7 +447,7 @@
 	Always into a folder named after it	常にその名前のフォルダーに
 #. checkbox in a dialog box
 #, machine
-	Always turn on Speed Limiter on Mister Download Manager startup	Mister Download Manager の起動時に常にスピード リミッターをオンにする
+	Always turn on Speed Limiter on tnctr download manager startup	tnctr download manager の起動時に常にスピード リミッターをオンにする
 #. text in regional.rs; text in the Scheduler window
 #. before noon, after a time of day (12-hour clock). Its pair is "PM": write both the same way (this language's own short marks, or both kept as AM and PM)
 #, machine
@@ -513,7 +513,7 @@
 #. text in a dialog box
 #. {name} = a file name (keep the braces as they are)
 #, machine
-	Are you sure you want to delete "{name}" from Mister Download Manager list of downloads?	Mister Download Manager のダウンロード リストから "{name}" を削除してもよろしいですか?
+	Are you sure you want to delete "{name}" from tnctr download manager list of downloads?	tnctr download manager のダウンロード リストから "{name}" を削除してもよろしいですか?
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -682,7 +682,7 @@
 	Browse...	参照...
 #. text in extension.rs
 #, machine
-	Browser integration isn't set up on this computer, so no browser can reach Mister Download Manager yet.	このコンピューターではブラウザー統合が設定されていないため、どのブラウザーもまだ Mister Download Manager に到達できません。
+	Browser integration isn't set up on this computer, so no browser can reach tnctr download manager yet.	このコンピューターではブラウザー統合が設定されていないため、どのブラウザーもまだ tnctr download manager に到達できません。
 #. page title in the Options window
 #, machine
 	Browser/System Integration	ブラウザー/システム統合
@@ -874,7 +874,7 @@
 	Choose a language	言語の選択
 #. text in langpick.rs
 #, machine
-	Choose the language Mister Download Manager shows its windows in:	Mister Download Manager のウィンドウに表示する言語を選択してください:
+	Choose the language tnctr download manager shows its windows in:	tnctr download manager のウィンドウに表示する言語を選択してください:
 #. text in the Options window
 #. Options → Sites Logins → Cookies for video sites: the title of the window, and the tooltip of the button, that pick a browser profile's folder
 #, machine
@@ -1493,7 +1493,7 @@
 	Exit	終了
 #. checkbox in a download's progress window; checkbox in the Scheduler window
 #, machine
-	Exit Mister Download Manager when done	完了時にMister Download Managerを終了する
+	Exit tnctr download manager when done	完了時にtnctr download managerを終了する
 #. text in the Checksum window
 #, machine
 	Expected checksum (MD5, SHA-1, SHA-256, SHA-512 or CRC32):	予期されるチェックサム (MD5、SHA-1、SHA-256、SHA-512、またはCRC32):
@@ -1924,7 +1924,7 @@
 	Hide web pages	Web ページを非表示にする
 #. text in the Options window
 #, machine
-	Hold Alt while clicking a link to let the browser download it instead of Mister Download Manager.	リンクをクリックするときに Alt キーを押したままにすると、Mister Download Manager の代わりにブラウザーでダウンロードされます。
+	Hold Alt while clicking a link to let the browser download it instead of tnctr download manager.	リンクをクリックするときに Alt キーを押したままにすると、tnctr download manager の代わりにブラウザーでダウンロードされます。
 #. link (opens a web page) in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Home page	ホームページ
@@ -1960,7 +1960,7 @@
 	Hungary	ハンガリー
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	I download with Mister Download Manager: fast, free, and it looks like the download manager you already know. {link}	Mister Download Manager を使ってダウンロードしています。高速で無料で、使い慣れたダウンロードマネージャーのように見えます。{link}
+	I download with tnctr download manager: fast, free, and it looks like the download manager you already know. {link}	tnctr download manager を使ってダウンロードしています。高速で無料で、使い慣れたダウンロードマネージャーのように見えます。{link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2231,7 +2231,7 @@
 	Latvia	ラトビア
 #. text in the Options window
 #, machine
-	Launch Mister Download Manager on startup	Mister Download Manager をスタートアップ時に起動する
+	Launch tnctr download manager on startup	tnctr download manager をスタートアップ時に起動する
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2518,54 +2518,54 @@
 	Missing	未取得
 #. message or event log entry in the main window; window title in a dialog box; text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	Mister Download Manager	Mister Download Manager
+	tnctr download manager	tnctr download manager
 #. text in unix.rs
 #. Linux, at start, on the terminal and in a message box: a library the window needs isn't installed; {libraries} = its file names (libxkbcommon-x11.so.0…), left as they are
 #, machine
-	Mister Download Manager can't open its window: this system lacks {libraries}.	Mister Download Manager はウィンドウを開けません: このシステムには {libraries} がありません。
+	tnctr download manager can't open its window: this system lacks {libraries}.	tnctr download manager はウィンドウを開けません: このシステムには {libraries} がありません。
 #. text in crashui.rs
 #. crash report window heading: MDM crashed and is gone
 #, machine
-	Mister Download Manager closed unexpectedly	Mister Download Manager が予期せず終了しました
+	tnctr download manager closed unexpectedly	tnctr download manager が予期せず終了しました
 #. window title in the Options window
 #, machine
-	Mister Download Manager Configuration	Mister Download Manager の構成
+	tnctr download manager Configuration	tnctr download manager の構成
 #. text in crashui.rs
 #, machine
-	Mister Download Manager crash report	Mister Download Manager クラッシュ レポート
+	tnctr download manager crash report	tnctr download manager クラッシュ レポート
 #. text in crashui.rs
 #. crash report window heading: an internal error, MDM still running
 #, machine
-	Mister Download Manager hit an internal error	Mister Download Manager で内部エラーが発生しました
+	tnctr download manager hit an internal error	tnctr download manager で内部エラーが発生しました
 #. text in wake.rs
 #. why the computer isn't going to sleep, in the system's list of programs that keep it awake; {queue} = the queue's name
 #. {queue} = a queue name such as "Main queue" (keep the braces as they are)
 #, machine
-	Mister Download Manager is running the queue "{queue}"	Mister Download Manager がキュー「{queue}」を実行しています
+	tnctr download manager is running the queue "{queue}"	tnctr download manager がキュー「{queue}」を実行しています
 #. text in crashui.rs
 #. crash report window heading: MDM's window doesn't answer (frozen)
 #, machine
-	Mister Download Manager stopped responding	Mister Download Manager が応答を停止しました
+	tnctr download manager stopped responding	tnctr download manager が応答を停止しました
 #. text in crashui.rs
 #, machine
-	Mister Download Manager stopped responding for a while	Mister Download Manager がしばらく応答しなくなりました
+	tnctr download manager stopped responding for a while	tnctr download manager がしばらく応答しなくなりました
 #. text in the Options window
 #. \\n starts a new line: break lines where they fit the translation
 #, machine
-	Mister Download Manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.	Mister Download Manager は、すべての接続を最終ファイル (その隣にあるスパースな部分ファイル) に直接書き込むため、一時ディレクトリやアセンブル手順は不要です。
+	tnctr download manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.	tnctr download manager は、すべての接続を最終ファイル (その隣にあるスパースな部分ファイル) に直接書き込むため、一時ディレクトリやアセンブル手順は不要です。
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	Mister Download Manager {version} is available (released {date}).	Mister Download Manager {version} が利用可能です ({date} にリリース)。
+	tnctr download manager {version} is available (released {date}).	tnctr download manager {version} が利用可能です ({date} にリリース)。
 #. text in helpers.rs
 #. Video helpers: {version} = the version of MDM's own copy
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	Mister Download Manager's own copy, version {version}	Mister Download Manager 自身のコピー、バージョン {version}
+	tnctr download manager's own copy, version {version}	tnctr download manager 自身のコピー、バージョン {version}
 #. text in unix.rs
 #. Linux, at start, on the terminal: the libraries an X11 window needs aren't installed, so the window opens through Wayland instead, where menus can't be placed under what was clicked; {libraries} = their file names, left as they are
 #, machine
-	Mister Download Manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.	Mister Download Manager の X11 ウィンドウには {libraries} が必要ですが、このシステムにはありません。代わりに Wayland で開きます。この場合、メニューがクリックした項目から離れた位置に開くことがあります。
+	tnctr download manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.	tnctr download manager の X11 ウィンドウには {libraries} が必要ですが、このシステムにはありません。代わりに Wayland で開きます。この場合、メニューがクリックした項目から離れた位置に開くことがあります。
 #. text in the Scheduler window
 #. Monday, as short as a calendar's column head (two letters in English)
 #, machine
@@ -3070,10 +3070,10 @@
 	Open folder	フォルダーを開く
 #. checkbox in the Add torrent window
 #, machine
-	Open magnet links and .torrent files with Mister Download Manager	マグネット リンクと .torrent ファイルを Mister Download Manager で開く
+	Open magnet links and .torrent files with tnctr download manager	マグネット リンクと .torrent ファイルを tnctr download manager で開く
 #. text in the tray icon's menu
 #, machine
-	Open Mister Download Manager	Mister Download Manager を開く
+	Open tnctr download manager	tnctr download manager を開く
 #. text in extension.rs
 #. step 2 of turning on the Safari extension; Cmd is the Command key
 #, machine
@@ -3144,7 +3144,7 @@
 #. text in remote.rs
 #. remote control page (on a phone): title of the pairing screen
 #, machine
-	Pair with Mister Download Manager	Mister Download Manager とペアリング
+	Pair with tnctr download manager	tnctr download manager とペアリング
 #. text in the Options window
 #. column title: when the device was paired
 #, machine
@@ -3630,7 +3630,7 @@
 	Select or unselect the download with the dotted outline	点線の枠線でダウンロードを選択または選択解除します
 #. group box title in the Options window
 #, machine
-	Select sounds for Mister Download Manager events	Mister Download Manager イベントのサウンドを選択します
+	Select sounds for tnctr download manager events	tnctr download manager イベントのサウンドを選択します
 #. what a keyboard shortcut does in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Select the downloads in the box	ボックス内のダウンロードを選択
@@ -3955,7 +3955,7 @@
 	Start download at	ダウンロード開始時刻
 #. checkbox in the Scheduler window
 #, machine
-	Start download on Mister Download Manager startup	Mister Download Manager 起動時にダウンロードを開始
+	Start download on tnctr download manager startup	tnctr download manager 起動時にダウンロードを開始
 #. checkbox in the Options window
 #, machine
 	Start downloading immediately while displaying "Download File Info" dialog	「ダウンロード ファイル情報」ダイアログの表示中にすぐにダウンロードを開始
@@ -3990,7 +3990,7 @@
 #, machine
 	Started with the computer, it starts minimized: no notification area shows its icon here	コンピューターの起動時に最小化されて起動します: ここには通知領域にアイコンが表示されません
 #. text in the Options window
-#. tooltip of "Launch Mister Download Manager on startup": started with the computer, MDM's window stays hidden, its icon in the notification area (system tray)
+#. tooltip of "Launch tnctr download manager on startup": started with the computer, MDM's window stays hidden, its icon in the notification area (system tray)
 #, machine
 	Started with the computer, it waits in the notification area	コンピューターの起動時に通知領域で待機します
 #. message or event log entry in the main window
@@ -4211,7 +4211,7 @@
 #. text in extension.rs
 #. a check of Test browser integration: the browsers find MDM's helper program
 #, machine
-	The browsers can find Mister Download Manager	ブラウザーは Mister Download Manager を見つけることができます
+	The browsers can find tnctr download manager	ブラウザーは tnctr download manager を見つけることができます
 #. text in the Options window
 #. Options → Remote → Status: the settings were changed; they apply on OK
 #, machine
@@ -4235,7 +4235,7 @@
 #. text in the Scheduler window
 #. tooltip on the Scheduler's "Wake the computer to run this queue"
 #, machine
-	The computer is woken a minute before the start time and kept awake while the queue runs. Mister Download Manager has to be running (it can wait in the notification area).	コンピューターは開始時刻の 1 分前にスリープ解除され、キューの実行中はスリープ解除されたままになります。Mister Download Manager が実行されている必要があります (通知領域で待機できます)。
+	The computer is woken a minute before the start time and kept awake while the queue runs. tnctr download manager has to be running (it can wait in the notification area).	コンピューターは開始時刻の 1 分前にスリープ解除され、キューの実行中はスリープ解除されたままになります。tnctr download manager が実行されている必要があります (通知領域で待機できます)。
 #. text in the Scheduler window
 #. the Scheduler, under "Wake the computer to run this queue": when it will happen; {date} = e.g. 06/11/2026, {time} = e.g. 22:59:00
 #. {time} = a time of day (keep the braces as they are)
@@ -4406,7 +4406,7 @@
 #. text in a dialog box
 #. \\n starts a new line: break lines where they fit the translation
 #, machine
-	The selected download is not complete. Are you sure you want to delete\nit from Mister Download Manager list of downloads?	選択したダウンロードは完了していません。Mister Download Manager のダウンロード\nリストから削除してもよろしいですか?
+	The selected download is not complete. Are you sure you want to delete\nit from tnctr download manager list of downloads?	選択したダウンロードは完了していません。tnctr download manager のダウンロード\nリストから削除してもよろしいですか?
 #. text in errors.rs
 #, machine
 	the server answered {status}	サーバーが {status} と応答しました
@@ -4765,7 +4765,7 @@
 #. text in extension.rs
 #. step 8 of turning on the Safari extension
 #, machine
-	Turn on "Mister Download Manager" and allow it on all websites.	「Mister Download Manager」をオンにして、すべての Web サイトでの使用を許可します。
+	Turn on "tnctr download manager" and allow it on all websites.	「tnctr download manager」をオンにして、すべての Web サイトでの使用を許可します。
 #. text in extension.rs
 #. step 4 of turning on the Safari extension; the quoted switch name is what Safari's settings show in this language: use Apple's own words for it, or keep the English name when unsure
 #, machine
@@ -5178,7 +5178,7 @@
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	You have the latest version of Mister Download Manager ({version}).	Mister Download Manager ({version}) は最新バージョンです。
+	You have the latest version of tnctr download manager ({version}).	tnctr download manager ({version}) は最新バージョンです。
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. Check for updates, under the new version's line, when MDM was installed by the Linux system's package manager (pacman, ...), which MDM can't update itself
 #. {version} = a version number (keep the braces as they are)
@@ -5557,15 +5557,15 @@ column	Time left	残り時間
 #, machine
 column	Transfer rate	転送速度
 #. text in the browser extension
-#. choice under Send downloads to: an MDM running on another computer of the network, such as a home server; keep the name Mister Download Manager as it is
+#. choice under Send downloads to: an MDM running on another computer of the network, such as a home server; keep the name tnctr download manager as it is
 #, machine
-extension	Another Mister Download Manager (a server)	別の Mister Download Manager (サーバー)
+extension	Another tnctr download manager (a server)	別の tnctr download manager (サーバー)
 #. text in the browser extension
 #. the name this browser gets in the other MDM's list of paired devices
 #, machine
 extension	Browser extension	ブラウザー拡張機能
 #. text in the browser extension
-#. menu command of the download button over a video: opens its settings in Mister Download Manager
+#. menu command of the download button over a video: opens its settings in tnctr download manager
 #. the trailing ... means it is still going on: keep it
 #, machine
 extension	Button settings...	ボタンの設定...
@@ -5574,34 +5574,34 @@ extension	Button settings...	ボタンの設定...
 #, machine
 extension	Can't tell which video this is: open its own page and try there	どの動画か判別できません。動画自体のページを開いて、そこでお試しください
 #. text in the browser extension
-#. the toolbar button's status when the browser reaches the app; keep the name Mister Download Manager as it is
+#. the toolbar button's status when the browser reaches the app; keep the name tnctr download manager as it is
 #, machine
-extension	Connected to Mister Download Manager	Mister Download Manager に接続済み
+extension	Connected to tnctr download manager	tnctr download manager に接続済み
 #. text in the browser extension
-#. the toolbar button's status when the browser reaches the app, with the app's version number; keep the name Mister Download Manager as it is
+#. the toolbar button's status when the browser reaches the app, with the app's version number; keep the name tnctr download manager as it is
 #. {version} = a version number (keep the braces as they are)
 #, machine
-extension	Connected to Mister Download Manager {version}	Mister Download Manager {version} に接続済み
+extension	Connected to tnctr download manager {version}	tnctr download manager {version} に接続済み
 #. text in the browser extension
 #. button beside a video, sound or stream in the toolbar button's popup: download it with the app; verb; short
 #, machine
 extension	Download	ダウンロード
 #. text in the browser extension
-#. command in the browser's right-click menu on a page: download the links of the whole page; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on a page: download the links of the whole page; keep the name tnctr download manager as it is
 #, machine
-extension	Download all links with Mister Download Manager	Mister Download Manager で全リンクをダウンロード
+extension	Download all links with tnctr download manager	tnctr download manager で全リンクをダウンロード
 #. text in the browser extension
-#. command in the browser's right-click menu on selected text: download the links in the selection; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on selected text: download the links in the selection; keep the name tnctr download manager as it is
 #, machine
-extension	Download selected links with Mister Download Manager	Mister Download Manager で選択したリンクをダウンロード
+extension	Download selected links with tnctr download manager	tnctr download manager で選択したリンクをダウンロード
 #. text in the browser extension
 #. the button over a video on a web page that downloads it; verb; short (it sits on the video)
 #, machine
 extension	Download video	動画をダウンロード
 #. text in the browser extension
-#. command in the browser's right-click menu on a link, picture, video or sound; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on a link, picture, video or sound; keep the name tnctr download manager as it is
 #, machine
-extension	Download with Mister Download Manager	Mister Download Manager でダウンロード
+extension	Download with tnctr download manager	tnctr download manager でダウンロード
 #. text in the browser extension
 #. shown in the toolbar button's popup after the site was excluded
 #. {site} = a web site's name such as "example.com" (keep the braces as they are)
@@ -5620,9 +5620,9 @@ extension	Drag to move it along the video's edge	ドラッグして動画の端�
 #, machine
 extension	Enter its https:// address.	https:// アドレスを入力してください。
 #. text in the browser extension
-#. the extension's description in the browser's list of extensions; keep the name Mister Download Manager as it is
+#. the extension's description in the browser's list of extensions; keep the name tnctr download manager as it is
 #, machine
-extension	Hands downloads from the browser to Mister Download Manager.	ブラウザーから Mister Download Manager にダウンロードを渡します。
+extension	Hands downloads from the browser to tnctr download manager.	ブラウザーから tnctr download manager にダウンロードを渡します。
 #. text in the browser extension
 #. link in the toolbar button's popup to the help page
 #, machine
@@ -5677,33 +5677,33 @@ extension	Live	ライブ
 #, machine
 extension	Media on this page	このページのメディア
 #. text in the browser extension
-#. the extension's name in the browser's list of extensions and on its toolbar button; keep the name Mister Download Manager as it is
+#. the extension's name in the browser's list of extensions and on its toolbar button; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager	Mister Download Manager
+extension	tnctr download manager	tnctr download manager
 #. text in the browser extension
-#. status when the app was started for a download but didn't answer in time; keep the name Mister Download Manager as it is
+#. status when the app was started for a download but didn't answer in time; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager didn't start in time	Mister Download Manager が時間内に起動しませんでした
+extension	tnctr download manager didn't start in time	tnctr download manager が時間内に起動しませんでした
 #. text in the browser extension
-#. status when the app refuses this copy of the extension (another copy is installed, or it came from another store); keep the name Mister Download Manager as it is
+#. status when the app refuses this copy of the extension (another copy is installed, or it came from another store); keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager doesn't accept this copy of the extension	Mister Download Manager はこの拡張機能のコピーを受け入れません
+extension	tnctr download manager doesn't accept this copy of the extension	tnctr download manager はこの拡張機能のコピーを受け入れません
 #. text in the browser extension
-#. shown briefly on the download button when the app could not be reached; keep the name Mister Download Manager as it is
+#. shown briefly on the download button when the app could not be reached; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager isn't installed or didn't start	Mister Download Manager がインストールされていないか、起動していません
+extension	tnctr download manager isn't installed or didn't start	tnctr download manager がインストールされていないか、起動していません
 #. text in the browser extension
-#. status when the browser can't find the app's connection; keep the name Mister Download Manager as it is
+#. status when the browser can't find the app's connection; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager isn't installed, or its browser integration isn't set up	Mister Download Manager がインストールされていないか、ブラウザー統合が設定されていません
+extension	tnctr download manager isn't installed, or its browser integration isn't set up	tnctr download manager がインストールされていないか、ブラウザー統合が設定されていません
 #. text in the browser extension
-#. tooltip of the switch Send downloads through this browser's proxy or VPN extension; keep the name Mister Download Manager as it is
+#. tooltip of the switch Send downloads through this browser's proxy or VPN extension; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager then downloads through the same proxy as this browser. The browser asks you once to allow it; turning this off takes that back.	Mister Download Manager は、このブラウザーと同じプロキシ経由でダウンロードします。ブラウザーは一度だけ許可を求めます。これをオフにすると、その許可は取り消されます。
+extension	tnctr download manager then downloads through the same proxy as this browser. The browser asks you once to allow it; turning this off takes that back.	tnctr download manager は、このブラウザーと同じプロキシ経由でダウンロードします。ブラウザーは一度だけ許可を求めます。これをオフにすると、その許可は取り消されます。
 #. text in the browser extension
-#. tooltip of the switch Send downloads through this browser's proxy or VPN extension in Chrome, Edge and the other Chromium browsers (they ask for no permission at the switch); keep the name Mister Download Manager as it is
+#. tooltip of the switch Send downloads through this browser's proxy or VPN extension in Chrome, Edge and the other Chromium browsers (they ask for no permission at the switch); keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager then downloads through the same proxy as this browser. While this is off, the extension doesn't read the browser's proxy.	Mister Download Manager は、このブラウザーと同じプロキシ経由でダウンロードします。これがオフの場合、拡張機能はブラウザーのプロキシを読み取りません。
+extension	tnctr download manager then downloads through the same proxy as this browser. While this is off, the extension doesn't read the browser's proxy.	tnctr download manager は、このブラウザーと同じプロキシ経由でダウンロードします。これがオフの場合、拡張機能はブラウザーのプロキシを読み取りません。
 #. text in the browser extension
 #. the small arrow next to the Download video button that opens its menu (read aloud by screen readers)
 #, machine
@@ -5735,9 +5735,9 @@ extension	Open it	開く
 #, machine
 extension	Open its address once and accept its certificate, then enter a code from its Options, Remote, Pair a device (or misterdownloadmanager-cli pair).	一度アドレスを開いて証明書を承認し、そのオプション、リモート、デバイスのペアリング (または misterdownloadmanager-cli pair) からコードを入力してください。
 #. text in the browser extension
-#. button in the toolbar button's popup; keep the name Mister Download Manager as it is
+#. button in the toolbar button's popup; keep the name tnctr download manager as it is
 #, machine
-extension	Open Mister Download Manager	Mister Download Manager を開く
+extension	Open tnctr download manager	tnctr download manager を開く
 #. text in the browser extension
 #. button in the toolbar button's popup: open the app's Options
 #. the trailing ... means it is still going on: keep it
@@ -5772,9 +5772,9 @@ extension	Send downloads through this browser's proxy or VPN extension	このブ
 #, machine
 extension	Send downloads to	ダウンロードの送信先
 #. text in the browser extension
-#. shown briefly on the download button after it was clicked; keep the name Mister Download Manager as it is
+#. shown briefly on the download button after it was clicked; keep the name tnctr download manager as it is
 #, machine
-extension	Sent to Mister Download Manager	Mister Download Manager に送信済み
+extension	Sent to tnctr download manager	tnctr download manager に送信済み
 #. text in the browser extension
 #. link at the foot of the toolbar button's popup to the creator's GitHub Sponsors page (MDM is free; this is an optional donation)
 #, machine
@@ -5788,9 +5788,9 @@ extension	Take downloads from this browser	このブラウザーからのダウ�
 #, machine
 extension	The Chrome Web Store's rules keep this copy of the add-on away from this site's videos. Help says what you can do.	Chrome ウェブストアの規則により、このコピーのアドオンはこのサイトの動画には対応していません。対処方法はヘルプをご覧ください。
 #. text in the browser extension
-#. status when the connection to the app broke off (often security software blocking it); keep the name Mister Download Manager as it is
+#. status when the connection to the app broke off (often security software blocking it); keep the name tnctr download manager as it is
 #, machine
-extension	The connection to Mister Download Manager failed	Mister Download Manager への接続に失敗しました
+extension	The connection to tnctr download manager failed	tnctr download manager への接続に失敗しました
 #. text in the browser extension
 #. shown briefly on the download button over a video when the app's settings keep the button off on this web site
 #, machine
@@ -5808,7 +5808,7 @@ extension	The last download was left to the browser.	前回のダウンロード
 #, machine
 extension	This browser isn't ticked in Options → General.	このブラウザーは、オプション → 全般でチェックされていません。
 #. text in the browser extension
-#. choice under Send downloads to: the Mister Download Manager on this computer
+#. choice under Send downloads to: the tnctr download manager on this computer
 #, machine
 extension	This computer	このコンピューター
 #. text in the browser extension
@@ -5820,9 +5820,9 @@ extension	This download's details were too large to hand over	このダウンロ
 #, machine
 extension	This page's player streams its video in pieces, so there's no file to list. Point at the video and use its Download video button.	このページのプレーヤーは動画を分割してストリーミングしているため、一覧に表示するファイルはありません。動画にポインターを合わせ、[動画をダウンロード] ボタンを使ってください。
 #. text in the browser extension
-#. status when the app is older than the extension; keep the name Mister Download Manager as it is
+#. status when the app is older than the extension; keep the name tnctr download manager as it is
 #, machine
-extension	Update Mister Download Manager to use everything this extension offers	この拡張機能のすべての機能を使用するには、Mister Download Manager を更新してください
+extension	Update tnctr download manager to use everything this extension offers	この拡張機能のすべての機能を使用するには、tnctr download manager を更新してください
 #. text in the browser extension
 #. why a download stayed with the browser: the app's setting 'Use advanced browser integration' is off; keep the setting's name as the app shows it
 #, machine
@@ -5938,7 +5938,7 @@ key	Up / Down	↑ / ↓
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
-menu	&About Mister Download Manager	Mister Download Manager について(&A)
+menu	&About tnctr download manager	tnctr download manager について(&A)
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
@@ -6290,7 +6290,7 @@ menu	Metro	メトロ
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
-menu	Mister Download Manager &Home Page	Mister Download Manager ホーム ページ(&H)
+menu	tnctr download manager &Home Page	tnctr download manager ホーム ページ(&H)
 #. menu command in the main window
 #, machine
 menu	Move/Rename (Ctrl-M)	移動/名前の変更 (Ctrl+M)
@@ -6403,7 +6403,7 @@ menu	Select &all	すべて選択(&A)
 menu	Show &drop target	ドロップ ターゲットを表示(&D)
 #. menu command in the main window
 #, machine
-menu	Show Mister Download Manager	Mister Download Manager を表示
+menu	Show tnctr download manager	tnctr download manager を表示
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine

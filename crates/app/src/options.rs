@@ -305,7 +305,7 @@ impl OptionsDialog {
         let outcome = window(
             ctx,
             "options",
-            "Mister Download Manager Configuration",
+            "tnctr download manager Configuration",
             [430.0, 506.0],
             false,
             LIGHT_BG(),
@@ -438,7 +438,7 @@ impl OptionsDialog {
             (
                 94.0,
                 &mut s.launch_on_startup,
-                crate::i18n::mark("Launch Mister Download Manager on startup"),
+                crate::i18n::mark("Launch tnctr download manager on startup"),
             ),
             (
                 113.0,
@@ -483,7 +483,7 @@ impl OptionsDialog {
             // Where a start with the session leaves the window (#226).
             if i == 0 && enabled && check.hovered() {
                 check.on_hover_text(if crate::can_start_in_tray() {
-                    // i18n: tooltip of "Launch Mister Download Manager on startup": started with the computer, MDM's window stays hidden, its icon in the notification area (system tray)
+                    // i18n: tooltip of "Launch tnctr download manager on startup": started with the computer, MDM's window stays hidden, its icon in the notification area (system tray)
                     crate::i18n::t("Started with the computer, it waits in the notification area")
                 } else {
                     // i18n: the same tooltip where no notification area (system tray) shows MDM's icon (some Linux desktops): its window starts minimized instead
@@ -926,7 +926,7 @@ impl OptionsDialog {
             o.x + 30.0,
             o.y + 387.0,
             crate::i18n::t(
-                "Mister Download Manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.",
+                "tnctr download manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.",
             ),
             LIGHT_TEXT(),
             o.x + 426.0,
@@ -2354,7 +2354,7 @@ impl OptionsDialog {
             102.0,
             383.0,
             299.0,
-            "Select sounds for Mister Download Manager events",
+            "Select sounds for tnctr download manager events",
         );
         let list_on_screen = r(o, 33.0, 112.0, 366.0, 250.0);
         list_frame(&p, list_on_screen);
@@ -3291,7 +3291,7 @@ impl OptionsDialog {
                             o.x + 14.0,
                             o.y + 22.0,
                             crate::i18n::t(
-                                "Hold Alt while clicking a link to let the browser download it instead of Mister Download Manager.",
+                                "Hold Alt while clicking a link to let the browser download it instead of tnctr download manager.",
                             ),
                             LIGHT_TEXT(),
                             o.x + 386.0,
