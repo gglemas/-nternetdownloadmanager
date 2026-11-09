@@ -1,9 +1,6 @@
-//! Tasks → Show drop target (D-021): IDM's small floating box that takes links dragged onto
-//! it. Always on top, moved by dragging it, double-click brings the main window back,
-//! right-click hides it. Browsers hand dragged links over through OLE drag and drop (the
-//! "UniformResourceLocatorW" format, else text), which egui doesn't expose (it only takes
-//! dropped files): the window gets its own `IDropTarget` (`win32::ole`, D-008; elsewhere it
-//! shows but takes nothing yet).
+//! An always-on-top drop target: drag to move, double-click to show the main window,
+//! right-click to hide. Windows accepts dragged URLs through its OLE IDropTarget;
+//! other platforms currently display the target without accepting those drops.
 
 use std::sync::mpsc::{Receiver, Sender, channel};
 use std::sync::{Arc, atomic::AtomicBool, atomic::Ordering};
