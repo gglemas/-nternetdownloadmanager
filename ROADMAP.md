@@ -9,7 +9,7 @@ issue, where the details and the discussion are. Released changes are in
 
 ## Branding
 
-- [x] Rename the application display name to `tnctr download manager` across the desktop UI, translations, browser extension and installers; preserve existing storage and integration identifiers.
+- [x] Rename the application display name to `tnctr download manager` across the desktop UI, translations, browser extension and installers; preserve existing storage and integration identifiers. Keep the generated automation API schema title in sync.
 
 ## Version 0.5.0
 
