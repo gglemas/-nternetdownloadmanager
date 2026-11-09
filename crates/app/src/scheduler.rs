@@ -1,5 +1,4 @@
 //! The Scheduler (Downloads → Scheduler; notes/ui-spec/scheduler-and-misc.md §1). Light in both
-//! modes, as IDM's. Queues on the left; on the right the selected queue's Schedule and Files in
 //! the queue, or the Download limits page. Edits stay in a draft until Apply, Start now or Close.
 
 use chrono::{Datelike, Duration as Days, Local, NaiveDate};
@@ -58,7 +57,6 @@ enum Tab {
 }
 
 /// One queue's Schedule tab as edited. Times and numbers keep their values while their
-/// checkbox is off, as IDM's pickers do.
 #[derive(Clone, PartialEq)]
 struct Form {
     start_on_startup: bool,
@@ -168,7 +166,6 @@ pub struct Scheduler {
     deleting: Option<(usize, crate::dialogs::Confirm)>,
 }
 
-/// How much lower everything under "Start download at" sits than in IDM's window: the room for
 /// "Wake the computer to run this queue" and its note (#142).
 const DY: f32 = 40.0;
 
@@ -332,7 +329,6 @@ impl Scheduler {
             close_pickers(ctx, &mut self.focus);
         }
         if matches!(outcome, Outcome::Closed) {
-            // Close keeps the changes (as Apply would) [IDM: unknown, lab].
             self.apply(actions);
             return false;
         }
@@ -534,7 +530,6 @@ impl Scheduler {
         }
     }
 
-    /// The queue list (a tree view in IDM): queues, then Download limits, in the shared row
     /// list. True when Delete is pressed on it.
     fn tree(&mut self, ui: &mut Ui, icons: &mut ShellIcons, rc: Rect) -> bool {
         let queues = &self.queues;
@@ -615,7 +610,6 @@ impl Scheduler {
             true,
         );
         winui::etched_h(&p, o.x + 228.0, o.y + 99.0, 399.0);
-        // A box after a caption starts where IDM has it, or after a longer translated caption,
         // as far as the page allows (`last`: its rightmost start); the caption ends in "..."
         // before it when even that is not enough.
         let after = |glyph_x: f32, caption: &str, idm: f32, last: f32| {
@@ -1491,7 +1485,6 @@ fn picker_keys(ui: &Ui, hovered: bool) -> (i32, Option<char>, i32) {
     })
 }
 
-/// IDM's time picker (`h:mm:ss tt` with an up-down): click a field, then the arrows, the
 /// wheel, Up/Down or digits change it; Left/Right move between fields.
 fn time_picker(
     ui: &mut Ui,
@@ -1513,7 +1506,6 @@ fn time_picker(
         // i18n: after noon, after a time of day (12-hour clock). Its pair is "AM": write both the same way (this language's own short marks, or both kept as AM and PM)
         crate::i18n::t("PM")
     };
-    // IDM's box holds "12:00:00 PM"; an AM/PM longer than the English ("مساء") widens it by the
     // difference at its trailing edge, into the room after it.
     let rtl = winui::rtl();
     let w2 = winui::text_width(&p, "00");
@@ -1687,7 +1679,6 @@ fn time_picker(
     }
 }
 
-// Names in English, translated where drawn. The fields keep IDM's en-US long-date layout
 // (`Sunday, October 29, 2026`); the region's date order is M16's number-format step.
 const WEEKDAYS: [&str; 7] = [
     crate::i18n::mark("Sunday"),
@@ -1744,7 +1735,6 @@ fn add_months(date: NaiveDate, n: i32) -> NaiveDate {
     }
 }
 
-/// IDM's long-date picker (`Wednesday,  October  28, 2026`, fixed-width fields, like
 /// Windows'): fields change with the wheel, Up/Down and digits; the chevron opens a month
 /// calendar.
 fn date_picker(
@@ -1757,7 +1747,6 @@ fn date_picker(
 ) {
     let p = ui.painter().clone();
     // The four fields (0 weekday, 1 month, 2 day, 3 year) in the order Options → Regional
-    // writes a date: `Thursday, October 30, 2026` (IDM's), `Thursday, 30 October 2026` or
     // `2026 October 30, Thursday`. `visual`: the fields from the leading edge.
     let order = crate::regional::current().order;
     let visual: [usize; 4] = match order {
@@ -1769,7 +1758,6 @@ fn date_picker(
     let day_comma = if order == DateOrder::Dmy { "" } else { "," };
     // Where the fields start, from the box's leading edge: one after the other as the date reads
     // (Windows' date picker flows its text too), from 5 px in as every text box's text, the box
-    // growing at its trailing edge when they need more room. IDM's fixed places let "September"
     // (53 px) run into the day; fields sized for the widest names left gaps after short ones.
     let mut xs: [f32; 4] = [5.0, 71.0, 121.0, 140.0];
     {
@@ -1785,7 +1773,6 @@ fn date_picker(
             winui::text_width(&p, &format!("00{day_comma}")).ceil(),
             winui::text_width(&p, "0000").ceil(),
         ];
-        // The gap after each field (IDM's: 5 after the names, 4 after the numbers).
         let gaps = [5.0, 5.0, 4.0, 4.0];
         let mut x = 5.0;
         for &f in &visual {
