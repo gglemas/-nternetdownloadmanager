@@ -1,10 +1,8 @@
-//! Link grabber (#37): the links of a page (the browser's "Download all links"), of a list file
-//! (Tasks → Import), dropped or pasted, gathered into packages to tick before they are added.
-//! It grew out of the Import window and keeps its ways (IDM's "Download all links": every link
-//! looked up for its name and size, Check all / Uncheck all, "Hide web pages", OK adds the
-//! ticked ones to the queue); the packages come from JDownloader's link grabber: a split
-//! archive's volumes are one package, the other links of one page another, the rest "Various
-//! files". A package has its folder, an archive password and "Extract when done".
+//! Link grabber (#37): collects links from a page, a list file (Tasks → Import), pasted text, or
+//! dropped content. It looks up names and sizes, and lets users select links before adding them.
+//! Split archive volumes are grouped together; other links from a page form a package, and
+//! remaining links go into "Various files". Each package has a folder, archive password, and
+//! "Extract when done" setting.
 
 use std::path::PathBuf;
 use std::sync::{Arc, Mutex};
@@ -100,7 +98,6 @@ impl Origin {
     }
 }
 
-/// A web page's name rather than a file's (IDM's "Hide HTML files").
 pub fn web_page(name: &str) -> bool {
     let lower = name.to_ascii_lowercase();
     let ext = lower.rsplit_once('.').map(|(_, e)| e).unwrap_or("");
@@ -400,7 +397,6 @@ impl Grabber {
                     }
                 }
                 Err(state) => {
-                    // Not there: unticked, as IDM leaves a broken link out.
                     if matches!(state, LinkState::Offline(_)) {
                         l.on = false;
                     }
@@ -514,7 +510,6 @@ impl Grabber {
 
         // Under the list: Hide web pages, the count, Check all / Uncheck all.
         let mut hide = self.hide_pages;
-        // i18n: Link grabber check box (IDM's "Hide HTML files"): links to web pages are not shown
         winui::checkbox_light(ui, o + vec2(11.0, 299.0), &mut hide, "Hide web pages", true);
         self.hide_pages = hide;
         let shown: Vec<&Link> = self.links.iter().filter(|l| self.shows(l)).collect();
@@ -535,9 +530,7 @@ impl Grabber {
             629.0,
             296.0,
             &[
-                // i18n: Link grabber button (IDM's): tick every link
                 (crate::i18n::mark("Check all"), ButtonKind::Normal),
-                // i18n: Link grabber button (IDM's): untick every link
                 (crate::i18n::mark("Uncheck all"), ButtonKind::Normal),
             ],
         );
@@ -565,7 +558,6 @@ impl Grabber {
             629.0,
             BUTTONS_Y,
             &[
-                // i18n: Link grabber button: add the ticked links to the download queue without starting them (IDM's OK)
                 (crate::i18n::mark("Add to queue"), kind(false)),
                 // i18n: Link grabber button: download the ticked links now
                 (crate::i18n::mark("Start"), kind(true)),
@@ -1128,11 +1120,10 @@ mod tests {
         assert_eq!(picked[0].links.len(), 3);
     }
 
-    /// IDM's export file through Tasks → Import: every download keeps its referrer, cookies
     /// and User-Agent, and a list of several kinds of files goes each to its category's folder
     /// (the package has no folder of its own), as Import always did.
     #[test]
-    fn an_idm_export_file_keeps_its_request_context() {
+    fn a_legacy_export_file_keeps_its_request_context() {
         let ef2 = "<\r\nhttps://files.example.org/setup.exe\r\nreferer: https://example.org/get\r\n\
                    cookie: sid=42; theme=dark\r\nUser-Agent: Mozilla/5.0 Test\r\n>\r\n\
                    <\r\nhttps://files.example.org/manual.pdf\r\nreferer: https://example.org/get\r\n\

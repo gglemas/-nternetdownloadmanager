@@ -1,8 +1,7 @@
-//! tnctr download manager's command channel (shared by the app, its command line and the browser host).
-//! Single-instance command channel. The running app listens on a localhost port and writes
-//! `{port, token}` to `%APPDATA%\misterdownloadmanager\ipc.json`; a second launch (IDM-style command line)
-//! or the browser's native messaging host sends one JSON line per command, carrying the token.
-//! Only connections from 127.0.0.1 with the right token are accepted.
+//! Single-instance command channel shared by the app, command line, and browser host.
+//! The running app listens on localhost; the command line or browser native messaging host
+//! sends one JSON line per command with the token. Only connections from 127.0.0.1 with the
+//! correct token are accepted.
 
 pub mod api;
 pub mod browsers;
@@ -63,7 +62,6 @@ pub struct Command {
     /// That proxy asked the browser for a login, which the extension that set it answers with
     /// its own: no other program can have it.
     pub proxy_login: bool,
-    /// Automation API (off by default, beyond IDM): `"list"` asks for every download as JSON.
     pub query: Option<String>,
     /// Automation API: turn it on or off.
     pub api: Option<bool>,
@@ -86,19 +84,15 @@ pub struct Command {
     /// The remote control (#157, `misterdownloadmanager-cli pair`): show a new pairing code;
     /// answered with it, the page's addresses and a QR code to scan ([`api::PairAnswer`]).
     pub pair: bool,
-    /// `/exit` (beyond IDM): the running app saves and quits (the installer, before an upgrade
-    /// or an uninstall). Starts nothing when no app runs.
+    /// Save state and quit the running app. Used by the installer before an upgrade or uninstall
+    /// (#226). Does nothing if the app is not running.
     pub exit: bool,
-    /// `/startup` (beyond IDM): started with the session (Options → General → Launch on
-    /// startup, or the installer's "Start when Windows starts", #226): MDM starts in the
-    /// notification area, its window hidden. Changes nothing in a running app.
+    /// Start with the session in the notification area, without opening a window (#226).
+    /// Changes nothing in an already-running app.
     pub startup: bool,
-    /// `/show <window>` (beyond IDM): the running app opens one of its windows by name, for
-    /// screenshots and scripted checks (tools/lab/docs-shots.ps1): `addurl`, `batch`, `find`,
-    /// `scheduler`, `about`, `language`, `shortcuts`, `speedlimit`, `properties`, `delete`,
-    /// `progress`, `existing-files`, `video-page`, `video-helpers`, `video-subs`,
-    /// `torrent-settings`, `add-trackers`, `menu` (the first download's right-click menu),
-    /// `options[:general|types|saveto|downloads|connection|proxy|logins|sounds|regional|panels]`.
+    /// Open a named window for screenshots and scripted checks without showing the main window.
+    /// Supported names include `addurl`, `batch`, `find`, `scheduler`, `about`, `language`,
+    /// `shortcuts`, `speedlimit`, `properties`, `delete`, `progress`, and `options`.
     pub show: Option<String>,
     /// From the browser's download button over a video: open the Download video window for this
     /// page (its address; an embedded player's own).
@@ -217,7 +211,7 @@ pub fn set_data_dir(dir: PathBuf) {
 }
 
 /// The app's data folder, `%APPDATA%\misterdownloadmanager` (list, settings, channel, crash
-/// log). The folder of the app's former codename, `idmnext`, is moved here once.
+/// log). Legacy app data is migrated here once.
 ///
 /// `MDM_DATA_DIR` overrides it (a separate instance with its own list and channel: tests,
 /// screenshots). Portable mode: a writable `data` folder next to the program holds it all.
@@ -587,7 +581,6 @@ fn random_token() -> String {
 /// LaunchAgent, the installer's): MDM starts in the notification area ([`Command::startup`]).
 pub const STARTUP: &str = "/startup";
 
-/// Parse IDM's command line: `/d URL [/p dir] [/f name] [/a] [/n] [/q] [/s]` (case-insensitive;
 /// `-d` also accepted). Returns None when there is nothing to do.
 pub fn parse_args(args: &[String]) -> Option<Command> {
     let mut cmd = Command::default();
@@ -637,7 +630,7 @@ mod tests {
     }
 
     #[test]
-    fn idm_command_line() {
+    fn legacy_command_line() {
         let a = |s: &str| s.split(' ').map(String::from).collect::<Vec<_>>();
         let c = parse_args(&a("/d http://x/a.zip /p C:\\dl /f b.zip /a /n")).unwrap();
         assert_eq!(c.url.as_deref(), Some("http://x/a.zip"));

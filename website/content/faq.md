@@ -9,13 +9,9 @@ level-two headings. Answers link to the full help page. Built by tools/website/b
 
 Yes, completely. Mister Download Manager (MDM) is free and open-source software under the GNU General Public License, version 3. There is no trial period, no paid edition, no registration key, no nag screen and no ads, and there never will be. You may use it at home or at work, copy it and give it to others.
 
-### Is it a copy or a crack of Internet Download Manager? {#is-it-idm}
+### What can I download with Mister Download Manager? {#downloads}
 
-No. MDM is an independent program written from scratch in Rust, with no connection to Tonec Inc., the makers of Internet Download Manager (IDM). It contains none of IDM's code or artwork. Its windows are laid out the way IDM users expect, so you can switch without learning anything new — and because MDM is free, there is nothing to crack. Please don't download "cracked" download managers: they are a common way to spread malware.
-
-### How is MDM different from IDM? {#mdm-vs-idm}
-
-The layout is familiar on purpose: the toolbar, the categories, the download list, the progress window with every connection, queues and the scheduler. The differences: MDM is free and open source, downloads BitTorrent and magnet links in the same list, finished faster in [our benchmark](/benchmark.html), speaks 86 languages and has builds for Linux and macOS. IDM is the more mature product, refined over many years. See the full [comparison](/idm-alternative.html).
+MDM supports HTTP and FTP downloads, BitTorrent and magnet links, and video downloads from supported web pages.
 
 ### Is it safe? Does it contain adware or spyware? {#is-it-safe}
 
@@ -43,9 +39,9 @@ No. MDM needs Windows 10 or 11, 64-bit. The Rust toolchain it is built with no l
 
 Yes. The portable download is a zip: unzip it anywhere, a USB stick included, and run it. Your downloads list and settings stay in its own `data` folder, so nothing is written to the computer. See [Portable mode](/help/portable.html).
 
-### Can I bring my download list over from IDM? {#import-from-idm}
+### Can I import an existing download list? {#import-list}
 
-Yes. In IDM, export your list with **Tasks → Export → To IDM export file**. In MDM, choose **Tasks → Import → From IDM export file** and pick that `.ef2` file: every download comes over with its address, referrer and cookies. A plain text file of links works too. See [Adding downloads](/help/adding-downloads.html).
+Save a list as an `.ef2` export file or a plain-text list of links. In MDM, choose **Tasks → Import** and select the file. Available referrers and cookies are retained, and the entries join the main queue.
 
 ### How do I uninstall it? {#uninstall}
 
@@ -129,7 +125,7 @@ Very likely: MDM speaks 86 languages, every display language Windows 11 offers, 
 
 ### Can other programs or scripts control MDM? {#automation}
 
-Yes. MDM accepts IDM's familiar command-line switches, comes with `misterdownloadmanager-cli` for downloads from a terminal, and has a local, token-protected automation API that can list, pause, start and remove downloads. The API is off until you turn it on. See [Command line and automation](/help/command-line.html).
+Yes. MDM accepts common legacy command-line switches, comes with `misterdownloadmanager-cli` for downloads from a terminal, and has a local, token-protected automation API that can list, pause, start and remove downloads. The API is off until you turn it on. See [Command line and automation](/help/command-line.html).
 
 ### Can my AI assistant use MDM? {#ai}
 

@@ -7,6 +7,10 @@ issue, where the details and the discussion are. Released changes are in
 
 ✅ done, coming in 0.5.0 · 🔄 being built · 📋 planned · 🔍 looking into it
 
+## Independent product documentation
+
+- [x] Remove competitor comparisons, version references and comparison-specific assets/tooling; describe the application through its own features.
+
 ## Build tooling
 
 - [x] Add a root `build.ps1` for one-command Release/Debug builds from any working directory, preserving the caller's directory and reporting build failures.
@@ -419,9 +423,6 @@ Everything below ships together, in version 0.5.0.
   one control, step strips for the usual flows, in light and dark, made from one shot list
   ([#228](https://github.com/anefzaoui/misterdownloadmanager/issues/228))
 - ✅ Website in European Portuguese, and an [intended use](https://misterdownloadmanager.com/intended-use.html) page
-- ✅ Website: the [free IDM alternative](https://misterdownloadmanager.com/idm-alternative.html) page compares
-  MDM with IDM and with nine other free download managers, each checked on its own site, with
-  their logos, a feature-by-feature form and an MDM-vs-IDM label with the benchmark's times to scale
 - ✅ Website: the header fits its row in every language at every width (it hides the Sponsor heart,
   then tightens, then turns into the menu, only as far as a language needs)
   ([#168](https://github.com/anefzaoui/misterdownloadmanager/issues/168)), and no page scrolls
@@ -516,5 +517,3 @@ These ship in a later version, when they're ready.
 - 📋 Vulkan the default on Linux and Metal on macOS, once real graphics cards have tried them (AMD,
   Intel and NVIDIA, X11 and Wayland, older cards without Vulkan)
   ([#206](https://github.com/anefzaoui/misterdownloadmanager/issues/206))
-- 📋 Benchmarks against other download managers
-  ([#71](https://github.com/anefzaoui/misterdownloadmanager/issues/71))
