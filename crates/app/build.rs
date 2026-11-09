@@ -26,8 +26,8 @@ fn main() {
         println!("cargo:rerun-if-changed=assets/icons/app/mdm.ico");
         let mut res = winresource::WindowsResource::new();
         res.set_icon("assets/icons/app/mdm.ico")
-            .set("ProductName", "Mister Download Manager")
-            .set("FileDescription", "Mister Download Manager")
+            .set("ProductName", "tnctr download manager")
+            .set("FileDescription", "tnctr download manager")
             .set("CompanyName", "Ahmed Nefzaoui")
             .set(
                 "LegalCopyright",

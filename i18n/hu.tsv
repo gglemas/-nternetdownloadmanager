@@ -1,4 +1,4 @@
-# Mister Download Manager in Hungarian (Magyar): tools/i18n/translate.py
+# tnctr download manager in Hungarian (Magyar): tools/i18n/translate.py
 # writes the rows marked '#, machine'; a native speaker deletes that line after checking.
 # context	source	translation (craft-i18n format, rows as in en.tsv)
 @id	language.name	Magyar
@@ -11,7 +11,7 @@
 #. never shown for a single download
 #. {n} = a number (keep the braces as they are)
 #, machine
-@plural	Are you sure you want to delete {n} download from Mister Download Manager list of downloads?|Are you sure you want to delete these {n} downloads from Mister Download Manager list of downloads?	Biztosan törölni szeretné a(z) {n} letöltést a Mister Download Manager letöltési listájáról?|Biztosan törölni szeretné ezt a(z) {n} letöltést a Mister Download Manager letöltési listájáról?
+@plural	Are you sure you want to delete {n} download from tnctr download manager list of downloads?|Are you sure you want to delete these {n} downloads from tnctr download manager list of downloads?	Biztosan törölni szeretné a(z) {n} letöltést a tnctr download manager letöltési listájáról?|Biztosan törölni szeretné ezt a(z) {n} letöltést a tnctr download manager letöltési listájáról?
 #. count in the Add torrent window
 #. while a magnet link's file list is fetched; {n} = peers that answered
 #. {n} = a number (keep the braces as they are)
@@ -226,7 +226,7 @@
 	a volume of it is missing	egy kötete hiányzik
 #. window title in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	About Mister Download Manager	Névjegy: Mister Download Manager
+	About tnctr download manager	Névjegy: tnctr download manager
 #. text in whereis.rs
 #. a download's server's round trip: {ms} a number of milliseconds, {reach} near, medium or far
 #, machine
@@ -280,7 +280,7 @@
 #. window title in extension.rs
 #. title of the window that offers the browser extension
 #, machine
-	Add Mister Download Manager to your browser	A(z) Mister Download Manager hozzáadása a böngészőhöz
+	Add tnctr download manager to your browser	A(z) tnctr download manager hozzáadása a böngészőhöz
 #. message or event log entry in the main window; text in the tray icon's menu
 #. link in the empty download list: opens Add URL
 #, machine
@@ -447,7 +447,7 @@
 	Always into a folder named after it	Mindig egy, a nevéről elnevezett mappába
 #. checkbox in a dialog box
 #, machine
-	Always turn on Speed Limiter on Mister Download Manager startup	A sebességkorlátozó bekapcsolása a Mister Download Manager indításakor
+	Always turn on Speed Limiter on tnctr download manager startup	A sebességkorlátozó bekapcsolása a tnctr download manager indításakor
 #. text in regional.rs; text in the Scheduler window
 #. before noon, after a time of day (12-hour clock). Its pair is "PM": write both the same way (this language's own short marks, or both kept as AM and PM)
 #, machine
@@ -513,7 +513,7 @@
 #. text in a dialog box
 #. {name} = a file name (keep the braces as they are)
 #, machine
-	Are you sure you want to delete "{name}" from Mister Download Manager list of downloads?	Biztosan törölni szeretné a(z) „{name}” fájlt a Mister Download Manager letöltési listájáról?
+	Are you sure you want to delete "{name}" from tnctr download manager list of downloads?	Biztosan törölni szeretné a(z) „{name}” fájlt a tnctr download manager letöltési listájáról?
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -682,7 +682,7 @@
 	Browse...	Tallózás...
 #. text in extension.rs
 #, machine
-	Browser integration isn't set up on this computer, so no browser can reach Mister Download Manager yet.	A böngészőintegráció nincs beállítva ezen a számítógépen, így egyetlen böngésző sem érheti el az Mister Download Manager alkalmazást.
+	Browser integration isn't set up on this computer, so no browser can reach tnctr download manager yet.	A böngészőintegráció nincs beállítva ezen a számítógépen, így egyetlen böngésző sem érheti el az tnctr download manager alkalmazást.
 #. page title in the Options window
 #, machine
 	Browser/System Integration	Böngésző/rendszer-integráció
@@ -874,7 +874,7 @@
 	Choose a language	Válasszon nyelvet
 #. text in langpick.rs
 #, machine
-	Choose the language Mister Download Manager shows its windows in:	Válassza ki azt a nyelvet, amelyen a Mister Download Manager megjeleníti az ablakait:
+	Choose the language tnctr download manager shows its windows in:	Válassza ki azt a nyelvet, amelyen a tnctr download manager megjeleníti az ablakait:
 #. text in the Options window
 #. Options → Sites Logins → Cookies for video sites: the title of the window, and the tooltip of the button, that pick a browser profile's folder
 #, machine
@@ -1493,7 +1493,7 @@
 	Exit	Kilépés
 #. checkbox in a download's progress window; checkbox in the Scheduler window
 #, machine
-	Exit Mister Download Manager when done	Kilépés a(z) Mister Download Manager alkalmazásból, ha befejeződött
+	Exit tnctr download manager when done	Kilépés a(z) tnctr download manager alkalmazásból, ha befejeződött
 #. text in the Checksum window
 #, machine
 	Expected checksum (MD5, SHA-1, SHA-256, SHA-512 or CRC32):	Várható ellenőrzőösszeg (MD5, SHA-1, SHA-256, SHA-512 vagy CRC32):
@@ -1924,7 +1924,7 @@
 	Hide web pages	Weboldalak elrejtése
 #. text in the Options window
 #, machine
-	Hold Alt while clicking a link to let the browser download it instead of Mister Download Manager.	Tartsa lenyomva az Alt billentyűt, miközben egy hivatkozásra kattint, hogy a böngésző töltse le azt az Mister Download Manager helyett.
+	Hold Alt while clicking a link to let the browser download it instead of tnctr download manager.	Tartsa lenyomva az Alt billentyűt, miközben egy hivatkozásra kattint, hogy a böngésző töltse le azt az tnctr download manager helyett.
 #. link (opens a web page) in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Home page	Kezdőlap
@@ -1960,7 +1960,7 @@
 	Hungary	Magyarország
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	I download with Mister Download Manager: fast, free, and it looks like the download manager you already know. {link}	A Mister Download Managerrel töltök le: gyors, ingyenes, és úgy néz ki, mint az Ön által már ismert letöltéskezelő. {link}
+	I download with tnctr download manager: fast, free, and it looks like the download manager you already know. {link}	A tnctr download managerrel töltök le: gyors, ingyenes, és úgy néz ki, mint az Ön által már ismert letöltéskezelő. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2231,7 +2231,7 @@
 	Latvia	Lettország
 #. text in the Options window
 #, machine
-	Launch Mister Download Manager on startup	A(z) Mister Download Manager indítása a rendszer indításakor
+	Launch tnctr download manager on startup	A(z) tnctr download manager indítása a rendszer indításakor
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2518,54 +2518,54 @@
 	Missing	Hiányzik
 #. message or event log entry in the main window; window title in a dialog box; text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	Mister Download Manager	Mister Download Manager
+	tnctr download manager	tnctr download manager
 #. text in unix.rs
 #. Linux, at start, on the terminal and in a message box: a library the window needs isn't installed; {libraries} = its file names (libxkbcommon-x11.so.0…), left as they are
 #, machine
-	Mister Download Manager can't open its window: this system lacks {libraries}.	A(z) Mister Download Manager nem tudja megnyitni az ablakát: a rendszerből hiányoznak a(z) {libraries}.
+	tnctr download manager can't open its window: this system lacks {libraries}.	A(z) tnctr download manager nem tudja megnyitni az ablakát: a rendszerből hiányoznak a(z) {libraries}.
 #. text in crashui.rs
 #. crash report window heading: MDM crashed and is gone
 #, machine
-	Mister Download Manager closed unexpectedly	Mister Download Manager váratlanul bezárult
+	tnctr download manager closed unexpectedly	tnctr download manager váratlanul bezárult
 #. window title in the Options window
 #, machine
-	Mister Download Manager Configuration	Mister Download Manager konfiguráció
+	tnctr download manager Configuration	tnctr download manager konfiguráció
 #. text in crashui.rs
 #, machine
-	Mister Download Manager crash report	Mister Download Manager hibajelentés
+	tnctr download manager crash report	tnctr download manager hibajelentés
 #. text in crashui.rs
 #. crash report window heading: an internal error, MDM still running
 #, machine
-	Mister Download Manager hit an internal error	Mister Download Manager belső hibába ütközött
+	tnctr download manager hit an internal error	tnctr download manager belső hibába ütközött
 #. text in wake.rs
 #. why the computer isn't going to sleep, in the system's list of programs that keep it awake; {queue} = the queue's name
 #. {queue} = a queue name such as "Main queue" (keep the braces as they are)
 #, machine
-	Mister Download Manager is running the queue "{queue}"	Mister Download Manager futtatja a(z) „{queue}” várólistát
+	tnctr download manager is running the queue "{queue}"	tnctr download manager futtatja a(z) „{queue}” várólistát
 #. text in crashui.rs
 #. crash report window heading: MDM's window doesn't answer (frozen)
 #, machine
-	Mister Download Manager stopped responding	Mister Download Manager nem válaszol
+	tnctr download manager stopped responding	tnctr download manager nem válaszol
 #. text in crashui.rs
 #, machine
-	Mister Download Manager stopped responding for a while	Mister Download Manager egy ideig nem válaszolt
+	tnctr download manager stopped responding for a while	tnctr download manager egy ideig nem válaszolt
 #. text in the Options window
 #. \\n starts a new line: break lines where they fit the translation
 #, machine
-	Mister Download Manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.	A Mister Download Manager minden kapcsolatot közvetlenül a végső\nfájlba ír (egy ritka részfájl mellé), így nincs szükség ideiglenes könyvtárra és\nösszeállítási lépésre.
+	tnctr download manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.	A tnctr download manager minden kapcsolatot közvetlenül a végső\nfájlba ír (egy ritka részfájl mellé), így nincs szükség ideiglenes könyvtárra és\nösszeállítási lépésre.
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	Mister Download Manager {version} is available (released {date}).	Elérhető a Mister Download Manager {version} (megjelent: {date}).
+	tnctr download manager {version} is available (released {date}).	Elérhető a tnctr download manager {version} (megjelent: {date}).
 #. text in helpers.rs
 #. Video helpers: {version} = the version of MDM's own copy
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	Mister Download Manager's own copy, version {version}	Mister Download Manager saját példánya, {version} verzió
+	tnctr download manager's own copy, version {version}	tnctr download manager saját példánya, {version} verzió
 #. text in unix.rs
 #. Linux, at start, on the terminal: the libraries an X11 window needs aren't installed, so the window opens through Wayland instead, where menus can't be placed under what was clicked; {libraries} = their file names, left as they are
 #, machine
-	Mister Download Manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.	A(z) Mister Download Manager X11-es ablakának szüksége van a(z) {libraries} fájlokra, amelyek hiányoznak a rendszerből: ezért Wayland alatt nyílik meg, ahol a menük nem feltétlenül a címük alatt nyílnak meg.
+	tnctr download manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.	A(z) tnctr download manager X11-es ablakának szüksége van a(z) {libraries} fájlokra, amelyek hiányoznak a rendszerből: ezért Wayland alatt nyílik meg, ahol a menük nem feltétlenül a címük alatt nyílnak meg.
 #. text in the Scheduler window
 #. Monday, as short as a calendar's column head (two letters in English)
 #, machine
@@ -3070,10 +3070,10 @@
 	Open folder	Mappa megnyitása
 #. checkbox in the Add torrent window
 #, machine
-	Open magnet links and .torrent files with Mister Download Manager	Magnet linkek és .torrent fájlok megnyitása a Mister Download Managerrel
+	Open magnet links and .torrent files with tnctr download manager	Magnet linkek és .torrent fájlok megnyitása a tnctr download managerrel
 #. text in the tray icon's menu
 #, machine
-	Open Mister Download Manager	Mister Download Manager megnyitása
+	Open tnctr download manager	tnctr download manager megnyitása
 #. text in extension.rs
 #. step 2 of turning on the Safari extension; Cmd is the Command key
 #, machine
@@ -3144,7 +3144,7 @@
 #. text in remote.rs
 #. remote control page (on a phone): title of the pairing screen
 #, machine
-	Pair with Mister Download Manager	Párosítás a következővel: Mister Download Manager
+	Pair with tnctr download manager	Párosítás a következővel: tnctr download manager
 #. text in the Options window
 #. column title: when the device was paired
 #, machine
@@ -3630,7 +3630,7 @@
 	Select or unselect the download with the dotted outline	A szaggatott körvonalú letöltés kijelölése vagy kijelölésének megszüntetése
 #. group box title in the Options window
 #, machine
-	Select sounds for Mister Download Manager events	Hangok kiválasztása a Mister Download Manager eseményeihez
+	Select sounds for tnctr download manager events	Hangok kiválasztása a tnctr download manager eseményeihez
 #. what a keyboard shortcut does in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Select the downloads in the box	A letöltések kijelölése a dobozban
@@ -3955,7 +3955,7 @@
 	Start download at	Letöltés indítása ekkor:
 #. checkbox in the Scheduler window
 #, machine
-	Start download on Mister Download Manager startup	Letöltés indítása a Mister Download Manager indításakor
+	Start download on tnctr download manager startup	Letöltés indítása a tnctr download manager indításakor
 #. checkbox in the Options window
 #, machine
 	Start downloading immediately while displaying "Download File Info" dialog	Azonnali letöltés indítása a „Fájlinformációk letöltése” párbeszédpanel megjelenítése közben
@@ -3990,7 +3990,7 @@
 #, machine
 	Started with the computer, it starts minimized: no notification area shows its icon here	A számítógéppel együtt indul, minimalizálva: az értesítési területen nem jelenik meg az ikonja
 #. text in the Options window
-#. tooltip of "Launch Mister Download Manager on startup": started with the computer, MDM's window stays hidden, its icon in the notification area (system tray)
+#. tooltip of "Launch tnctr download manager on startup": started with the computer, MDM's window stays hidden, its icon in the notification area (system tray)
 #, machine
 	Started with the computer, it waits in the notification area	A számítógéppel együtt indul, és az értesítési területen várakozik
 #. message or event log entry in the main window
@@ -4211,7 +4211,7 @@
 #. text in extension.rs
 #. a check of Test browser integration: the browsers find MDM's helper program
 #, machine
-	The browsers can find Mister Download Manager	A böngészők megtalálják az Mister Download Manager alkalmazást
+	The browsers can find tnctr download manager	A böngészők megtalálják az tnctr download manager alkalmazást
 #. text in the Options window
 #. Options → Remote → Status: the settings were changed; they apply on OK
 #, machine
@@ -4235,7 +4235,7 @@
 #. text in the Scheduler window
 #. tooltip on the Scheduler's "Wake the computer to run this queue"
 #, machine
-	The computer is woken a minute before the start time and kept awake while the queue runs. Mister Download Manager has to be running (it can wait in the notification area).	A számítógép egy perccel a kezdési idő előtt felébred, és ébren marad, amíg a várólista fut. Az Mister Download Manager programnak futnia kell (várhat az értesítési területen).
+	The computer is woken a minute before the start time and kept awake while the queue runs. tnctr download manager has to be running (it can wait in the notification area).	A számítógép egy perccel a kezdési idő előtt felébred, és ébren marad, amíg a várólista fut. Az tnctr download manager programnak futnia kell (várhat az értesítési területen).
 #. text in the Scheduler window
 #. the Scheduler, under "Wake the computer to run this queue": when it will happen; {date} = e.g. 06/11/2026, {time} = e.g. 22:59:00
 #. {time} = a time of day (keep the braces as they are)
@@ -4406,7 +4406,7 @@
 #. text in a dialog box
 #. \\n starts a new line: break lines where they fit the translation
 #, machine
-	The selected download is not complete. Are you sure you want to delete\nit from Mister Download Manager list of downloads?	A kiválasztott letöltés nem fejeződött be. Biztosan törölni szeretné\na(z) Mister Download Manager letöltési listájáról?
+	The selected download is not complete. Are you sure you want to delete\nit from tnctr download manager list of downloads?	A kiválasztott letöltés nem fejeződött be. Biztosan törölni szeretné\na(z) tnctr download manager letöltési listájáról?
 #. text in errors.rs
 #, machine
 	the server answered {status}	a szerver {status} választ adott
@@ -4765,7 +4765,7 @@
 #. text in extension.rs
 #. step 8 of turning on the Safari extension
 #, machine
-	Turn on "Mister Download Manager" and allow it on all websites.	Kapcsolja be a(z) „Mister Download Manager” bővítményt, és engedélyezze minden webhelyen.
+	Turn on "tnctr download manager" and allow it on all websites.	Kapcsolja be a(z) „tnctr download manager” bővítményt, és engedélyezze minden webhelyen.
 #. text in extension.rs
 #. step 4 of turning on the Safari extension; the quoted switch name is what Safari's settings show in this language: use Apple's own words for it, or keep the English name when unsure
 #, machine
@@ -5178,7 +5178,7 @@
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	You have the latest version of Mister Download Manager ({version}).	A Mister Download Manager ({version}) legújabb verzióját használja.
+	You have the latest version of tnctr download manager ({version}).	A tnctr download manager ({version}) legújabb verzióját használja.
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. Check for updates, under the new version's line, when MDM was installed by the Linux system's package manager (pacman, ...), which MDM can't update itself
 #. {version} = a version number (keep the braces as they are)
@@ -5557,15 +5557,15 @@ column	Time left	Hátralévő idő
 #, machine
 column	Transfer rate	Átviteli sebesség
 #. text in the browser extension
-#. choice under Send downloads to: an MDM running on another computer of the network, such as a home server; keep the name Mister Download Manager as it is
+#. choice under Send downloads to: an MDM running on another computer of the network, such as a home server; keep the name tnctr download manager as it is
 #, machine
-extension	Another Mister Download Manager (a server)	Másik Mister Download Manager (kiszolgáló)
+extension	Another tnctr download manager (a server)	Másik tnctr download manager (kiszolgáló)
 #. text in the browser extension
 #. the name this browser gets in the other MDM's list of paired devices
 #, machine
 extension	Browser extension	Böngészőbővítmény
 #. text in the browser extension
-#. menu command of the download button over a video: opens its settings in Mister Download Manager
+#. menu command of the download button over a video: opens its settings in tnctr download manager
 #. the trailing ... means it is still going on: keep it
 #, machine
 extension	Button settings...	Gombbeállítások...
@@ -5574,34 +5574,34 @@ extension	Button settings...	Gombbeállítások...
 #, machine
 extension	Can't tell which video this is: open its own page and try there	Nem állapítható meg, melyik videóról van szó: nyissa meg a saját oldalát, és próbálja ott
 #. text in the browser extension
-#. the toolbar button's status when the browser reaches the app; keep the name Mister Download Manager as it is
+#. the toolbar button's status when the browser reaches the app; keep the name tnctr download manager as it is
 #, machine
-extension	Connected to Mister Download Manager	Csatlakoztatva az Mister Download Manager alkalmazáshoz
+extension	Connected to tnctr download manager	Csatlakoztatva az tnctr download manager alkalmazáshoz
 #. text in the browser extension
-#. the toolbar button's status when the browser reaches the app, with the app's version number; keep the name Mister Download Manager as it is
+#. the toolbar button's status when the browser reaches the app, with the app's version number; keep the name tnctr download manager as it is
 #. {version} = a version number (keep the braces as they are)
 #, machine
-extension	Connected to Mister Download Manager {version}	Csatlakoztatva az Mister Download Manager {version} alkalmazáshoz
+extension	Connected to tnctr download manager {version}	Csatlakoztatva az tnctr download manager {version} alkalmazáshoz
 #. text in the browser extension
 #. button beside a video, sound or stream in the toolbar button's popup: download it with the app; verb; short
 #, machine
 extension	Download	Letöltés
 #. text in the browser extension
-#. command in the browser's right-click menu on a page: download the links of the whole page; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on a page: download the links of the whole page; keep the name tnctr download manager as it is
 #, machine
-extension	Download all links with Mister Download Manager	Összes hivatkozás letöltése az Mister Download Manager alkalmazással
+extension	Download all links with tnctr download manager	Összes hivatkozás letöltése az tnctr download manager alkalmazással
 #. text in the browser extension
-#. command in the browser's right-click menu on selected text: download the links in the selection; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on selected text: download the links in the selection; keep the name tnctr download manager as it is
 #, machine
-extension	Download selected links with Mister Download Manager	Kijelölt hivatkozások letöltése az Mister Download Manager alkalmazással
+extension	Download selected links with tnctr download manager	Kijelölt hivatkozások letöltése az tnctr download manager alkalmazással
 #. text in the browser extension
 #. the button over a video on a web page that downloads it; verb; short (it sits on the video)
 #, machine
 extension	Download video	Videó letöltése
 #. text in the browser extension
-#. command in the browser's right-click menu on a link, picture, video or sound; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on a link, picture, video or sound; keep the name tnctr download manager as it is
 #, machine
-extension	Download with Mister Download Manager	Letöltés a(z) Mister Download Manager alkalmazással
+extension	Download with tnctr download manager	Letöltés a(z) tnctr download manager alkalmazással
 #. text in the browser extension
 #. shown in the toolbar button's popup after the site was excluded
 #. {site} = a web site's name such as "example.com" (keep the braces as they are)
@@ -5620,9 +5620,9 @@ extension	Drag to move it along the video's edge	Húzza a videó szélére a moz
 #, machine
 extension	Enter its https:// address.	Adja meg a https:// címét.
 #. text in the browser extension
-#. the extension's description in the browser's list of extensions; keep the name Mister Download Manager as it is
+#. the extension's description in the browser's list of extensions; keep the name tnctr download manager as it is
 #, machine
-extension	Hands downloads from the browser to Mister Download Manager.	Átadja a letöltéseket a böngészőből a(z) Mister Download Manager alkalmazásnak.
+extension	Hands downloads from the browser to tnctr download manager.	Átadja a letöltéseket a böngészőből a(z) tnctr download manager alkalmazásnak.
 #. text in the browser extension
 #. link in the toolbar button's popup to the help page
 #, machine
@@ -5677,33 +5677,33 @@ extension	Live	Élő
 #, machine
 extension	Media on this page	Média ezen az oldalon
 #. text in the browser extension
-#. the extension's name in the browser's list of extensions and on its toolbar button; keep the name Mister Download Manager as it is
+#. the extension's name in the browser's list of extensions and on its toolbar button; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager	Mister Download Manager
+extension	tnctr download manager	tnctr download manager
 #. text in the browser extension
-#. status when the app was started for a download but didn't answer in time; keep the name Mister Download Manager as it is
+#. status when the app was started for a download but didn't answer in time; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager didn't start in time	Az Mister Download Manager nem indult el időben
+extension	tnctr download manager didn't start in time	Az tnctr download manager nem indult el időben
 #. text in the browser extension
-#. status when the app refuses this copy of the extension (another copy is installed, or it came from another store); keep the name Mister Download Manager as it is
+#. status when the app refuses this copy of the extension (another copy is installed, or it came from another store); keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager doesn't accept this copy of the extension	Az Mister Download Manager nem fogadja el a bővítmény ezen másolatát
+extension	tnctr download manager doesn't accept this copy of the extension	Az tnctr download manager nem fogadja el a bővítmény ezen másolatát
 #. text in the browser extension
-#. shown briefly on the download button when the app could not be reached; keep the name Mister Download Manager as it is
+#. shown briefly on the download button when the app could not be reached; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager isn't installed or didn't start	Az Mister Download Manager nincs telepítve, vagy nem indult el
+extension	tnctr download manager isn't installed or didn't start	Az tnctr download manager nincs telepítve, vagy nem indult el
 #. text in the browser extension
-#. status when the browser can't find the app's connection; keep the name Mister Download Manager as it is
+#. status when the browser can't find the app's connection; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager isn't installed, or its browser integration isn't set up	Az Mister Download Manager nincs telepítve, vagy a böngészőintegrációja nincs beállítva
+extension	tnctr download manager isn't installed, or its browser integration isn't set up	Az tnctr download manager nincs telepítve, vagy a böngészőintegrációja nincs beállítva
 #. text in the browser extension
-#. tooltip of the switch Send downloads through this browser's proxy or VPN extension; keep the name Mister Download Manager as it is
+#. tooltip of the switch Send downloads through this browser's proxy or VPN extension; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager then downloads through the same proxy as this browser. The browser asks you once to allow it; turning this off takes that back.	Az Mister Download Manager ezután ugyanazon a proxyn keresztül tölt le, mint ez a böngésző. A böngésző egyszer engedélyt kér erre; ennek kikapcsolásával visszavonhatja az engedélyt.
+extension	tnctr download manager then downloads through the same proxy as this browser. The browser asks you once to allow it; turning this off takes that back.	Az tnctr download manager ezután ugyanazon a proxyn keresztül tölt le, mint ez a böngésző. A böngésző egyszer engedélyt kér erre; ennek kikapcsolásával visszavonhatja az engedélyt.
 #. text in the browser extension
-#. tooltip of the switch Send downloads through this browser's proxy or VPN extension in Chrome, Edge and the other Chromium browsers (they ask for no permission at the switch); keep the name Mister Download Manager as it is
+#. tooltip of the switch Send downloads through this browser's proxy or VPN extension in Chrome, Edge and the other Chromium browsers (they ask for no permission at the switch); keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager then downloads through the same proxy as this browser. While this is off, the extension doesn't read the browser's proxy.	Ekkor a(z) Mister Download Manager ugyanazon a proxyn keresztül tölt le, mint ez a böngésző. Ha ez ki van kapcsolva, a bővítmény nem olvassa be a böngésző proxyját.
+extension	tnctr download manager then downloads through the same proxy as this browser. While this is off, the extension doesn't read the browser's proxy.	Ekkor a(z) tnctr download manager ugyanazon a proxyn keresztül tölt le, mint ez a böngésző. Ha ez ki van kapcsolva, a bővítmény nem olvassa be a böngésző proxyját.
 #. text in the browser extension
 #. the small arrow next to the Download video button that opens its menu (read aloud by screen readers)
 #, machine
@@ -5735,9 +5735,9 @@ extension	Open it	Megnyitás
 #, machine
 extension	Open its address once and accept its certificate, then enter a code from its Options, Remote, Pair a device (or misterdownloadmanager-cli pair).	Nyissa meg egyszer a címét, és fogadja el a tanúsítványát, majd adja meg a kódot a Beállítások, Távoli, Eszköz párosítása (vagy misterdownloadmanager-cli pair) menüpontból.
 #. text in the browser extension
-#. button in the toolbar button's popup; keep the name Mister Download Manager as it is
+#. button in the toolbar button's popup; keep the name tnctr download manager as it is
 #, machine
-extension	Open Mister Download Manager	Megnyitás: Mister Download Manager
+extension	Open tnctr download manager	Megnyitás: tnctr download manager
 #. text in the browser extension
 #. button in the toolbar button's popup: open the app's Options
 #. the trailing ... means it is still going on: keep it
@@ -5772,9 +5772,9 @@ extension	Send downloads through this browser's proxy or VPN extension	Letölté
 #, machine
 extension	Send downloads to	Letöltések küldése ide
 #. text in the browser extension
-#. shown briefly on the download button after it was clicked; keep the name Mister Download Manager as it is
+#. shown briefly on the download button after it was clicked; keep the name tnctr download manager as it is
 #, machine
-extension	Sent to Mister Download Manager	Elküldve a következőnek: Mister Download Manager
+extension	Sent to tnctr download manager	Elküldve a következőnek: tnctr download manager
 #. text in the browser extension
 #. link at the foot of the toolbar button's popup to the creator's GitHub Sponsors page (MDM is free; this is an optional donation)
 #, machine
@@ -5788,9 +5788,9 @@ extension	Take downloads from this browser	Letöltések átvétele ebből a bön
 #, machine
 extension	The Chrome Web Store's rules keep this copy of the add-on away from this site's videos. Help says what you can do.	A Chrome Internetes áruház szabályai távol tartják a bővítmény e példányát az oldal videóitól. A Súgó elmondja, mit tehet.
 #. text in the browser extension
-#. status when the connection to the app broke off (often security software blocking it); keep the name Mister Download Manager as it is
+#. status when the connection to the app broke off (often security software blocking it); keep the name tnctr download manager as it is
 #, machine
-extension	The connection to Mister Download Manager failed	Nem sikerült csatlakozni az Mister Download Manager alkalmazáshoz
+extension	The connection to tnctr download manager failed	Nem sikerült csatlakozni az tnctr download manager alkalmazáshoz
 #. text in the browser extension
 #. shown briefly on the download button over a video when the app's settings keep the button off on this web site
 #, machine
@@ -5808,7 +5808,7 @@ extension	The last download was left to the browser.	Az utolsó letöltés a bö
 #, machine
 extension	This browser isn't ticked in Options → General.	Ez a böngésző nincs bejelölve a Beállítások → Általános menüpontban.
 #. text in the browser extension
-#. choice under Send downloads to: the Mister Download Manager on this computer
+#. choice under Send downloads to: the tnctr download manager on this computer
 #, machine
 extension	This computer	Ez a számítógép
 #. text in the browser extension
@@ -5820,9 +5820,9 @@ extension	This download's details were too large to hand over	A letöltés rész
 #, machine
 extension	This page's player streams its video in pieces, so there's no file to list. Point at the video and use its Download video button.	Ennek az oldalnak a lejátszója darabokban streameli a videót, így nincs felsorolható fájl. Mutasson a videóra, és használja a „Videó letöltése” gombját.
 #. text in the browser extension
-#. status when the app is older than the extension; keep the name Mister Download Manager as it is
+#. status when the app is older than the extension; keep the name tnctr download manager as it is
 #, machine
-extension	Update Mister Download Manager to use everything this extension offers	Frissítse a(z) Mister Download Manager alkalmazást, hogy használhassa a bővítmény összes funkcióját
+extension	Update tnctr download manager to use everything this extension offers	Frissítse a(z) tnctr download manager alkalmazást, hogy használhassa a bővítmény összes funkcióját
 #. text in the browser extension
 #. why a download stayed with the browser: the app's setting 'Use advanced browser integration' is off; keep the setting's name as the app shows it
 #, machine
@@ -5938,7 +5938,7 @@ key	Up / Down	Fel / Le
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
-menu	&About Mister Download Manager	A &Mister Download Manager névjegye
+menu	&About tnctr download manager	A &tnctr download manager névjegye
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
@@ -6290,7 +6290,7 @@ menu	Metro	Metro
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
-menu	Mister Download Manager &Home Page	Mister Download Manager &kezdőlapja
+menu	tnctr download manager &Home Page	tnctr download manager &kezdőlapja
 #. menu command in the main window
 #, machine
 menu	Move/Rename (Ctrl-M)	Áthelyezés/átnevezés (Ctrl+M)
@@ -6403,7 +6403,7 @@ menu	Select &all	Összes ki&jelölése
 menu	Show &drop target	&Célterület megjelenítése
 #. menu command in the main window
 #, machine
-menu	Show Mister Download Manager	Mister Download Manager megjelenítése
+menu	Show tnctr download manager	tnctr download manager megjelenítése
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
