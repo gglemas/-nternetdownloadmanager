@@ -1,12 +1,12 @@
 {
   "name": {
-    "message": "Mister Download Manager"
+    "message": "tnctr download manager"
   },
   "description": {
-    "message": "Entrega as transferências do browser ao Mister Download Manager."
+    "message": "Entrega as transferências do browser ao tnctr download manager."
   },
   "menu": {
-    "message": "Transferir com o Mister Download Manager"
+    "message": "Transferir com o tnctr download manager"
   },
   "video_download": {
     "message": "Transferir vídeo"
@@ -30,25 +30,25 @@
     "message": "Definições do botão..."
   },
   "video_sent": {
-    "message": "Enviado para Mister Download Manager"
+    "message": "Enviado para tnctr download manager"
   },
   "video_failed": {
-    "message": "Mister Download Manager não está instalado ou não iniciou"
+    "message": "tnctr download manager não está instalado ou não iniciou"
   },
   "video_drag": {
     "message": "Arraste para o mover ao longo do limite do vídeo"
   },
   "menu_selected": {
-    "message": "Descarregar links selecionados com Mister Download Manager"
+    "message": "Descarregar links selecionados com tnctr download manager"
   },
   "menu_all": {
-    "message": "Descarregar todos os links com Mister Download Manager"
+    "message": "Descarregar todos os links com tnctr download manager"
   },
   "status_connected": {
-    "message": "Ligado a Mister Download Manager"
+    "message": "Ligado a tnctr download manager"
   },
   "status_connected_version": {
-    "message": "Ligado a Mister Download Manager $version$",
+    "message": "Ligado a tnctr download manager $version$",
     "placeholders": {
       "version": {
         "content": "$1",
@@ -60,22 +60,22 @@
     "message": "Em pausa: os downloads permanecem no navegador"
   },
   "status_not_installed": {
-    "message": "Mister Download Manager não está instalado ou a sua integração com o navegador não está configurada"
+    "message": "tnctr download manager não está instalado ou a sua integração com o navegador não está configurada"
   },
   "status_forbidden": {
-    "message": "Mister Download Manager não aceita esta cópia da extensão"
+    "message": "tnctr download manager não aceita esta cópia da extensão"
   },
   "status_not_running": {
-    "message": "Mister Download Manager não iniciou a tempo"
+    "message": "tnctr download manager não iniciou a tempo"
   },
   "status_host_failed": {
-    "message": "A ligação ao Mister Download Manager falhou"
+    "message": "A ligação ao tnctr download manager falhou"
   },
   "status_too_large": {
     "message": "Os detalhes deste download eram demasiado grandes para serem entregues"
   },
   "status_update_app": {
-    "message": "Atualize o Mister Download Manager para usar tudo o que esta extensão oferece"
+    "message": "Atualize o tnctr download manager para usar tudo o que esta extensão oferece"
   },
   "popup_take": {
     "message": "Obter downloads deste navegador"
@@ -84,10 +84,10 @@
     "message": "Enviar transferências através do proxy ou extensão VPN deste browser"
   },
   "popup_proxy_title": {
-    "message": "O Mister Download Manager transfere através do mesmo proxy que este browser. O browser pede-lhe uma vez para permitir; desativar isto anula essa permissão."
+    "message": "O tnctr download manager transfere através do mesmo proxy que este browser. O browser pede-lhe uma vez para permitir; desativar isto anula essa permissão."
   },
   "popup_proxy_title_chromium": {
-    "message": "O Mister Download Manager transfere, então, através do mesmo proxy que este navegador. Enquanto esta opção estiver desativada, a extensão não lê o proxy do navegador."
+    "message": "O tnctr download manager transfere, então, através do mesmo proxy que este navegador. Enquanto esta opção estiver desativada, a extensão não lê o proxy do navegador."
   },
   "popup_exclude_site": {
     "message": "Nunca descarregar de $site$",
@@ -108,7 +108,7 @@
     }
   },
   "popup_open": {
-    "message": "Abrir Mister Download Manager"
+    "message": "Abrir tnctr download manager"
   },
   "popup_options": {
     "message": "Opções..."
@@ -117,7 +117,7 @@
     "message": "Ajuda"
   },
   "popup_support": {
-    "message": "Apoiar o MDM"
+    "message": "Apoiar o tnctr download manager"
   },
   "popup_fix": {
     "message": "Como corrigir"
@@ -195,7 +195,7 @@
     "message": "Este computador"
   },
   "popup_send_remote": {
-    "message": "Outro Mister Download Manager (um servidor)"
+    "message": "Outro tnctr download manager (um servidor)"
   },
   "popup_remote_code": {
     "message": "Código de emparelhamento"

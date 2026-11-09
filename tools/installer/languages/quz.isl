@@ -1,4 +1,4 @@
-﻿; Mister Download Manager's installer in Quechua: tools/installer/languages.py
+﻿; tnctr download manager's installer in Quechua: tools/installer/languages.py
 ; (machine-translated; a native speaker may correct any line).
 
 [LangOptions]
@@ -291,8 +291,8 @@ ShutdownBlockReasonUninstallingApp=%1 hurquchkan.
 
 [CustomMessages]
 TaskBrowser=Wamp'aq &mask'ay (Chrome, Edge, Brave, Firefox) t'ikrayta churay
-TaskTorrents=.&torrent willkakunatawan magnet t'inkikunata Mister Download Managerwan kichay
-TaskStartup=&Windows qallariptin Mister Download Managerta qallariy
+TaskTorrents=.&torrent willkakunatawan magnet t'inkikunata tnctr download managerwan kichay
+TaskStartup=&Windows qallariptin tnctr download managerta qallariy
 TaskGroupOther=Huk:
-Launch=Mister Download Managerta qallariy
+Launch=tnctr download managerta qallariy
 KeepData=Chaymanta urayk'uchisqa willk'ana listaykita chaymanta churaykunata pichayta munankichu?%n%nUrayk'uchisqa willk'anakunaqa manam imatapas llamk'achisqachu.

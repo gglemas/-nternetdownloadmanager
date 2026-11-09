@@ -1,4 +1,4 @@
-﻿; Mister Download Manager's installer in Cherokee: tools/installer/languages.py
+﻿; tnctr download manager's installer in Cherokee: tools/installer/languages.py
 ; (machine-translated; a native speaker may correct any line).
 
 [LangOptions]
@@ -291,8 +291,8 @@ ShutdownBlockReasonUninstallingApp=ᎤᏕᎳᎰᏒᎢ %1.
 
 [CustomMessages]
 TaskBrowser=ᎤᏓᎷᎪᏗ &ᏗᏟᎶᏍᏗ (Chrome, Edge, Brave, Firefox) ᏕᎪᏢᎾ
-TaskTorrents=Mister Download Manager &ᎠᏍᏚᎢᏍᏗ .torrent Ꮧ फाइल ᎢᏯᏓᏛᏁᎯ ᎠᎴ magnet links
-TaskStartup=&Windows ᎤᎴᏅᎲᎯ Mister Download Manager ᎤᎴᏅᏗ
+TaskTorrents=tnctr download manager &ᎠᏍᏚᎢᏍᏗ .torrent Ꮧ फाइल ᎢᏯᏓᏛᏁᎯ ᎠᎴ magnet links
+TaskStartup=&Windows ᎤᎴᏅᎲᎯ tnctr download manager ᎤᎴᏅᏗ
 TaskGroupOther=ᎤᏟᏍᏗ:
-Launch=Mister Download Manager ᎤᎴᏅᏗ
+Launch=tnctr download manager ᎤᎴᏅᏗ
 KeepData=ᎠᎴᏬ ᏕᏣᏓᎴᏔᏅᏍᎪᎢ ᏗᏟᎶᏍᏗ ᏗᏓᎴᏔᏅᏍᏗ ᎠᎴ ᏗᏟᎶᏍᏗ?%n%nᏗᏟᎶᏍᏗ ᏗᏓᎴᏔᏅᏍᏗ ᎥᏝ ᏱᏗᏓᎴᏔᏅᏍᎦ.

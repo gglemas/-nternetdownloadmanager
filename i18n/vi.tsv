@@ -1,4 +1,4 @@
-# Mister Download Manager in Vietnamese (Tiếng Việt): tools/i18n/translate.py
+# tnctr download manager in Vietnamese (Tiếng Việt): tools/i18n/translate.py
 # writes the rows marked '#, machine'; a native speaker deletes that line after checking.
 # context	source	translation (craft-i18n format, rows as in en.tsv)
 @id	language.name	Tiếng Việt
@@ -11,7 +11,7 @@
 #. never shown for a single download
 #. {n} = a number (keep the braces as they are)
 #, machine
-@plural	Are you sure you want to delete {n} download from Mister Download Manager list of downloads?|Are you sure you want to delete these {n} downloads from Mister Download Manager list of downloads?	Bạn có chắc muốn xóa {n} mục tải xuống này khỏi danh sách tải xuống của Mister Download Manager không?
+@plural	Are you sure you want to delete {n} download from tnctr download manager list of downloads?|Are you sure you want to delete these {n} downloads from tnctr download manager list of downloads?	Bạn có chắc muốn xóa {n} mục tải xuống này khỏi danh sách tải xuống của tnctr download manager không?
 #. count in the Add torrent window
 #. while a magnet link's file list is fetched; {n} = peers that answered
 #. {n} = a number (keep the braces as they are)
@@ -226,7 +226,7 @@
 	a volume of it is missing	một tập của nó bị thiếu
 #. window title in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	About Mister Download Manager	Giới thiệu về Mister Download Manager
+	About tnctr download manager	Giới thiệu về tnctr download manager
 #. text in whereis.rs
 #. a download's server's round trip: {ms} a number of milliseconds, {reach} near, medium or far
 #, machine
@@ -280,7 +280,7 @@
 #. window title in extension.rs
 #. title of the window that offers the browser extension
 #, machine
-	Add Mister Download Manager to your browser	Thêm Mister Download Manager vào trình duyệt của bạn
+	Add tnctr download manager to your browser	Thêm tnctr download manager vào trình duyệt của bạn
 #. message or event log entry in the main window; text in the tray icon's menu
 #. link in the empty download list: opens Add URL
 #, machine
@@ -447,7 +447,7 @@
 	Always into a folder named after it	Luôn vào một thư mục được đặt tên theo nó
 #. checkbox in a dialog box
 #, machine
-	Always turn on Speed Limiter on Mister Download Manager startup	Luôn bật Bộ giới hạn tốc độ khi khởi động Mister Download Manager
+	Always turn on Speed Limiter on tnctr download manager startup	Luôn bật Bộ giới hạn tốc độ khi khởi động tnctr download manager
 #. text in regional.rs; text in the Scheduler window
 #. before noon, after a time of day (12-hour clock). Its pair is "PM": write both the same way (this language's own short marks, or both kept as AM and PM)
 #, machine
@@ -513,7 +513,7 @@
 #. text in a dialog box
 #. {name} = a file name (keep the braces as they are)
 #, machine
-	Are you sure you want to delete "{name}" from Mister Download Manager list of downloads?	Bạn có chắc chắn muốn xóa "{name}" khỏi danh sách tải xuống của Mister Download Manager không?
+	Are you sure you want to delete "{name}" from tnctr download manager list of downloads?	Bạn có chắc chắn muốn xóa "{name}" khỏi danh sách tải xuống của tnctr download manager không?
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -682,7 +682,7 @@
 	Browse...	Duyệt...
 #. text in extension.rs
 #, machine
-	Browser integration isn't set up on this computer, so no browser can reach Mister Download Manager yet.	Tích hợp trình duyệt chưa được thiết lập trên máy tính này, vì vậy chưa có trình duyệt nào có thể truy cập Mister Download Manager.
+	Browser integration isn't set up on this computer, so no browser can reach tnctr download manager yet.	Tích hợp trình duyệt chưa được thiết lập trên máy tính này, vì vậy chưa có trình duyệt nào có thể truy cập tnctr download manager.
 #. page title in the Options window
 #, machine
 	Browser/System Integration	Tích hợp Trình duyệt/Hệ thống
@@ -874,7 +874,7 @@
 	Choose a language	Chọn ngôn ngữ
 #. text in langpick.rs
 #, machine
-	Choose the language Mister Download Manager shows its windows in:	Chọn ngôn ngữ Mister Download Manager hiển thị cửa sổ:
+	Choose the language tnctr download manager shows its windows in:	Chọn ngôn ngữ tnctr download manager hiển thị cửa sổ:
 #. text in the Options window
 #. Options → Sites Logins → Cookies for video sites: the title of the window, and the tooltip of the button, that pick a browser profile's folder
 #, machine
@@ -1493,7 +1493,7 @@
 	Exit	Thoát
 #. checkbox in a download's progress window; checkbox in the Scheduler window
 #, machine
-	Exit Mister Download Manager when done	Thoát Mister Download Manager khi hoàn tất
+	Exit tnctr download manager when done	Thoát tnctr download manager khi hoàn tất
 #. text in the Checksum window
 #, machine
 	Expected checksum (MD5, SHA-1, SHA-256, SHA-512 or CRC32):	Tổng kiểm tra dự kiến (MD5, SHA-1, SHA-256, SHA-512 hoặc CRC32):
@@ -1924,7 +1924,7 @@
 	Hide web pages	Ẩn các trang web
 #. text in the Options window
 #, machine
-	Hold Alt while clicking a link to let the browser download it instead of Mister Download Manager.	Giữ phím Alt trong khi nhấp vào liên kết để trình duyệt tải xuống thay vì Mister Download Manager.
+	Hold Alt while clicking a link to let the browser download it instead of tnctr download manager.	Giữ phím Alt trong khi nhấp vào liên kết để trình duyệt tải xuống thay vì tnctr download manager.
 #. link (opens a web page) in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Home page	Trang chủ
@@ -1960,7 +1960,7 @@
 	Hungary	Hungary
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	I download with Mister Download Manager: fast, free, and it looks like the download manager you already know. {link}	Tôi tải xuống bằng Mister Download Manager: nhanh, miễn phí và trông giống như trình quản lý tải xuống mà bạn đã biết. {link}
+	I download with tnctr download manager: fast, free, and it looks like the download manager you already know. {link}	Tôi tải xuống bằng tnctr download manager: nhanh, miễn phí và trông giống như trình quản lý tải xuống mà bạn đã biết. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2231,7 +2231,7 @@
 	Latvia	Latvia
 #. text in the Options window
 #, machine
-	Launch Mister Download Manager on startup	Khởi chạy Mister Download Manager khi khởi động
+	Launch tnctr download manager on startup	Khởi chạy tnctr download manager khi khởi động
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2518,54 +2518,54 @@
 	Missing	Thiếu
 #. message or event log entry in the main window; window title in a dialog box; text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	Mister Download Manager	Mister Download Manager
+	tnctr download manager	tnctr download manager
 #. text in unix.rs
 #. Linux, at start, on the terminal and in a message box: a library the window needs isn't installed; {libraries} = its file names (libxkbcommon-x11.so.0…), left as they are
 #, machine
-	Mister Download Manager can't open its window: this system lacks {libraries}.	Mister Download Manager không thể mở cửa sổ: hệ thống này thiếu {libraries}.
+	tnctr download manager can't open its window: this system lacks {libraries}.	tnctr download manager không thể mở cửa sổ: hệ thống này thiếu {libraries}.
 #. text in crashui.rs
 #. crash report window heading: MDM crashed and is gone
 #, machine
-	Mister Download Manager closed unexpectedly	Mister Download Manager đã đóng đột ngột
+	tnctr download manager closed unexpectedly	tnctr download manager đã đóng đột ngột
 #. window title in the Options window
 #, machine
-	Mister Download Manager Configuration	Cấu hình Mister Download Manager
+	tnctr download manager Configuration	Cấu hình tnctr download manager
 #. text in crashui.rs
 #, machine
-	Mister Download Manager crash report	Báo cáo sự cố Mister Download Manager
+	tnctr download manager crash report	Báo cáo sự cố tnctr download manager
 #. text in crashui.rs
 #. crash report window heading: an internal error, MDM still running
 #, machine
-	Mister Download Manager hit an internal error	Mister Download Manager gặp lỗi nội bộ
+	tnctr download manager hit an internal error	tnctr download manager gặp lỗi nội bộ
 #. text in wake.rs
 #. why the computer isn't going to sleep, in the system's list of programs that keep it awake; {queue} = the queue's name
 #. {queue} = a queue name such as "Main queue" (keep the braces as they are)
 #, machine
-	Mister Download Manager is running the queue "{queue}"	Mister Download Manager đang chạy hàng đợi "{queue}"
+	tnctr download manager is running the queue "{queue}"	tnctr download manager đang chạy hàng đợi "{queue}"
 #. text in crashui.rs
 #. crash report window heading: MDM's window doesn't answer (frozen)
 #, machine
-	Mister Download Manager stopped responding	Mister Download Manager đã ngừng phản hồi
+	tnctr download manager stopped responding	tnctr download manager đã ngừng phản hồi
 #. text in crashui.rs
 #, machine
-	Mister Download Manager stopped responding for a while	Mister Download Manager đã ngừng phản hồi một lúc
+	tnctr download manager stopped responding for a while	tnctr download manager đã ngừng phản hồi một lúc
 #. text in the Options window
 #. \\n starts a new line: break lines where they fit the translation
 #, machine
-	Mister Download Manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.	Mister Download Manager ghi mọi kết nối trực tiếp vào tệp cuối cùng\n(một tệp thưa bên cạnh), vì vậy không cần thư mục tạm thời và không\ncần bước ghép nối.
+	tnctr download manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.	tnctr download manager ghi mọi kết nối trực tiếp vào tệp cuối cùng\n(một tệp thưa bên cạnh), vì vậy không cần thư mục tạm thời và không\ncần bước ghép nối.
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	Mister Download Manager {version} is available (released {date}).	Mister Download Manager {version} đã có sẵn (phát hành ngày {date}).
+	tnctr download manager {version} is available (released {date}).	tnctr download manager {version} đã có sẵn (phát hành ngày {date}).
 #. text in helpers.rs
 #. Video helpers: {version} = the version of MDM's own copy
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	Mister Download Manager's own copy, version {version}	Bản sao riêng của Mister Download Manager, phiên bản {version}
+	tnctr download manager's own copy, version {version}	Bản sao riêng của tnctr download manager, phiên bản {version}
 #. text in unix.rs
 #. Linux, at start, on the terminal: the libraries an X11 window needs aren't installed, so the window opens through Wayland instead, where menus can't be placed under what was clicked; {libraries} = their file names, left as they are
 #, machine
-	Mister Download Manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.	Cửa sổ X11 của Mister Download Manager cần {libraries}, nhưng hệ thống này không có các thư viện đó nên cửa sổ sẽ mở trên Wayland, nơi các menu có thể mở lệch khỏi tiêu đề của chúng.
+	tnctr download manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.	Cửa sổ X11 của tnctr download manager cần {libraries}, nhưng hệ thống này không có các thư viện đó nên cửa sổ sẽ mở trên Wayland, nơi các menu có thể mở lệch khỏi tiêu đề của chúng.
 #. text in the Scheduler window
 #. Monday, as short as a calendar's column head (two letters in English)
 #, machine
@@ -3070,10 +3070,10 @@
 	Open folder	Mở thư mục
 #. checkbox in the Add torrent window
 #, machine
-	Open magnet links and .torrent files with Mister Download Manager	Mở liên kết magnet và tệp .torrent bằng Mister Download Manager
+	Open magnet links and .torrent files with tnctr download manager	Mở liên kết magnet và tệp .torrent bằng tnctr download manager
 #. text in the tray icon's menu
 #, machine
-	Open Mister Download Manager	Mở Mister Download Manager
+	Open tnctr download manager	Mở tnctr download manager
 #. text in extension.rs
 #. step 2 of turning on the Safari extension; Cmd is the Command key
 #, machine
@@ -3144,7 +3144,7 @@
 #. text in remote.rs
 #. remote control page (on a phone): title of the pairing screen
 #, machine
-	Pair with Mister Download Manager	Ghép nối với Mister Download Manager
+	Pair with tnctr download manager	Ghép nối với tnctr download manager
 #. text in the Options window
 #. column title: when the device was paired
 #, machine
@@ -3630,7 +3630,7 @@
 	Select or unselect the download with the dotted outline	Chọn hoặc bỏ chọn bản tải xuống có đường viền chấm chấm
 #. group box title in the Options window
 #, machine
-	Select sounds for Mister Download Manager events	Chọn âm thanh cho các sự kiện của Mister Download Manager
+	Select sounds for tnctr download manager events	Chọn âm thanh cho các sự kiện của tnctr download manager
 #. what a keyboard shortcut does in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Select the downloads in the box	Chọn các bản tải xuống trong hộp
@@ -3955,7 +3955,7 @@
 	Start download at	Bắt đầu tải xuống lúc
 #. checkbox in the Scheduler window
 #, machine
-	Start download on Mister Download Manager startup	Bắt đầu tải xuống khi khởi động Mister Download Manager
+	Start download on tnctr download manager startup	Bắt đầu tải xuống khi khởi động tnctr download manager
 #. checkbox in the Options window
 #, machine
 	Start downloading immediately while displaying "Download File Info" dialog	Bắt đầu tải xuống ngay lập tức trong khi hiển thị hộp thoại "Thông tin tệp tải xuống"
@@ -3990,7 +3990,7 @@
 #, machine
 	Started with the computer, it starts minimized: no notification area shows its icon here	Khởi động cùng máy tính, ứng dụng sẽ khởi động ở chế độ thu nhỏ: vùng thông báo không hiển thị biểu tượng ở đây
 #. text in the Options window
-#. tooltip of "Launch Mister Download Manager on startup": started with the computer, MDM's window stays hidden, its icon in the notification area (system tray)
+#. tooltip of "Launch tnctr download manager on startup": started with the computer, MDM's window stays hidden, its icon in the notification area (system tray)
 #, machine
 	Started with the computer, it waits in the notification area	Khởi động cùng máy tính, nó sẽ đợi trong vùng thông báo
 #. message or event log entry in the main window
@@ -4211,7 +4211,7 @@
 #. text in extension.rs
 #. a check of Test browser integration: the browsers find MDM's helper program
 #, machine
-	The browsers can find Mister Download Manager	Các trình duyệt có thể tìm thấy Mister Download Manager
+	The browsers can find tnctr download manager	Các trình duyệt có thể tìm thấy tnctr download manager
 #. text in the Options window
 #. Options → Remote → Status: the settings were changed; they apply on OK
 #, machine
@@ -4235,7 +4235,7 @@
 #. text in the Scheduler window
 #. tooltip on the Scheduler's "Wake the computer to run this queue"
 #, machine
-	The computer is woken a minute before the start time and kept awake while the queue runs. Mister Download Manager has to be running (it can wait in the notification area).	Máy tính được đánh thức một phút trước thời gian bắt đầu và được giữ ở trạng thái hoạt động trong khi hàng đợi chạy. Mister Download Manager phải đang chạy (nó có thể đợi trong vùng thông báo).
+	The computer is woken a minute before the start time and kept awake while the queue runs. tnctr download manager has to be running (it can wait in the notification area).	Máy tính được đánh thức một phút trước thời gian bắt đầu và được giữ ở trạng thái hoạt động trong khi hàng đợi chạy. tnctr download manager phải đang chạy (nó có thể đợi trong vùng thông báo).
 #. text in the Scheduler window
 #. the Scheduler, under "Wake the computer to run this queue": when it will happen; {date} = e.g. 06/11/2026, {time} = e.g. 22:59:00
 #. {time} = a time of day (keep the braces as they are)
@@ -4406,7 +4406,7 @@
 #. text in a dialog box
 #. \\n starts a new line: break lines where they fit the translation
 #, machine
-	The selected download is not complete. Are you sure you want to delete\nit from Mister Download Manager list of downloads?	Bản tải xuống đã chọn chưa hoàn tất. Bạn có chắc chắn muốn xóa\nbản tải xuống này khỏi danh sách tải xuống của Mister Download Manager không?
+	The selected download is not complete. Are you sure you want to delete\nit from tnctr download manager list of downloads?	Bản tải xuống đã chọn chưa hoàn tất. Bạn có chắc chắn muốn xóa\nbản tải xuống này khỏi danh sách tải xuống của tnctr download manager không?
 #. text in errors.rs
 #, machine
 	the server answered {status}	máy chủ đã trả lời {status}
@@ -4765,7 +4765,7 @@
 #. text in extension.rs
 #. step 8 of turning on the Safari extension
 #, machine
-	Turn on "Mister Download Manager" and allow it on all websites.	Bật “Mister Download Manager” và cho phép trên tất cả trang web.
+	Turn on "tnctr download manager" and allow it on all websites.	Bật “tnctr download manager” và cho phép trên tất cả trang web.
 #. text in extension.rs
 #. step 4 of turning on the Safari extension; the quoted switch name is what Safari's settings show in this language: use Apple's own words for it, or keep the English name when unsure
 #, machine
@@ -5178,7 +5178,7 @@
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	You have the latest version of Mister Download Manager ({version}).	Bạn đang dùng phiên bản mới nhất của Mister Download Manager ({version}).
+	You have the latest version of tnctr download manager ({version}).	Bạn đang dùng phiên bản mới nhất của tnctr download manager ({version}).
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. Check for updates, under the new version's line, when MDM was installed by the Linux system's package manager (pacman, ...), which MDM can't update itself
 #. {version} = a version number (keep the braces as they are)
@@ -5557,15 +5557,15 @@ column	Time left	Thời gian còn lại
 #, machine
 column	Transfer rate	Tốc độ truyền
 #. text in the browser extension
-#. choice under Send downloads to: an MDM running on another computer of the network, such as a home server; keep the name Mister Download Manager as it is
+#. choice under Send downloads to: an MDM running on another computer of the network, such as a home server; keep the name tnctr download manager as it is
 #, machine
-extension	Another Mister Download Manager (a server)	Một Mister Download Manager khác (máy chủ)
+extension	Another tnctr download manager (a server)	Một tnctr download manager khác (máy chủ)
 #. text in the browser extension
 #. the name this browser gets in the other MDM's list of paired devices
 #, machine
 extension	Browser extension	Tiện ích mở rộng trình duyệt
 #. text in the browser extension
-#. menu command of the download button over a video: opens its settings in Mister Download Manager
+#. menu command of the download button over a video: opens its settings in tnctr download manager
 #. the trailing ... means it is still going on: keep it
 #, machine
 extension	Button settings...	Cài đặt nút...
@@ -5574,34 +5574,34 @@ extension	Button settings...	Cài đặt nút...
 #, machine
 extension	Can't tell which video this is: open its own page and try there	Không xác định được đây là video nào: hãy mở trang riêng của video và thử ở đó
 #. text in the browser extension
-#. the toolbar button's status when the browser reaches the app; keep the name Mister Download Manager as it is
+#. the toolbar button's status when the browser reaches the app; keep the name tnctr download manager as it is
 #, machine
-extension	Connected to Mister Download Manager	Đã kết nối với Mister Download Manager
+extension	Connected to tnctr download manager	Đã kết nối với tnctr download manager
 #. text in the browser extension
-#. the toolbar button's status when the browser reaches the app, with the app's version number; keep the name Mister Download Manager as it is
+#. the toolbar button's status when the browser reaches the app, with the app's version number; keep the name tnctr download manager as it is
 #. {version} = a version number (keep the braces as they are)
 #, machine
-extension	Connected to Mister Download Manager {version}	Đã kết nối với Mister Download Manager {version}
+extension	Connected to tnctr download manager {version}	Đã kết nối với tnctr download manager {version}
 #. text in the browser extension
 #. button beside a video, sound or stream in the toolbar button's popup: download it with the app; verb; short
 #, machine
 extension	Download	Tải xuống
 #. text in the browser extension
-#. command in the browser's right-click menu on a page: download the links of the whole page; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on a page: download the links of the whole page; keep the name tnctr download manager as it is
 #, machine
-extension	Download all links with Mister Download Manager	Tải xuống tất cả liên kết bằng Mister Download Manager
+extension	Download all links with tnctr download manager	Tải xuống tất cả liên kết bằng tnctr download manager
 #. text in the browser extension
-#. command in the browser's right-click menu on selected text: download the links in the selection; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on selected text: download the links in the selection; keep the name tnctr download manager as it is
 #, machine
-extension	Download selected links with Mister Download Manager	Tải xuống các liên kết đã chọn bằng Mister Download Manager
+extension	Download selected links with tnctr download manager	Tải xuống các liên kết đã chọn bằng tnctr download manager
 #. text in the browser extension
 #. the button over a video on a web page that downloads it; verb; short (it sits on the video)
 #, machine
 extension	Download video	Tải xuống video
 #. text in the browser extension
-#. command in the browser's right-click menu on a link, picture, video or sound; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on a link, picture, video or sound; keep the name tnctr download manager as it is
 #, machine
-extension	Download with Mister Download Manager	Tải xuống bằng Mister Download Manager
+extension	Download with tnctr download manager	Tải xuống bằng tnctr download manager
 #. text in the browser extension
 #. shown in the toolbar button's popup after the site was excluded
 #. {site} = a web site's name such as "example.com" (keep the braces as they are)
@@ -5620,9 +5620,9 @@ extension	Drag to move it along the video's edge	Kéo để di chuyển dọc th
 #, machine
 extension	Enter its https:// address.	Nhập địa chỉ https:// của nó.
 #. text in the browser extension
-#. the extension's description in the browser's list of extensions; keep the name Mister Download Manager as it is
+#. the extension's description in the browser's list of extensions; keep the name tnctr download manager as it is
 #, machine
-extension	Hands downloads from the browser to Mister Download Manager.	Chuyển các bản tải xuống từ trình duyệt sang Mister Download Manager.
+extension	Hands downloads from the browser to tnctr download manager.	Chuyển các bản tải xuống từ trình duyệt sang tnctr download manager.
 #. text in the browser extension
 #. link in the toolbar button's popup to the help page
 #, machine
@@ -5677,33 +5677,33 @@ extension	Live	Trực tiếp
 #, machine
 extension	Media on this page	Nội dung đa phương tiện trên trang này
 #. text in the browser extension
-#. the extension's name in the browser's list of extensions and on its toolbar button; keep the name Mister Download Manager as it is
+#. the extension's name in the browser's list of extensions and on its toolbar button; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager	Mister Download Manager
+extension	tnctr download manager	tnctr download manager
 #. text in the browser extension
-#. status when the app was started for a download but didn't answer in time; keep the name Mister Download Manager as it is
+#. status when the app was started for a download but didn't answer in time; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager didn't start in time	Mister Download Manager chưa khởi động kịp
+extension	tnctr download manager didn't start in time	tnctr download manager chưa khởi động kịp
 #. text in the browser extension
-#. status when the app refuses this copy of the extension (another copy is installed, or it came from another store); keep the name Mister Download Manager as it is
+#. status when the app refuses this copy of the extension (another copy is installed, or it came from another store); keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager doesn't accept this copy of the extension	Mister Download Manager không chấp nhận bản sao tiện ích mở rộng này
+extension	tnctr download manager doesn't accept this copy of the extension	tnctr download manager không chấp nhận bản sao tiện ích mở rộng này
 #. text in the browser extension
-#. shown briefly on the download button when the app could not be reached; keep the name Mister Download Manager as it is
+#. shown briefly on the download button when the app could not be reached; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager isn't installed or didn't start	Mister Download Manager chưa được cài đặt hoặc chưa khởi động
+extension	tnctr download manager isn't installed or didn't start	tnctr download manager chưa được cài đặt hoặc chưa khởi động
 #. text in the browser extension
-#. status when the browser can't find the app's connection; keep the name Mister Download Manager as it is
+#. status when the browser can't find the app's connection; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager isn't installed, or its browser integration isn't set up	Mister Download Manager chưa được cài đặt hoặc tích hợp trình duyệt chưa được thiết lập
+extension	tnctr download manager isn't installed, or its browser integration isn't set up	tnctr download manager chưa được cài đặt hoặc tích hợp trình duyệt chưa được thiết lập
 #. text in the browser extension
-#. tooltip of the switch Send downloads through this browser's proxy or VPN extension; keep the name Mister Download Manager as it is
+#. tooltip of the switch Send downloads through this browser's proxy or VPN extension; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager then downloads through the same proxy as this browser. The browser asks you once to allow it; turning this off takes that back.	Mister Download Manager sau đó tải xuống thông qua cùng một proxy với trình duyệt này. Trình duyệt sẽ hỏi bạn một lần để cho phép; tắt tùy chọn này sẽ thu hồi quyền đó.
+extension	tnctr download manager then downloads through the same proxy as this browser. The browser asks you once to allow it; turning this off takes that back.	tnctr download manager sau đó tải xuống thông qua cùng một proxy với trình duyệt này. Trình duyệt sẽ hỏi bạn một lần để cho phép; tắt tùy chọn này sẽ thu hồi quyền đó.
 #. text in the browser extension
-#. tooltip of the switch Send downloads through this browser's proxy or VPN extension in Chrome, Edge and the other Chromium browsers (they ask for no permission at the switch); keep the name Mister Download Manager as it is
+#. tooltip of the switch Send downloads through this browser's proxy or VPN extension in Chrome, Edge and the other Chromium browsers (they ask for no permission at the switch); keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager then downloads through the same proxy as this browser. While this is off, the extension doesn't read the browser's proxy.	Mister Download Manager sau đó tải xuống qua cùng một proxy với trình duyệt này. Khi tắt tùy chọn này, tiện ích sẽ không đọc proxy của trình duyệt.
+extension	tnctr download manager then downloads through the same proxy as this browser. While this is off, the extension doesn't read the browser's proxy.	tnctr download manager sau đó tải xuống qua cùng một proxy với trình duyệt này. Khi tắt tùy chọn này, tiện ích sẽ không đọc proxy của trình duyệt.
 #. text in the browser extension
 #. the small arrow next to the Download video button that opens its menu (read aloud by screen readers)
 #, machine
@@ -5735,9 +5735,9 @@ extension	Open it	Mở
 #, machine
 extension	Open its address once and accept its certificate, then enter a code from its Options, Remote, Pair a device (or misterdownloadmanager-cli pair).	Mở địa chỉ của nó một lần và chấp nhận chứng chỉ của nó, sau đó nhập mã từ Tùy chọn, Từ xa, Ghép nối thiết bị (hoặc misterdownloadmanager-cli pair).
 #. text in the browser extension
-#. button in the toolbar button's popup; keep the name Mister Download Manager as it is
+#. button in the toolbar button's popup; keep the name tnctr download manager as it is
 #, machine
-extension	Open Mister Download Manager	Mở Mister Download Manager
+extension	Open tnctr download manager	Mở tnctr download manager
 #. text in the browser extension
 #. button in the toolbar button's popup: open the app's Options
 #. the trailing ... means it is still going on: keep it
@@ -5772,13 +5772,13 @@ extension	Send downloads through this browser's proxy or VPN extension	Gửi cá
 #, machine
 extension	Send downloads to	Gửi tải xuống đến
 #. text in the browser extension
-#. shown briefly on the download button after it was clicked; keep the name Mister Download Manager as it is
+#. shown briefly on the download button after it was clicked; keep the name tnctr download manager as it is
 #, machine
-extension	Sent to Mister Download Manager	Đã gửi đến Mister Download Manager
+extension	Sent to tnctr download manager	Đã gửi đến tnctr download manager
 #. text in the browser extension
 #. link at the foot of the toolbar button's popup to the creator's GitHub Sponsors page (MDM is free; this is an optional donation)
 #, machine
-extension	Support MDM	Hỗ trợ MDM
+extension	Support tnctr download manager	Hỗ trợ tnctr download manager
 #. text in the browser extension
 #. check box in the toolbar button's popup: on, downloads go to the app; off, the browser keeps them
 #, machine
@@ -5788,9 +5788,9 @@ extension	Take downloads from this browser	Nhận tải xuống từ trình duy�
 #, machine
 extension	The Chrome Web Store's rules keep this copy of the add-on away from this site's videos. Help says what you can do.	Quy tắc của Cửa hàng Chrome trực tuyến giữ bản sao tiện ích này tránh xa video của trang web này. Mục Trợ giúp cho biết bạn có thể làm gì.
 #. text in the browser extension
-#. status when the connection to the app broke off (often security software blocking it); keep the name Mister Download Manager as it is
+#. status when the connection to the app broke off (often security software blocking it); keep the name tnctr download manager as it is
 #, machine
-extension	The connection to Mister Download Manager failed	Kết nối với Mister Download Manager không thành công
+extension	The connection to tnctr download manager failed	Kết nối với tnctr download manager không thành công
 #. text in the browser extension
 #. shown briefly on the download button over a video when the app's settings keep the button off on this web site
 #, machine
@@ -5808,7 +5808,7 @@ extension	The last download was left to the browser.	Bản tải xuống cuối 
 #, machine
 extension	This browser isn't ticked in Options → General.	Trình duyệt này không được chọn trong Tùy chọn → Chung.
 #. text in the browser extension
-#. choice under Send downloads to: the Mister Download Manager on this computer
+#. choice under Send downloads to: the tnctr download manager on this computer
 #, machine
 extension	This computer	Máy tính này
 #. text in the browser extension
@@ -5820,9 +5820,9 @@ extension	This download's details were too large to hand over	Thông tin của l
 #, machine
 extension	This page's player streams its video in pieces, so there's no file to list. Point at the video and use its Download video button.	Trình phát của trang này truyền video theo từng phần nên không có tệp nào để liệt kê. Trỏ vào video và dùng nút Tải xuống video của nó.
 #. text in the browser extension
-#. status when the app is older than the extension; keep the name Mister Download Manager as it is
+#. status when the app is older than the extension; keep the name tnctr download manager as it is
 #, machine
-extension	Update Mister Download Manager to use everything this extension offers	Cập nhật Mister Download Manager để sử dụng mọi tính năng mà tiện ích mở rộng này cung cấp
+extension	Update tnctr download manager to use everything this extension offers	Cập nhật tnctr download manager để sử dụng mọi tính năng mà tiện ích mở rộng này cung cấp
 #. text in the browser extension
 #. why a download stayed with the browser: the app's setting 'Use advanced browser integration' is off; keep the setting's name as the app shows it
 #, machine
@@ -5938,7 +5938,7 @@ key	Up / Down	Mũi tên lên / Mũi tên xuống
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
-menu	&About Mister Download Manager	&Giới thiệu Mister Download Manager
+menu	&About tnctr download manager	&Giới thiệu tnctr download manager
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
@@ -6290,7 +6290,7 @@ menu	Metro	Metro
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
-menu	Mister Download Manager &Home Page	Trang chủ Mister Download Manager (&H)
+menu	tnctr download manager &Home Page	Trang chủ tnctr download manager (&H)
 #. menu command in the main window
 #, machine
 menu	Move/Rename (Ctrl-M)	Di chuyển/Đổi tên (Ctrl-M)
@@ -6403,7 +6403,7 @@ menu	Select &all	Chọn &tất cả
 menu	Show &drop target	Hiển thị mục tiêu &kéo thả
 #. menu command in the main window
 #, machine
-menu	Show Mister Download Manager	Hiển thị Mister Download Manager
+menu	Show tnctr download manager	Hiển thị tnctr download manager
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine

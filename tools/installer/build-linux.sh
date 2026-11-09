@@ -64,7 +64,7 @@ EOF
 cat > "$tree/usr/share/applications/misterdownloadmanager.desktop" <<EOF
 [Desktop Entry]
 Type=Application
-Name=Mister Download Manager
+Name=tnctr download manager
 Comment=Download manager
 Exec=misterdownloadmanager %U
 Icon=misterdownloadmanager

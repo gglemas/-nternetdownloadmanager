@@ -1,4 +1,4 @@
-# Mister Download Manager in Filipino (Filipino): tools/i18n/translate.py
+# tnctr download manager in Filipino (Filipino): tools/i18n/translate.py
 # writes the rows marked '#, machine'; a native speaker deletes that line after checking.
 # context	source	translation (craft-i18n format, rows as in en.tsv)
 @id	language.name	Filipino
@@ -11,7 +11,7 @@
 #. never shown for a single download
 #. {n} = a number (keep the braces as they are)
 #, machine
-@plural	Are you sure you want to delete {n} download from Mister Download Manager list of downloads?|Are you sure you want to delete these {n} downloads from Mister Download Manager list of downloads?	Sigurado ka bang gusto mong tanggalin ang {n} download mula sa listahan ng mga download ng Mister Download Manager?|Sigurado ka bang gusto mong tanggalin ang {n} (na) download na ito mula sa listahan ng mga download ng Mister Download Manager?
+@plural	Are you sure you want to delete {n} download from tnctr download manager list of downloads?|Are you sure you want to delete these {n} downloads from tnctr download manager list of downloads?	Sigurado ka bang gusto mong tanggalin ang {n} download mula sa listahan ng mga download ng tnctr download manager?|Sigurado ka bang gusto mong tanggalin ang {n} (na) download na ito mula sa listahan ng mga download ng tnctr download manager?
 #. count in the Add torrent window
 #. while a magnet link's file list is fetched; {n} = peers that answered
 #. {n} = a number (keep the braces as they are)
@@ -226,7 +226,7 @@
 	a volume of it is missing	may nawawalang volume nito
 #. window title in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	About Mister Download Manager	Tungkol sa Mister Download Manager
+	About tnctr download manager	Tungkol sa tnctr download manager
 #. text in whereis.rs
 #. a download's server's round trip: {ms} a number of milliseconds, {reach} near, medium or far
 #, machine
@@ -280,7 +280,7 @@
 #. window title in extension.rs
 #. title of the window that offers the browser extension
 #, machine
-	Add Mister Download Manager to your browser	Idagdag ang Mister Download Manager sa iyong browser
+	Add tnctr download manager to your browser	Idagdag ang tnctr download manager sa iyong browser
 #. message or event log entry in the main window; text in the tray icon's menu
 #. link in the empty download list: opens Add URL
 #, machine
@@ -447,7 +447,7 @@
 	Always into a folder named after it	Palaging sa isang folder na ipinangalan dito
 #. checkbox in a dialog box
 #, machine
-	Always turn on Speed Limiter on Mister Download Manager startup	Palaging i-on ang Speed Limiter sa pagsisimula ng Mister Download Manager
+	Always turn on Speed Limiter on tnctr download manager startup	Palaging i-on ang Speed Limiter sa pagsisimula ng tnctr download manager
 #. text in regional.rs; text in the Scheduler window
 #. before noon, after a time of day (12-hour clock). Its pair is "PM": write both the same way (this language's own short marks, or both kept as AM and PM)
 #, machine
@@ -513,7 +513,7 @@
 #. text in a dialog box
 #. {name} = a file name (keep the braces as they are)
 #, machine
-	Are you sure you want to delete "{name}" from Mister Download Manager list of downloads?	Sigurado ka bang gusto mong tanggalin ang "{name}" mula sa listahan ng mga download ng Mister Download Manager?
+	Are you sure you want to delete "{name}" from tnctr download manager list of downloads?	Sigurado ka bang gusto mong tanggalin ang "{name}" mula sa listahan ng mga download ng tnctr download manager?
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -682,7 +682,7 @@
 	Browse...	I-browse...
 #. text in extension.rs
 #, machine
-	Browser integration isn't set up on this computer, so no browser can reach Mister Download Manager yet.	Hindi pa naka-set up ang integrasyon ng browser sa computer na ito, kaya wala pang browser ang makakaabot sa Mister Download Manager.
+	Browser integration isn't set up on this computer, so no browser can reach tnctr download manager yet.	Hindi pa naka-set up ang integrasyon ng browser sa computer na ito, kaya wala pang browser ang makakaabot sa tnctr download manager.
 #. page title in the Options window
 #, machine
 	Browser/System Integration	Pagsasama ng Browser/System
@@ -874,7 +874,7 @@
 	Choose a language	Pumili ng wika
 #. text in langpick.rs
 #, machine
-	Choose the language Mister Download Manager shows its windows in:	Piliin ang wikang ipinapakita ng Mister Download Manager sa mga window nito:
+	Choose the language tnctr download manager shows its windows in:	Piliin ang wikang ipinapakita ng tnctr download manager sa mga window nito:
 #. text in the Options window
 #. Options → Sites Logins → Cookies for video sites: the title of the window, and the tooltip of the button, that pick a browser profile's folder
 #, machine
@@ -1493,7 +1493,7 @@
 	Exit	Lumabas
 #. checkbox in a download's progress window; checkbox in the Scheduler window
 #, machine
-	Exit Mister Download Manager when done	Lumabas sa Mister Download Manager kapag tapos na
+	Exit tnctr download manager when done	Lumabas sa tnctr download manager kapag tapos na
 #. text in the Checksum window
 #, machine
 	Expected checksum (MD5, SHA-1, SHA-256, SHA-512 or CRC32):	Inaasahang checksum (MD5, SHA-1, SHA-256, SHA-512 o CRC32):
@@ -1924,7 +1924,7 @@
 	Hide web pages	Itago ang mga web page
 #. text in the Options window
 #, machine
-	Hold Alt while clicking a link to let the browser download it instead of Mister Download Manager.	Pindutin ang Alt habang nagki-click ng link para hayaang i-download ito ng browser sa halip na Mister Download Manager.
+	Hold Alt while clicking a link to let the browser download it instead of tnctr download manager.	Pindutin ang Alt habang nagki-click ng link para hayaang i-download ito ng browser sa halip na tnctr download manager.
 #. link (opens a web page) in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Home page	Home page
@@ -1960,7 +1960,7 @@
 	Hungary	Hungary
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	I download with Mister Download Manager: fast, free, and it looks like the download manager you already know. {link}	Nagda-download ako gamit ang Mister Download Manager: mabilis, libre, at mukha itong download manager na alam mo na. {link}
+	I download with tnctr download manager: fast, free, and it looks like the download manager you already know. {link}	Nagda-download ako gamit ang tnctr download manager: mabilis, libre, at mukha itong download manager na alam mo na. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2231,7 +2231,7 @@
 	Latvia	Latvia
 #. text in the Options window
 #, machine
-	Launch Mister Download Manager on startup	Ilunsad ang Mister Download Manager sa startup
+	Launch tnctr download manager on startup	Ilunsad ang tnctr download manager sa startup
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2518,54 +2518,54 @@
 	Missing	Nawawala
 #. message or event log entry in the main window; window title in a dialog box; text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	Mister Download Manager	Mister Download Manager
+	tnctr download manager	tnctr download manager
 #. text in unix.rs
 #. Linux, at start, on the terminal and in a message box: a library the window needs isn't installed; {libraries} = its file names (libxkbcommon-x11.so.0…), left as they are
 #, machine
-	Mister Download Manager can't open its window: this system lacks {libraries}.	Hindi mabuksan ng Mister Download Manager ang window nito: kulang ang system na ito ng {libraries}.
+	tnctr download manager can't open its window: this system lacks {libraries}.	Hindi mabuksan ng tnctr download manager ang window nito: kulang ang system na ito ng {libraries}.
 #. text in crashui.rs
 #. crash report window heading: MDM crashed and is gone
 #, machine
-	Mister Download Manager closed unexpectedly	Hindi inaasahang nagsara ang Mister Download Manager
+	tnctr download manager closed unexpectedly	Hindi inaasahang nagsara ang tnctr download manager
 #. window title in the Options window
 #, machine
-	Mister Download Manager Configuration	Configuration ng Mister Download Manager
+	tnctr download manager Configuration	Configuration ng tnctr download manager
 #. text in crashui.rs
 #, machine
-	Mister Download Manager crash report	Ulat ng pag-crash ng Mister Download Manager
+	tnctr download manager crash report	Ulat ng pag-crash ng tnctr download manager
 #. text in crashui.rs
 #. crash report window heading: an internal error, MDM still running
 #, machine
-	Mister Download Manager hit an internal error	Nakaranas ang Mister Download Manager ng panloob na error
+	tnctr download manager hit an internal error	Nakaranas ang tnctr download manager ng panloob na error
 #. text in wake.rs
 #. why the computer isn't going to sleep, in the system's list of programs that keep it awake; {queue} = the queue's name
 #. {queue} = a queue name such as "Main queue" (keep the braces as they are)
 #, machine
-	Mister Download Manager is running the queue "{queue}"	Pinapatakbo ng Mister Download Manager ang queue na "{queue}"
+	tnctr download manager is running the queue "{queue}"	Pinapatakbo ng tnctr download manager ang queue na "{queue}"
 #. text in crashui.rs
 #. crash report window heading: MDM's window doesn't answer (frozen)
 #, machine
-	Mister Download Manager stopped responding	Hindi tumugon ang Mister Download Manager
+	tnctr download manager stopped responding	Hindi tumugon ang tnctr download manager
 #. text in crashui.rs
 #, machine
-	Mister Download Manager stopped responding for a while	Hindi tumugon ang Mister Download Manager nang ilang sandali
+	tnctr download manager stopped responding for a while	Hindi tumugon ang tnctr download manager nang ilang sandali
 #. text in the Options window
 #. \\n starts a new line: break lines where they fit the translation
 #, machine
-	Mister Download Manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.	Direktang isinusulat ng Mister Download Manager ang bawat koneksyon sa final\nfile (isang sparse part file sa tabi nito), kaya hindi kailangan ng temporary directory at\nwalang assembling step.
+	tnctr download manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.	Direktang isinusulat ng tnctr download manager ang bawat koneksyon sa final\nfile (isang sparse part file sa tabi nito), kaya hindi kailangan ng temporary directory at\nwalang assembling step.
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	Mister Download Manager {version} is available (released {date}).	Available ang Mister Download Manager {version} (inilabas noong {date}).
+	tnctr download manager {version} is available (released {date}).	Available ang tnctr download manager {version} (inilabas noong {date}).
 #. text in helpers.rs
 #. Video helpers: {version} = the version of MDM's own copy
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	Mister Download Manager's own copy, version {version}	Sariling kopya ng Mister Download Manager, bersyon {version}
+	tnctr download manager's own copy, version {version}	Sariling kopya ng tnctr download manager, bersyon {version}
 #. text in unix.rs
 #. Linux, at start, on the terminal: the libraries an X11 window needs aren't installed, so the window opens through Wayland instead, where menus can't be placed under what was clicked; {libraries} = their file names, left as they are
 #, machine
-	Mister Download Manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.	Kailangan ng X11 window ng Mister Download Manager ang {libraries}, na kulang sa system na ito: bubuksan ito sa Wayland, kung saan maaaring lumabas ang mga menu nito malayo sa mga pamagat nito.
+	tnctr download manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.	Kailangan ng X11 window ng tnctr download manager ang {libraries}, na kulang sa system na ito: bubuksan ito sa Wayland, kung saan maaaring lumabas ang mga menu nito malayo sa mga pamagat nito.
 #. text in the Scheduler window
 #. Monday, as short as a calendar's column head (two letters in English)
 #, machine
@@ -3070,10 +3070,10 @@
 	Open folder	Buksan ang folder
 #. checkbox in the Add torrent window
 #, machine
-	Open magnet links and .torrent files with Mister Download Manager	Buksan ang mga magnet link at .torrent file gamit ang Mister Download Manager
+	Open magnet links and .torrent files with tnctr download manager	Buksan ang mga magnet link at .torrent file gamit ang tnctr download manager
 #. text in the tray icon's menu
 #, machine
-	Open Mister Download Manager	Buksan ang Mister Download Manager
+	Open tnctr download manager	Buksan ang tnctr download manager
 #. text in extension.rs
 #. step 2 of turning on the Safari extension; Cmd is the Command key
 #, machine
@@ -3144,7 +3144,7 @@
 #. text in remote.rs
 #. remote control page (on a phone): title of the pairing screen
 #, machine
-	Pair with Mister Download Manager	Ipares sa Mister Download Manager
+	Pair with tnctr download manager	Ipares sa tnctr download manager
 #. text in the Options window
 #. column title: when the device was paired
 #, machine
@@ -3630,7 +3630,7 @@
 	Select or unselect the download with the dotted outline	Piliin o i-unselect ang download na may tuldok na balangkas
 #. group box title in the Options window
 #, machine
-	Select sounds for Mister Download Manager events	Pumili ng mga tunog para sa mga event ng Mister Download Manager
+	Select sounds for tnctr download manager events	Pumili ng mga tunog para sa mga event ng tnctr download manager
 #. what a keyboard shortcut does in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Select the downloads in the box	Piliin ang mga download sa kahon
@@ -3955,7 +3955,7 @@
 	Start download at	Simulan ang download sa
 #. checkbox in the Scheduler window
 #, machine
-	Start download on Mister Download Manager startup	Simulan ang download sa pagsisimula ng Mister Download Manager
+	Start download on tnctr download manager startup	Simulan ang download sa pagsisimula ng tnctr download manager
 #. checkbox in the Options window
 #, machine
 	Start downloading immediately while displaying "Download File Info" dialog	Simulan agad ang pag-download habang ipinapakita ang dialog na "Impormasyon ng File ng Download"
@@ -3990,7 +3990,7 @@
 #, machine
 	Started with the computer, it starts minimized: no notification area shows its icon here	Sinimulan kasama ng computer, nagsisimula itong naka-minimize: walang lugar ng notification na nagpapakita ng icon nito rito
 #. text in the Options window
-#. tooltip of "Launch Mister Download Manager on startup": started with the computer, MDM's window stays hidden, its icon in the notification area (system tray)
+#. tooltip of "Launch tnctr download manager on startup": started with the computer, MDM's window stays hidden, its icon in the notification area (system tray)
 #, machine
 	Started with the computer, it waits in the notification area	Sinimulan kasama ng computer, naghihintay ito sa lugar ng notification
 #. message or event log entry in the main window
@@ -4211,7 +4211,7 @@
 #. text in extension.rs
 #. a check of Test browser integration: the browsers find MDM's helper program
 #, machine
-	The browsers can find Mister Download Manager	Mahahanap ng mga browser ang Mister Download Manager
+	The browsers can find tnctr download manager	Mahahanap ng mga browser ang tnctr download manager
 #. text in the Options window
 #. Options → Remote → Status: the settings were changed; they apply on OK
 #, machine
@@ -4235,7 +4235,7 @@
 #. text in the Scheduler window
 #. tooltip on the Scheduler's "Wake the computer to run this queue"
 #, machine
-	The computer is woken a minute before the start time and kept awake while the queue runs. Mister Download Manager has to be running (it can wait in the notification area).	Gagawin ang computer isang minuto bago ang oras ng pagsisimula at pananatilihing gising habang tumatakbo ang queue. Kailangang tumatakbo ang Mister Download Manager (maaari itong maghintay sa notification area).
+	The computer is woken a minute before the start time and kept awake while the queue runs. tnctr download manager has to be running (it can wait in the notification area).	Gagawin ang computer isang minuto bago ang oras ng pagsisimula at pananatilihing gising habang tumatakbo ang queue. Kailangang tumatakbo ang tnctr download manager (maaari itong maghintay sa notification area).
 #. text in the Scheduler window
 #. the Scheduler, under "Wake the computer to run this queue": when it will happen; {date} = e.g. 06/11/2026, {time} = e.g. 22:59:00
 #. {time} = a time of day (keep the braces as they are)
@@ -4406,7 +4406,7 @@
 #. text in a dialog box
 #. \\n starts a new line: break lines where they fit the translation
 #, machine
-	The selected download is not complete. Are you sure you want to delete\nit from Mister Download Manager list of downloads?	Hindi kumpleto ang napiling download. Sigurado ka bang gusto mong tanggalin\nito mula sa listahan ng mga download ng Mister Download Manager?
+	The selected download is not complete. Are you sure you want to delete\nit from tnctr download manager list of downloads?	Hindi kumpleto ang napiling download. Sigurado ka bang gusto mong tanggalin\nito mula sa listahan ng mga download ng tnctr download manager?
 #. text in errors.rs
 #, machine
 	the server answered {status}	sumagot ang server ng {status}
@@ -4765,7 +4765,7 @@
 #. text in extension.rs
 #. step 8 of turning on the Safari extension
 #, machine
-	Turn on "Mister Download Manager" and allow it on all websites.	I-on ang "Mister Download Manager" at payagan ito sa lahat ng website.
+	Turn on "tnctr download manager" and allow it on all websites.	I-on ang "tnctr download manager" at payagan ito sa lahat ng website.
 #. text in extension.rs
 #. step 4 of turning on the Safari extension; the quoted switch name is what Safari's settings show in this language: use Apple's own words for it, or keep the English name when unsure
 #, machine
@@ -5178,7 +5178,7 @@
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	You have the latest version of Mister Download Manager ({version}).	Mayroon ka ng pinakabagong bersyon ng Mister Download Manager ({version}).
+	You have the latest version of tnctr download manager ({version}).	Mayroon ka ng pinakabagong bersyon ng tnctr download manager ({version}).
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. Check for updates, under the new version's line, when MDM was installed by the Linux system's package manager (pacman, ...), which MDM can't update itself
 #. {version} = a version number (keep the braces as they are)
@@ -5557,15 +5557,15 @@ column	Time left	Natitirang oras
 #, machine
 column	Transfer rate	Rate ng paglipat
 #. text in the browser extension
-#. choice under Send downloads to: an MDM running on another computer of the network, such as a home server; keep the name Mister Download Manager as it is
+#. choice under Send downloads to: an MDM running on another computer of the network, such as a home server; keep the name tnctr download manager as it is
 #, machine
-extension	Another Mister Download Manager (a server)	Isa pang Mister Download Manager (isang server)
+extension	Another tnctr download manager (a server)	Isa pang tnctr download manager (isang server)
 #. text in the browser extension
 #. the name this browser gets in the other MDM's list of paired devices
 #, machine
 extension	Browser extension	Extension ng browser
 #. text in the browser extension
-#. menu command of the download button over a video: opens its settings in Mister Download Manager
+#. menu command of the download button over a video: opens its settings in tnctr download manager
 #. the trailing ... means it is still going on: keep it
 #, machine
 extension	Button settings...	Mga setting ng button...
@@ -5574,34 +5574,34 @@ extension	Button settings...	Mga setting ng button...
 #, machine
 extension	Can't tell which video this is: open its own page and try there	Hindi matukoy kung aling video ito: buksan ang sarili nitong page at subukan doon
 #. text in the browser extension
-#. the toolbar button's status when the browser reaches the app; keep the name Mister Download Manager as it is
+#. the toolbar button's status when the browser reaches the app; keep the name tnctr download manager as it is
 #, machine
-extension	Connected to Mister Download Manager	Nakakonekta sa Mister Download Manager
+extension	Connected to tnctr download manager	Nakakonekta sa tnctr download manager
 #. text in the browser extension
-#. the toolbar button's status when the browser reaches the app, with the app's version number; keep the name Mister Download Manager as it is
+#. the toolbar button's status when the browser reaches the app, with the app's version number; keep the name tnctr download manager as it is
 #. {version} = a version number (keep the braces as they are)
 #, machine
-extension	Connected to Mister Download Manager {version}	Nakakonekta sa Mister Download Manager {version}
+extension	Connected to tnctr download manager {version}	Nakakonekta sa tnctr download manager {version}
 #. text in the browser extension
 #. button beside a video, sound or stream in the toolbar button's popup: download it with the app; verb; short
 #, machine
 extension	Download	I-download
 #. text in the browser extension
-#. command in the browser's right-click menu on a page: download the links of the whole page; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on a page: download the links of the whole page; keep the name tnctr download manager as it is
 #, machine
-extension	Download all links with Mister Download Manager	I-download ang lahat ng link gamit ang Mister Download Manager
+extension	Download all links with tnctr download manager	I-download ang lahat ng link gamit ang tnctr download manager
 #. text in the browser extension
-#. command in the browser's right-click menu on selected text: download the links in the selection; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on selected text: download the links in the selection; keep the name tnctr download manager as it is
 #, machine
-extension	Download selected links with Mister Download Manager	I-download ang mga napiling link gamit ang Mister Download Manager
+extension	Download selected links with tnctr download manager	I-download ang mga napiling link gamit ang tnctr download manager
 #. text in the browser extension
 #. the button over a video on a web page that downloads it; verb; short (it sits on the video)
 #, machine
 extension	Download video	I-download ang video
 #. text in the browser extension
-#. command in the browser's right-click menu on a link, picture, video or sound; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on a link, picture, video or sound; keep the name tnctr download manager as it is
 #, machine
-extension	Download with Mister Download Manager	I-download gamit ang Mister Download Manager
+extension	Download with tnctr download manager	I-download gamit ang tnctr download manager
 #. text in the browser extension
 #. shown in the toolbar button's popup after the site was excluded
 #. {site} = a web site's name such as "example.com" (keep the braces as they are)
@@ -5620,9 +5620,9 @@ extension	Drag to move it along the video's edge	I-drag para ilipat ito sa gilid
 #, machine
 extension	Enter its https:// address.	Ilagay ang https:// address nito.
 #. text in the browser extension
-#. the extension's description in the browser's list of extensions; keep the name Mister Download Manager as it is
+#. the extension's description in the browser's list of extensions; keep the name tnctr download manager as it is
 #, machine
-extension	Hands downloads from the browser to Mister Download Manager.	Ibinibigay ang mga download mula sa browser sa Mister Download Manager.
+extension	Hands downloads from the browser to tnctr download manager.	Ibinibigay ang mga download mula sa browser sa tnctr download manager.
 #. text in the browser extension
 #. link in the toolbar button's popup to the help page
 #, machine
@@ -5677,33 +5677,33 @@ extension	Live	Live
 #, machine
 extension	Media on this page	Media sa pahinang ito
 #. text in the browser extension
-#. the extension's name in the browser's list of extensions and on its toolbar button; keep the name Mister Download Manager as it is
+#. the extension's name in the browser's list of extensions and on its toolbar button; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager	Mister Download Manager
+extension	tnctr download manager	tnctr download manager
 #. text in the browser extension
-#. status when the app was started for a download but didn't answer in time; keep the name Mister Download Manager as it is
+#. status when the app was started for a download but didn't answer in time; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager didn't start in time	Hindi nagsimula sa oras ang Mister Download Manager
+extension	tnctr download manager didn't start in time	Hindi nagsimula sa oras ang tnctr download manager
 #. text in the browser extension
-#. status when the app refuses this copy of the extension (another copy is installed, or it came from another store); keep the name Mister Download Manager as it is
+#. status when the app refuses this copy of the extension (another copy is installed, or it came from another store); keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager doesn't accept this copy of the extension	Hindi tinatanggap ng Mister Download Manager ang kopyang ito ng extension
+extension	tnctr download manager doesn't accept this copy of the extension	Hindi tinatanggap ng tnctr download manager ang kopyang ito ng extension
 #. text in the browser extension
-#. shown briefly on the download button when the app could not be reached; keep the name Mister Download Manager as it is
+#. shown briefly on the download button when the app could not be reached; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager isn't installed or didn't start	Hindi naka-install ang Mister Download Manager o hindi nagsimula
+extension	tnctr download manager isn't installed or didn't start	Hindi naka-install ang tnctr download manager o hindi nagsimula
 #. text in the browser extension
-#. status when the browser can't find the app's connection; keep the name Mister Download Manager as it is
+#. status when the browser can't find the app's connection; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager isn't installed, or its browser integration isn't set up	Hindi naka-install ang Mister Download Manager, o hindi naka-set up ang integrasyon nito sa browser
+extension	tnctr download manager isn't installed, or its browser integration isn't set up	Hindi naka-install ang tnctr download manager, o hindi naka-set up ang integrasyon nito sa browser
 #. text in the browser extension
-#. tooltip of the switch Send downloads through this browser's proxy or VPN extension; keep the name Mister Download Manager as it is
+#. tooltip of the switch Send downloads through this browser's proxy or VPN extension; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager then downloads through the same proxy as this browser. The browser asks you once to allow it; turning this off takes that back.	Pagkatapos ay magda-download ang Mister Download Manager sa pamamagitan ng parehong proxy gaya ng browser na ito. Isang beses kang tatanungin ng browser na payagan ito; ang pag-off nito ay babawiin iyon.
+extension	tnctr download manager then downloads through the same proxy as this browser. The browser asks you once to allow it; turning this off takes that back.	Pagkatapos ay magda-download ang tnctr download manager sa pamamagitan ng parehong proxy gaya ng browser na ito. Isang beses kang tatanungin ng browser na payagan ito; ang pag-off nito ay babawiin iyon.
 #. text in the browser extension
-#. tooltip of the switch Send downloads through this browser's proxy or VPN extension in Chrome, Edge and the other Chromium browsers (they ask for no permission at the switch); keep the name Mister Download Manager as it is
+#. tooltip of the switch Send downloads through this browser's proxy or VPN extension in Chrome, Edge and the other Chromium browsers (they ask for no permission at the switch); keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager then downloads through the same proxy as this browser. While this is off, the extension doesn't read the browser's proxy.	Pagkatapos ay magda-download ang Mister Download Manager sa pamamagitan ng parehong proxy gaya ng browser na ito. Habang naka-off ito, hindi binabasa ng extension ang proxy ng browser.
+extension	tnctr download manager then downloads through the same proxy as this browser. While this is off, the extension doesn't read the browser's proxy.	Pagkatapos ay magda-download ang tnctr download manager sa pamamagitan ng parehong proxy gaya ng browser na ito. Habang naka-off ito, hindi binabasa ng extension ang proxy ng browser.
 #. text in the browser extension
 #. the small arrow next to the Download video button that opens its menu (read aloud by screen readers)
 #, machine
@@ -5735,9 +5735,9 @@ extension	Open it	Buksan ito
 #, machine
 extension	Open its address once and accept its certificate, then enter a code from its Options, Remote, Pair a device (or misterdownloadmanager-cli pair).	Buksan ang address nito nang isang beses at tanggapin ang certificate nito, pagkatapos ay maglagay ng code mula sa Options, Remote, Ipares ang device nito (o misterdownloadmanager-cli pair).
 #. text in the browser extension
-#. button in the toolbar button's popup; keep the name Mister Download Manager as it is
+#. button in the toolbar button's popup; keep the name tnctr download manager as it is
 #, machine
-extension	Open Mister Download Manager	Buksan ang Mister Download Manager
+extension	Open tnctr download manager	Buksan ang tnctr download manager
 #. text in the browser extension
 #. button in the toolbar button's popup: open the app's Options
 #. the trailing ... means it is still going on: keep it
@@ -5772,13 +5772,13 @@ extension	Send downloads through this browser's proxy or VPN extension	Ipadala a
 #, machine
 extension	Send downloads to	Ipadala ang mga download sa
 #. text in the browser extension
-#. shown briefly on the download button after it was clicked; keep the name Mister Download Manager as it is
+#. shown briefly on the download button after it was clicked; keep the name tnctr download manager as it is
 #, machine
-extension	Sent to Mister Download Manager	Ipinadala sa Mister Download Manager
+extension	Sent to tnctr download manager	Ipinadala sa tnctr download manager
 #. text in the browser extension
 #. link at the foot of the toolbar button's popup to the creator's GitHub Sponsors page (MDM is free; this is an optional donation)
 #, machine
-extension	Support MDM	Suportahan ang MDM
+extension	Support tnctr download manager	Suportahan ang tnctr download manager
 #. text in the browser extension
 #. check box in the toolbar button's popup: on, downloads go to the app; off, the browser keeps them
 #, machine
@@ -5788,9 +5788,9 @@ extension	Take downloads from this browser	Kumuha ng mga download mula sa browse
 #, machine
 extension	The Chrome Web Store's rules keep this copy of the add-on away from this site's videos. Help says what you can do.	Pinapanatili ng mga patakaran ng Chrome Web Store ang kopyang ito ng add-on na malayo sa mga video ng site na ito. Sinasabi ng Tulong kung ano ang magagawa mo.
 #. text in the browser extension
-#. status when the connection to the app broke off (often security software blocking it); keep the name Mister Download Manager as it is
+#. status when the connection to the app broke off (often security software blocking it); keep the name tnctr download manager as it is
 #, machine
-extension	The connection to Mister Download Manager failed	Nabigo ang koneksyon sa Mister Download Manager
+extension	The connection to tnctr download manager failed	Nabigo ang koneksyon sa tnctr download manager
 #. text in the browser extension
 #. shown briefly on the download button over a video when the app's settings keep the button off on this web site
 #, machine
@@ -5808,7 +5808,7 @@ extension	The last download was left to the browser.	Ang huling download ay iniw
 #, machine
 extension	This browser isn't ticked in Options → General.	Hindi naka-tick ang browser na ito sa Mga Opsyon → Pangkalahatan.
 #. text in the browser extension
-#. choice under Send downloads to: the Mister Download Manager on this computer
+#. choice under Send downloads to: the tnctr download manager on this computer
 #, machine
 extension	This computer	Ang computer na ito
 #. text in the browser extension
@@ -5820,9 +5820,9 @@ extension	This download's details were too large to hand over	Masyadong malaki a
 #, machine
 extension	This page's player streams its video in pieces, so there's no file to list. Point at the video and use its Download video button.	Ini-stream ng player ng page na ito ang video nang piraso-piraso, kaya walang file na maililista. Ituro ang video at gamitin ang button nitong I-download ang video.
 #. text in the browser extension
-#. status when the app is older than the extension; keep the name Mister Download Manager as it is
+#. status when the app is older than the extension; keep the name tnctr download manager as it is
 #, machine
-extension	Update Mister Download Manager to use everything this extension offers	I-update ang Mister Download Manager para magamit ang lahat ng iniaalok ng extension na ito
+extension	Update tnctr download manager to use everything this extension offers	I-update ang tnctr download manager para magamit ang lahat ng iniaalok ng extension na ito
 #. text in the browser extension
 #. why a download stayed with the browser: the app's setting 'Use advanced browser integration' is off; keep the setting's name as the app shows it
 #, machine
@@ -5938,7 +5938,7 @@ key	Up / Down	Pataas / Pababa
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
-menu	&About Mister Download Manager	&Tungkol sa Mister Download Manager
+menu	&About tnctr download manager	&Tungkol sa tnctr download manager
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
@@ -6290,7 +6290,7 @@ menu	Metro	Metro
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
-menu	Mister Download Manager &Home Page	Mister Download Manager &Home Page
+menu	tnctr download manager &Home Page	tnctr download manager &Home Page
 #. menu command in the main window
 #, machine
 menu	Move/Rename (Ctrl-M)	Ilipat/Palitan ang Pangalan (Ctrl-M)
@@ -6403,7 +6403,7 @@ menu	Select &all	Piliin &lahat
 menu	Show &drop target	Ipakita ang &drop target
 #. menu command in the main window
 #, machine
-menu	Show Mister Download Manager	Ipakita ang Mister Download Manager
+menu	Show tnctr download manager	Ipakita ang tnctr download manager
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine

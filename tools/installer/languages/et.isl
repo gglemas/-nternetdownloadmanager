@@ -1,4 +1,4 @@
-﻿; Mister Download Manager's installer in Estonian: tools/installer/languages.py
+﻿; tnctr download manager's installer in Estonian: tools/installer/languages.py
 ; (machine-translated; a native speaker may correct any line).
 
 [LangOptions]
@@ -291,8 +291,8 @@ ShutdownBlockReasonUninstallingApp=Eemaldan %1.
 
 [CustomMessages]
 TaskBrowser=Seadista &brauseri integreerimine (Chrome, Edge, Brave, Firefox)
-TaskTorrents=Ava &torrent-failid ja magnetlingid rakendusega Mister Download Manager
-TaskStartup=Käivita Mister Download Manager &Windowsi käivitamisel
+TaskTorrents=Ava &torrent-failid ja magnetlingid rakendusega tnctr download manager
+TaskStartup=Käivita tnctr download manager &Windowsi käivitamisel
 TaskGroupOther=Muu:
-Launch=Käivita Mister Download Manager
+Launch=Käivita tnctr download manager
 KeepData=Kas kustutada ka teie allalaadimiste loend ja sätted?%n%nTeie allalaaditud faile ei puudutata kummalgi juhul.
