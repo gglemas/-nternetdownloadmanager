@@ -6,7 +6,7 @@
 [[theme]]
 id = "classic"
 name = "Classic"
-feel = "MDM's own look and the default: the layout IDM users know, with Windows 11's controls."
+feel = "MDM's own look and the default: a familiar Windows desktop layout with Windows 11 controls."
 shot = "images/help/site-theme-classic.webp"
 
 [[theme]]

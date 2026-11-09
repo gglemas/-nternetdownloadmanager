@@ -1,6 +1,4 @@
-//! IDM's small dialogs as separate OS windows, laid out to the pixel from
-//! notes/ui-spec/dialogs.md: "Enter new address to download", "Download File Info",
-//! "Download complete". All coordinates below are client pixels from the spec.
+//! Add URL, download information, and completion dialogs; coordinates are client pixels.
 
 use std::path::{Path, PathBuf};
 use std::sync::{Arc, Mutex};
@@ -41,10 +39,8 @@ fn main_rect(ctx: &egui::Context) -> Option<egui::Rect> {
     ))
 }
 
-/// Where a dialog opens: centred over the main window (as IDM's are), inside the screen's work
-/// area (its title bar first, for one larger than the screen), decided once when the dialog
-/// first shows and kept until `forget_place` — so the user can still move it. Placed again when
-/// the interface size changes (#262): the place is in points, which that changes.
+/// Place dialogs in the work area, prioritizing the title bar when oversized. Keep the user’s
+/// position until forget_place, and recalculate when the interface scale changes.
 pub fn place(ctx: &egui::Context, key: egui::Id, client: [f32; 2]) -> Option<Pos2> {
     let zoom = ctx.zoom_factor();
     if let Some((p, z)) = ctx.data(|d| d.get_temp::<(Pos2, f32)>(key))
@@ -215,9 +211,8 @@ pub(crate) fn question<T>(
     dialog_window(ctx, id, title, client, minimize, bg, Kind::Question, body)
 }
 
-/// News that must not go unseen (Download complete, as IDM shows it): a `window` shown above
-/// every other program's while `on_top`, without taking the keyboard focus from the one being
-/// typed in. The caller drops `on_top` once it has been clicked (`notice_seen`).
+/// Keep the dialog above other programs while on_top without stealing keyboard focus.
+/// The caller clears on_top after the user interacts with it.
 #[allow(clippy::too_many_arguments)]
 pub(crate) fn notice<T>(
     ctx: &egui::Context,
@@ -361,8 +356,7 @@ fn dialog_window<T>(
     // Elsewhere follow_scale asked the window manager itself.
     #[cfg(not(windows))]
     let _ = rescaled;
-    // Give the window IDM's modal-dialog frame (3 px borders, 26 px caption) once it exists,
-    // and again at a new size (a dialog that grows: the frame is sized from the client).
+    // Reapply the frame when the client size changes.
     #[cfg(windows)]
     {
         let framed = key.with("framed");
@@ -501,7 +495,6 @@ fn opening_key_of(viewport: ViewportId) -> egui::Id {
     egui::Id::unique(("dialog-opening", viewport))
 }
 
-/// IDM shows paths under the user profile relative to it: `Downloads\Compressed\a.zip`.
 pub fn display_path(p: &Path) -> String {
     match dirs::home_dir().and_then(|h| p.strip_prefix(h).ok().map(Path::to_owned)) {
         Some(rel) => rel.display().to_string(),
@@ -519,7 +512,6 @@ pub fn resolve_path(s: &str) -> PathBuf {
     }
 }
 
-/// IDM's dialog size text, e.g. `60.00  MB` (two spaces, as measured).
 pub fn dialog_size(b: u64) -> String {
     model::size(b).replacen(' ', "  ", 1)
 }
@@ -544,8 +536,8 @@ pub struct NewUrl {
 }
 
 impl AddUrl {
-    /// Opens like IDM's: pre-filled with the clipboard's text when it is an http(s) URL (or a
-    /// magnet link: OK then opens Add torrent).
+    /// Prefill Add URL from an HTTP(S) URL or magnet link on the clipboard; magnets open Add
+    /// torrent.
     pub fn from_clipboard(history: &[String]) -> Self {
         let clip = crate::clipboard_text().unwrap_or_default();
         let clip = clip.trim();
@@ -617,7 +609,6 @@ impl AddUrl {
                     self.address = self.history[i].clone();
                     addr.request_focus();
                 }
-                // Enter presses the default button (OK), as in IDM, wherever the focus is.
                 let _ = &addr;
                 let enter = winui::enter_pressed(ui);
 
@@ -739,7 +730,6 @@ impl AddUrl {
 pub struct FileInfo {
     pub url: Url,
     pub login: Option<(String, String)>,
-    /// Shown relative to the user profile, like IDM (`Downloads\Video\a.mp4`).
     pub save_as: String,
     pub category: Category,
     pub description: String,
@@ -795,10 +785,8 @@ pub enum Start {
 }
 
 impl FileInfo {
-    /// Opens the dialog and looks the URL up in the background (name, size), like IDM, with
-    /// `request`'s headers (the download's own). A download from the browser needs no look-up:
-    /// the browser has had the answer, and its name (a link's `download` name, a Unicode
-    /// `filename*`) is the one it checked; asking again could get another.
+    /// Use the download’s request headers for lookup. Browser downloads already have a checked
+    /// name and size; another lookup could return a different answer.
     #[allow(clippy::too_many_arguments)]
     pub fn new(
         new: NewUrl,
@@ -973,8 +961,7 @@ impl FileInfo {
         self.kept.take()
     }
 
-    /// The address was looked up and answered (name and size known): the moment IDM starts an
-    /// early download.
+    /// The lookup has supplied the name and size, so an early download can start.
     pub fn probed(&self) -> bool {
         matches!(self.info, Some(Ok(_)))
     }
@@ -1207,7 +1194,6 @@ impl FileInfo {
                 );
                 let folder_rc = r(o, 104.0, 112.0, 348.0, 23.0);
                 winui::edit(ui, folder_rc, &mut folder, false, false);
-                // Greyed as IDM shows it, and still copyable.
                 winui::copyable(ui, folder_rc, "remembered-folder", &folder, false);
 
                 // i18n: noun: label before a free-text box describing the file
@@ -1363,7 +1349,6 @@ impl FileInfo {
                 );
 
                 // Right column, centred on x ≈ 516 (+ cx): file icon, size, Preview.
-                // The shell's own 32 px icon for this file type, as IDM shows.
                 let ext = Path::new(&self.save_as)
                     .extension()
                     .map(|e| e.to_string_lossy().to_ascii_lowercase())
@@ -1487,8 +1472,7 @@ pub struct Complete {
     /// What went wrong besides, in the interface language (a video's subtitles, #68): one line
     /// under the size.
     pub notices: Vec<String>,
-    /// Clicked (or activated) once: from then on a window like any other, no longer above every
-    /// program's (it shows above them until then, as IDM's does: #77).
+    /// Once activated, the dialog behaves like a normal window rather than staying above others.
     pub seen: bool,
 }
 
@@ -1506,7 +1490,6 @@ impl Complete {
             !self.seen,
             |ui, o| {
                 let p = ui.painter().clone();
-                // The system's open folder (IDM shows one here): the shared file icons'.
                 crate::fileicons::paint_at(
                     ui,
                     &p,
@@ -1609,10 +1592,9 @@ impl Complete {
                     true,
                 );
 
-                // Drag handle: white box with a 1 px #828790 border; drag it to drop the file into
-                // Explorer, a mail or a chat (IDM 5.05). Windows only: dragging a file out to
-                // another app goes through OLE there; Linux and macOS have no such drag built
-                // yet, so the handle isn't shown (Open folder is the way there).
+                // On Windows, the handle drags the file into another app through OLE. Hide it on
+                // other
+                // platforms until native drag-out is available; Open folder remains available.
                 #[cfg(windows)]
                 {
                     let handle = r(o, 414.0, 187.0, 27.0, 20.0);
@@ -1675,12 +1657,10 @@ impl Complete {
 pub struct SpeedSettings {
     pub kb: String,
     pub on_startup: bool,
-    /// Beyond IDM (D-012): one limit for all downloads together.
     pub global_on: bool,
     pub global_kb: String,
     pub only_active: bool,
-    /// How much taller the note is than IDM's three lines (a longer translation): the rows
-    /// below it and the window move down by this much (from the frame before).
+    /// Extra note height moves the following controls and grows the window.
     note_extra: f32,
 }
 
@@ -1747,8 +1727,7 @@ impl SpeedSettings {
                 let note = crate::i18n::t(
                     "Note: Internet servers may break connection when the speed is too limited! Thus it's not\nrecommended to use Speed Limiter to download from servers that do not support\n\"resume\" feature.",
                 );
-                // Wrapped inside the window (IDM's English runs to x 440); a translation longer than three
-                // lines pushes the rest down and the window grows.
+                // Additional wrapped lines push subsequent controls down and grow the window.
                 let lines =
                     winui::paragraph(&p, o.x + 11.0, o.y + 47.0, note, black, o.x + 449.0, 13.0);
                 self.note_extra = lines.saturating_sub(3) as f32 * 13.0;
@@ -1760,7 +1739,6 @@ impl SpeedSettings {
                     "Always turn on Speed Limiter on tnctr download manager startup",
                     true,
                 );
-                // Beyond IDM: a limit for all downloads together.
                 winui::etched_h(&p, o.x + 11.0, o.y + 108.0, 431.0);
                 winui::checkbox_light_until(
                     ui,
@@ -1908,8 +1886,7 @@ pub fn message(ctx: &egui::Context, id: &str, title: &str, text: &str) -> Outcom
 
 // ---- Download limit reached (light) ---------------------------------------------------------
 
-/// "Show warning before stopping downloads" (Scheduler → Download limits): says the limit was
-/// reached and when downloads go on. IDM's own wording is [unknown] (lab).
+/// Explain that the download quota was reached and when downloading can resume.
 pub struct LimitNotice {
     lines: [String; 2],
 }
@@ -1989,9 +1966,7 @@ impl LimitNotice {
 
 // ---- Turn off computer countdown (light) ---------------------------------------------------
 
-/// After a queue with "Turn off computer when done": a 30 s countdown that can be cancelled
-/// (or skipped) before the computer shuts down, sleeps or hibernates. IDM's own prompt is
-/// [unknown] (lab); turning a computer off unannounced is not acceptable.
+/// Give a cancellable 30-second countdown before shutting down after a queue finishes.
 pub struct TurnOffCountdown {
     mode: crate::queue::TurnOff,
     force: bool,
@@ -2148,14 +2123,12 @@ impl TurnOffCountdown {
 
 // ---- Confirm deletion of downloads (client 374 × 120, light) ----------------------------------
 
-/// "Confirm deletion of downloads": Delete / Remove / Delete All Completed. Asks whether the
-/// files go too (user, 2026-10-29: IDM's checkbox; for an unfinished download its data so far),
-/// for one download or several. `Done((files, dont_show_again))` on Yes.
+/// Confirm removing downloads, optionally deleting their files. Return files and dont_show_again on
+/// Yes.
 pub struct ConfirmDelete {
     pub ids: Vec<u64>,
     /// The file name when there is one download.
     name: String,
-    /// One download, not complete (IDM's wording).
     unfinished: bool,
     files: bool,
     dont_show: bool,

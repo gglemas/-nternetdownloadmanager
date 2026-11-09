@@ -13,7 +13,6 @@ priority: 0.3
 - You may use, copy, change and share Mister Download Manager under the **GNU GPL, version 3**.
 - It comes **without any warranty**: use it at your own risk.
 - **Download only what you have the right to.** You are responsible for what you download and share.
-- MDM is **not affiliated** with Tonec Inc. or Internet Download Manager.
 
 </div>
 
@@ -54,11 +53,9 @@ To the extent allowed by law, we will not be liable for any damages arising from
 
 "Mister Download Manager", "MDM" and the MDM logo identify this project. You may use them to refer to the project, and to name unmodified copies you distribute. If you distribute a changed version, please give it a different name and logo so people aren't confused about who made it; the GPL still applies to the code.
 
-Internet Download Manager and IDM are trademarks of their owner. We name them only to describe and compare, as allowed by law. MDM is **not affiliated with, endorsed by or connected to Tonec Inc.** and contains none of Internet Download Manager's code, artwork or text.
-
 ## 8. The site
 
-The site's content is provided for information. We try to keep it accurate, including the comparisons and benchmark figures, which are documented with their methods and raw data, but we can't guarantee it is always complete or up to date. Tell us about mistakes and we'll fix them. Links to other sites are for convenience; we don't control them.
+The site's content is provided for information. We try to keep it accurate, but cannot guarantee it is always complete or up to date. Tell us about mistakes and we'll fix them. Links to other sites are for convenience; we don't control them.
 
 ## 9. Changes
 
