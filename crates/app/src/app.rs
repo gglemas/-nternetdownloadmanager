@@ -541,8 +541,8 @@ pub struct App {
     /// The zoom (View → Interface size, #262) the windows were last drawn at: a change is saved,
     /// and the windows that don't follow by themselves are made to (`follow_zoom`).
     zoom: f32,
-    /// The main window was brought inside the screen after the start (scale::fit_window).
-    fitted: bool,
+    /// Fits the main window after startup, zoom and monitor DPI changes.
+    fitted: crate::scale::WindowFit,
     /// View → Theme's choices (#45), and when the themes folder last changed (read again then).
     theme_list: Vec<crate::themefile::Entry>,
     themes_changed: Option<std::time::SystemTime>,
@@ -1016,7 +1016,7 @@ impl App {
             saver: store::Saver::new(),
             theme_checked: None,
             zoom,
-            fitted: false,
+            fitted: Default::default(),
             theme_list: crate::themefile::list(),
             themes_changed: crate::themefile::changed(),
             pywal_there: crate::themefile::pywal_file().is_some_and(|p| p.is_file()),
@@ -1074,7 +1074,7 @@ impl App {
     /// empty, why, and the one thing to do about it (clear the filters, show every download,
     /// add one). Returns that command when it is clicked.
     fn empty_state(&self, ui: &Ui, body: egui::Rect) -> Option<Cmd> {
-        let p = ui.painter();
+        let p = &ui.painter().with_clip_rect(winui::rect(body));
         let filtered = self.list.filters.iter().any(Option::is_some) && !self.view_ids().is_empty();
         let (title, why, action, cmd) = if filtered {
             (
@@ -1107,13 +1107,21 @@ impl App {
             )
         };
         let (title, why) = (crate::i18n::t(title), crate::i18n::t(why));
-        let title_font = winui::tahoma_bold();
-        let tw = winui::text_width_font(p, title_font.clone(), title);
-        let ww = winui::text_width(p, why);
+        let layout = |text: &str, font, color| {
+            let mut job = egui::text::LayoutJob::simple(
+                text.to_owned(),
+                font,
+                color,
+                (body.width() - 32.0).max(1.0),
+            );
+            job.direction = winui::direction();
+            job.halign = egui::Align::Center;
+            p.layout_job(job)
+        };
+        let title = layout(title, winui::tahoma_bold(), winui::TEXT());
+        let why = layout(why, winui::tahoma(), winui::MUTED());
         let aw = winui::text_width(p, crate::i18n::t(action));
-        // The block: icon 40, title, reason, link; in the middle, or under the header when
-        // the list is short.
-        let block_h = 40.0 + 14.0 + 16.0 + 8.0 + 13.0 + 14.0 + 13.0;
+        let block_h = 40.0 + 14.0 + title.size().y + 8.0 + why.size().y + 14.0 + 13.0;
         let top = (body.center().y - block_h / 2.0).max(body.top() + 16.0);
         let cx = body.center().x;
         // A download glyph in the muted ink (outlined, as the toolbar's icons are).
@@ -1127,11 +1135,13 @@ impl App {
         p.line_segment([c + egui::vec2(0.0, -10.0), c + egui::vec2(0.0, 9.0)], ink);
         p.line_segment([c + egui::vec2(-7.0, 2.0), c + egui::vec2(0.0, 9.0)], ink);
         p.line_segment([c + egui::vec2(7.0, 2.0), c + egui::vec2(0.0, 9.0)], ink);
-        let y = top + 40.0 + 14.0 + 12.0;
-        winui::text_font(p, title_font, cx - tw / 2.0, y, title, winui::TEXT());
-        let y = y + 8.0 + 13.0;
-        winui::text(p, cx - ww / 2.0, y, why, winui::MUTED());
-        let y = y + 14.0 + 13.0;
+        let y = top + 40.0 + 14.0;
+        let screen_cx = winui::rect(body).center().x;
+        let why_y = y + title.size().y + 8.0;
+        let action_y = why_y + why.size().y + 14.0 + 12.0;
+        p.galley(pos2(screen_cx, y), title, winui::TEXT());
+        p.galley(pos2(screen_cx, why_y), why, winui::MUTED());
+        let y = action_y;
         winui::link(ui, p, cx - aw / 2.0, y, action, "empty-action").then_some(cmd)
     }
 
@@ -6990,9 +7000,8 @@ impl App {
         crate::scale::keys(ctx);
         let zoom = ctx.zoom_factor();
         let settled = zoom == self.zoom;
-        if settled && !self.fitted && ctx.input(|i| i.viewport().outer_rect).is_some() {
-            self.fitted = true;
-            crate::scale::fit_window(ctx, MIN, None);
+        if settled {
+            self.fitted.update(ctx, MIN, None);
         }
         // Saved whatever changed it, and kept when Options, opened before, hands back its copy
         // of the settings.
@@ -7006,7 +7015,7 @@ impl App {
         }
         let ratio = self.zoom / zoom;
         self.zoom = zoom;
-        self.fitted = false;
+        self.fitted.reset();
         tracing::info!("interface size {percent}%");
         ctx.send_viewport_cmd(egui::ViewportCommand::MinInnerSize(MIN));
         if let Some((x, y)) = self.settings.drop_target_pos {

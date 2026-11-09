@@ -184,8 +184,8 @@ struct ReportWindow {
     icon: Option<egui::TextureHandle>,
     /// Windows' caption follows the window's theme (set once the window exists).
     caption_set: bool,
-    /// Brought inside the screen once it exists (scale::fit_window, #262).
-    fitted: bool,
+    /// Fits the report after startup and display changes.
+    fitted: crate::scale::WindowFit,
 }
 
 impl ReportWindow {
@@ -202,7 +202,7 @@ impl ReportWindow {
             told: None,
             icon: None,
             caption_set: false,
-            fitted: false,
+            fitted: Default::default(),
         }
     }
 
@@ -314,10 +314,10 @@ impl eframe::App for ReportWindow {
             self.caption_set = true;
         }
         // Inside the screen at a large interface size (#262); what doesn't fit scrolls.
-        if !self.fitted && ui.ctx().input(|i| i.viewport().outer_rect).is_some() {
-            self.fitted = true;
+        {
             let layout = egui::vec2(CLIENT[0], CLIENT[1]);
-            crate::scale::fit_window(ui.ctx(), egui::vec2(120.0, 120.0), Some(layout));
+            self.fitted
+                .update(ui.ctx(), egui::vec2(120.0, 120.0), Some(layout));
         }
         // Re-asserted as the main window does (winit can set it back from Windows' own mode).
         #[cfg(windows)]
