@@ -1,4 +1,4 @@
-# Mister Download Manager in Korean (한국어): tools/i18n/translate.py
+# tnctr download manager in Korean (한국어): tools/i18n/translate.py
 # writes the rows marked '#, machine'; a native speaker deletes that line after checking.
 # context	source	translation (craft-i18n format, rows as in en.tsv)
 @id	language.name	한국어
@@ -11,7 +11,7 @@
 #. never shown for a single download
 #. {n} = a number (keep the braces as they are)
 #, machine
-@plural	Are you sure you want to delete {n} download from Mister Download Manager list of downloads?|Are you sure you want to delete these {n} downloads from Mister Download Manager list of downloads?	Mister Download Manager 다운로드 목록에서 {n}개 다운로드를 삭제하시겠습니까?
+@plural	Are you sure you want to delete {n} download from tnctr download manager list of downloads?|Are you sure you want to delete these {n} downloads from tnctr download manager list of downloads?	tnctr download manager 다운로드 목록에서 {n}개 다운로드를 삭제하시겠습니까?
 #. count in the Add torrent window
 #. while a magnet link's file list is fetched; {n} = peers that answered
 #. {n} = a number (keep the braces as they are)
@@ -226,7 +226,7 @@
 	a volume of it is missing	볼륨이 없습니다.
 #. window title in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	About Mister Download Manager	Mister Download Manager 정보
+	About tnctr download manager	tnctr download manager 정보
 #. text in whereis.rs
 #. a download's server's round trip: {ms} a number of milliseconds, {reach} near, medium or far
 #, machine
@@ -280,7 +280,7 @@
 #. window title in extension.rs
 #. title of the window that offers the browser extension
 #, machine
-	Add Mister Download Manager to your browser	브라우저에 Mister Download Manager 추가
+	Add tnctr download manager to your browser	브라우저에 tnctr download manager 추가
 #. message or event log entry in the main window; text in the tray icon's menu
 #. link in the empty download list: opens Add URL
 #, machine
@@ -447,7 +447,7 @@
 	Always into a folder named after it	항상 이름과 같은 폴더에
 #. checkbox in a dialog box
 #, machine
-	Always turn on Speed Limiter on Mister Download Manager startup	Mister Download Manager 시작 시 항상 속도 제한기 켜기
+	Always turn on Speed Limiter on tnctr download manager startup	tnctr download manager 시작 시 항상 속도 제한기 켜기
 #. text in regional.rs; text in the Scheduler window
 #. before noon, after a time of day (12-hour clock). Its pair is "PM": write both the same way (this language's own short marks, or both kept as AM and PM)
 #, machine
@@ -513,7 +513,7 @@
 #. text in a dialog box
 #. {name} = a file name (keep the braces as they are)
 #, machine
-	Are you sure you want to delete "{name}" from Mister Download Manager list of downloads?	Mister Download Manager 다운로드 목록에서 "{name}"을(를) 삭제하시겠습니까?
+	Are you sure you want to delete "{name}" from tnctr download manager list of downloads?	tnctr download manager 다운로드 목록에서 "{name}"을(를) 삭제하시겠습니까?
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -682,7 +682,7 @@
 	Browse...	찾아보기...
 #. text in extension.rs
 #, machine
-	Browser integration isn't set up on this computer, so no browser can reach Mister Download Manager yet.	이 컴퓨터에 브라우저 통합이 설정되지 않아 브라우저가 아직 Mister Download Manager에 연결할 수 없습니다.
+	Browser integration isn't set up on this computer, so no browser can reach tnctr download manager yet.	이 컴퓨터에 브라우저 통합이 설정되지 않아 브라우저가 아직 tnctr download manager에 연결할 수 없습니다.
 #. page title in the Options window
 #, machine
 	Browser/System Integration	브라우저/시스템 통합
@@ -874,7 +874,7 @@
 	Choose a language	언어 선택
 #. text in langpick.rs
 #, machine
-	Choose the language Mister Download Manager shows its windows in:	표시할 Mister Download Manager 창의 언어를 선택하세요:
+	Choose the language tnctr download manager shows its windows in:	표시할 tnctr download manager 창의 언어를 선택하세요:
 #. text in the Options window
 #. Options → Sites Logins → Cookies for video sites: the title of the window, and the tooltip of the button, that pick a browser profile's folder
 #, machine
@@ -1493,7 +1493,7 @@
 	Exit	끝내기
 #. checkbox in a download's progress window; checkbox in the Scheduler window
 #, machine
-	Exit Mister Download Manager when done	완료 시 Mister Download Manager 종료
+	Exit tnctr download manager when done	완료 시 tnctr download manager 종료
 #. text in the Checksum window
 #, machine
 	Expected checksum (MD5, SHA-1, SHA-256, SHA-512 or CRC32):	예상 체크섬(MD5, SHA-1, SHA-256, SHA-512 또는 CRC32):
@@ -1924,7 +1924,7 @@
 	Hide web pages	웹 페이지 숨기기
 #. text in the Options window
 #, machine
-	Hold Alt while clicking a link to let the browser download it instead of Mister Download Manager.	Alt 키를 누른 채 링크를 클릭하면 Mister Download Manager 대신 브라우저가 다운로드합니다.
+	Hold Alt while clicking a link to let the browser download it instead of tnctr download manager.	Alt 키를 누른 채 링크를 클릭하면 tnctr download manager 대신 브라우저가 다운로드합니다.
 #. link (opens a web page) in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Home page	홈 페이지
@@ -1960,7 +1960,7 @@
 	Hungary	헝가리
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	I download with Mister Download Manager: fast, free, and it looks like the download manager you already know. {link}	저는 Mister Download Manager로 다운로드합니다. 빠르고 무료이며 이미 알고 있는 다운로드 관리자와 비슷합니다. {link}
+	I download with tnctr download manager: fast, free, and it looks like the download manager you already know. {link}	저는 tnctr download manager로 다운로드합니다. 빠르고 무료이며 이미 알고 있는 다운로드 관리자와 비슷합니다. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2231,7 +2231,7 @@
 	Latvia	라트비아
 #. text in the Options window
 #, machine
-	Launch Mister Download Manager on startup	시작 시 Mister Download Manager 실행
+	Launch tnctr download manager on startup	시작 시 tnctr download manager 실행
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2518,54 +2518,54 @@
 	Missing	누락
 #. message or event log entry in the main window; window title in a dialog box; text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	Mister Download Manager	Mister Download Manager
+	tnctr download manager	tnctr download manager
 #. text in unix.rs
 #. Linux, at start, on the terminal and in a message box: a library the window needs isn't installed; {libraries} = its file names (libxkbcommon-x11.so.0…), left as they are
 #, machine
-	Mister Download Manager can't open its window: this system lacks {libraries}.	Mister Download Manager에서 창을 열 수 없습니다. 이 시스템에 {libraries} 라이브러리가 없습니다.
+	tnctr download manager can't open its window: this system lacks {libraries}.	tnctr download manager에서 창을 열 수 없습니다. 이 시스템에 {libraries} 라이브러리가 없습니다.
 #. text in crashui.rs
 #. crash report window heading: MDM crashed and is gone
 #, machine
-	Mister Download Manager closed unexpectedly	Mister Download Manager이(가) 예기치 않게 종료되었습니다.
+	tnctr download manager closed unexpectedly	tnctr download manager이(가) 예기치 않게 종료되었습니다.
 #. window title in the Options window
 #, machine
-	Mister Download Manager Configuration	Mister Download Manager 구성
+	tnctr download manager Configuration	tnctr download manager 구성
 #. text in crashui.rs
 #, machine
-	Mister Download Manager crash report	Mister Download Manager 크래시 보고서
+	tnctr download manager crash report	tnctr download manager 크래시 보고서
 #. text in crashui.rs
 #. crash report window heading: an internal error, MDM still running
 #, machine
-	Mister Download Manager hit an internal error	Mister Download Manager에 내부 오류가 발생했습니다.
+	tnctr download manager hit an internal error	tnctr download manager에 내부 오류가 발생했습니다.
 #. text in wake.rs
 #. why the computer isn't going to sleep, in the system's list of programs that keep it awake; {queue} = the queue's name
 #. {queue} = a queue name such as "Main queue" (keep the braces as they are)
 #, machine
-	Mister Download Manager is running the queue "{queue}"	Mister Download Manager에서 "{queue}" 큐를 실행 중입니다.
+	tnctr download manager is running the queue "{queue}"	tnctr download manager에서 "{queue}" 큐를 실행 중입니다.
 #. text in crashui.rs
 #. crash report window heading: MDM's window doesn't answer (frozen)
 #, machine
-	Mister Download Manager stopped responding	Mister Download Manager이(가) 응답을 중지했습니다.
+	tnctr download manager stopped responding	tnctr download manager이(가) 응답을 중지했습니다.
 #. text in crashui.rs
 #, machine
-	Mister Download Manager stopped responding for a while	Mister Download Manager이(가) 잠시 응답을 중지했습니다.
+	tnctr download manager stopped responding for a while	tnctr download manager이(가) 잠시 응답을 중지했습니다.
 #. text in the Options window
 #. \\n starts a new line: break lines where they fit the translation
 #, machine
-	Mister Download Manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.	Mister Download Manager는 모든 연결을 최종 파일(그 옆의 스파스 부분 파일)에 직접 기록하므로 임시 디렉터리 및 조립 단계가 필요하지 않습니다.
+	tnctr download manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.	tnctr download manager는 모든 연결을 최종 파일(그 옆의 스파스 부분 파일)에 직접 기록하므로 임시 디렉터리 및 조립 단계가 필요하지 않습니다.
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	Mister Download Manager {version} is available (released {date}).	Mister Download Manager {version}을 사용할 수 있습니다({date}에 릴리스됨).
+	tnctr download manager {version} is available (released {date}).	tnctr download manager {version}을 사용할 수 있습니다({date}에 릴리스됨).
 #. text in helpers.rs
 #. Video helpers: {version} = the version of MDM's own copy
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	Mister Download Manager's own copy, version {version}	Mister Download Manager 자체 복사본, 버전 {version}
+	tnctr download manager's own copy, version {version}	tnctr download manager 자체 복사본, 버전 {version}
 #. text in unix.rs
 #. Linux, at start, on the terminal: the libraries an X11 window needs aren't installed, so the window opens through Wayland instead, where menus can't be placed under what was clicked; {libraries} = their file names, left as they are
 #, machine
-	Mister Download Manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.	Mister Download Manager의 X11 창에는 {libraries} 라이브러리가 필요하지만 이 시스템에 없습니다. 대신 Wayland에서 열리므로 메뉴가 제목과 다른 위치에 열릴 수 있습니다.
+	tnctr download manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.	tnctr download manager의 X11 창에는 {libraries} 라이브러리가 필요하지만 이 시스템에 없습니다. 대신 Wayland에서 열리므로 메뉴가 제목과 다른 위치에 열릴 수 있습니다.
 #. text in the Scheduler window
 #. Monday, as short as a calendar's column head (two letters in English)
 #, machine
@@ -3070,10 +3070,10 @@
 	Open folder	폴더 열기
 #. checkbox in the Add torrent window
 #, machine
-	Open magnet links and .torrent files with Mister Download Manager	Mister Download Manager에서 마그넷 링크 및 .torrent 파일 열기
+	Open magnet links and .torrent files with tnctr download manager	tnctr download manager에서 마그넷 링크 및 .torrent 파일 열기
 #. text in the tray icon's menu
 #, machine
-	Open Mister Download Manager	Mister Download Manager 열기
+	Open tnctr download manager	tnctr download manager 열기
 #. text in extension.rs
 #. step 2 of turning on the Safari extension; Cmd is the Command key
 #, machine
@@ -3144,7 +3144,7 @@
 #. text in remote.rs
 #. remote control page (on a phone): title of the pairing screen
 #, machine
-	Pair with Mister Download Manager	Mister Download Manager과(와) 페어링
+	Pair with tnctr download manager	tnctr download manager과(와) 페어링
 #. text in the Options window
 #. column title: when the device was paired
 #, machine
@@ -3630,7 +3630,7 @@
 	Select or unselect the download with the dotted outline	점선 윤곽선이 있는 다운로드 선택 또는 선택 취소
 #. group box title in the Options window
 #, machine
-	Select sounds for Mister Download Manager events	Mister Download Manager 이벤트에 대한 소리 선택
+	Select sounds for tnctr download manager events	tnctr download manager 이벤트에 대한 소리 선택
 #. what a keyboard shortcut does in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Select the downloads in the box	상자에 있는 다운로드 선택
@@ -3955,7 +3955,7 @@
 	Start download at	다운로드 시작 시각
 #. checkbox in the Scheduler window
 #, machine
-	Start download on Mister Download Manager startup	Mister Download Manager 시작 시 다운로드 시작
+	Start download on tnctr download manager startup	tnctr download manager 시작 시 다운로드 시작
 #. checkbox in the Options window
 #, machine
 	Start downloading immediately while displaying "Download File Info" dialog	"파일 정보 다운로드" 대화 상자를 표시하는 동안 즉시 다운로드 시작
@@ -3990,7 +3990,7 @@
 #, machine
 	Started with the computer, it starts minimized: no notification area shows its icon here	컴퓨터와 함께 시작하면 최소화된 상태로 시작됩니다. 여기에는 알림 영역에 아이콘이 표시되지 않습니다.
 #. text in the Options window
-#. tooltip of "Launch Mister Download Manager on startup": started with the computer, MDM's window stays hidden, its icon in the notification area (system tray)
+#. tooltip of "Launch tnctr download manager on startup": started with the computer, MDM's window stays hidden, its icon in the notification area (system tray)
 #, machine
 	Started with the computer, it waits in the notification area	컴퓨터와 함께 시작하면 알림 영역에서 대기합니다.
 #. message or event log entry in the main window
@@ -4211,7 +4211,7 @@
 #. text in extension.rs
 #. a check of Test browser integration: the browsers find MDM's helper program
 #, machine
-	The browsers can find Mister Download Manager	브라우저가 Mister Download Manager을(를) 찾을 수 있습니다.
+	The browsers can find tnctr download manager	브라우저가 tnctr download manager을(를) 찾을 수 있습니다.
 #. text in the Options window
 #. Options → Remote → Status: the settings were changed; they apply on OK
 #, machine
@@ -4235,7 +4235,7 @@
 #. text in the Scheduler window
 #. tooltip on the Scheduler's "Wake the computer to run this queue"
 #, machine
-	The computer is woken a minute before the start time and kept awake while the queue runs. Mister Download Manager has to be running (it can wait in the notification area).	컴퓨터는 시작 시간 1분 전에 절전 모드에서 해제되고 큐가 실행되는 동안 절전 모드가 해제된 상태로 유지됩니다. Mister Download Manager이(가) 실행 중이어야 합니다(알림 영역에서 대기할 수 있음).
+	The computer is woken a minute before the start time and kept awake while the queue runs. tnctr download manager has to be running (it can wait in the notification area).	컴퓨터는 시작 시간 1분 전에 절전 모드에서 해제되고 큐가 실행되는 동안 절전 모드가 해제된 상태로 유지됩니다. tnctr download manager이(가) 실행 중이어야 합니다(알림 영역에서 대기할 수 있음).
 #. text in the Scheduler window
 #. the Scheduler, under "Wake the computer to run this queue": when it will happen; {date} = e.g. 06/11/2026, {time} = e.g. 22:59:00
 #. {time} = a time of day (keep the braces as they are)
@@ -4406,7 +4406,7 @@
 #. text in a dialog box
 #. \\n starts a new line: break lines where they fit the translation
 #, machine
-	The selected download is not complete. Are you sure you want to delete\nit from Mister Download Manager list of downloads?	선택한 다운로드가 완료되지 않았습니다. Mister Download Manager 다운로드 목록에서 삭제하시겠습니까?
+	The selected download is not complete. Are you sure you want to delete\nit from tnctr download manager list of downloads?	선택한 다운로드가 완료되지 않았습니다. tnctr download manager 다운로드 목록에서 삭제하시겠습니까?
 #. text in errors.rs
 #, machine
 	the server answered {status}	서버 응답: {status}
@@ -4765,7 +4765,7 @@
 #. text in extension.rs
 #. step 8 of turning on the Safari extension
 #, machine
-	Turn on "Mister Download Manager" and allow it on all websites.	“Mister Download Manager”을 켜고 모든 웹 사이트에서 허용합니다.
+	Turn on "tnctr download manager" and allow it on all websites.	“tnctr download manager”을 켜고 모든 웹 사이트에서 허용합니다.
 #. text in extension.rs
 #. step 4 of turning on the Safari extension; the quoted switch name is what Safari's settings show in this language: use Apple's own words for it, or keep the English name when unsure
 #, machine
@@ -5178,7 +5178,7 @@
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	You have the latest version of Mister Download Manager ({version}).	Mister Download Manager({version})의 최신 버전을 사용 중입니다.
+	You have the latest version of tnctr download manager ({version}).	tnctr download manager({version})의 최신 버전을 사용 중입니다.
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. Check for updates, under the new version's line, when MDM was installed by the Linux system's package manager (pacman, ...), which MDM can't update itself
 #. {version} = a version number (keep the braces as they are)
@@ -5557,15 +5557,15 @@ column	Time left	남은 시간
 #, machine
 column	Transfer rate	전송 속도
 #. text in the browser extension
-#. choice under Send downloads to: an MDM running on another computer of the network, such as a home server; keep the name Mister Download Manager as it is
+#. choice under Send downloads to: an MDM running on another computer of the network, such as a home server; keep the name tnctr download manager as it is
 #, machine
-extension	Another Mister Download Manager (a server)	다른 Mister Download Manager (서버)
+extension	Another tnctr download manager (a server)	다른 tnctr download manager (서버)
 #. text in the browser extension
 #. the name this browser gets in the other MDM's list of paired devices
 #, machine
 extension	Browser extension	브라우저 확장
 #. text in the browser extension
-#. menu command of the download button over a video: opens its settings in Mister Download Manager
+#. menu command of the download button over a video: opens its settings in tnctr download manager
 #. the trailing ... means it is still going on: keep it
 #, machine
 extension	Button settings...	단추 설정...
@@ -5574,34 +5574,34 @@ extension	Button settings...	단추 설정...
 #, machine
 extension	Can't tell which video this is: open its own page and try there	어떤 비디오인지 알 수 없습니다. 비디오 자체 페이지를 열어 다시 시도하세요
 #. text in the browser extension
-#. the toolbar button's status when the browser reaches the app; keep the name Mister Download Manager as it is
+#. the toolbar button's status when the browser reaches the app; keep the name tnctr download manager as it is
 #, machine
-extension	Connected to Mister Download Manager	Mister Download Manager에 연결됨
+extension	Connected to tnctr download manager	tnctr download manager에 연결됨
 #. text in the browser extension
-#. the toolbar button's status when the browser reaches the app, with the app's version number; keep the name Mister Download Manager as it is
+#. the toolbar button's status when the browser reaches the app, with the app's version number; keep the name tnctr download manager as it is
 #. {version} = a version number (keep the braces as they are)
 #, machine
-extension	Connected to Mister Download Manager {version}	Mister Download Manager {version}에 연결됨
+extension	Connected to tnctr download manager {version}	tnctr download manager {version}에 연결됨
 #. text in the browser extension
 #. button beside a video, sound or stream in the toolbar button's popup: download it with the app; verb; short
 #, machine
 extension	Download	다운로드
 #. text in the browser extension
-#. command in the browser's right-click menu on a page: download the links of the whole page; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on a page: download the links of the whole page; keep the name tnctr download manager as it is
 #, machine
-extension	Download all links with Mister Download Manager	Mister Download Manager으로 모든 링크 다운로드
+extension	Download all links with tnctr download manager	tnctr download manager으로 모든 링크 다운로드
 #. text in the browser extension
-#. command in the browser's right-click menu on selected text: download the links in the selection; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on selected text: download the links in the selection; keep the name tnctr download manager as it is
 #, machine
-extension	Download selected links with Mister Download Manager	Mister Download Manager으로 선택한 링크 다운로드
+extension	Download selected links with tnctr download manager	tnctr download manager으로 선택한 링크 다운로드
 #. text in the browser extension
 #. the button over a video on a web page that downloads it; verb; short (it sits on the video)
 #, machine
 extension	Download video	비디오 다운로드
 #. text in the browser extension
-#. command in the browser's right-click menu on a link, picture, video or sound; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on a link, picture, video or sound; keep the name tnctr download manager as it is
 #, machine
-extension	Download with Mister Download Manager	Mister Download Manager으로 다운로드
+extension	Download with tnctr download manager	tnctr download manager으로 다운로드
 #. text in the browser extension
 #. shown in the toolbar button's popup after the site was excluded
 #. {site} = a web site's name such as "example.com" (keep the braces as they are)
@@ -5620,9 +5620,9 @@ extension	Drag to move it along the video's edge	비디오 가장자리를 따�
 #, machine
 extension	Enter its https:// address.	https:// 주소를 입력하세요.
 #. text in the browser extension
-#. the extension's description in the browser's list of extensions; keep the name Mister Download Manager as it is
+#. the extension's description in the browser's list of extensions; keep the name tnctr download manager as it is
 #, machine
-extension	Hands downloads from the browser to Mister Download Manager.	브라우저에서 Mister Download Manager으로 다운로드를 전달합니다.
+extension	Hands downloads from the browser to tnctr download manager.	브라우저에서 tnctr download manager으로 다운로드를 전달합니다.
 #. text in the browser extension
 #. link in the toolbar button's popup to the help page
 #, machine
@@ -5677,33 +5677,33 @@ extension	Live	라이브
 #, machine
 extension	Media on this page	이 페이지의 미디어
 #. text in the browser extension
-#. the extension's name in the browser's list of extensions and on its toolbar button; keep the name Mister Download Manager as it is
+#. the extension's name in the browser's list of extensions and on its toolbar button; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager	Mister Download Manager
+extension	tnctr download manager	tnctr download manager
 #. text in the browser extension
-#. status when the app was started for a download but didn't answer in time; keep the name Mister Download Manager as it is
+#. status when the app was started for a download but didn't answer in time; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager didn't start in time	Mister Download Manager이(가) 제시간에 시작되지 않았습니다.
+extension	tnctr download manager didn't start in time	tnctr download manager이(가) 제시간에 시작되지 않았습니다.
 #. text in the browser extension
-#. status when the app refuses this copy of the extension (another copy is installed, or it came from another store); keep the name Mister Download Manager as it is
+#. status when the app refuses this copy of the extension (another copy is installed, or it came from another store); keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager doesn't accept this copy of the extension	Mister Download Manager이(가) 이 확장 프로그램 복사본을 허용하지 않습니다.
+extension	tnctr download manager doesn't accept this copy of the extension	tnctr download manager이(가) 이 확장 프로그램 복사본을 허용하지 않습니다.
 #. text in the browser extension
-#. shown briefly on the download button when the app could not be reached; keep the name Mister Download Manager as it is
+#. shown briefly on the download button when the app could not be reached; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager isn't installed or didn't start	Mister Download Manager이(가) 설치되지 않았거나 시작되지 않았습니다.
+extension	tnctr download manager isn't installed or didn't start	tnctr download manager이(가) 설치되지 않았거나 시작되지 않았습니다.
 #. text in the browser extension
-#. status when the browser can't find the app's connection; keep the name Mister Download Manager as it is
+#. status when the browser can't find the app's connection; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager isn't installed, or its browser integration isn't set up	Mister Download Manager이(가) 설치되지 않았거나 브라우저 통합이 설정되지 않았습니다.
+extension	tnctr download manager isn't installed, or its browser integration isn't set up	tnctr download manager이(가) 설치되지 않았거나 브라우저 통합이 설정되지 않았습니다.
 #. text in the browser extension
-#. tooltip of the switch Send downloads through this browser's proxy or VPN extension; keep the name Mister Download Manager as it is
+#. tooltip of the switch Send downloads through this browser's proxy or VPN extension; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager then downloads through the same proxy as this browser. The browser asks you once to allow it; turning this off takes that back.	Mister Download Manager이 이 브라우저와 동일한 프록시를 통해 다운로드합니다. 브라우저에서 한 번 허용할지 묻습니다. 이 기능을 끄면 해당 권한이 취소됩니다.
+extension	tnctr download manager then downloads through the same proxy as this browser. The browser asks you once to allow it; turning this off takes that back.	tnctr download manager이 이 브라우저와 동일한 프록시를 통해 다운로드합니다. 브라우저에서 한 번 허용할지 묻습니다. 이 기능을 끄면 해당 권한이 취소됩니다.
 #. text in the browser extension
-#. tooltip of the switch Send downloads through this browser's proxy or VPN extension in Chrome, Edge and the other Chromium browsers (they ask for no permission at the switch); keep the name Mister Download Manager as it is
+#. tooltip of the switch Send downloads through this browser's proxy or VPN extension in Chrome, Edge and the other Chromium browsers (they ask for no permission at the switch); keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager then downloads through the same proxy as this browser. While this is off, the extension doesn't read the browser's proxy.	Mister Download Manager이(가) 이 브라우저와 동일한 프록시를 통해 다운로드합니다. 이 옵션이 꺼져 있으면 확장 프로그램이 브라우저의 프록시를 읽지 않습니다.
+extension	tnctr download manager then downloads through the same proxy as this browser. While this is off, the extension doesn't read the browser's proxy.	tnctr download manager이(가) 이 브라우저와 동일한 프록시를 통해 다운로드합니다. 이 옵션이 꺼져 있으면 확장 프로그램이 브라우저의 프록시를 읽지 않습니다.
 #. text in the browser extension
 #. the small arrow next to the Download video button that opens its menu (read aloud by screen readers)
 #, machine
@@ -5735,9 +5735,9 @@ extension	Open it	열기
 #, machine
 extension	Open its address once and accept its certificate, then enter a code from its Options, Remote, Pair a device (or misterdownloadmanager-cli pair).	해당 주소를 한 번 열고 인증서를 수락한 다음, 옵션, 원격, 장치 페어링(또는 misterdownloadmanager-cli pair)에서 코드를 입력하세요.
 #. text in the browser extension
-#. button in the toolbar button's popup; keep the name Mister Download Manager as it is
+#. button in the toolbar button's popup; keep the name tnctr download manager as it is
 #, machine
-extension	Open Mister Download Manager	Mister Download Manager 열기
+extension	Open tnctr download manager	tnctr download manager 열기
 #. text in the browser extension
 #. button in the toolbar button's popup: open the app's Options
 #. the trailing ... means it is still going on: keep it
@@ -5772,13 +5772,13 @@ extension	Send downloads through this browser's proxy or VPN extension	이 브�
 #, machine
 extension	Send downloads to	다운로드 보낼 위치
 #. text in the browser extension
-#. shown briefly on the download button after it was clicked; keep the name Mister Download Manager as it is
+#. shown briefly on the download button after it was clicked; keep the name tnctr download manager as it is
 #, machine
-extension	Sent to Mister Download Manager	Mister Download Manager으로 보냄
+extension	Sent to tnctr download manager	tnctr download manager으로 보냄
 #. text in the browser extension
 #. link at the foot of the toolbar button's popup to the creator's GitHub Sponsors page (MDM is free; this is an optional donation)
 #, machine
-extension	Support MDM	MDM 지원
+extension	Support tnctr download manager	tnctr download manager 지원
 #. text in the browser extension
 #. check box in the toolbar button's popup: on, downloads go to the app; off, the browser keeps them
 #, machine
@@ -5788,9 +5788,9 @@ extension	Take downloads from this browser	이 브라우저에서 다운로드 �
 #, machine
 extension	The Chrome Web Store's rules keep this copy of the add-on away from this site's videos. Help says what you can do.	Chrome 웹 스토어 규칙에 따라 이 부가 기능 사본은 이 사이트의 비디오에서 작동하지 않습니다. 할 수 있는 방법은 도움말을 참조하세요.
 #. text in the browser extension
-#. status when the connection to the app broke off (often security software blocking it); keep the name Mister Download Manager as it is
+#. status when the connection to the app broke off (often security software blocking it); keep the name tnctr download manager as it is
 #, machine
-extension	The connection to Mister Download Manager failed	Mister Download Manager에 대한 연결에 실패했습니다.
+extension	The connection to tnctr download manager failed	tnctr download manager에 대한 연결에 실패했습니다.
 #. text in the browser extension
 #. shown briefly on the download button over a video when the app's settings keep the button off on this web site
 #, machine
@@ -5808,7 +5808,7 @@ extension	The last download was left to the browser.	마지막 다운로드는 �
 #, machine
 extension	This browser isn't ticked in Options → General.	옵션 → 일반에서 이 브라우저가 선택되지 않았습니다.
 #. text in the browser extension
-#. choice under Send downloads to: the Mister Download Manager on this computer
+#. choice under Send downloads to: the tnctr download manager on this computer
 #, machine
 extension	This computer	이 컴퓨터
 #. text in the browser extension
@@ -5820,9 +5820,9 @@ extension	This download's details were too large to hand over	이 다운로드�
 #, machine
 extension	This page's player streams its video in pieces, so there's no file to list. Point at the video and use its Download video button.	이 페이지의 플레이어는 비디오를 조각으로 스트리밍하므로 목록에 표시할 파일이 없습니다. 비디오를 가리킨 다음 '비디오 다운로드' 버튼을 사용하세요.
 #. text in the browser extension
-#. status when the app is older than the extension; keep the name Mister Download Manager as it is
+#. status when the app is older than the extension; keep the name tnctr download manager as it is
 #, machine
-extension	Update Mister Download Manager to use everything this extension offers	이 확장에서 제공하는 모든 기능을 사용하려면 Mister Download Manager을(를) 업데이트하세요.
+extension	Update tnctr download manager to use everything this extension offers	이 확장에서 제공하는 모든 기능을 사용하려면 tnctr download manager을(를) 업데이트하세요.
 #. text in the browser extension
 #. why a download stayed with the browser: the app's setting 'Use advanced browser integration' is off; keep the setting's name as the app shows it
 #, machine
@@ -5938,7 +5938,7 @@ key	Up / Down	위쪽 / 아래쪽
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
-menu	&About Mister Download Manager	Mister Download Manager 정보(&A)
+menu	&About tnctr download manager	tnctr download manager 정보(&A)
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
@@ -6290,7 +6290,7 @@ menu	Metro	메트로
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
-menu	Mister Download Manager &Home Page	Mister Download Manager &홈 페이지
+menu	tnctr download manager &Home Page	tnctr download manager &홈 페이지
 #. menu command in the main window
 #, machine
 menu	Move/Rename (Ctrl-M)	이동/이름 바꾸기(Ctrl+M)
@@ -6403,7 +6403,7 @@ menu	Select &all	모두 선택(&A)
 menu	Show &drop target	끌어 놓기 대상 표시(&D)
 #. menu command in the main window
 #, machine
-menu	Show Mister Download Manager	Mister Download Manager 표시
+menu	Show tnctr download manager	tnctr download manager 표시
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine

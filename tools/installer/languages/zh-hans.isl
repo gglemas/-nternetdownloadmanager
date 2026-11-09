@@ -1,4 +1,4 @@
-﻿; Mister Download Manager's installer in Chinese (Simplified): tools/installer/languages.py
+﻿; tnctr download manager's installer in Chinese (Simplified): tools/installer/languages.py
 ; (machine-translated; a native speaker may correct any line).
 
 [LangOptions]
@@ -291,8 +291,8 @@ ShutdownBlockReasonUninstallingApp=正在卸载 %1。
 
 [CustomMessages]
 TaskBrowser=设置浏览器集成(&B) (Chrome、Edge、Brave、Firefox)
-TaskTorrents=用 Mister Download Manager 打开 .&torrent 文件和磁力链接
-TaskStartup=在 &Windows 启动时启动 Mister Download Manager
+TaskTorrents=用 tnctr download manager 打开 .&torrent 文件和磁力链接
+TaskStartup=在 &Windows 启动时启动 tnctr download manager
 TaskGroupOther=其他:
-Launch=启动 Mister Download Manager
+Launch=启动 tnctr download manager
 KeepData=是否同时删除下载列表和设置?%n%n无论如何，您的下载文件都不会被触及。

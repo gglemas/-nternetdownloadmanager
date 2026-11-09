@@ -1,4 +1,4 @@
-//! Mister Download Manager updating itself: how this copy was installed, the release file that
+//! tnctr download manager updating itself: how this copy was installed, the release file that
 //! replaces it, and that file fetched and checked against the release's SHA256SUMS.txt, whose
 //! signature by MDM's release key ([`crate::signed_by_mdm`]) is checked first. Putting the file
 //! in place is the app's (`crates/app/src/update.rs`): it has to close itself to do it.

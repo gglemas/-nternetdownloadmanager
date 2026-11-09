@@ -831,7 +831,7 @@ impl Progress {
             ui,
             o + vec2(33.0, 114.0),
             &mut self.exit,
-            "Exit Mister Download Manager when done",
+            "Exit tnctr download manager when done",
             on,
         );
         winui::checkbox_until(

@@ -1,4 +1,4 @@
-﻿; Mister Download Manager's installer in Assamese: tools/installer/languages.py
+﻿; tnctr download manager's installer in Assamese: tools/installer/languages.py
 ; (machine-translated; a native speaker may correct any line).
 
 [LangOptions]
@@ -291,8 +291,8 @@ ShutdownBlockReasonUninstallingApp=%1 আনইনষ্টল কৰা হৈ�
 
 [CustomMessages]
 TaskBrowser=ব্ৰাউজাৰ ইণ্টিগ্ৰেচন ছেট আপ কৰক (&browser integration) (Chrome, Edge, Brave, Firefox)
-TaskTorrents=Mister Download Manager ৰ সৈতে .&torrent ফাইল আৰু মেগনেট লিংক খোলক
-TaskStartup=যেতিয়া &Windows আৰম্ভ হয় তেতিয়া Mister Download Manager আৰম্ভ কৰক
+TaskTorrents=tnctr download manager ৰ সৈতে .&torrent ফাইল আৰু মেগনেট লিংক খোলক
+TaskStartup=যেতিয়া &Windows আৰম্ভ হয় তেতিয়া tnctr download manager আৰম্ভ কৰক
 TaskGroupOther=অন্যান্য:
-Launch=Mister Download Manager আৰম্ভ কৰক
+Launch=tnctr download manager আৰম্ভ কৰক
 KeepData=আপোনাৰ ডাউনলোড তালিকা আৰু ছেটিংছও বিলোপ কৰিবনে?%n%nআপোনাৰ ডাউনলোড কৰা ফাইলবোৰ কোনো ধৰণে স্পৰ্শ কৰা নহ'ব।

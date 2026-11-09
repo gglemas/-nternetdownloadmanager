@@ -1,4 +1,4 @@
-﻿; Mister Download Manager's installer in Basque: tools/installer/languages.py
+﻿; tnctr download manager's installer in Basque: tools/installer/languages.py
 ; (machine-translated; a native speaker may correct any line).
 
 [LangOptions]
@@ -291,8 +291,8 @@ ShutdownBlockReasonUninstallingApp=%1 desinstalatzen.
 
 [CustomMessages]
 TaskBrowser=Arakatzailearen integrazioa konfiguratu (&B) (Chrome, Edge, Brave, Firefox)
-TaskTorrents=Ireki .&torrent fitxategiak eta magnet estekak Mister Download Manager aplikazioarekin
-TaskStartup=Abiarazi Mister Download Manager &Windows abiaraztean
+TaskTorrents=Ireki .&torrent fitxategiak eta magnet estekak tnctr download manager aplikazioarekin
+TaskStartup=Abiarazi tnctr download manager &Windows abiaraztean
 TaskGroupOther=Bestelakoak:
-Launch=Abiarazi Mister Download Manager
+Launch=Abiarazi tnctr download manager
 KeepData=Zure deskarga-zerrenda eta ezarpenak ere ezabatu?%n%nDeskargatutako fitxategiak ez dira ukitzen, edonola ere.
