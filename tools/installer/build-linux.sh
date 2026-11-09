@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # Builds the Linux release into target/dist/ (up to 0.2.4, each name ended in "-experimental"):
-#   MisterDownloadManager-<version>-linux-x86_64.AppImage        runs on most distros
-#   MisterDownloadManager-<version>-linux-x86_64.AppImage.zsync  its updates (AppImage tools)
-#   MisterDownloadManager-<version>-linux-x86_64.tar.gz          the plain programs
-#   MisterDownloadManager-<version>-linux-x86_64.deb             Debian, Ubuntu, Mint
-#   MisterDownloadManager-<version>-linux-x86_64.rpm             Fedora, RHEL, openSUSE
+#   tnctr-download-manager-<version>-linux-x86_64.AppImage        runs on most distros
+#   tnctr-download-manager-<version>-linux-x86_64.AppImage.zsync  its updates (AppImage tools)
+#   tnctr-download-manager-<version>-linux-x86_64.tar.gz          the plain programs
+#   tnctr-download-manager-<version>-linux-x86_64.deb             Debian, Ubuntu, Mint
+#   tnctr-download-manager-<version>-linux-x86_64.rpm             Fedora, RHEL, openSUSE
 # Update now (crates/tools/src/update.rs), the website (tools/website/build.py) and the docs
 # look for these names, and still for the "-experimental" ones of older releases.
 # Needs: cargo, pwsh (the extension), python3 with Pillow (the icon), dpkg-deb, rpmbuild, network access (appimagetool is fetched),
@@ -17,7 +17,7 @@ dist="$root/target/dist"
 bin="$root/target/release"
 version="$(sed -n 's/^version *= *"\([^"]*\)".*/\1/p' "$root/Cargo.toml" | head -1)"
 [ -n "$version" ] || { echo "no version in Cargo.toml" >&2; exit 1; }
-name="MisterDownloadManager-$version-linux-x86_64"
+name="tnctr-download-manager-$version-linux-x86_64"
 programs=(misterdownloadmanager misterdownloadmanager-nmhost misterdownloadmanager-cli misterdownloadmanager-mcp)
 
 if [ "${1:-}" != "--no-build" ]; then
@@ -64,7 +64,7 @@ EOF
 cat > "$tree/usr/share/applications/misterdownloadmanager.desktop" <<EOF
 [Desktop Entry]
 Type=Application
-Name=Mister Download Manager
+Name=tnctr download manager
 Comment=Download manager
 Exec=misterdownloadmanager %U
 Icon=misterdownloadmanager

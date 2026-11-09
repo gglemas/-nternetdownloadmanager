@@ -1,4 +1,4 @@
-﻿; Mister Download Manager's installer in Welsh: tools/installer/languages.py
+﻿; tnctr download manager's installer in Welsh: tools/installer/languages.py
 ; (machine-translated; a native speaker may correct any line).
 
 [LangOptions]
@@ -291,8 +291,8 @@ ShutdownBlockReasonUninstallingApp=Yn dad-osod %1.
 
 [CustomMessages]
 TaskBrowser=Sefydlu integreiddio porwr (&browser integration) (Chrome, Edge, Brave, Firefox)
-TaskTorrents=Agor ffeiliau .&torrent a dolenni magnet gyda Mister Download Manager
-TaskStartup=Dechrau Mister Download Manager pan fydd &Windows yn cychwyn
+TaskTorrents=Agor ffeiliau .&torrent a dolenni magnet gyda tnctr download manager
+TaskStartup=Dechrau tnctr download manager pan fydd &Windows yn cychwyn
 TaskGroupOther=Arall:
-Launch=Dechrau Mister Download Manager
+Launch=Dechrau tnctr download manager
 KeepData=Dileu eich rhestr lawrlwytho a'ch gosodiadau hefyd?%n%nNi chyffyrddir â'ch ffeiliau sydd wedi'u lawrlwytho beth bynnag.

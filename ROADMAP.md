@@ -7,6 +7,10 @@ issue, where the details and the discussion are. Released changes are in
 
 ✅ done, coming in 0.5.0 · 🔄 being built · 📋 planned · 🔍 looking into it
 
+## Branding
+
+- [x] Rename the application display name to `tnctr download manager` across the desktop UI, translations, browser extension and installers; preserve existing storage and integration identifiers.
+
 ## Version 0.5.0
 
 Everything below ships together, in version 0.5.0.

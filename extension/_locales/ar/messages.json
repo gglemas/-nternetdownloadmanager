@@ -1,12 +1,12 @@
 {
   "name": {
-    "message": "Mister Download Manager"
+    "message": "tnctr download manager"
   },
   "description": {
-    "message": "يسلم التنزيلات من المستعرض إلى Mister Download Manager."
+    "message": "يسلم التنزيلات من المستعرض إلى tnctr download manager."
   },
   "menu": {
-    "message": "تنزيل باستخدام Mister Download Manager"
+    "message": "تنزيل باستخدام tnctr download manager"
   },
   "video_download": {
     "message": "تنزيل الفيديو"
@@ -30,25 +30,25 @@
     "message": "إعدادات الزر..."
   },
   "video_sent": {
-    "message": "تم الإرسال إلى Mister Download Manager"
+    "message": "تم الإرسال إلى tnctr download manager"
   },
   "video_failed": {
-    "message": "لم يتم تثبيت Mister Download Manager أو لم يبدأ"
+    "message": "لم يتم تثبيت tnctr download manager أو لم يبدأ"
   },
   "video_drag": {
     "message": "اسحب لتحريكه على طول حافة الفيديو"
   },
   "menu_selected": {
-    "message": "تنزيل الروابط المحددة باستخدام Mister Download Manager"
+    "message": "تنزيل الروابط المحددة باستخدام tnctr download manager"
   },
   "menu_all": {
-    "message": "تنزيل جميع الروابط باستخدام Mister Download Manager"
+    "message": "تنزيل جميع الروابط باستخدام tnctr download manager"
   },
   "status_connected": {
-    "message": "متصل بـ Mister Download Manager"
+    "message": "متصل بـ tnctr download manager"
   },
   "status_connected_version": {
-    "message": "متصل بـ Mister Download Manager $version$",
+    "message": "متصل بـ tnctr download manager $version$",
     "placeholders": {
       "version": {
         "content": "$1",
@@ -60,22 +60,22 @@
     "message": "متوقف مؤقتا: تبقى التنزيلات مع المستعرض"
   },
   "status_not_installed": {
-    "message": "لم يتم تثبيت Mister Download Manager، أو لم يتم إعداد الربط بالمستعرض الخاص به"
+    "message": "لم يتم تثبيت tnctr download manager، أو لم يتم إعداد الربط بالمستعرض الخاص به"
   },
   "status_forbidden": {
-    "message": "لا يقبل Mister Download Manager هذه النسخة من الملحق"
+    "message": "لا يقبل tnctr download manager هذه النسخة من الملحق"
   },
   "status_not_running": {
-    "message": "لم يبدأ Mister Download Manager في الوقت المحدد"
+    "message": "لم يبدأ tnctr download manager في الوقت المحدد"
   },
   "status_host_failed": {
-    "message": "فشل الاتصال بـ Mister Download Manager"
+    "message": "فشل الاتصال بـ tnctr download manager"
   },
   "status_too_large": {
     "message": "كانت تفاصيل هذا التنزيل كبيرة جدا بحيث لا يمكن تسليمها"
   },
   "status_update_app": {
-    "message": "قم بتحديث Mister Download Manager لاستخدام كل ما يوفره هذا الملحق"
+    "message": "قم بتحديث tnctr download manager لاستخدام كل ما يوفره هذا الملحق"
   },
   "popup_take": {
     "message": "تلقي التنزيلات من هذا المستعرض"
@@ -84,10 +84,10 @@
     "message": "إرسال التنزيلات عبر وكيل هذا المستعرض أو ملحق VPN"
   },
   "popup_proxy_title": {
-    "message": "يجري Mister Download Manager التنزيل بعد ذلك عبر الوكيل نفسه الذي يستخدمه هذا المستعرض. يطلب منك المستعرض مرة واحدة السماح بذلك؛ وإيقاف هذا يلغي ذلك."
+    "message": "يجري tnctr download manager التنزيل بعد ذلك عبر الوكيل نفسه الذي يستخدمه هذا المستعرض. يطلب منك المستعرض مرة واحدة السماح بذلك؛ وإيقاف هذا يلغي ذلك."
   },
   "popup_proxy_title_chromium": {
-    "message": "يجري Mister Download Manager التنزيل بعد ذلك عبر الوكيل نفسه الذي يستخدمه هذا المستعرض. عندما يكون هذا الخيار متوقفا، لا يقرأ الملحق وكيل المستعرض."
+    "message": "يجري tnctr download manager التنزيل بعد ذلك عبر الوكيل نفسه الذي يستخدمه هذا المستعرض. عندما يكون هذا الخيار متوقفا، لا يقرأ الملحق وكيل المستعرض."
   },
   "popup_exclude_site": {
     "message": "عدم التقاط التنزيلات من $site$ أبدا",
@@ -108,7 +108,7 @@
     }
   },
   "popup_open": {
-    "message": "فتح Mister Download Manager"
+    "message": "فتح tnctr download manager"
   },
   "popup_options": {
     "message": "خيارات..."
@@ -117,7 +117,7 @@
     "message": "تعليمات"
   },
   "popup_support": {
-    "message": "ادعم MDM"
+    "message": "ادعم tnctr download manager"
   },
   "popup_fix": {
     "message": "كيفية إصلاحها"
@@ -195,7 +195,7 @@
     "message": "هذا الكمبيوتر"
   },
   "popup_send_remote": {
-    "message": "Mister Download Manager آخر (خادم)"
+    "message": "tnctr download manager آخر (خادم)"
   },
   "popup_remote_code": {
     "message": "رمز الإقران"

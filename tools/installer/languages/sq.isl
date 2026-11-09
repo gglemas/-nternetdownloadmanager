@@ -1,4 +1,4 @@
-﻿; Mister Download Manager's installer in Albanian: tools/installer/languages.py
+﻿; tnctr download manager's installer in Albanian: tools/installer/languages.py
 ; (machine-translated; a native speaker may correct any line).
 
 [LangOptions]
@@ -291,8 +291,8 @@ ShutdownBlockReasonUninstallingApp=Po çinstalohet %1.
 
 [CustomMessages]
 TaskBrowser=Konfiguro integrimin e &shfletuesit (Chrome, Edge, Brave, Firefox)
-TaskTorrents=Hapni skedarët .&torrent dhe lidhjet magnet me Mister Download Manager
-TaskStartup=Nisni Mister Download Manager kur niset &Windows
+TaskTorrents=Hapni skedarët .&torrent dhe lidhjet magnet me tnctr download manager
+TaskStartup=Nisni tnctr download manager kur niset &Windows
 TaskGroupOther=Të tjera:
-Launch=Nisni Mister Download Manager
+Launch=Nisni tnctr download manager
 KeepData=Të fshihet edhe lista e shkarkimeve dhe cilësimet?%n%nSkedarët tuaj të shkarkuar nuk preken në asnjë mënyrë.

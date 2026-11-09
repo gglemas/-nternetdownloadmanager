@@ -1,4 +1,4 @@
-﻿; Mister Download Manager's installer in Norwegian Nynorsk: tools/installer/languages.py
+﻿; tnctr download manager's installer in Norwegian Nynorsk: tools/installer/languages.py
 ; (machine-translated; a native speaker may correct any line).
 
 [LangOptions]
@@ -291,8 +291,8 @@ ShutdownBlockReasonUninstallingApp=Avinstallerer %1.
 
 [CustomMessages]
 TaskBrowser=Set opp nettlesar&integrering (Chrome, Edge, Brave, Firefox)
-TaskTorrents=Opne .&torrent-filer og magnetlenkjer med Mister Download Manager
-TaskStartup=Start Mister Download Manager når &Windows startar
+TaskTorrents=Opne .&torrent-filer og magnetlenkjer med tnctr download manager
+TaskStartup=Start tnctr download manager når &Windows startar
 TaskGroupOther=Anna:
-Launch=Start Mister Download Manager
+Launch=Start tnctr download manager
 KeepData=Vil du òg slette nedlastingslista og innstillingane dine?%n%nDei nedlasta filene dine blir ikkje rørt uansett.

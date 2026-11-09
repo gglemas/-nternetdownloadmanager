@@ -1,7 +1,7 @@
-# Mister Download Manager
+# tnctr download manager
 
 <p align="center">
-  <img src="docs/images/logo.png" alt="Mister Download Manager's logo" width="160">
+  <img src="docs/images/logo.png" alt="tnctr download manager's logo" width="160">
 </p>
 
 <h3 align="center">Downloads faster than IDM. Free, forever.</h3>
@@ -23,7 +23,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/anefzaoui/misterdownloadmanager/stargazers"><img src="https://img.shields.io/github/stars/anefzaoui/misterdownloadmanager?style=social&label=Star%20MDM" alt="Star Mister Download Manager on GitHub" height="28"></a><br>
+  <a href="https://github.com/anefzaoui/misterdownloadmanager/stargazers"><img src="https://img.shields.io/github/stars/anefzaoui/misterdownloadmanager?style=social&label=Star%20MDM" alt="Star tnctr download manager on GitHub" height="28"></a><br>
   <sub>⭐ <b>Like it? Give it a star.</b> MDM has no ads and no marketing budget: stars are how people find it.</sub>
 </p>
 
@@ -44,7 +44,7 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/images/main-dark.webp">
-    <img src="docs/images/main-light.webp" alt="Mister Download Manager's main window: categories, toolbar and a list of downloads" width="920">
+    <img src="docs/images/main-light.webp" alt="tnctr download manager's main window: categories, toolbar and a list of downloads" width="920">
   </picture>
 </p>
 
@@ -68,12 +68,12 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/images/races-dark.svg">
-    <img src="docs/images/races-light.svg" alt="Three races. A big 1 GB file: Mister Download Manager 1 second, IDM 5.5 seconds, 5 times faster. A small file: instantly versus 3.1 seconds, over 100 times faster. A shaky connection: 1.6 seconds versus 5.4 seconds, 3 times faster." width="880">
+    <img src="docs/images/races-light.svg" alt="Three races. A big 1 GB file: tnctr download manager 1 second, IDM 5.5 seconds, 5 times faster. A small file: instantly versus 3.1 seconds, over 100 times faster. A shaky connection: 1.6 seconds versus 5.4 seconds, 3 times faster." width="880">
   </picture>
 </p>
 
 <!-- compare:start -->
-| | Mister Download Manager | IDM 6.42 |
+| | tnctr download manager | IDM 6.42 |
 | --- | --- | --- |
 | Download a big file (1 GB) | **1 second** | 5.5 seconds |
 | Download a small file | **instantly** | 3.1 seconds |
@@ -128,7 +128,7 @@ Up to version 0.2.4, the files' names end in `-experimental`.
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/images/main-linux-dark.webp">
-    <img src="docs/images/main-linux.webp" alt="Mister Download Manager's main window on Ubuntu's GNOME desktop" width="620">
+    <img src="docs/images/main-linux.webp" alt="tnctr download manager's main window on Ubuntu's GNOME desktop" width="620">
   </picture>
 </p>
 
@@ -317,7 +317,7 @@ statistically significant (Mann-Whitney p < 0.001), and MDM used less CPU in eve
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/images/bench-time-dark.svg">
-    <img src="docs/images/bench-time-light.svg" alt="Time to finish a download in seconds, Mister Download Manager versus IDM, in seven scenarios" width="880">
+    <img src="docs/images/bench-time-light.svg" alt="Time to finish a download in seconds, tnctr download manager versus IDM, in seven scenarios" width="880">
   </picture>
 </p>
 
@@ -479,7 +479,7 @@ a free download manager. [Star it on GitHub](https://github.com/anefzaoui/mister
 <a href="https://star-history.com/#anefzaoui/misterdownloadmanager&Date">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=anefzaoui/misterdownloadmanager&type=Date&theme=dark">
-    <img src="https://api.star-history.com/svg?repos=anefzaoui/misterdownloadmanager&type=Date" alt="Mister Download Manager's GitHub stars over time" width="600">
+    <img src="https://api.star-history.com/svg?repos=anefzaoui/misterdownloadmanager&type=Date" alt="tnctr download manager's GitHub stars over time" width="600">
   </picture>
 </a>
 
@@ -491,7 +491,7 @@ changes or unlocks, and there is no paid edition.
 
 ## Licence and credits
 
-Copyright (c) 2026 Ahmed Nefzaoui. Mister Download Manager is free software under the
+Copyright (c) 2026 Ahmed Nefzaoui. tnctr download manager is free software under the
 [GNU General Public License, version 3](LICENSE) or (at your option) any later version.
 
 Built on [egui](https://github.com/emilk/egui) through
