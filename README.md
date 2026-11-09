@@ -4,7 +4,7 @@
   <img src="docs/images/logo.png" alt="tnctr download manager's logo" width="160">
 </p>
 
-<h3 align="center">Downloads faster than IDM. Free, forever.</h3>
+<h3 align="center">Manage your downloads. Free, forever.</h3>
 
 <p align="center">
   <a href="https://github.com/anefzaoui/misterdownloadmanager/releases/latest"><img src="https://img.shields.io/badge/Download%20for-Windows-2a78d6?style=flat-square&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0yIDMuNWw4LjUtMS4ydjguMkgyek0xMS41IDIuMkwyMiAuOHY5LjdIMTEuNXpNMiAxMS41aDguNXY4LjJMMiAxOC41ek0xMS41IDExLjVIMjJ2OS43bC0xMC41LTEuNHoiLz48L3N2Zz4%3D" alt="Download for Windows" height="34"></a>
@@ -34,9 +34,9 @@
 
 <table align="center">
   <tr>
-    <td align="center" width="210"><img src="docs/images/icons/faster.png" width="76" alt=""><h1>5×</h1><b>Faster</b><br><sub>a 1 GB file: 1 s instead of 5.5 s</sub></td>
-    <td align="center" width="210"><img src="docs/images/icons/languages.png" width="76" alt=""><h1>+46</h1><b>More languages</b><br><sub>86 instead of IDM's 40</sub></td>
-    <td align="center" width="210"><img src="docs/images/icons/free.png" width="76" alt=""><h1>100%</h1><b>Cheaper (free!)</b><br><sub>no licence, no trial, ever</sub></td>
+    <td align="center" width="210"><img src="docs/images/icons/faster.png" width="76" alt=""><h1>Parallel</h1><b>Downloads</b><br><sub>resume, queue and schedule your files</sub></td>
+    <td align="center" width="210"><img src="docs/images/icons/languages.png" width="76" alt=""><h1>86</h1><b>Languages</b><br><sub>use the interface in your language</sub></td>
+    <td align="center" width="210"><img src="docs/images/icons/free.png" width="76" alt=""><h1>100%</h1><b>Free to use</b><br><sub>no licence, no trial, ever</sub></td>
     <td align="center" width="210"><img src="docs/images/icons/torrent.png" width="76" alt=""><h1>Torrent</h1><b>Supported fully</b><br><sub>magnet links, .torrent files, seeding</sub></td>
   </tr>
 </table>
@@ -58,35 +58,14 @@
   <a href="LICENSE"><img src="https://img.shields.io/github/license/anefzaoui/misterdownloadmanager" alt="GPL-3.0 license"></a>
 </p>
 
-| 🚀 [Download](#download) | ⚡ [Why switch](#why-switch-from-idm) | 🖼️ [Screenshots](#screenshots) | ✨ [Getting started](docs/getting-started.md) | 📜 [Help and tutorials](docs/README.md) |
+| 🚀 [Download](#download) | ⚡ [Features](#features) | 🖼️ [Screenshots](#screenshots) | ✨ [Getting started](docs/getting-started.md) | 📜 [Help and tutorials](docs/README.md) |
 | --- | --- | --- | --- | --- |
 
-## Why switch from IDM?
+## Features
 
-**Same window you know. Your downloads finish sooner. And it costs nothing.**
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/images/races-dark.svg">
-    <img src="docs/images/races-light.svg" alt="Three races. A big 1 GB file: tnctr download manager 1 second, IDM 5.5 seconds, 5 times faster. A small file: instantly versus 3.1 seconds, over 100 times faster. A shaky connection: 1.6 seconds versus 5.4 seconds, 3 times faster." width="880">
-  </picture>
-</p>
-
-<!-- compare:start -->
-| | tnctr download manager | IDM 6.42 |
-| --- | --- | --- |
-| Download a big file (1 GB) | **1 second** | 5.5 seconds |
-| Download a small file | **instantly** | 3.1 seconds |
-| Download over a shaky connection | **1.6 seconds** | 5.4 seconds |
-| Wait before a download starts | **instantly** | 3.1 seconds |
-| Price | **Free, forever** | Paid, after a 30-day trial |
-| Ads, nag screens, sign-up | **None** | Registration needed |
-| Open source | **Yes** (GPL) | No |
-<!-- compare:end -->
-
-Nothing new to learn: the toolbar, the categories, the list of downloads, the progress window and
-the browser button are where you expect them. Measured on the same computer, same files, both
-programs at their default settings ([how we measured](#the-benchmark-in-detail)).
+Download files with parallel connections, resume interrupted transfers, organize queues and
+schedule downloads. Browser integration, video downloads and torrents are included, with no
+ads, trial or sign-up.
 
 ## Download
 
@@ -290,7 +269,7 @@ right-to-left window.
   switch, and choose an encrypted DNS. Each download shows its server's country.
 - **From your phone, or on a server**: control MDM from a phone on your home network, or run it
   without a window on a NAS (Docker, Unraid) ([how](docs/server.md)).
-- **Works from scripts too**: IDM's command-line switches, a command-line tool, and a local API for other programs ([how](docs/command-line.md)).
+- **Works from scripts too**: command-line switches, a command-line tool, and a local API for other programs ([how](docs/command-line.md)).
 - **Works with your AI assistant**: an MCP server lets Claude, Cursor or VS Code list, add, pause and remove your downloads ([set it up](docs/ai-assistants.md)).
 - **Leaves you some speed**: limit one download or all of them, only while you're at the computer.
 - **Day and dark mode, and themes**: Classic, Native, High contrast, Metro, Adwaita, Breeze,
@@ -307,46 +286,14 @@ Step by step: [your first download](docs/guide-first-download.md) ·
 
 ---
 
-## The benchmark in detail
+## Independent implementation
 
-Both programs downloaded the same files from the same local test server
-([labserver](crates/labserver)), with the network trouble each scenario names: seven runs each,
-both at their default settings. MDM finished first in **all seven scenarios**; every difference is
-statistically significant (Mann-Whitney p < 0.001), and MDM used less CPU in every one.
+tnctr download manager is an independent, clean-room program built on public standards,
+including HTTP (RFC 9110 and RFC 9112). Its download engine is tested against a local
+[lab server](crates/labserver) with controlled network faults.
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/images/bench-time-dark.svg">
-    <img src="docs/images/bench-time-light.svg" alt="Time to finish a download in seconds, tnctr download manager versus IDM, in seven scenarios" width="880">
-  </picture>
-</p>
-
-On a server that allows only two connections, MDM used 2 and still finished first; IDM opened 480.
-The full table, the machine and the raw data: [docs/bench/run5/REPORT.md](docs/bench/run5/REPORT.md).
-The harness is in [tools/bench](tools/bench), so anyone can run it again.
-
-## Not a reverse-engineering project
-
-MDM is an independent, clean-room program. It is a new implementation of a familiar way of
-working, not a copy of anyone's software.
-
-- **No one else's code or assets.** It contains no code, binaries, artwork, icons, sounds or
-  text from Internet Download Manager, nor code from any other download manager. The app icon
-  was made for MDM with ChatGPT (OpenAI's image generation); the other icons come from openly
-  licensed sets ([ATTRIBUTION.md](ATTRIBUTION.md)).
-- **Nothing taken apart.** No IDM file was ever disassembled, decompiled, debugged, patched or
-  inspected below its user interface, and its licensing, trial and registration were never
-  touched or bypassed.
-- **Learned as a user learns.** What MDM does was learned from IDM's public documentation and
-  help pages, its public screenshots, and by using a licensed copy as a black box: downloading
-  test files from our own test server ([labserver](crates/labserver)) and watching what reached
-  the network and the screen.
-- **Built on public standards.** The download engine follows the HTTP specifications (RFC 9110,
-  RFC 9112) and was designed, tested and measured independently. Its speed comes from its own
-  design, which the benchmark shows.
-- **Not affiliated.** MDM isn't affiliated with, endorsed by or connected to Tonec Inc.
-  "Internet Download Manager" and "IDM" are trademarks of their owner, named here only to
-  describe the layout people already know and to compare the two programs.
+The app icon was made for the project with ChatGPT (OpenAI's image generation). Other icons
+and dependencies retain their open-source licenses and credits in [ATTRIBUTION.md](ATTRIBUTION.md).
 
 ## For developers
 
@@ -422,7 +369,7 @@ pieces fit.
 | `python tools/i18n/extract.py` | Lists every interface text in `i18n/en.tsv` (CI checks it matches the code) |
 | `python tools/i18n/translate.py` | Translates what the catalogs lack (checks every row in code) |
 | `python tools/installer/languages.py` | The installer's messages in every language |
-| `node tools/readme/build.mjs` | This page's pictures, comparison table and flags, from the benchmark data |
+| `node tools/readme/build.mjs` | This page's icons and language flags |
 | `tools\lab\docs-shots.ps1` | The screenshots, from a separate test instance (`/show <window>` opens each window), off the screen |
 | `python tools/shots/make.py` | The help pages' pictures, from one list (`tools/shots/shots.toml`): shot, cropped, annotated, lossless WebP; `make.py check` keeps them in step |
 | `tools/lab/wsl/` | A WSL2 machine that builds MDM for Linux in minutes and shoots its windows on a virtual screen ([README](tools/lab/wsl/README.md)) |

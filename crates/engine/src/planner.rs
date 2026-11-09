@@ -1,6 +1,5 @@
 //! Dynamic segmentation planner — pure logic, no I/O.
 //!
-//! Implements IDM's documented rule (notes/ENGINE.md §1). When a connection is free it:
 //! 1. takes an unassigned, unfinished segment (e.g. after a resume or a failed worker);
 //! 2. else takes over the segment right after the one it just finished, if that segment's
 //!    connection has not started receiving yet and has waited at least `preempt_after` (ours:
@@ -58,7 +57,6 @@ pub struct Assignment {
     pub to: u64,
     /// Bytes of this segment directly before `from` that are already on disk (resumed or
     /// taken-over segments; 0 for a fresh split). The worker re-fetches a few of them to check
-    /// the file did not change (IDM's resume overlap check).
     pub written: u64,
     /// A worker whose not-yet-receiving segment was taken over; its next claim is `Lost`.
     pub preempted: Option<WorkerId>,
@@ -195,7 +193,6 @@ impl Planner {
             return Some(self.give(i, w, None));
         }
 
-        // 2. IDM's reassign rule: the next segment's connection hasn't started receiving.
         if let Some(a) = after
             && let Some(i) = self.segs.iter().position(|s| {
                 s.start == a
