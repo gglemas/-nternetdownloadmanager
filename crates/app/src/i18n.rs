@@ -156,7 +156,7 @@ pub fn isolate(value: &str) -> String {
     craft_i18n::isolate(value)
 }
 
-/// A whole number as the interface language writes it (English: plain digits, as IDM):
+/// A whole number as the interface language writes it (English: plain digits, as the app):
 /// `10200`, `10.200`, `10 200`.
 pub fn integer(n: u64) -> String {
     if code() == "en" {
@@ -167,7 +167,7 @@ pub fn integer(n: u64) -> String {
 }
 
 /// `v` with `decimals` digits after the decimal mark, as the interface language writes it
-/// (English: `1234.50`, as IDM; German `1.234,50`).
+/// (English: `1234.50`, as the app; German `1.234,50`).
 pub fn decimal(v: f64, decimals: usize) -> String {
     if code() == "en" {
         format!("{v:.decimals$}")
@@ -177,7 +177,7 @@ pub fn decimal(v: f64, decimals: usize) -> String {
 }
 
 /// `ratio` as a percentage with `decimals` digits, as the interface language writes it (English:
-/// `13.38%`, as IDM; German `13,38 %`, Turkish `%13,38`).
+/// `13.38%`, as the app; German `13,38 %`, Turkish `%13,38`).
 pub fn percent(ratio: f64, decimals: usize) -> String {
     if code() == "en" {
         format!("{:.decimals$}%", 100.0 * ratio)

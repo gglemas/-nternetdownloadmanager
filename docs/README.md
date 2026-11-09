@@ -1,6 +1,6 @@
 # Mister Download Manager — documentation
 
-Mister Download Manager (MDM) is a free download manager for Windows and Linux (and, still experimental, macOS). It is laid out the way Internet Download Manager users expect: a toolbar, categories on the left, one list of downloads and a browser extension that hands downloads to it.
+Mister Download Manager (MDM) is a free download manager for Windows and Linux (and, still experimental, macOS). Its compact desktop interface includes a toolbar, categories on the left, one list of downloads and a browser extension that hands downloads to it.
 
 These pages explain each part of the program. The tutorials walk through the things people do most, one task each.
 
@@ -43,7 +43,7 @@ These pages explain each part of the program. The tutorials walk through the thi
 - **[Languages](languages.md)** — the 86 interface languages, numbers and dates, right-to-left layouts, and how to help translate.
 - **[Portable mode](portable.md)** — run MDM from a folder or a USB stick without installing it.
 - **[Keyboard shortcuts](keyboard-shortcuts.md)** — every key the main window answers, and screen readers.
-- **[Command line and automation](command-line.md)** — IDM's command-line switches, the `misterdownloadmanager-cli` tool, and the automation API other programs can use.
+- **[Command line and automation](command-line.md)** — command-line switches, the `misterdownloadmanager-cli` tool, and the automation API other programs can use.
 - **[AI assistants (MCP)](ai-assistants.md)** — let Claude, Cursor, VS Code or another MCP assistant list, add, pause and remove your downloads.
 
 ## Tutorials

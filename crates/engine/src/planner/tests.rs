@@ -122,7 +122,7 @@ fn a_request_still_on_its_way_is_not_taken_over() {
     let a = p.assign(0, Some(5 * MB)).unwrap();
     assert_eq!(a.preempted, None, "worker 1 only just got its segment");
     check_invariants(&p);
-    // Once it has waited past the grace, IDM's rule applies.
+    // Once it has waited past the grace, the rule applies.
     let mut p = setup();
     std::thread::sleep(grace + std::time::Duration::from_millis(10));
     let a = p.assign(0, Some(5 * MB)).unwrap();

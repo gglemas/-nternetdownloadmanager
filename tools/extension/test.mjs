@@ -1158,9 +1158,9 @@ const MPD = (protect) => `<?xml version="1.0"?>
   for (const file of readdirSync(new URL("../../extension/", import.meta.url))) {
     if (!/\.(js|html|css|json)$/.test(file)) continue;
     const text = readFileSync(new URL(`../../extension/${file}`, import.meta.url), "utf8");
-    assert.ok(!/\bIDM\b|Internet Download Manager|notes\//.test(text), `${file} names IDM or the private notes`);
+    assert.ok(!/notes\//.test(text), `${file} refers to private notes`);
   }
-  ok("nothing of IDM's in the extension");
+  ok("no private notes in the extension");
 }
 
 // The right-click command in the browser's language, and every locale complete: the same keys

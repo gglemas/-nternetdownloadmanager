@@ -307,7 +307,7 @@
 #, machine
 	Add them without starting them	Dodaj jih, ne da bi jih zagnal
 #. message or event log entry in the main window; text in the Link grabber window
-#. Link grabber button: add the ticked links to the download queue without starting them (IDM's OK)
+#. Link grabber button: add the ticked links to the download queue without starting them (the OK)
 #, machine
 	Add to queue	Dodaj v čakalno vrsto
 #. text in a dialog box
@@ -803,7 +803,7 @@
 #, machine
 	Change folder for "{category}" category on last selected	Spremeni mapo za kategorijo »{category}« glede na zadnjo izbrano
 #. text in the Link grabber window
-#. Link grabber button (IDM's): tick every link
+#. Link grabber button (the): tick every link
 #, machine
 	Check all	Izberi vse
 #. text in rssdlg.rs
@@ -1919,7 +1919,7 @@
 #, machine
 	Hide to the notification area	Skrij v območje za obvestila
 #. checkbox in the Link grabber window; text in the Link grabber window; checkbox in the Options window
-#. Link grabber check box (IDM's "Hide HTML files"): links to web pages are not shown
+#. Link grabber check box (the "Hide HTML files"): links to web pages are not shown
 #, machine
 	Hide web pages	Skrij spletne strani
 #. text in the Options window
@@ -2332,7 +2332,7 @@
 #, machine
 	Login	Uporabniško ime
 #. checkbox in the Options window
-#. Options → Archives → Link grabber check box (IDM's Download all links looks every link up)
+#. Options → Archives → Link grabber check box (the Download all links looks every link up)
 #, machine
 	Look links up when they arrive (name, size, online)	Poišči povezave ob prejemu (ime, velikost, dostopnost)
 #. text in the Add torrent window; button in the Download video window
@@ -4842,7 +4842,7 @@
 #, machine
 	Ukraine	Ukrajina
 #. text in the Link grabber window
-#. Link grabber button (IDM's): untick every link
+#. Link grabber button (the): untick every link
 #, machine
 	Uncheck all	Odznači vse
 #. item in the Categories tree in the main window; text in remote.rs
@@ -6163,7 +6163,7 @@ menu	C&ustomize URL List...	&Prilagodi seznam URL-jev...
 #, machine
 menu	Check for &updates...	Preveri &posodobitve...
 #. menu command in the main window
-#. View → Theme: MDM's own look, the default (IDM's layout, Windows 11's controls)
+#. View → Theme: MDM's own look, the default (the layout, Windows 11's controls)
 #, machine
 menu	Classic	Klasično
 #. menu command in the main window
@@ -6242,7 +6242,7 @@ menu	Font	Pisava
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
 #, machine
-menu	From &IDM export file...	Iz &izvozne datoteke IDM...
+menu	From &legacy export file...	From &legacy export file...
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
@@ -6442,7 +6442,7 @@ menu	Theme	Tema
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
 #, machine
-menu	To &IDM export file...	V datoteko za izvoz &IDM...
+menu	To &legacy export file...	To &legacy export file...
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it

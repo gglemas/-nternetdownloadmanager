@@ -1,4 +1,4 @@
-//! App settings, saved with the download list (store.rs). Defaults are IDM 6.42's
+//! App settings, saved with the download list (store.rs). Defaults are the measured build's
 //! (notes/ui-spec/options-dialog.md, scheduler-and-misc.md).
 
 use mdm_ipc::capture::host_matches;
@@ -63,30 +63,30 @@ impl DebridAccount {
 pub struct Settings {
     /// Downloads → Speed Limiter → Turn on / Turn off.
     pub speed_limit_on: bool,
-    /// "Maximum download speed for one file", KBytes/sec (IDM default 10).
+    /// "Maximum download speed for one file", KBytes/sec (the app default 10).
     pub speed_limit_kb: u64,
     /// "Always turn on Speed Limiter on … startup".
     pub limiter_on_startup: bool,
-    /// Beyond IDM (D-012): one limit for all downloads together, optionally only while the
+    /// additional (D-012): one limit for all downloads together, optionally only while the
     /// user is at the computer. Off by default.
     pub global_limit_on: bool,
     pub global_limit_kb: u64,
     pub global_only_active: bool,
-    /// Options → Connection → "Default max. conn. number" (IDM default 8).
+    /// Options → Connection → "Default max. conn. number" (the app default 8).
     pub max_connections: u32,
-    /// Beyond IDM (issue #12): "Allow more than 32 connections" raises the ceiling of that
+    /// additional (issue #12): "Allow more than 32 connections" raises the ceiling of that
     /// number and of the exceptions from `MAX_CONNECTIONS` to `MAX_CONNECTIONS_UNLOCKED`.
     pub many_connections: bool,
     /// Show the "Download complete" dialog (Options → Downloads).
     pub show_complete: bool,
-    /// List right-click → On Double click: Open (true) or Properties (IDM default).
+    /// List right-click → On Double click: Open (true) or Properties (the app default).
     pub double_click_open: bool,
     /// Ask before deleting downloads ("Don't show this dialog again" clears it).
     pub confirm_delete: bool,
-    /// The confirmation's "Also delete the files from disk", as last answered (IDM keeps it):
+    /// The confirmation's "Also delete the files from disk", as last answered (the app keeps it):
     /// its first state next time, and what happens when it no longer asks.
     pub delete_files_too: bool,
-    /// Categories pane frame width (IDM: 143, frame x 6..149); dragged with the splitter.
+    /// Categories pane frame width ( 143, frame x 6..149); dragged with the splitter.
     pub categories_width: u32,
     /// The main window as last left: position and size (x, y, width, height, in points at 100 %
     /// interface size: the system's own logical pixels), and maximized.
@@ -97,7 +97,7 @@ pub struct Settings {
     pub show_categories: bool,
     pub branches: [bool; 4],
     pub view: Option<crate::app::View>,
-    /// View → Dark Mode support (IDM 6.37): follow Windows' dark app mode; off = always light.
+    /// View → Dark Mode support (the app 6.37): follow Windows' dark app mode; off = always light.
     pub dark_mode_support: bool,
     /// View → Always dark (#60): dark whatever the system says (a desktop that reports no
     /// preference, or a dark MDM on a light desktop).
@@ -112,14 +112,14 @@ pub struct Settings {
     /// window drawn that much larger than the display's own scale makes it.
     pub interface_size: u16,
     /// Scheduler → Download limits: "Download no more than `limits_mb` MBytes every
-    /// `limits_hours` hours" (IDM defaults 200 / 5), with a warning before stopping.
+    /// `limits_hours` hours" (the app defaults 200 / 5), with a warning before stopping.
     pub limits_on: bool,
     pub limits_mb: u32,
     pub limits_hours: u32,
     pub limits_warn: bool,
 
-    // ---- Options (notes/ui-spec/options-dialog.md; IDM 6.42 defaults unless noted) ----
-    /// General: start with Windows. IDM's default is on; ours is off until the user asks
+    // ---- Options (notes/ui-spec/options-dialog.md; the measured build defaults unless noted) ----
+    /// General: start with Windows. the default is on; ours is off until the user asks
     /// (a download manager shouldn't register itself silently).
     pub launch_on_startup: bool,
     /// View → Language: a catalog's code (`ar`, `pt-br`…); `None` follows Windows.
@@ -164,7 +164,7 @@ pub struct Settings {
     pub category_dirs: Vec<(String, String)>,
     pub change_folder_on_last: bool,
     /// The addresses typed into Add URL and the folders downloads were saved to, newest first
-    /// (the Address and Save As drop lists, as IDM's UrlHistory.txt).
+    /// (the Address and Save As drop lists, as configured UrlHistory.txt).
     pub url_history: Vec<String>,
     pub folder_history: Vec<String>,
     pub set_creation_date: bool,
@@ -230,10 +230,10 @@ pub struct Settings {
     pub debrid_torrents: bool,
     /// Sounds: download complete, download failed, queue started, queue stopped/finished.
     pub sounds: [(bool, String); 4],
-    /// The local automation API (beyond IDM): status queries over the command channel. Off by
+    /// The local automation API (additional): status queries over the command channel. Off by
     /// default; `misterdownloadmanager-cli api on` turns it on.
     pub automation_api: bool,
-    /// Options → Remote (#141, beyond IDM): paired phones and computers on the local network
+    /// Options → Remote (#141, additional): paired phones and computers on the local network
     /// add and control downloads (crates/remote). Off by default.
     pub remote_on: bool,
     /// Its port.
@@ -272,11 +272,11 @@ pub struct Settings {
     pub torrent_stop_minutes_on: bool,
     pub torrent_stop_minutes: u32,
     /// Help: look for a newer release once a week (D-020; its switch is in Check for updates:
-    /// Options → General has no free row in IDM's layout).
+    /// Options → General has no free row in the layout).
     pub update_check: bool,
     /// When the weekly check last ran (Unix seconds; 0: never).
     pub update_checked: i64,
-    /// The user's categories (D-021), after IDM's and Torrents.
+    /// The user's categories (D-021), after the and Torrents.
     pub custom_categories: Vec<crate::model::CustomCategory>,
     /// The built-in categories the user renamed, gave other file types or deleted (#93); the
     /// others are as shipped. Their folders stay in `category_dirs`.
@@ -301,16 +301,16 @@ pub struct Settings {
     /// Into a folder named after the archive: 0 when it holds several things at its top (smart),
     /// 1 always, 2 never.
     pub extract_subfolder: u8,
-    /// Link grabber: look each link up (name, size, online) when it arrives, as IDM's "Download
+    /// Link grabber: look each link up (name, size, online) when it arrives, as configured "Download
     /// all links" does. On.
     pub grabber_check: bool,
-    /// Link grabber: web pages hidden (IDM's "Hide HTML files"). On.
+    /// Link grabber: web pages hidden (the "Hide HTML files"). On.
     pub grabber_hide_pages: bool,
 }
 
-/// Options → File types defaults (IDM 6.42), shared with the browser host (mdm_ipc::capture).
+/// Options → File types defaults (the measured build), shared with the browser host (mdm_ipc::capture).
 pub use mdm_ipc::capture::{DEFAULT_AUTO_TYPES, DEFAULT_EXCLUDED_SITES};
-/// The browsers IDM 6.42 lists, plus Firefox's forks MDM tells apart (#41; capture::browser_named),
+/// The browsers the measured build lists, plus Firefox's forks MDM tells apart (#41; capture::browser_named),
 /// all captured on.
 pub const BROWSERS: [&str; 12] = [
     "Apple Safari",          // not translated: a product name
@@ -1131,7 +1131,7 @@ mod tests {
         assert_eq!(old.video_cookies(), None);
         assert_eq!(Settings::default().video_cookies(), None);
         assert_eq!(old.connections_for(&url("https://fast.org/a")), 32);
-        // IDM's default: no proxy, but "use the browser's proxy" ticked — the browser's is
+        // the default: no proxy, but "use the browser's proxy" ticked — the browser's is
         // Windows' (none set there: direct).
         assert_eq!(s.proxy(), mdm_engine::Proxy::System);
         s.proxy_from_browser = false;
