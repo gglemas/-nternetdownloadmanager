@@ -11,7 +11,7 @@
 #ifndef AppVersion
   #define AppVersion "0.5.1"
 #endif
-#define AppName "Mister Download Manager"
+#define AppName "tnctr download manager"
 #define AppExe "misterdownloadmanager.exe"
 #define HostExe "misterdownloadmanager-nmhost.exe"
 #define Root "..\.."
@@ -28,7 +28,7 @@ AppPublisherURL=https://github.com/anefzaoui/misterdownloadmanager
 AppSupportURL=https://github.com/anefzaoui/misterdownloadmanager/issues
 AppUpdatesURL=https://github.com/anefzaoui/misterdownloadmanager/releases
 AppCopyright=Copyright (C) 2026 Ahmed Nefzaoui
-DefaultDirName={autopf}\{#AppName}
+DefaultDirName={autopf}\Mister Download Manager
 DisableProgramGroupPage=yes
 PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
@@ -42,7 +42,7 @@ SetupIconFile={#Root}\crates\app\assets\icons\app\mdm.ico
 UninstallDisplayIcon={app}\{#AppExe}
 UninstallDisplayName={#AppName}
 OutputDir={#Root}\target\dist
-OutputBaseFilename=MisterDownloadManager-{#AppVersion}-setup
+OutputBaseFilename=tnctr-download-manager-{#AppVersion}-setup
 ; A 64 MB dictionary (#25): an 8 MB one (lzma2/max) only finds what repeats close by in the
 ; solid archive. A few MB smaller; building needs about 750 MB of memory, installing 64 MB.
 Compression=lzma2/ultra64

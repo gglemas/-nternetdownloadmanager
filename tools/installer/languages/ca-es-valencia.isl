@@ -1,4 +1,4 @@
-﻿; Mister Download Manager's installer in Valencian: tools/installer/languages.py
+﻿; tnctr download manager's installer in Valencian: tools/installer/languages.py
 ; (machine-translated; a native speaker may correct any line).
 
 [LangOptions]
@@ -291,8 +291,8 @@ ShutdownBlockReasonUninstallingApp=Desinstal·lant %1.
 
 [CustomMessages]
 TaskBrowser=Configura la integració del &navegador (Chrome, Edge, Brave, Firefox)
-TaskTorrents=Obri fitxers .&torrent i enllaços magnet amb Mister Download Manager
-TaskStartup=Inicia Mister Download Manager quan s'inicia &Windows
+TaskTorrents=Obri fitxers .&torrent i enllaços magnet amb tnctr download manager
+TaskStartup=Inicia tnctr download manager quan s'inicia &Windows
 TaskGroupOther=Altres:
-Launch=Inicia Mister Download Manager
+Launch=Inicia tnctr download manager
 KeepData=Vols esborrar també la llista de descàrregues i la configuració?%n%nEls fitxers descarregats no es toquen de cap manera.

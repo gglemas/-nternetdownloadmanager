@@ -1,4 +1,4 @@
-# Mister Download Manager in Telugu (తెలుగు): tools/i18n/translate.py
+# tnctr download manager in Telugu (తెలుగు): tools/i18n/translate.py
 # writes the rows marked '#, machine'; a native speaker deletes that line after checking.
 # context	source	translation (craft-i18n format, rows as in en.tsv)
 @id	language.name	తెలుగు
@@ -11,7 +11,7 @@
 #. never shown for a single download
 #. {n} = a number (keep the braces as they are)
 #, machine
-@plural	Are you sure you want to delete {n} download from Mister Download Manager list of downloads?|Are you sure you want to delete these {n} downloads from Mister Download Manager list of downloads?	Mister Download Manager డౌన్‌లోడ్‌ల జాబితా నుండి {n} డౌన్‌లోడ్‌ను తొలగించాలా?|Mister Download Manager డౌన్‌లోడ్‌ల జాబితా నుండి ఈ {n} డౌన్‌లోడ్‌లను తొలగించాలా?
+@plural	Are you sure you want to delete {n} download from tnctr download manager list of downloads?|Are you sure you want to delete these {n} downloads from tnctr download manager list of downloads?	tnctr download manager డౌన్‌లోడ్‌ల జాబితా నుండి {n} డౌన్‌లోడ్‌ను తొలగించాలా?|tnctr download manager డౌన్‌లోడ్‌ల జాబితా నుండి ఈ {n} డౌన్‌లోడ్‌లను తొలగించాలా?
 #. count in the Add torrent window
 #. while a magnet link's file list is fetched; {n} = peers that answered
 #. {n} = a number (keep the braces as they are)
@@ -226,7 +226,7 @@
 	a volume of it is missing	దాని వాల్యూమ్ లేదు
 #. window title in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	About Mister Download Manager	Mister Download Manager గురించి
+	About tnctr download manager	tnctr download manager గురించి
 #. text in whereis.rs
 #. a download's server's round trip: {ms} a number of milliseconds, {reach} near, medium or far
 #, machine
@@ -280,7 +280,7 @@
 #. window title in extension.rs
 #. title of the window that offers the browser extension
 #, machine
-	Add Mister Download Manager to your browser	Mister Download Managerని మీ బ్రౌజర్‌కు జోడించండి
+	Add tnctr download manager to your browser	tnctr download managerని మీ బ్రౌజర్‌కు జోడించండి
 #. message or event log entry in the main window; text in the tray icon's menu
 #. link in the empty download list: opens Add URL
 #, machine
@@ -447,7 +447,7 @@
 	Always into a folder named after it	ఎల్లప్పుడూ దాని పేరుతో ఉన్న ఫోల్డర్‌లోకి
 #. checkbox in a dialog box
 #, machine
-	Always turn on Speed Limiter on Mister Download Manager startup	Mister Download Manager ప్రారంభంలో స్పీడ్ లిమిటర్‌ను ఎల్లప్పుడూ ఆన్ చేయండి
+	Always turn on Speed Limiter on tnctr download manager startup	tnctr download manager ప్రారంభంలో స్పీడ్ లిమిటర్‌ను ఎల్లప్పుడూ ఆన్ చేయండి
 #. text in regional.rs; text in the Scheduler window
 #. before noon, after a time of day (12-hour clock). Its pair is "PM": write both the same way (this language's own short marks, or both kept as AM and PM)
 #, machine
@@ -513,7 +513,7 @@
 #. text in a dialog box
 #. {name} = a file name (keep the braces as they are)
 #, machine
-	Are you sure you want to delete "{name}" from Mister Download Manager list of downloads?	Mister Download Manager డౌన్‌లోడ్‌ల జాబితా నుండి "{name}"ని తొలగించాలనుకుంటున్నారా?
+	Are you sure you want to delete "{name}" from tnctr download manager list of downloads?	tnctr download manager డౌన్‌లోడ్‌ల జాబితా నుండి "{name}"ని తొలగించాలనుకుంటున్నారా?
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -682,7 +682,7 @@
 	Browse...	బ్రౌజ్ చేయండి...
 #. text in extension.rs
 #, machine
-	Browser integration isn't set up on this computer, so no browser can reach Mister Download Manager yet.	ఈ కంప్యూటర్‌లో బ్రౌజర్ అనుసంధానం సెటప్ చేయబడలేదు, కాబట్టి ఏ బ్రౌజర్ కూడా ఇంకా Mister Download Managerని చేరుకోలేదు.
+	Browser integration isn't set up on this computer, so no browser can reach tnctr download manager yet.	ఈ కంప్యూటర్‌లో బ్రౌజర్ అనుసంధానం సెటప్ చేయబడలేదు, కాబట్టి ఏ బ్రౌజర్ కూడా ఇంకా tnctr download managerని చేరుకోలేదు.
 #. page title in the Options window
 #, machine
 	Browser/System Integration	బ్రౌజర్/సిస్టమ్ ఇంటిగ్రేషన్
@@ -874,7 +874,7 @@
 	Choose a language	భాషను ఎంచుకోండి
 #. text in langpick.rs
 #, machine
-	Choose the language Mister Download Manager shows its windows in:	Mister Download Manager దాని విండోలను చూపించే భాషను ఎంచుకోండి:
+	Choose the language tnctr download manager shows its windows in:	tnctr download manager దాని విండోలను చూపించే భాషను ఎంచుకోండి:
 #. text in the Options window
 #. Options → Sites Logins → Cookies for video sites: the title of the window, and the tooltip of the button, that pick a browser profile's folder
 #, machine
@@ -1493,7 +1493,7 @@
 	Exit	నిష్క్రమించు
 #. checkbox in a download's progress window; checkbox in the Scheduler window
 #, machine
-	Exit Mister Download Manager when done	పూర్తయినప్పుడు Mister Download Manager నుండి నిష్క్రమించండి
+	Exit tnctr download manager when done	పూర్తయినప్పుడు tnctr download manager నుండి నిష్క్రమించండి
 #. text in the Checksum window
 #, machine
 	Expected checksum (MD5, SHA-1, SHA-256, SHA-512 or CRC32):	ఆశించిన చెక్‌సమ్ (MD5, SHA-1, SHA-256, SHA-512 లేదా CRC32):
@@ -1924,7 +1924,7 @@
 	Hide web pages	వెబ్ పేజీలను దాచు
 #. text in the Options window
 #, machine
-	Hold Alt while clicking a link to let the browser download it instead of Mister Download Manager.	Mister Download Managerకి బదులుగా బ్రౌజర్ లింక్‌ను డౌన్‌లోడ్ చేయడానికి, లింక్‌ను క్లిక్ చేస్తున్నప్పుడు Alt కీని నొక్కి ఉంచండి.
+	Hold Alt while clicking a link to let the browser download it instead of tnctr download manager.	tnctr download managerకి బదులుగా బ్రౌజర్ లింక్‌ను డౌన్‌లోడ్ చేయడానికి, లింక్‌ను క్లిక్ చేస్తున్నప్పుడు Alt కీని నొక్కి ఉంచండి.
 #. link (opens a web page) in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Home page	హోమ్ పేజీ
@@ -1960,7 +1960,7 @@
 	Hungary	హంగేరీ
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	I download with Mister Download Manager: fast, free, and it looks like the download manager you already know. {link}	నేను Mister Download Managerతో డౌన్‌లోడ్ చేస్తాను: వేగంగా, ఉచితంగా, మీకు ఇప్పటికే తెలిసిన డౌన్‌లోడ్ మేనేజర్‌లా ఉంటుంది. {link}
+	I download with tnctr download manager: fast, free, and it looks like the download manager you already know. {link}	నేను tnctr download managerతో డౌన్‌లోడ్ చేస్తాను: వేగంగా, ఉచితంగా, మీకు ఇప్పటికే తెలిసిన డౌన్‌లోడ్ మేనేజర్‌లా ఉంటుంది. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2231,7 +2231,7 @@
 	Latvia	లాట్వియా
 #. text in the Options window
 #, machine
-	Launch Mister Download Manager on startup	Windows ప్రారంభమైనప్పుడు Mister Download Managerను అమలు చేయి
+	Launch tnctr download manager on startup	Windows ప్రారంభమైనప్పుడు tnctr download managerను అమలు చేయి
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2518,54 +2518,54 @@
 	Missing	మిస్సింగ్
 #. message or event log entry in the main window; window title in a dialog box; text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	Mister Download Manager	Mister Download Manager
+	tnctr download manager	tnctr download manager
 #. text in unix.rs
 #. Linux, at start, on the terminal and in a message box: a library the window needs isn't installed; {libraries} = its file names (libxkbcommon-x11.so.0…), left as they are
 #, machine
-	Mister Download Manager can't open its window: this system lacks {libraries}.	Mister Download Manager విండోను తెరవలేకపోయింది: ఈ సిస్టమ్‌లో {libraries} లేవు.
+	tnctr download manager can't open its window: this system lacks {libraries}.	tnctr download manager విండోను తెరవలేకపోయింది: ఈ సిస్టమ్‌లో {libraries} లేవు.
 #. text in crashui.rs
 #. crash report window heading: MDM crashed and is gone
 #, machine
-	Mister Download Manager closed unexpectedly	Mister Download Manager అనుకోకుండా మూసివేయబడింది
+	tnctr download manager closed unexpectedly	tnctr download manager అనుకోకుండా మూసివేయబడింది
 #. window title in the Options window
 #, machine
-	Mister Download Manager Configuration	Mister Download Manager కాన్ఫిగరేషన్
+	tnctr download manager Configuration	tnctr download manager కాన్ఫిగరేషన్
 #. text in crashui.rs
 #, machine
-	Mister Download Manager crash report	Mister Download Manager క్రాష్ నివేదిక
+	tnctr download manager crash report	tnctr download manager క్రాష్ నివేదిక
 #. text in crashui.rs
 #. crash report window heading: an internal error, MDM still running
 #, machine
-	Mister Download Manager hit an internal error	Mister Download Manager అంతర్గత లోపాన్ని ఎదుర్కొంది
+	tnctr download manager hit an internal error	tnctr download manager అంతర్గత లోపాన్ని ఎదుర్కొంది
 #. text in wake.rs
 #. why the computer isn't going to sleep, in the system's list of programs that keep it awake; {queue} = the queue's name
 #. {queue} = a queue name such as "Main queue" (keep the braces as they are)
 #, machine
-	Mister Download Manager is running the queue "{queue}"	Mister Download Manager "{queue}" క్యూను నడుపుతోంది
+	tnctr download manager is running the queue "{queue}"	tnctr download manager "{queue}" క్యూను నడుపుతోంది
 #. text in crashui.rs
 #. crash report window heading: MDM's window doesn't answer (frozen)
 #, machine
-	Mister Download Manager stopped responding	Mister Download Manager స్పందించడం ఆపివేసింది
+	tnctr download manager stopped responding	tnctr download manager స్పందించడం ఆపివేసింది
 #. text in crashui.rs
 #, machine
-	Mister Download Manager stopped responding for a while	Mister Download Manager కొంతకాలం స్పందించడం ఆపివేసింది
+	tnctr download manager stopped responding for a while	tnctr download manager కొంతకాలం స్పందించడం ఆపివేసింది
 #. text in the Options window
 #. \\n starts a new line: break lines where they fit the translation
 #, machine
-	Mister Download Manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.	Mister Download Manager ప్రతి కనెక్షన్‌ను నేరుగా తుది ఫైల్‌లోకి వ్రాస్తుంది (దాని పక్కన ఒక స్పార్స్ పార్ట్ ఫైల్), కాబట్టి తాత్కాలిక డైరెక్టరీ మరియు అసెంబ్లింగ్ దశ అవసరం లేదు.
+	tnctr download manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.	tnctr download manager ప్రతి కనెక్షన్‌ను నేరుగా తుది ఫైల్‌లోకి వ్రాస్తుంది (దాని పక్కన ఒక స్పార్స్ పార్ట్ ఫైల్), కాబట్టి తాత్కాలిక డైరెక్టరీ మరియు అసెంబ్లింగ్ దశ అవసరం లేదు.
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	Mister Download Manager {version} is available (released {date}).	Mister Download Manager {version} అందుబాటులో ఉంది ({date}న విడుదలైంది).
+	tnctr download manager {version} is available (released {date}).	tnctr download manager {version} అందుబాటులో ఉంది ({date}న విడుదలైంది).
 #. text in helpers.rs
 #. Video helpers: {version} = the version of MDM's own copy
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	Mister Download Manager's own copy, version {version}	Mister Download Manager స్వంత కాపీ, వెర్షన్ {version}
+	tnctr download manager's own copy, version {version}	tnctr download manager స్వంత కాపీ, వెర్షన్ {version}
 #. text in unix.rs
 #. Linux, at start, on the terminal: the libraries an X11 window needs aren't installed, so the window opens through Wayland instead, where menus can't be placed under what was clicked; {libraries} = their file names, left as they are
 #, machine
-	Mister Download Manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.	Mister Download Manager X11 విండోకు {libraries} అవసరం, అవి ఈ సిస్టమ్‌లో లేవు: బదులుగా అది Waylandలో తెరుచుకుంటుంది, అక్కడ దాని మెనూలు వాటి శీర్షికలకు దూరంగా తెరుచుకోవచ్చు.
+	tnctr download manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.	tnctr download manager X11 విండోకు {libraries} అవసరం, అవి ఈ సిస్టమ్‌లో లేవు: బదులుగా అది Waylandలో తెరుచుకుంటుంది, అక్కడ దాని మెనూలు వాటి శీర్షికలకు దూరంగా తెరుచుకోవచ్చు.
 #. text in the Scheduler window
 #. Monday, as short as a calendar's column head (two letters in English)
 #, machine
@@ -3070,10 +3070,10 @@
 	Open folder	ఫోల్డర్‌ను తెరవండి
 #. checkbox in the Add torrent window
 #, machine
-	Open magnet links and .torrent files with Mister Download Manager	Mister Download Managerతో మాగ్నెట్ లింక్‌లు మరియు .torrent ఫైల్‌లను తెరవండి
+	Open magnet links and .torrent files with tnctr download manager	tnctr download managerతో మాగ్నెట్ లింక్‌లు మరియు .torrent ఫైల్‌లను తెరవండి
 #. text in the tray icon's menu
 #, machine
-	Open Mister Download Manager	Mister Download Managerని తెరవండి
+	Open tnctr download manager	tnctr download managerని తెరవండి
 #. text in extension.rs
 #. step 2 of turning on the Safari extension; Cmd is the Command key
 #, machine
@@ -3144,7 +3144,7 @@
 #. text in remote.rs
 #. remote control page (on a phone): title of the pairing screen
 #, machine
-	Pair with Mister Download Manager	Mister Download Managerతో జత చేయి
+	Pair with tnctr download manager	tnctr download managerతో జత చేయి
 #. text in the Options window
 #. column title: when the device was paired
 #, machine
@@ -3630,7 +3630,7 @@
 	Select or unselect the download with the dotted outline	చుక్కల గీతతో ఉన్న డౌన్‌లోడ్‌ను ఎంచుకోండి లేదా దాని ఎంపికను తీసివేయండి
 #. group box title in the Options window
 #, machine
-	Select sounds for Mister Download Manager events	Mister Download Manager ఈవెంట్‌ల కోసం శబ్దాలను ఎంచుకోండి
+	Select sounds for tnctr download manager events	tnctr download manager ఈవెంట్‌ల కోసం శబ్దాలను ఎంచుకోండి
 #. what a keyboard shortcut does in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Select the downloads in the box	బాక్స్‌లోని డౌన్‌లోడ్‌లను ఎంచుకోండి
@@ -3955,7 +3955,7 @@
 	Start download at	డౌన్‌లోడ్‌ను ప్రారంభించే సమయం
 #. checkbox in the Scheduler window
 #, machine
-	Start download on Mister Download Manager startup	Mister Download Manager ప్రారంభమైనప్పుడు డౌన్‌లోడ్‌ను ప్రారంభించు
+	Start download on tnctr download manager startup	tnctr download manager ప్రారంభమైనప్పుడు డౌన్‌లోడ్‌ను ప్రారంభించు
 #. checkbox in the Options window
 #, machine
 	Start downloading immediately while displaying "Download File Info" dialog	"డౌన్‌లోడ్ ఫైల్ సమాచారం" డైలాగ్‌ను ప్రదర్శిస్తున్నప్పుడు వెంటనే డౌన్‌లోడ్ చేయడం ప్రారంభించు
@@ -3990,7 +3990,7 @@
 #, machine
 	Started with the computer, it starts minimized: no notification area shows its icon here	కంప్యూటర్‌తో ప్రారంభించబడింది, ఇది కనిష్టీకరించబడింది: ఇక్కడ నోటిఫికేషన్ ప్రాంతం దాని చిహ్నాన్ని చూపదు
 #. text in the Options window
-#. tooltip of "Launch Mister Download Manager on startup": started with the computer, MDM's window stays hidden, its icon in the notification area (system tray)
+#. tooltip of "Launch tnctr download manager on startup": started with the computer, MDM's window stays hidden, its icon in the notification area (system tray)
 #, machine
 	Started with the computer, it waits in the notification area	కంప్యూటర్‌తో ప్రారంభించబడింది, ఇది నోటిఫికేషన్ ప్రాంతంలో వేచి ఉంటుంది
 #. message or event log entry in the main window
@@ -4211,7 +4211,7 @@
 #. text in extension.rs
 #. a check of Test browser integration: the browsers find MDM's helper program
 #, machine
-	The browsers can find Mister Download Manager	బ్రౌజర్‌లు Mister Download Managerని కనుగొనగలవు
+	The browsers can find tnctr download manager	బ్రౌజర్‌లు tnctr download managerని కనుగొనగలవు
 #. text in the Options window
 #. Options → Remote → Status: the settings were changed; they apply on OK
 #, machine
@@ -4235,7 +4235,7 @@
 #. text in the Scheduler window
 #. tooltip on the Scheduler's "Wake the computer to run this queue"
 #, machine
-	The computer is woken a minute before the start time and kept awake while the queue runs. Mister Download Manager has to be running (it can wait in the notification area).	ప్రారంభ సమయానికి ఒక నిమిషం ముందు కంప్యూటర్ మేల్కొంటుంది, క్యూ నడుస్తున్నంతసేపు మేల్కొని ఉంటుంది. Mister Download Manager తప్పనిసరిగా నడుస్తూ ఉండాలి (అది నోటిఫికేషన్ ప్రాంతంలో వేచి ఉండవచ్చు).
+	The computer is woken a minute before the start time and kept awake while the queue runs. tnctr download manager has to be running (it can wait in the notification area).	ప్రారంభ సమయానికి ఒక నిమిషం ముందు కంప్యూటర్ మేల్కొంటుంది, క్యూ నడుస్తున్నంతసేపు మేల్కొని ఉంటుంది. tnctr download manager తప్పనిసరిగా నడుస్తూ ఉండాలి (అది నోటిఫికేషన్ ప్రాంతంలో వేచి ఉండవచ్చు).
 #. text in the Scheduler window
 #. the Scheduler, under "Wake the computer to run this queue": when it will happen; {date} = e.g. 06/11/2026, {time} = e.g. 22:59:00
 #. {time} = a time of day (keep the braces as they are)
@@ -4406,7 +4406,7 @@
 #. text in a dialog box
 #. \\n starts a new line: break lines where they fit the translation
 #, machine
-	The selected download is not complete. Are you sure you want to delete\nit from Mister Download Manager list of downloads?	ఎంచుకున్న డౌన్‌లోడ్ పూర్తి కాలేదు. మీరు దీన్ని Mister Download Manager డౌన్‌లోడ్‌ల జాబితా నుండి తొలగించాలనుకుంటున్నారని ఖచ్చితంగా అనుకుంటున్నారా?
+	The selected download is not complete. Are you sure you want to delete\nit from tnctr download manager list of downloads?	ఎంచుకున్న డౌన్‌లోడ్ పూర్తి కాలేదు. మీరు దీన్ని tnctr download manager డౌన్‌లోడ్‌ల జాబితా నుండి తొలగించాలనుకుంటున్నారని ఖచ్చితంగా అనుకుంటున్నారా?
 #. text in errors.rs
 #, machine
 	the server answered {status}	సర్వర్ {status} అని సమాధానం ఇచ్చింది
@@ -4765,7 +4765,7 @@
 #. text in extension.rs
 #. step 8 of turning on the Safari extension
 #, machine
-	Turn on "Mister Download Manager" and allow it on all websites.	"Mister Download Manager"ను ఆన్ చేసి, అన్ని వెబ్‌సైట్‌లలో అనుమతించండి.
+	Turn on "tnctr download manager" and allow it on all websites.	"tnctr download manager"ను ఆన్ చేసి, అన్ని వెబ్‌సైట్‌లలో అనుమతించండి.
 #. text in extension.rs
 #. step 4 of turning on the Safari extension; the quoted switch name is what Safari's settings show in this language: use Apple's own words for it, or keep the English name when unsure
 #, machine
@@ -5178,7 +5178,7 @@
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	You have the latest version of Mister Download Manager ({version}).	మీరు Mister Download Manager ({version}) యొక్క తాజా వెర్షన్‌ను కలిగి ఉన్నారు.
+	You have the latest version of tnctr download manager ({version}).	మీరు tnctr download manager ({version}) యొక్క తాజా వెర్షన్‌ను కలిగి ఉన్నారు.
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. Check for updates, under the new version's line, when MDM was installed by the Linux system's package manager (pacman, ...), which MDM can't update itself
 #. {version} = a version number (keep the braces as they are)
@@ -5557,15 +5557,15 @@ column	Time left	మిగిలిన సమయం
 #, machine
 column	Transfer rate	బదిలీ రేటు
 #. text in the browser extension
-#. choice under Send downloads to: an MDM running on another computer of the network, such as a home server; keep the name Mister Download Manager as it is
+#. choice under Send downloads to: an MDM running on another computer of the network, such as a home server; keep the name tnctr download manager as it is
 #, machine
-extension	Another Mister Download Manager (a server)	మరొక Mister Download Manager (ఒక సర్వర్)
+extension	Another tnctr download manager (a server)	మరొక tnctr download manager (ఒక సర్వర్)
 #. text in the browser extension
 #. the name this browser gets in the other MDM's list of paired devices
 #, machine
 extension	Browser extension	బ్రౌజర్ పొడిగింపు
 #. text in the browser extension
-#. menu command of the download button over a video: opens its settings in Mister Download Manager
+#. menu command of the download button over a video: opens its settings in tnctr download manager
 #. the trailing ... means it is still going on: keep it
 #, machine
 extension	Button settings...	బటన్ సెట్టింగ్‌లు...
@@ -5574,34 +5574,34 @@ extension	Button settings...	బటన్ సెట్టింగ్‌లు..
 #, machine
 extension	Can't tell which video this is: open its own page and try there	ఇది ఏ వీడియోనో తెలియడం లేదు: దాని స్వంత పేజీని తెరిచి అక్కడ ప్రయత్నించండి
 #. text in the browser extension
-#. the toolbar button's status when the browser reaches the app; keep the name Mister Download Manager as it is
+#. the toolbar button's status when the browser reaches the app; keep the name tnctr download manager as it is
 #, machine
-extension	Connected to Mister Download Manager	Mister Download Managerకి కనెక్ట్ చేయబడింది
+extension	Connected to tnctr download manager	tnctr download managerకి కనెక్ట్ చేయబడింది
 #. text in the browser extension
-#. the toolbar button's status when the browser reaches the app, with the app's version number; keep the name Mister Download Manager as it is
+#. the toolbar button's status when the browser reaches the app, with the app's version number; keep the name tnctr download manager as it is
 #. {version} = a version number (keep the braces as they are)
 #, machine
-extension	Connected to Mister Download Manager {version}	Mister Download Manager {version}కి కనెక్ట్ చేయబడింది
+extension	Connected to tnctr download manager {version}	tnctr download manager {version}కి కనెక్ట్ చేయబడింది
 #. text in the browser extension
 #. button beside a video, sound or stream in the toolbar button's popup: download it with the app; verb; short
 #, machine
 extension	Download	డౌన్‌లోడ్ చేయండి
 #. text in the browser extension
-#. command in the browser's right-click menu on a page: download the links of the whole page; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on a page: download the links of the whole page; keep the name tnctr download manager as it is
 #, machine
-extension	Download all links with Mister Download Manager	Mister Download Managerతో అన్ని లింక్‌లను డౌన్‌లోడ్ చేయండి
+extension	Download all links with tnctr download manager	tnctr download managerతో అన్ని లింక్‌లను డౌన్‌లోడ్ చేయండి
 #. text in the browser extension
-#. command in the browser's right-click menu on selected text: download the links in the selection; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on selected text: download the links in the selection; keep the name tnctr download manager as it is
 #, machine
-extension	Download selected links with Mister Download Manager	Mister Download Managerతో ఎంచుకున్న లింక్‌లను డౌన్‌లోడ్ చేయండి
+extension	Download selected links with tnctr download manager	tnctr download managerతో ఎంచుకున్న లింక్‌లను డౌన్‌లోడ్ చేయండి
 #. text in the browser extension
 #. the button over a video on a web page that downloads it; verb; short (it sits on the video)
 #, machine
 extension	Download video	వీడియోను డౌన్‌లోడ్ చేయండి
 #. text in the browser extension
-#. command in the browser's right-click menu on a link, picture, video or sound; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on a link, picture, video or sound; keep the name tnctr download manager as it is
 #, machine
-extension	Download with Mister Download Manager	Mister Download Managerతో డౌన్‌లోడ్ చేయండి
+extension	Download with tnctr download manager	tnctr download managerతో డౌన్‌లోడ్ చేయండి
 #. text in the browser extension
 #. shown in the toolbar button's popup after the site was excluded
 #. {site} = a web site's name such as "example.com" (keep the braces as they are)
@@ -5620,9 +5620,9 @@ extension	Drag to move it along the video's edge	వీడియో అంచు
 #, machine
 extension	Enter its https:// address.	దాని https:// చిరునామాను నమోదు చేయండి.
 #. text in the browser extension
-#. the extension's description in the browser's list of extensions; keep the name Mister Download Manager as it is
+#. the extension's description in the browser's list of extensions; keep the name tnctr download manager as it is
 #, machine
-extension	Hands downloads from the browser to Mister Download Manager.	బ్రౌజర్ నుండి Mister Download Managerకి డౌన్‌లోడ్‌లను అందిస్తుంది.
+extension	Hands downloads from the browser to tnctr download manager.	బ్రౌజర్ నుండి tnctr download managerకి డౌన్‌లోడ్‌లను అందిస్తుంది.
 #. text in the browser extension
 #. link in the toolbar button's popup to the help page
 #, machine
@@ -5677,33 +5677,33 @@ extension	Live	ప్రత్యక్ష ప్రసారం
 #, machine
 extension	Media on this page	ఈ పేజీలోని మీడియా
 #. text in the browser extension
-#. the extension's name in the browser's list of extensions and on its toolbar button; keep the name Mister Download Manager as it is
+#. the extension's name in the browser's list of extensions and on its toolbar button; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager	Mister Download Manager
+extension	tnctr download manager	tnctr download manager
 #. text in the browser extension
-#. status when the app was started for a download but didn't answer in time; keep the name Mister Download Manager as it is
+#. status when the app was started for a download but didn't answer in time; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager didn't start in time	Mister Download Manager సమయానికి ప్రారంభం కాలేదు
+extension	tnctr download manager didn't start in time	tnctr download manager సమయానికి ప్రారంభం కాలేదు
 #. text in the browser extension
-#. status when the app refuses this copy of the extension (another copy is installed, or it came from another store); keep the name Mister Download Manager as it is
+#. status when the app refuses this copy of the extension (another copy is installed, or it came from another store); keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager doesn't accept this copy of the extension	Mister Download Manager పొడిగింపు యొక్క ఈ కాపీని అంగీకరించదు
+extension	tnctr download manager doesn't accept this copy of the extension	tnctr download manager పొడిగింపు యొక్క ఈ కాపీని అంగీకరించదు
 #. text in the browser extension
-#. shown briefly on the download button when the app could not be reached; keep the name Mister Download Manager as it is
+#. shown briefly on the download button when the app could not be reached; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager isn't installed or didn't start	Mister Download Manager ఇన్‌స్టాల్ చేయబడలేదు లేదా ప్రారంభం కాలేదు
+extension	tnctr download manager isn't installed or didn't start	tnctr download manager ఇన్‌స్టాల్ చేయబడలేదు లేదా ప్రారంభం కాలేదు
 #. text in the browser extension
-#. status when the browser can't find the app's connection; keep the name Mister Download Manager as it is
+#. status when the browser can't find the app's connection; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager isn't installed, or its browser integration isn't set up	Mister Download Manager ఇన్‌స్టాల్ చేయబడలేదు లేదా దాని బ్రౌజర్ అనుసంధానం సెటప్ చేయబడలేదు
+extension	tnctr download manager isn't installed, or its browser integration isn't set up	tnctr download manager ఇన్‌స్టాల్ చేయబడలేదు లేదా దాని బ్రౌజర్ అనుసంధానం సెటప్ చేయబడలేదు
 #. text in the browser extension
-#. tooltip of the switch Send downloads through this browser's proxy or VPN extension; keep the name Mister Download Manager as it is
+#. tooltip of the switch Send downloads through this browser's proxy or VPN extension; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager then downloads through the same proxy as this browser. The browser asks you once to allow it; turning this off takes that back.	Mister Download Manager ఈ బ్రౌజర్ వలె అదే ప్రాక్సీ ద్వారా డౌన్‌లోడ్ చేస్తుంది. బ్రౌజర్ దీన్ని అనుమతించమని మిమ్మల్ని ఒకసారి అడుగుతుంది; దీన్ని ఆఫ్ చేయడం ద్వారా అది తిరిగి తీసుకోబడుతుంది.
+extension	tnctr download manager then downloads through the same proxy as this browser. The browser asks you once to allow it; turning this off takes that back.	tnctr download manager ఈ బ్రౌజర్ వలె అదే ప్రాక్సీ ద్వారా డౌన్‌లోడ్ చేస్తుంది. బ్రౌజర్ దీన్ని అనుమతించమని మిమ్మల్ని ఒకసారి అడుగుతుంది; దీన్ని ఆఫ్ చేయడం ద్వారా అది తిరిగి తీసుకోబడుతుంది.
 #. text in the browser extension
-#. tooltip of the switch Send downloads through this browser's proxy or VPN extension in Chrome, Edge and the other Chromium browsers (they ask for no permission at the switch); keep the name Mister Download Manager as it is
+#. tooltip of the switch Send downloads through this browser's proxy or VPN extension in Chrome, Edge and the other Chromium browsers (they ask for no permission at the switch); keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager then downloads through the same proxy as this browser. While this is off, the extension doesn't read the browser's proxy.	Mister Download Manager ఈ బ్రౌజర్ వలె అదే ప్రాక్సీ ద్వారా డౌన్‌లోడ్ చేస్తుంది. ఇది ఆఫ్ చేయబడినప్పుడు, పొడిగింపు బ్రౌజర్ ప్రాక్సీని చదవదు.
+extension	tnctr download manager then downloads through the same proxy as this browser. While this is off, the extension doesn't read the browser's proxy.	tnctr download manager ఈ బ్రౌజర్ వలె అదే ప్రాక్సీ ద్వారా డౌన్‌లోడ్ చేస్తుంది. ఇది ఆఫ్ చేయబడినప్పుడు, పొడిగింపు బ్రౌజర్ ప్రాక్సీని చదవదు.
 #. text in the browser extension
 #. the small arrow next to the Download video button that opens its menu (read aloud by screen readers)
 #, machine
@@ -5735,9 +5735,9 @@ extension	Open it	దీన్ని తెరవండి
 #, machine
 extension	Open its address once and accept its certificate, then enter a code from its Options, Remote, Pair a device (or misterdownloadmanager-cli pair).	దాని చిరునామాను ఒకసారి తెరిచి, దాని సర్టిఫికేట్‌ను ఆమోదించండి, ఆపై దాని ఎంపికలు, రిమోట్, పరికరాన్ని జత చేయి (లేదా misterdownloadmanager-cli pair) నుండి కోడ్‌ను నమోదు చేయండి.
 #. text in the browser extension
-#. button in the toolbar button's popup; keep the name Mister Download Manager as it is
+#. button in the toolbar button's popup; keep the name tnctr download manager as it is
 #, machine
-extension	Open Mister Download Manager	Mister Download Managerని తెరవండి
+extension	Open tnctr download manager	tnctr download managerని తెరవండి
 #. text in the browser extension
 #. button in the toolbar button's popup: open the app's Options
 #. the trailing ... means it is still going on: keep it
@@ -5772,13 +5772,13 @@ extension	Send downloads through this browser's proxy or VPN extension	ఈ బ�
 #, machine
 extension	Send downloads to	డౌన్‌లోడ్‌లను దీనికి పంపండి
 #. text in the browser extension
-#. shown briefly on the download button after it was clicked; keep the name Mister Download Manager as it is
+#. shown briefly on the download button after it was clicked; keep the name tnctr download manager as it is
 #, machine
-extension	Sent to Mister Download Manager	Mister Download Managerకు పంపబడింది
+extension	Sent to tnctr download manager	tnctr download managerకు పంపబడింది
 #. text in the browser extension
 #. link at the foot of the toolbar button's popup to the creator's GitHub Sponsors page (MDM is free; this is an optional donation)
 #, machine
-extension	Support MDM	MDMకి మద్దతు ఇవ్వండి
+extension	Support tnctr download manager	tnctr download managerకి మద్దతు ఇవ్వండి
 #. text in the browser extension
 #. check box in the toolbar button's popup: on, downloads go to the app; off, the browser keeps them
 #, machine
@@ -5788,9 +5788,9 @@ extension	Take downloads from this browser	ఈ బ్రౌజర్ నుం�
 #, machine
 extension	The Chrome Web Store's rules keep this copy of the add-on away from this site's videos. Help says what you can do.	Chrome Web Store నియమాలు ఈ యాడ్-ఆన్ కాపీని ఈ సైట్ వీడియోలకు దూరంగా ఉంచుతాయి. మీరు ఏమి చేయగలరో «సహాయం» చెబుతుంది.
 #. text in the browser extension
-#. status when the connection to the app broke off (often security software blocking it); keep the name Mister Download Manager as it is
+#. status when the connection to the app broke off (often security software blocking it); keep the name tnctr download manager as it is
 #, machine
-extension	The connection to Mister Download Manager failed	Mister Download Managerకి కనెక్షన్ విఫలమైంది
+extension	The connection to tnctr download manager failed	tnctr download managerకి కనెక్షన్ విఫలమైంది
 #. text in the browser extension
 #. shown briefly on the download button over a video when the app's settings keep the button off on this web site
 #, machine
@@ -5808,7 +5808,7 @@ extension	The last download was left to the browser.	చివరి డౌన�
 #, machine
 extension	This browser isn't ticked in Options → General.	ఈ బ్రౌజర్ ఎంపికలు → సాధారణలో టిక్ చేయబడలేదు.
 #. text in the browser extension
-#. choice under Send downloads to: the Mister Download Manager on this computer
+#. choice under Send downloads to: the tnctr download manager on this computer
 #, machine
 extension	This computer	ఈ కంప్యూటర్
 #. text in the browser extension
@@ -5820,9 +5820,9 @@ extension	This download's details were too large to hand over	ఈ డౌన్�
 #, machine
 extension	This page's player streams its video in pieces, so there's no file to list. Point at the video and use its Download video button.	ఈ పేజీ ప్లేయర్ వీడియోను ముక్కలుగా స్ట్రీమ్ చేస్తుంది, కాబట్టి జాబితాలో చూపడానికి ఫైల్ లేదు. వీడియోపై పాయింటర్ ఉంచి దాని «వీడియోను డౌన్‌లోడ్ చేయండి» బటన్‌ను ఉపయోగించండి.
 #. text in the browser extension
-#. status when the app is older than the extension; keep the name Mister Download Manager as it is
+#. status when the app is older than the extension; keep the name tnctr download manager as it is
 #, machine
-extension	Update Mister Download Manager to use everything this extension offers	ఈ పొడిగింపు అందించే ప్రతిదాన్ని ఉపయోగించడానికి Mister Download Managerని అప్‌డేట్ చేయండి
+extension	Update tnctr download manager to use everything this extension offers	ఈ పొడిగింపు అందించే ప్రతిదాన్ని ఉపయోగించడానికి tnctr download managerని అప్‌డేట్ చేయండి
 #. text in the browser extension
 #. why a download stayed with the browser: the app's setting 'Use advanced browser integration' is off; keep the setting's name as the app shows it
 #, machine
@@ -5938,7 +5938,7 @@ key	Up / Down	పైకి / క్రిందికి
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
-menu	&About Mister Download Manager	Mister Download Manager గు&రించి
+menu	&About tnctr download manager	tnctr download manager గు&రించి
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
@@ -6290,7 +6290,7 @@ menu	Metro	మెట్రో
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
-menu	Mister Download Manager &Home Page	Mister Download Manager &హోమ్ పేజీ
+menu	tnctr download manager &Home Page	tnctr download manager &హోమ్ పేజీ
 #. menu command in the main window
 #, machine
 menu	Move/Rename (Ctrl-M)	తరలించు/పేరు మార్చు (Ctrl-M)
@@ -6403,7 +6403,7 @@ menu	Select &all	అన్నింటినీ ఎంచుకో(&a)
 menu	Show &drop target	డ్రాప్ లక్ష్యాన్ని చూపండి(&d)
 #. menu command in the main window
 #, machine
-menu	Show Mister Download Manager	Mister Download Managerను చూపించు
+menu	Show tnctr download manager	tnctr download managerను చూపించు
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine

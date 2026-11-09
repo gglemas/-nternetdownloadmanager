@@ -1,4 +1,4 @@
-﻿; Mister Download Manager's installer in Uzbek: tools/installer/languages.py
+﻿; tnctr download manager's installer in Uzbek: tools/installer/languages.py
 ; (machine-translated; a native speaker may correct any line).
 
 [LangOptions]
@@ -291,8 +291,8 @@ ShutdownBlockReasonUninstallingApp=%1 oʻchirilmoqda.
 
 [CustomMessages]
 TaskBrowser=Brauzer integratsiyasini sozlash (&Chrome, Edge, Brave, Firefox)
-TaskTorrents=.&torrent fayllarini va magnit havolalarni Mister Download Manager bilan ochish
-TaskStartup=&Windows ishga tushganda Mister Download Managerni ishga tushirish
+TaskTorrents=.&torrent fayllarini va magnit havolalarni tnctr download manager bilan ochish
+TaskStartup=&Windows ishga tushganda tnctr download managerni ishga tushirish
 TaskGroupOther=Boshqa:
-Launch=Mister Download Managerni ishga tushirish
+Launch=tnctr download managerni ishga tushirish
 KeepData=Yuklab olish roʻyxati va sozlamalaringizni ham oʻchirib tashlaysizmi?%n%nYuklab olingan fayllaringizga hech qanday holatda tegmaydi.
