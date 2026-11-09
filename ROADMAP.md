@@ -87,7 +87,7 @@ Everything below ships together, in version 0.5.0.
   reliably, even while a browser still runs the old one, and put back at each start if it went
   missing; Test browser integration says when it is missing, or why setting it up failed
   ([#253](https://github.com/anefzaoui/misterdownloadmanager/issues/253))
-- ✅ The extension's popup shows **Open Mister Download Manager** whole: it was cut to "Open Mister
+- ✅ The extension's popup shows **Open tnctr download manager** whole: it was cut to "Open Mister
   Do…" on Linux and in longer languages; Options moves below it when both don't fit on one line
   (part of [#164](https://github.com/anefzaoui/misterdownloadmanager/issues/164))
 - ✅ The crash report window's status line (such as "The symbols couldn't be fetched: …") stays
@@ -210,7 +210,7 @@ Everything below ships together, in version 0.5.0.
   the button over the video, the right-click menu and the media list, read only when asked
   ([#171](https://github.com/anefzaoui/misterdownloadmanager/issues/171))
 - ✅ The extension in the [Chrome Web Store](https://chromewebstore.google.com/detail/mister-download-manager/ejoleppdfgjdndddcjoehopknmlglojp): **Add to Chrome** beside **Add to Firefox**
-  on the website, in the help, the FAQ and the README; MDM's **Add Mister Download Manager to
+  on the website, in the help, the FAQ and the README; MDM's **Add tnctr download manager to
   your browser** window opens the store in Chrome, Edge, Brave, Opera and Vivaldi, with the
   manual install as the fallback
 - ✅ Themes, the groundwork: every colour and size the controls are drawn with comes from one
@@ -259,7 +259,7 @@ Everything below ships together, in version 0.5.0.
   [#164](https://github.com/anefzaoui/misterdownloadmanager/issues/164))
 - ✅ Firefox's add-on offered from [addons.mozilla.org](https://addons.mozilla.org/firefox/addon/mister-download-manager/)
   first: **Add to Firefox** on the website, in the help, the FAQ and the README, and in MDM's
-  **Add Mister Download Manager to your browser** window (for Zen and LibreWolf too)
+  **Add tnctr download manager to your browser** window (for Zen and LibreWolf too)
 - ✅ Support MDM: a way to support its creator on [GitHub Sponsors](https://github.com/sponsors/anefzaoui),
   asked for only (**Help → Support MDM**, a line in About, the website, the README, the
   extension's popup and GitHub's Sponsor button); MDM stays free, nothing changes or unlocks
