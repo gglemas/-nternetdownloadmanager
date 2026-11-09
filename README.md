@@ -353,7 +353,25 @@ working, not a copy of anyone's software.
 <details>
 <summary><b>Build from source</b></summary>
 
-Requires Rust stable 1.95 or later (the MSVC toolchain on Windows).
+Requires Rust stable 1.95 or later (the MSVC toolchain and Visual Studio C++ build tools on Windows).
+
+For a one-command PowerShell build, run the root-level script:
+
+```powershell
+.\build.ps1                       # Release: app, browser host, CLI and MCP server
+.\build.ps1 -Configuration Debug  # Faster development build
+# Also works from another directory, including paths with spaces:
+& 'C:\Projects\tnctr download manager\build.ps1'
+```
+
+The script uses `$PSScriptRoot` (the PowerShell equivalent of batch `%~dp0`) to build
+from the project root and restores your original working directory afterwards. It stops
+on errors, uses `Cargo.lock`, and finds a standard Rust installation even if Cargo is not
+on PATH. Outputs go to `target/release/` or `target/debug/` by default (Cargo configuration
+or `CARGO_TARGET_DIR` can override this). This compiles the programs; packaging the installer
+and ZIPs remains a separate step below. No dependencies are installed automatically.
+
+Or use Cargo directly:
 
 ```
 cargo build --release

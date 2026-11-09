@@ -7,6 +7,10 @@ issue, where the details and the discussion are. Released changes are in
 
 ✅ done, coming in 0.5.0 · 🔄 being built · 📋 planned · 🔍 looking into it
 
+## Build tooling
+
+- [x] Add a root `build.ps1` for one-command Release/Debug builds from any working directory, preserving the caller's directory and reporting build failures.
+
 ## Branding
 
 - [x] Rename the application display name to `tnctr download manager` across the desktop UI, translations, browser extension and installers; preserve existing storage and integration identifiers. Keep the generated automation API schema title in sync.
