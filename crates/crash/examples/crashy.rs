@@ -129,7 +129,9 @@ fn run_monitor(m: mdm_crash::MonitorArgs) {
     let (tx, rx) = std::sync::mpsc::channel();
     let (socket, data) = (m.socket.clone(), m.data.clone());
     std::thread::spawn(move || {
-        let _ = monitor::serve(&socket, &data, tx);
+        if let Err(error) = monitor::serve(&socket, &data, tx) {
+            eprintln!("monitor: server failed: {error}");
+        }
     });
     while let Ok(e) = rx.recv() {
         match e {
