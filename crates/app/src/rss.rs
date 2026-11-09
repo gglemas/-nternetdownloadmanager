@@ -1,12 +1,6 @@
-//! RSS feeds with auto-download rules (#39; beyond IDM). A feed is fetched every so often (RSS
-//! 2.0 or Atom); its articles are listed in the RSS feeds window, where any of them can be
-//! downloaded by hand; and each article new since the last fetch goes through the download
-//! rules: one a rule takes is added as a torrent, to the rule's folder, at once.
-//!
-//! A rule: words the title must contain (all of them; `|` between alternatives; `*` and `?`
-//! wildcards) and must not contain, or regular expressions; an episode filter (`1x2;1x5-8;2x1-`)
-//! read from `S01E02` or `1x02` in the title; and no episode twice. Everything is kept in
-//! `rss.json` in the data folder.
+//! Fetch RSS 2.0 and Atom feeds. Articles can be downloaded manually or matched against
+//! rules for required/excluded words, alternatives, wildcards, regular expressions, and
+//! episode ranges. Avoid duplicate episodes and persist the configuration in rss.json.
 
 use std::collections::HashSet;
 use std::path::{Path, PathBuf};

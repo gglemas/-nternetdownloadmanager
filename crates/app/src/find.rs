@@ -1,5 +1,4 @@
-//! Downloads → Find (Ctrl-F) / Find Next (F3): IDM's "Find file" dialog
-//! (notes/ui-spec/scheduler-and-misc.md §4).
+//! Find downloads in the list; see the scheduler-and-misc UI specification.
 
 use egui::vec2;
 

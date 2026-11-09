@@ -68,7 +68,7 @@ BATCH = 40
 REASONING = {"enabled": False}
 
 # Names that stay as they are in every language.
-KEEP = ["tnctr download manager", "MDM", "IDM", "Internet Download Manager", "Windows",
+KEEP = ["tnctr download manager", "MDM", "Windows",
         "Chrome", "Edge", "Firefox", "Brave", "Opera", "yt-dlp", "ffmpeg", "BitTorrent",
         "GitHub", "librqbit", "URL", "HTTP", "HTTPS", "FTP", "SOCKS", "MD5", "SHA-1", "SHA-256",
         "DNS", "TLS", "TCP", "UDP", "IP", "Cloudflare", "Google", "Quad9", "AdGuard", "NextDNS",

@@ -1,8 +1,5 @@
-//! Tasks → Export / Import (D-021): the list's addresses to a text file or an IDM export file
-//! (`.ef2`), and downloads from either. IDM's import finds every web address in a file and shows
-//! them to check before they are added; so does ours (in Link grabber, grabber.rs). An `.ef2` file holds one block per
-//! download — `<`, the address, `referer: …` / `cookie: …` / `User-Agent: …` lines, `>` — so a
-//! list moves between IDM and MDM with its request context.
+//! Import and export download lists as text or EF2. EF2 blocks retain each address,
+//! referrer, cookies, and user agent; Link grabber reviews imported entries before adding them.
 
 use crate::model::Item;
 
@@ -22,7 +19,6 @@ pub fn export_text(items: &[Item]) -> String {
     items.iter().map(|i| format!("{}\r\n", i.url)).collect()
 }
 
-/// IDM's export format.
 pub fn export_ef2(items: &[Item]) -> String {
     let mut out = String::new();
     for i in items {
@@ -126,7 +122,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn idm_export_files_round_trip() {
+    fn legacy_export_files_round_trip() {
         let mut a = Item::new(
             1,
             "https://x.org/a.zip".parse().unwrap(),

@@ -187,7 +187,7 @@ components:
 
 **Creative North Star: "The Waybill on the Parcel"**
 
-A download is a delivery. The page is the board the parcel sits on, in the logo's blue; the real app window is the parcel; what the visitor reads is printed on thermal-label sheets stuck to it, in black ink with hairline field rules, ranked like a courier label: who sends it, the headline, the fine print, the fields, a real barcode. The benchmark is tracking: two shipments scanned event by event to the measured times, each event showing its rate as well as its time.
+A download is a delivery. The page is the board the parcel sits on, in the logo's blue; the real app window is the parcel; what the visitor reads is printed on thermal-label sheets stuck to it, in black ink with hairline field rules, ranked like a courier label: who sends it, the headline, the fine print, the fields, a real barcode.
 
 The world is the owner's choice. The blue board (#1f63d6) replaced kraft brown after four rendered options; dark theme is a navy depot where the same labels print in reverse (near-black stock, cool white ink). Density is a label's, not a brochure's: few elements, each one a field with a name and a value, numbers in tabular figures. Every screenshot is the real, unretouched app, shown at full content width; the site never draws a fake window, a glowing mock-up or a row of icon cards. Reading pages (help, FAQ, news, legal) take the same world with restraint: the board above, one sheet to read.
 
@@ -197,7 +197,7 @@ The site ships in 21 languages, Arabic and Persian right to left. Every directio
 - Blue board, white label stock, black ink; green only for Download and delivered.
 - One self-hosted face, Archivo, condensed by its width axis for headings and field names.
 - Fields, not cards: name over value, ink rules between.
-- Real artefacts only: the unretouched app, a scannable Code 128 barcode, the benchmark's own times.
+- Real artefacts only: the unretouched app and a scannable Code 128 barcode.
 - Motion is mechanical and rare: the label feeds out once, progress moves in real time, a stamp lands.
 
 ## Colors
@@ -221,7 +221,7 @@ Two materials and one law: the board in the logo's blue, label stock in white an
 - **Hairline** (line): quiet dividers inside a sheet (table rows, list rows, the help nav's edge).
 
 ### Named Rules
-**The Green By Law Rule.** Green appears only on the Download action and on delivered states (the done lane, the stamp). Never on a secondary button, a badge, a link or a decorative accent. One exception, the owner's choice: on the comparison page, MDM's line is live. Its foot carries a strip of eight connections that fill in green, each at its own pace with a head where the bytes arrive; then a Delivered stamp lands ("1 GiB in 1.01 s", the benchmark's median), and it loops every 6 s. Its ticks in the declaration are green. Reduced motion shows it delivered, at rest.
+**The Green By Law Rule.** Green appears only on the Download action and delivered states. Never use it on a secondary button, badge, link, or decorative accent.
 
 **The Two Text Systems Rule.** Text on the board is on-board or on-board-2; text on label stock is ink, ink-2 or ink-3. Never put ink on the board or board text on a sheet; every element printed on stock declares ink colour, whatever it inherits.
 
@@ -249,7 +249,7 @@ Two materials and one law: the board in the logo's blue, label stock in white an
 - **Field name** (750, 12px, 0.045em, uppercase, width 74%): the name over a field value, table column heads, the help nav's group names.
 
 ### Named Rules
-**The Tabular Figures Rule.** Every number that can be compared (times, sizes, ratios, versions, dates) is set in tabular figures.
+**The Tabular Figures Rule.** Times, sizes, versions, and dates use tabular figures for quick scanning.
 
 **The Condense, Don't Swap Rule.** Hierarchy comes from Archivo's width and weight axes, never from a second display face. Scripts Archivo lacks fall back to the system's face, without condensing, tracking or uppercase.
 
@@ -314,7 +314,7 @@ The site has no form inputs. Its "fields" are the label's data grid: two columns
 The label stuck on the parcel: an ink band with the logo and sender line, the label headline, an ink-2 subline, the green split Download, the other systems in fine print, the fields (postage, delivery time, systems, version and size), and a real Code 128 barcode of the release under a dashed tear line with its text in spaced mono. On first load it feeds out once, top to bottom, like a thermal printer (1.1s, cubic-bezier(.16, 1, .3, 1)); at rest it never moves.
 
 ### The Tracking Race (signature)
-Two lanes on one shared time axis, one continuous rule each: dashed while the app starts, solid ink while the file comes in (ink-2 for IDM), green once delivered, when a Delivered stamp thunks onto the finish. Events below list time and rate in tabular figures; the ratio grows at display scale in the foot. It plays in real time to the benchmark's measured medians, replays on demand, and shows the finish at once for reduced motion. Scenario tabs are an ink-ruled segmented control; selected is filled ink.
+The waybill feeds out once on first load; reduced motion skips directly to the finished state.
 
 ### Rubber Stamp
 Stamp Ink caps at width 70%, 900 weight, a 2.5px rule plus a 1.5px outline offset 2px (inked twice round), on paper, set at a slant. Used only for delivered.
@@ -350,7 +350,7 @@ The people who make MDM possible, from GitHub's public record (`tools/contributo
 - **Do** show only the real, unretouched app in screenshots, in its day and night versions, left to right even on RTL pages.
 - **Do** use logical properties for every direction, mirror tilts in RTL, and drop tracking, uppercase and condensing for Arabic, Persian, Indic, Thai and CJK scripts.
 - **Do** keep the barcode a real, scannable Code 128 of what it says.
-- **Do** show the other download managers on the comparison page with their own logos, 24px beside their names, unretouched, with the trademark notice and `website/assets/alts/SOURCES.txt`; never IDM's.
+- **Do** preserve attribution for third-party marks and assets that remain in use.
 - **Do** honour reduced motion: the race shows its finish, the label does not feed, bars and grids sit at rest.
 
 ### Don't:
@@ -359,5 +359,5 @@ The people who make MDM possible, from GitHub's public record (`tools/contributo
 - **Don't** add a second typeface for display; condense Archivo instead.
 - **Don't** set a field name above a section headline as a kicker; field names name fields, table columns and nav groups.
 - **Don't** add elevations beyond Sheet, Lift and the Download sticker edge (screenshots inside prose take a lighter contact shadow), and never a glow.
-- **Don't** draw a mock window, retouch a screenshot or use IDM artwork; IDM appears only as a named, text-marked comparison.
+- **Don't** draw a mock window, retouch a screenshot, or use unattributed third-party artwork.
 - **Don't** animate anything on entry except the label's single feed and progress moving into place (the race, the speed-up bars, the connection grids).

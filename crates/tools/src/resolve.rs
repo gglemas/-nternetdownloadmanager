@@ -1,5 +1,4 @@
 //! What a page holds, by `yt-dlp -J`: the title and the formats, turned into the few choices a
-//! person picks from (one per resolution, plus audio only), as IDM's video panel offers them.
 
 use std::path::Path;
 use std::time::Duration;
