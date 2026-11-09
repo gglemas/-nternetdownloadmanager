@@ -11,6 +11,16 @@ issue, where the details and the discussion are. Released changes are in
 
 - [x] Add a root `build.ps1` for one-command Release/Debug builds from any working directory, preserving the caller's directory and reporting build failures.
 
+## Crash-test diagnostics
+
+- [x] Surface crash-monitor startup failures and retain the child process output in end-to-end test failures.
+
+## Display scaling and text
+
+- [x] Refit the main and crash-report windows when display scale or monitor size changes, including restoring a maximized window; keep minimum sizes within the available screen.
+- [x] Wrap empty-download-list text within its pane at high zoom and in long or right-to-left translations.
+- [x] Keep font installation and Windows text-rasterizer state local to each UI context, and avoid allocating font-set lists on unchanged language loads.
+
 ## Branding
 
 - [x] Rename the application display name to `tnctr download manager` across the desktop UI, translations, browser extension and installers; preserve existing storage and integration identifiers. Keep the generated automation API schema title in sync.

@@ -205,24 +205,49 @@ pub fn frame(ctx: &egui::Context) -> Vec2 {
     FRAME / ctx.zoom_factor()
 }
 
+/// Refit after a DPI or monitor-size change, not on every repaint.
+#[derive(Default)]
+pub struct WindowFit {
+    display: Option<(f32, Option<Vec2>, bool)>,
+}
+
+impl WindowFit {
+    pub fn reset(&mut self) {
+        self.display = None;
+    }
+
+    pub fn update(&mut self, ctx: &egui::Context, min: Vec2, layout: Option<Vec2>) {
+        let display = (
+            ctx.pixels_per_point(),
+            ctx.input(|i| i.viewport().monitor_size),
+            ctx.input(|i| i.viewport().maximized == Some(true)),
+        );
+        if self.display != Some(display) && fit_window(ctx, min, layout) {
+            self.display = Some(display);
+        }
+    }
+}
+
 /// The root window being drawn (the main window, the crash report window) brought inside the
 /// screen once: made no larger than its work area, and moved onto it (Windows). After a start
 /// at a large interface size, its window was laid out for a larger screen. `layout`: the size
 /// of a fixed layout the window shows ([`pane`]), given room for a scroll bar when cut.
-pub fn fit_window(ctx: &egui::Context, min: Vec2, layout: Option<Vec2>) {
+fn fit_window(ctx: &egui::Context, min: Vec2, layout: Option<Vec2>) -> bool {
     let (inner, outer, maximized) = ctx.input(|i| {
         let v = i.viewport();
         (v.inner_rect, v.outer_rect, v.maximized == Some(true))
     });
     let (Some(inner), Some(outer)) = (inner, outer) else {
-        return;
+        return false;
     };
     if maximized {
-        return;
+        return true;
     }
     let Some(room) = room(ctx, outer.center()) else {
-        return;
+        return false;
     };
+    let min = fit(min, Some(room));
+    ctx.send_viewport_cmd(egui::ViewportCommand::MinInnerSize(min));
     let size = match layout {
         Some(l) => shown(l, Some(room)),
         None => fit(inner.size(), Some(room)),
@@ -238,6 +263,7 @@ pub fn fit_window(ctx: &egui::Context, min: Vec2, layout: Option<Vec2>) {
             ctx.send_viewport_cmd(egui::ViewportCommand::OuterPosition(p));
         }
     }
+    true
 }
 
 /// A layout of `content` points drawn in the space `ui` has, scrolled when that is smaller (a
@@ -390,6 +416,59 @@ fn into_view(r: Rect, port: Rect, rtl: bool) -> Vec2 {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    #[cfg(not(windows))] // Windows queries the real monitor work area rather than RawInput.
+    fn window_refits_after_dpi_and_monitor_changes_without_repeating_commands() {
+        let ctx = egui::Context::default();
+        let mut fit = WindowFit::default();
+        let mut draw = |dpi: f32, monitor: Vec2, ready: bool, maximized: bool| {
+            let mut input = egui::RawInput::default();
+            let viewport = input.viewports.get_mut(&egui::ViewportId::ROOT).unwrap();
+            viewport.native_pixels_per_point = Some(dpi);
+            viewport.monitor_size = Some(monitor);
+            viewport.maximized = Some(maximized);
+            if ready {
+                viewport.inner_rect = Some(Rect::from_min_size(Pos2::ZERO, vec2(800.0, 600.0)));
+                viewport.outer_rect = Some(Rect::from_min_size(Pos2::ZERO, vec2(816.0, 640.0)));
+            }
+            let mut out = ctx.run_ui(input, |ui| {
+                fit.update(ui.ctx(), vec2(600.0, 300.0), None);
+            });
+            out.textures_delta.clear();
+            out.viewport_output
+                .remove(&egui::ViewportId::ROOT)
+                .unwrap()
+                .commands
+                .into_iter()
+                .filter(|command| !matches!(command, egui::ViewportCommand::SetTheme(_)))
+                .collect::<Vec<_>>()
+        };
+        let screen = vec2(1000.0, 700.0);
+        assert!(draw(1.0, screen, false, false).is_empty());
+        assert!(
+            !draw(1.0, screen, true, false).is_empty(),
+            "retry when window geometry arrives"
+        );
+        assert!(draw(1.0, screen, true, false).is_empty());
+        assert!(
+            !draw(2.0, screen, true, false).is_empty(),
+            "DPI changes must refit"
+        );
+        let commands = draw(2.0, vec2(400.0, 250.0), true, false);
+        assert!(
+            commands.iter().any(|c| matches!(c,
+                egui::ViewportCommand::MinInnerSize(size) if size.x < 600.0 && size.y < 300.0
+            )),
+            "minimum size must fit the smaller display"
+        );
+        assert!(draw(2.0, vec2(400.0, 250.0), true, true).is_empty());
+        assert!(
+            !draw(2.0, vec2(400.0, 250.0), true, false).is_empty(),
+            "restoring a maximized window must refit"
+        );
+        assert!(draw(2.0, vec2(400.0, 250.0), true, false).is_empty());
+    }
 
     /// The sizes offered, Ctrl + and Ctrl − through them, and a hand-edited value as the nearest.
     #[test]

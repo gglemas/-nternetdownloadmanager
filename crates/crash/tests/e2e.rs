@@ -3,7 +3,7 @@
 //! the function where it happened.
 
 use std::path::PathBuf;
-use std::process::Command;
+use std::process::{Command, Stdio};
 use std::time::{Duration, Instant};
 
 fn crashy() -> PathBuf {
@@ -32,10 +32,14 @@ fn report(mode: &str) -> String {
             let _ = self.0.wait();
         }
     }
+    let log_path = data.path().join("crashy.log");
+    let log = std::fs::File::create(&log_path).unwrap();
     let _child = Running(
         Command::new(crashy())
             .arg(mode)
             .arg(data.path())
+            .stdout(Stdio::from(log.try_clone().unwrap()))
+            .stderr(Stdio::from(log))
             .spawn()
             .expect("examples/crashy is built with the tests"),
     );
@@ -53,7 +57,11 @@ fn report(mode: &str) -> String {
             return std::fs::read_to_string(&t).unwrap();
         }
         if Instant::now() > deadline {
-            panic!("no report for {mode} in {}", crashes.display());
+            let diagnostic = std::fs::read_to_string(&log_path).unwrap_or_default();
+            panic!(
+                "no report for {mode} in {}\n{diagnostic}",
+                crashes.display()
+            );
         }
         std::thread::sleep(Duration::from_millis(200));
     }
