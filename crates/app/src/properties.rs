@@ -1,5 +1,5 @@
 //! File Properties (double-click / right-click → Properties;
-//! notes/ui-spec/scheduler-and-misc.md §5). Light in both modes, as IDM's.
+//! notes/ui-spec/scheduler-and-misc.md §5). Light in both modes, as configured.
 
 use std::path::{Path, PathBuf};
 
@@ -120,7 +120,7 @@ impl Properties {
                 ],
             )
         });
-        // The values' column: IDM's 87, or after the widest label when a translation is longer
+        // The values' column: the 87, or after the widest label when a translation is longer
         // (the boxes keep their right edges).
         let col = [
             "Type:",

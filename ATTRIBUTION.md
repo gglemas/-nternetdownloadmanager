@@ -44,4 +44,4 @@ System resources used at run time and **not** bundled: Windows fonts (Segoe UI, 
 Arial) and each system's own file-type icons (the Windows shell's, macOS Finder's, the Linux
 desktop's icon theme).
 
-MDM contains no artwork, text or code from Internet Download Manager (see the README).
+The application is independently implemented; see the README.

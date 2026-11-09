@@ -1,7 +1,7 @@
 // Link the GUI with Windows subsystem version 5.02 (D-008). Windows gives windows of programs
-// linked this way the legacy frame metrics — dialogs get IDM's fixed frame (3 px borders,
+// linked this way the legacy frame metrics — dialogs get the fixed frame (3 px borders,
 // 26 px caption, measured: 566×122 outer for a 560×93 client) instead of the padded modern
-// frame (8 px, 31 px). Resizable windows keep their 8 px frame, as IDM's main window has.
+// frame (8 px, 31 px). Resizable windows keep their 8 px frame, as configured main window has.
 //
 // Also embeds the exe's icon (Explorer, taskbar before the window sets its own) and version
 // info.

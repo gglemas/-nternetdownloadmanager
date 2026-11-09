@@ -1,5 +1,5 @@
-//! The download list, painted to IDM 6.42's pixels (notes/ui-spec/main-window.md "List view"),
-//! with IDM's header behaviour: drag a header to reorder columns, drag a border to resize, click
+//! The download list, painted to the measured build's pixels (notes/ui-spec/main-window.md "List view"),
+//! with the header behaviour: drag a header to reorder columns, drag a border to resize, click
 //! to sort, right-click to choose columns.
 
 use egui::{Color32, CursorIcon, Pos2, Rect, Sense, Ui, pos2};
@@ -29,7 +29,7 @@ themed! {
     BG => list;
     HEADER_BG => header;
     HEADER_SEP => header_sep;
-    /// Sort indicator (an addition: IDM's header shows none).
+    /// Sort indicator (an addition: the header shows none).
     SORTED_BG => sorted;
     SORT_ARROW => sort_arrow;
     /// Light: the one grid colour, 1 px lines (light-main.md).
@@ -43,7 +43,7 @@ themed! {
     FILTER_ON => accent;
 }
 
-/// Columns, by their fixed data slot in [`Row::cells`]: IDM's eight, then the user's additions:
+/// Columns, by their fixed data slot in [`Row::cells`]: the eight, then the user's additions:
 /// "Added" (2026-10-30: when the download was added; sorts in order of addition) and "Source"
 /// (D-014: a Web or Torrent chip, first by default).
 pub const COLS: usize = 10;
@@ -70,11 +70,11 @@ pub const ADDED: usize = 8;
 /// The "Source" column's data slot: its cell is "Web" or "Torrent", painted as a chip.
 pub const SOURCE: usize = 9;
 
-/// IDM's default column widths (and ours for Added and Source).
+/// the default column widths (and ours for Added and Source).
 pub const DEFAULT_WIDTHS: [f32; COLS] = [
     150.0, 20.0, 75.0, 65.0, 75.0, 95.0, 65.0, 200.0, 125.0, 62.0,
 ];
-/// Default display order: Source first, then IDM's, with Added after Last Try Date.
+/// Default display order: Source first, then the, with Added after Last Try Date.
 const DEFAULT_ORDER: [usize; COLS] = [SOURCE, 0, 1, 2, 3, 4, 5, 6, ADDED, 7];
 
 const MIN_WIDTH: f32 = 16.0;
@@ -83,7 +83,7 @@ const GRIP: f32 = 4.0;
 /// Pointer travel before a header press becomes a column drag.
 const DRAG_START: f32 = 5.0;
 
-/// A column filter (beyond IDM, user 2026-10-29): a few fixed values to keep, or text the cell
+/// A column filter (additional, user 2026-10-29): a few fixed values to keep, or text the cell
 /// must contain (case-insensitive).
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub enum Filter {
@@ -282,7 +282,7 @@ pub struct Row {
     /// What the Status filter sees: Downloading, Stopped, Waiting, Complete or Error.
     pub status_group: &'static str,
     pub icon: IconKey,
-    /// In a queue: the Q column shows a queue icon (IDM: stacked files).
+    /// In a queue: the Q column shows a queue icon ( stacked files).
     pub queued: bool,
     pub cells: [String; COLS],
 }
@@ -1060,7 +1060,7 @@ pub fn show(
         if resp.secondary_clicked() {
             // A right-click inside the selection keeps it (the menu acts on all of it); outside,
             // the row alone is selected; on blank space the selection is cleared. The menu opens
-            // at the pointer (IDM opens the blank-space one at the list's centre; user decision).
+            // at the pointer (the app opens the blank-space one at the list's centre; user decision).
             let row = row_at(pos);
             out.pick = Some(match row {
                 Some(i) if selected.get(i).copied().unwrap_or(false) => Pick::Focus(i),

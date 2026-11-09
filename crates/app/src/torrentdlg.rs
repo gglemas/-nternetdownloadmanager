@@ -1,4 +1,4 @@
-//! Add torrent (M15, D-014; ours — IDM has no torrents). A magnet link or a .torrent file, its
+//! Add torrent (M15, D-014; ours — the app has no torrents). A magnet link or a .torrent file, its
 //! file list once known (a magnet asks the swarm for it), which files to download, and where.
 //! It follows the app's mode (dark or light) like Add URL: glyphs are rendered for the main
 //! window's mode, so a light dialog in dark mode would get heavy text.
