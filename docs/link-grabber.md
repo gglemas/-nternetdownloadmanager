@@ -9,7 +9,7 @@
 ## Where links come from
 
 - **The browser.** Right-click a page for **Download all links with Mister Download Manager**, or select part of it for **Download selected links with Mister Download Manager**. The page's referrer and cookies go with each link.
-- **Tasks → Import → From text file** and **From IDM export file**. An `.ef2` file brings each download's referrer and cookies.
+- **Tasks → Import → From text file** and **From EF2 export file**. An `.ef2` file brings each download's referrer and cookies.
 - Several links, or a `.txt` or `.ef2` list, dropped on the download list.
 - **Pasting.** Choose **Tasks → Link grabber...** and press **Ctrl+V**: every web address in the copied text is added.
 
@@ -25,7 +25,7 @@ Each package is a row you can open and close (click its arrow, double-click it, 
 
 ## Looking links up
 
-As links arrive, MDM asks each server about its file, as IDM's **Download all links** does. A few links are checked at a time, and only a few from any one site. Each link then shows its real name and size, and a status:
+As links arrive, MDM asks each server about its file. A few links are checked at a time, and only a few from any one site. Each link then shows its real name and size, and a status:
 
 - **Online**: the server has the file.
 - **Offline (404)**: it doesn't. The link is unticked.
@@ -49,7 +49,7 @@ The box under the list edits the package you selected:
 ## Adding the links
 
 - **Start** adds the ticked links to the **Main download queue** and starts the queue. It downloads as many files at once as the queue allows.
-- **Add to queue** adds them to the **Main download queue** without starting them, as IDM's import does.
+- **Add to queue** adds them to the **Main download queue** without starting them.
 - **Cancel** closes the window and adds nothing.
 
 ## Extracting archives

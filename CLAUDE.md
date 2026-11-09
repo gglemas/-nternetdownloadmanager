@@ -1,18 +1,15 @@
 # Mister Download Manager (MDM) — agent guide
 
 Mister Download Manager (MDM) is a download manager for Windows in Rust (egui + storytold
-craft-libs), laid out the way Internet Download Manager users expect. Start by reading
+craft-libs), with a compact desktop interface. Start by reading
 [README.md](README.md) and [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 ## Rules
 
-1. **Clean room.** MDM contains no code, binaries, artwork, icons, sounds or text from
-   Internet Download Manager or any other download manager. Never disassemble, decompile,
-   debug-attach or patch any IDM file, and never bypass its licensing or trial. Behaviour is
-   learned only from public documentation, screenshots and black-box use of a licensed copy.
-   One exception, the maintainer's: the website's comparison page may show the other download
-   managers' own logos (never IDM's), small, to identify them, with a notice that they belong to
-   their owners and their sources in `website/assets/alts/SOURCES.txt`.
+1. **Clean room.** The application is independently implemented from public standards.
+   Do not copy proprietary code, binaries, artwork, text or other assets, reverse-engineer
+   third-party software, or bypass licensing. Preserve third-party licenses and attribution
+   for the open-source dependencies and assets the project uses.
 2. Every user-visible text goes through `crate::i18n`; run `python tools/i18n/extract.py`
    after adding one.
 3. Windows-only calls live in `crates/app/src/win32.rs`, their Linux and macOS counterparts in
@@ -26,7 +23,7 @@ craft-libs), laid out the way Internet Download Manager users expect. Start by r
    window and state, before and after, light and dark, a long language (de) and right to left (ar);
    phone width for the website. The images live on the `pr-shots` branch (`<pr>/<name>.png`, never
    merged) and are embedded from `raw.githubusercontent.com/anefzaoui/misterdownloadmanager/pr-shots/`.
-   Neutral test folders in shots, no IDM artwork. A change with nothing to see shows its proof
+   Neutral test folders in shots, no third-party proprietary artwork. A change with nothing to see shows its proof
    (tables, logs) instead and says so.
 
 ## Commands
