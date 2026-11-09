@@ -307,7 +307,6 @@
 #, machine
 	Add them without starting them	ते सुरू करिनासतना जोडात
 #. message or event log entry in the main window; text in the Link grabber window
-#. Link grabber button: add the ticked links to the download queue without starting them (IDM's OK)
 #, machine
 	Add to queue	रांगेंत जोडचें
 #. text in a dialog box
@@ -803,7 +802,6 @@
 #, machine
 	Change folder for "{category}" category on last selected	निमण्या निवडलेल्याचेर "{category}" श्रेणी खातीर फोल्डर बदला
 #. text in the Link grabber window
-#. Link grabber button (IDM's): tick every link
 #, machine
 	Check all	सगळे तपासचे
 #. text in rssdlg.rs
@@ -1919,7 +1917,6 @@
 #, machine
 	Hide to the notification area	अधिसूचोवणी क्षेत्रांत लिपय
 #. checkbox in the Link grabber window; text in the Link grabber window; checkbox in the Options window
-#. Link grabber check box (IDM's "Hide HTML files"): links to web pages are not shown
 #, machine
 	Hide web pages	वेब पानां लिपय
 #. text in the Options window
@@ -2332,7 +2329,6 @@
 #, machine
 	Login	लॉगिन
 #. checkbox in the Options window
-#. Options → Archives → Link grabber check box (IDM's Download all links looks every link up)
 #, machine
 	Look links up when they arrive (name, size, online)	जेन्ना दुवे येतात तेन्ना ते पळोवचे (नांव, आकार, ऑनलायन)
 #. text in the Add torrent window; button in the Download video window
@@ -4842,7 +4838,6 @@
 #, machine
 	Ukraine	युक्रेन
 #. text in the Link grabber window
-#. Link grabber button (IDM's): untick every link
 #, machine
 	Uncheck all	सगळे अनचेक करा
 #. item in the Categories tree in the main window; text in remote.rs
@@ -6163,7 +6158,6 @@ menu	C&ustomize URL List...	URL वळेरी &सानुकूल करा
 #, machine
 menu	Check for &updates...	अद्यतनां खातीर &तपासात...
 #. menu command in the main window
-#. View → Theme: MDM's own look, the default (IDM's layout, Windows 11's controls)
 #, machine
 menu	Classic	क्लासिक
 #. menu command in the main window
@@ -6242,7 +6236,7 @@ menu	Font	फॉन्ट
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
 #, machine
-menu	From &IDM export file...	&IDM निर्यात फायलींतल्यान...
+menu	From &EF2 export file...	&EF2 निर्यात फायलींतल्यान...
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
@@ -6442,7 +6436,7 @@ menu	Theme	थीम
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
 #, machine
-menu	To &IDM export file...	IDM निर्यात फायलीक (&I)...
+menu	To &EF2 export file...	EF2 निर्यात फायलीक (&I)...
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it

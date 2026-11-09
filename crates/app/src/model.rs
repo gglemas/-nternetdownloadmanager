@@ -1,5 +1,3 @@
-//! Download list items, IDM's default categories, and IDM-style formatting.
-
 use std::path::{Path, PathBuf};
 use std::time::Instant;
 
@@ -8,9 +6,7 @@ use mdm_engine::download::State;
 use serde::{Deserialize, Serialize};
 use url::Url;
 
-/// IDM's default file categories (notes/research/idm-ui-and-integration.md, notes/UI.md), our
-/// Torrents (D-021) and the user's own (D-021: Options → Save to → New, the Categories
-/// right-click menu). Built-in ones are saved by name, so lists from before load unchanged.
+/// Built-in and custom categories. Built-ins serialize by name to preserve existing lists.
 #[derive(Clone, Copy, Debug, PartialEq, Eq, Hash, Serialize, Deserialize)]
 pub enum Category {
     General,
@@ -101,7 +97,6 @@ fn type_matches(pattern: &str, ext: &str) -> bool {
 }
 
 impl Category {
-    /// IDM's named categories, then Torrents.
     pub const BUILT_IN: [Category; 6] = [
         Category::Compressed,
         Category::Documents,
@@ -255,8 +250,7 @@ impl Category {
         }
     }
 
-    /// The category a file name falls into: the user's categories first (that is why they made
-    /// one), then IDM's; Torrents only by source, never by name.
+    /// Match custom categories before built-in categories when classifying a filename.
     pub fn of(file_name: &str) -> Category {
         let Some((_, ext)) = file_name.rsplit_once('.') else {
             return Category::General;
@@ -351,7 +345,6 @@ pub struct Item {
     pub last_try: Option<String>,
     pub error: Option<String>,
     pub resumable: Option<bool>,
-    /// The hash the finished file must have (Verify checksum…; beyond IDM, D-015).
     #[serde(default)]
     pub checksum: Option<mdm_engine::verify::Hash>,
     /// When the download was added ("Added" column), as `Last Try Date` is written. Downloads
@@ -886,9 +879,7 @@ impl Item {
             Status::Complete => crate::i18n::t("Complete").into(),
             // i18n: a download's status (state it is in, not a command): it failed
             Status::Error => crate::i18n::t("Error").into(),
-            // Where IDM leaves the cell blank (nothing yet, or no size to take a share of), it
-            // says what the download is doing.
-            // i18n: a download's status (state it is in, not a command): waiting in a queue for its turn
+            // i18n: a download status, not a command: waiting in a queue for its turn.
             Status::Queued if self.downloaded == 0 => crate::i18n::t("Waiting").into(),
             _ => match (self.size, self.status) {
                 (Some(t), _) if t > 0 => percent(self.downloaded as f64 / t as f64),
@@ -925,9 +916,7 @@ pub fn stamp_time(stored: &str) -> Option<chrono::NaiveDateTime> {
     chrono::NaiveDateTime::parse_from_str(stored.trim(), STAMP).ok()
 }
 
-/// A stored stamp as the list shows it: in the formats chosen in Options → Regional; else IDM's
-/// own text in English, and the user's Windows region format in other languages (its digits and
-/// order; month names would be in the region's language).
+/// Format dates in the compact English form or the selected regional digit and date order.
 pub fn date_text(stored: &str) -> String {
     let Some(t) = stamp_time(stored) else {
         return stored.to_owned();
@@ -938,8 +927,7 @@ pub fn date_text(stored: &str) -> String {
     when_text(t)
 }
 
-/// A local time as the interface writes dates and times (Options → Regional; IDM's text in
-/// English; the Windows region's elsewhere).
+/// Format a local time according to Options → Regional.
 pub fn when_text(t: chrono::NaiveDateTime) -> String {
     if crate::regional::current().custom {
         return crate::i18n::ltr(&crate::regional::short_date_time(t));
@@ -954,13 +942,11 @@ pub fn when_text(t: chrono::NaiveDateTime) -> String {
     crate::i18n::ltr(&crate::regional::short_date_time(t))
 }
 
-/// Whether numbers are written IDM's way (English): `7.05 MB`, `13.38%`, `1 min 22 sec`.
-/// Every other language writes them as its region does (digits, decimal mark, unit names; D-019).
+/// Format values with the language’s digits, decimal separator, and unit names.
 fn english() -> bool {
     crate::i18n::code() == "en"
 }
 
-/// `13.38%` (IDM), or the interface language's percentage (`13,38 %`).
 pub fn percent(ratio: f64) -> String {
     crate::i18n::percent(ratio, 2)
 }
@@ -970,7 +956,6 @@ fn unit(n: f64, decimals: usize, template: &str) -> String {
     crate::i18n::i18n().measure(crate::i18n::lang(), n, decimals, template)
 }
 
-/// `7.05 MB`, `412.20 KB`, `1.97 GB` — IDM shows two decimals.
 pub fn size(b: u64) -> String {
     if !english() {
         let v = b as f64;
@@ -1019,7 +1004,6 @@ pub fn size3(b: u64) -> String {
     }
 }
 
-/// `11.623 MB/sec`, `512.000 KB/sec` (IDM's progress dialog uses three decimals).
 pub fn rate(bps: f64) -> String {
     if !english() {
         return if bps >= 1024.0 * 1024.0 {
@@ -1035,7 +1019,6 @@ pub fn rate(bps: f64) -> String {
     }
 }
 
-/// The list's Size column: IDM puts two spaces before the unit (`200.00  MB`).
 pub fn size_list(b: u64) -> String {
     if english() {
         size(b).replacen(' ', "  ", 1)

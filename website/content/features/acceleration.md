@@ -24,16 +24,6 @@ far behind the others is dropped and opened again.
 The progress window draws it as it happens: a bar of the whole file with each connection's
 start and progress, and a table with what every connection is doing right now.
 
-## Measured, not claimed
-
-On the same PC and the same test server, MDM fetched a 1 GiB file in 1.0 s against IDM 6.42's
-5.5 s, and a 256 KiB file in 0.03 s against 3.1 s: the medians of alternating runs. The
-[benchmark page](/benchmark.html) has every run, the method and the raw data.
-
-More connections help only where a server sends each one at a limited speed. Most servers allow
-a few connections per address, and MDM notices when one says no: it stops asking that server
-for more and lists what it learned under **Exceptions** in **Options → Connection**. You can set
-a number for a server yourself there too.
 
 ## More than 32, if you want them
 
