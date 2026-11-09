@@ -1757,7 +1757,7 @@ impl SpeedSettings {
                     ui,
                     o + vec2(11.0, 86.0),
                     &mut self.on_startup,
-                    "Always turn on Speed Limiter on Mister Download Manager startup",
+                    "Always turn on Speed Limiter on tnctr download manager startup",
                     true,
                 );
                 // Beyond IDM: a limit for all downloads together.
@@ -2025,7 +2025,7 @@ impl TurnOffCountdown {
         question(
             ctx,
             "turn-off",
-            "Mister Download Manager",
+            "tnctr download manager",
             [374.0, 100.0],
             false,
             winui::LIGHT_BG(),
@@ -2192,7 +2192,7 @@ impl ConfirmDelete {
                 let text = if n == 1 && self.unfinished {
                     crate::i18n::t(
                         "The selected download is not complete. Are you sure you want to delete
-it from Mister Download Manager list of downloads?",
+it from tnctr download manager list of downloads?",
                     )
                     .to_owned()
                 } else if n == 1 {
@@ -2200,7 +2200,7 @@ it from Mister Download Manager list of downloads?",
                     let name = self.name.clone();
                     crate::i18n::fmt(
                         crate::i18n::t(
-                            "Are you sure you want to delete \"{name}\" from Mister Download Manager list of downloads?",
+                            "Are you sure you want to delete \"{name}\" from tnctr download manager list of downloads?",
                         ),
                         // A file name keeps its own direction (an Arabic one reads right to left).
                         &[("name", &crate::i18n::isolate(&name))],
@@ -2212,8 +2212,8 @@ it from Mister Download Manager list of downloads?",
                         // i18n: never shown for a single download
                         &crate::i18n::tn(
                             n,
-                            "Are you sure you want to delete {n} download from Mister Download Manager list of downloads?",
-                            "Are you sure you want to delete these {n} downloads from Mister Download Manager list of downloads?",
+                            "Are you sure you want to delete {n} download from tnctr download manager list of downloads?",
+                            "Are you sure you want to delete these {n} downloads from tnctr download manager list of downloads?",
                         ),
                         &[("n", &crate::i18n::integer(n))],
                     )
@@ -3109,7 +3109,7 @@ mod tests {
                         ui.painter().text(
                             origin + vec2(10.0, 10.0),
                             egui::Align2::LEFT_TOP,
-                            "Mister Download Manager",
+                            "tnctr download manager",
                             egui::FontId::proportional(12.0),
                             egui::Color32::BLACK,
                         );

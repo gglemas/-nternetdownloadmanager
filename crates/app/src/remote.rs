@@ -66,7 +66,7 @@ const PAGE: &[&str] = &[
     // i18n: remote control page (on a phone): menu command: unpair this phone or computer from MDM
     crate::i18n::mark("Forget this device"),
     // i18n: remote control page (on a phone): title of the pairing screen
-    crate::i18n::mark("Pair with Mister Download Manager"),
+    crate::i18n::mark("Pair with tnctr download manager"),
     // i18n: remote control page (on a phone): how to pair; "Options", "Remote" and "Pair a device" are MDM's dialog, tab and button
     crate::i18n::mark(
         "On the computer, open Options, then Remote, and click Pair a device. Enter the code it shows.",

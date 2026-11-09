@@ -55,7 +55,7 @@ for pair in "${targets[@]}"; do
   t="${pair%%:*}"
   arch="${pair##*:}"
   name="MisterDownloadManager-$version-macos-$arch-experimental"
-  app="$stage/$arch/dmg/Mister Download Manager.app"
+  app="$stage/$arch/dmg/tnctr download manager.app"
   mkdir -p "$app/Contents/MacOS" "$app/Contents/Resources"
 
   # Crash reports: the release's symbols for this processor (the -symbols zip, one per .dmg) from
@@ -81,8 +81,8 @@ for pair in "${targets[@]}"; do
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-  <key>CFBundleName</key><string>Mister Download Manager</string>
-  <key>CFBundleDisplayName</key><string>Mister Download Manager</string>
+  <key>CFBundleName</key><string>tnctr download manager</string>
+  <key>CFBundleDisplayName</key><string>tnctr download manager</string>
   <key>CFBundleIdentifier</key><string>io.github.anefzaoui.misterdownloadmanager</string>
   <key>CFBundleVersion</key><string>$version</string>
   <key>CFBundleShortVersionString</key><string>$version</string>
@@ -118,7 +118,7 @@ EOF
   # 10.15 and later; the app needs 11) packs it tighter than zlib (UDZO).
   ln -s /Applications "$stage/$arch/dmg/Applications"
   rm -f "$dist/$name.dmg"
-  hdiutil create -volname "Mister Download Manager" -srcfolder "$stage/$arch/dmg" -ov -format ULMO \
+  hdiutil create -volname "tnctr download manager" -srcfolder "$stage/$arch/dmg" -ov -format ULMO \
     "$dist/$name.dmg"
   if [ -n "${MDM_NOTARY_PROFILE:-}" ]; then
     codesign --force --sign "$sign" --timestamp "$dist/$name.dmg"

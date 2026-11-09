@@ -1,4 +1,4 @@
-﻿; Mister Download Manager's installer in Icelandic: tools/installer/languages.py
+﻿; tnctr download manager's installer in Icelandic: tools/installer/languages.py
 ; (machine-translated; a native speaker may correct any line).
 
 [LangOptions]
@@ -291,8 +291,8 @@ ShutdownBlockReasonUninstallingApp=Afskrái %1.
 
 [CustomMessages]
 TaskBrowser=Setja upp samþættingu við &vafra (Chrome, Edge, Brave, Firefox)
-TaskTorrents=Opna .&torrent skrár og segultengla með Mister Download Manager
-TaskStartup=Ræsa Mister Download Manager þegar &Windows ræsir
+TaskTorrents=Opna .&torrent skrár og segultengla með tnctr download manager
+TaskStartup=Ræsa tnctr download manager þegar &Windows ræsir
 TaskGroupOther=Annað:
-Launch=Ræsa Mister Download Manager
+Launch=Ræsa tnctr download manager
 KeepData=Eyða líka niðurhalslistanum þínum og stillingum?%n%nNiðurhalaðar skrár þínar verða ekki snertar hvort sem er.
