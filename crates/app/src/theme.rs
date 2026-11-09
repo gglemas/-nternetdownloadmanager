@@ -410,7 +410,7 @@ fn script_fonts(code: &str, all: bool) -> Vec<(String, Vec<u8>)> {
         let dir = font_dir();
         SCRIPT_FONTS
             .iter()
-            .filter(|(_, _, langs)| all || langs.contains(&code))
+            .filter(move |(_, _, langs)| all || langs.contains(&code))
             // The first file there is used (older systems name some differently); a .ttc's
             // first face is the regular one.
             .filter_map(|(key, files, _)| {
@@ -424,7 +424,7 @@ fn script_fonts(code: &str, all: bool) -> Vec<(String, Vec<u8>)> {
         let mut seen = std::collections::HashSet::new();
         SCRIPT_LANGS
             .iter()
-            .filter(|(ours, _)| all || *ours == code)
+            .filter(move |(ours, _)| all || *ours == code)
             .filter_map(|(_, fc)| fc_match(&format!(":lang={fc}")))
             // Several languages share a font (Devanagari, the CJK collection): loaded once.
             .filter(|f| seen.insert(f.clone()))
@@ -491,12 +491,19 @@ pub fn prepare_fonts() {
     });
 }
 
-/// The script fonts loaded now: the interface language's, or all of them.
-static LOADED: std::sync::Mutex<Option<(String, bool)>> = std::sync::Mutex::new(None);
+#[derive(Clone, Copy)]
+struct LoadedFonts {
+    code: &'static str,
+    all: bool,
+}
+
+fn loaded_fonts(ctx: &egui::Context) -> Option<LoadedFonts> {
+    ctx.data(|data| data.get_temp(egui::Id::unique("loaded-interface-fonts")))
+}
 
 /// Load the fonts the interface language needs (after it changed).
 pub fn language_fonts(ctx: &egui::Context) {
-    let all = LOADED.lock().unwrap().as_ref().is_some_and(|l| l.1);
+    let all = loaded_fonts(ctx).is_some_and(|loaded| loaded.all);
     load_fonts(ctx, all);
 }
 
@@ -515,32 +522,33 @@ pub fn interface_fonts(ctx: &egui::Context) {
 fn load_fonts(ctx: &egui::Context, all: bool) {
     #[cfg(windows)]
     classic_text(ctx);
-    let code = crate::i18n::code().to_owned();
-    let mut loaded = LOADED.lock().unwrap();
+    let code = crate::i18n::code();
     // Only the script fonts depend on the language: rebuild when that set changes.
-    let needs = |code: &str| -> Vec<&str> {
+    let needs = |code| {
         #[cfg(any(windows, target_os = "macos"))]
         return SCRIPT_FONTS
             .iter()
-            .filter(|(_, _, langs)| all || langs.contains(&code))
-            .map(|(key, ..)| *key)
-            .collect();
+            .filter(move |(_, _, langs)| all || langs.contains(&code))
+            .map(|(key, ..)| *key);
         #[cfg(not(any(windows, target_os = "macos")))]
         return SCRIPT_LANGS
             .iter()
-            .filter(|(ours, _)| all || *ours == code)
-            .map(|(ours, _)| *ours)
-            .collect();
+            .filter(move |(ours, _)| all || *ours == code)
+            .map(|(ours, _)| *ours);
     };
-    if let Some((old, old_all)) = loaded.as_ref()
-        && *old_all == all
-        && needs(old) == needs(&code)
+    if let Some(old) = loaded_fonts(ctx)
+        && old.all == all
+        && (old.code == code || needs(old.code).eq(needs(code)))
     {
-        *loaded = Some((code, all));
         return;
     }
-    fonts(ctx, &code, all);
-    *loaded = Some((code, all));
+    fonts(ctx, code, all);
+    ctx.data_mut(|data| {
+        data.insert_temp(
+            egui::Id::unique("loaded-interface-fonts"),
+            LoadedFonts { code, all },
+        );
+    });
 }
 
 /// IDM draws with Segoe UI 9 pt (12 px at 100 %): the system's own copy, nothing bundled
@@ -612,15 +620,15 @@ fn fonts(ctx: &egui::Context, code: &str, all: bool) {
 /// interface's direction changes: a right-to-left line needs its brackets mirrored by the shaper.
 #[cfg(windows)]
 fn classic_text(ctx: &egui::Context) {
-    use std::sync::atomic::{AtomicI8, Ordering};
-    static RTL: AtomicI8 = AtomicI8::new(-1);
     let rtl = crate::i18n::rtl();
-    if RTL.swap(i8::from(rtl), Ordering::Relaxed) != i8::from(rtl) {
+    let id = egui::Id::unique("classic-text-direction");
+    if ctx.data(|data| data.get_temp::<bool>(id)) != Some(rtl) {
         ctx.set_glyph_rasterizers(
             crate::win32::text_rasterizer(font_dir(), rtl)
                 .into_iter()
                 .collect(),
         );
+        ctx.data_mut(|data| data.insert_temp(id, rtl));
     }
 }
 
@@ -909,5 +917,32 @@ mod glyph_tests {
             "marks without a glyph:\n{}",
             report.join("\n")
         );
+    }
+}
+
+#[cfg(test)]
+mod font_cache_tests {
+    use super::*;
+
+    #[test]
+    fn each_context_installs_fonts_and_unchanged_loads_preserve_styles() {
+        for ctx in [egui::Context::default(), egui::Context::default()] {
+            assert!(loaded_fonts(&ctx).is_none());
+            language_fonts(&ctx);
+            assert!(loaded_fonts(&ctx).is_some());
+            let _ = ctx.run_ui(Default::default(), |ui| {
+                ui.label(egui::RichText::new("Font cache").font(crate::winui::tahoma()));
+            });
+            ctx.all_styles_mut(|style| {
+                style
+                    .text_styles
+                    .insert(egui::TextStyle::Body, egui::FontId::proportional(123.0));
+            });
+            language_fonts(&ctx);
+            assert_eq!(
+                ctx.style_of(egui::Theme::Light).text_styles[&egui::TextStyle::Body].size,
+                123.0
+            );
+        }
     }
 }
