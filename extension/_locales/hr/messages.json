@@ -1,12 +1,12 @@
 {
   "name": {
-    "message": "Mister Download Manager"
+    "message": "tnctr download manager"
   },
   "description": {
-    "message": "Preuzimanja iz preglednika prosljeđuje u Mister Download Manager."
+    "message": "Preuzimanja iz preglednika prosljeđuje u tnctr download manager."
   },
   "menu": {
-    "message": "Preuzmi pomoću Mister Download Manager"
+    "message": "Preuzmi pomoću tnctr download manager"
   },
   "video_download": {
     "message": "Preuzmi videozapis"
@@ -30,25 +30,25 @@
     "message": "Postavke gumba..."
   },
   "video_sent": {
-    "message": "Poslano aplikaciji Mister Download Manager"
+    "message": "Poslano aplikaciji tnctr download manager"
   },
   "video_failed": {
-    "message": "Mister Download Manager nije instaliran ili se nije pokrenuo"
+    "message": "tnctr download manager nije instaliran ili se nije pokrenuo"
   },
   "video_drag": {
     "message": "Povucite za pomicanje uz rub videozapisa"
   },
   "menu_selected": {
-    "message": "Preuzmi odabrane veze s Mister Download Manager"
+    "message": "Preuzmi odabrane veze s tnctr download manager"
   },
   "menu_all": {
-    "message": "Preuzmi sve veze s Mister Download Manager"
+    "message": "Preuzmi sve veze s tnctr download manager"
   },
   "status_connected": {
-    "message": "Povezano s Mister Download Manager"
+    "message": "Povezano s tnctr download manager"
   },
   "status_connected_version": {
-    "message": "Povezano s Mister Download Manager $version$",
+    "message": "Povezano s tnctr download manager $version$",
     "placeholders": {
       "version": {
         "content": "$1",
@@ -60,22 +60,22 @@
     "message": "Pauzirano: preuzimanja ostaju u pregledniku"
   },
   "status_not_installed": {
-    "message": "Mister Download Manager nije instaliran ili njegova integracija preglednika nije postavljena"
+    "message": "tnctr download manager nije instaliran ili njegova integracija preglednika nije postavljena"
   },
   "status_forbidden": {
-    "message": "Mister Download Manager ne prihvaća ovu kopiju proširenja"
+    "message": "tnctr download manager ne prihvaća ovu kopiju proširenja"
   },
   "status_not_running": {
-    "message": "Mister Download Manager se nije pokrenuo na vrijeme"
+    "message": "tnctr download manager se nije pokrenuo na vrijeme"
   },
   "status_host_failed": {
-    "message": "Veza s aplikacijom Mister Download Manager nije uspjela"
+    "message": "Veza s aplikacijom tnctr download manager nije uspjela"
   },
   "status_too_large": {
     "message": "Pojedinosti o ovom preuzimanju bile su prevelike za prijenos"
   },
   "status_update_app": {
-    "message": "Ažurirajte Mister Download Manager da biste koristili sve što nudi ovo proširenje"
+    "message": "Ažurirajte tnctr download manager da biste koristili sve što nudi ovo proširenje"
   },
   "popup_take": {
     "message": "Preuzimaj datoteke iz ovog preglednika"
@@ -84,10 +84,10 @@
     "message": "Šalji preuzimanja putem proxyja ili VPN proširenja ovog preglednika"
   },
   "popup_proxy_title": {
-    "message": "Mister Download Manager zatim preuzima putem istog proxyja kao i ovaj preglednik. Preglednik će vas jednom pitati želite li to dopustiti; isključivanjem ove opcije to se poništava."
+    "message": "tnctr download manager zatim preuzima putem istog proxyja kao i ovaj preglednik. Preglednik će vas jednom pitati želite li to dopustiti; isključivanjem ove opcije to se poništava."
   },
   "popup_proxy_title_chromium": {
-    "message": "Mister Download Manager zatim preuzima putem istog proxyja kao i ovaj preglednik. Dok je ovo isključeno, proširenje ne čita proxy preglednika."
+    "message": "tnctr download manager zatim preuzima putem istog proxyja kao i ovaj preglednik. Dok je ovo isključeno, proširenje ne čita proxy preglednika."
   },
   "popup_exclude_site": {
     "message": "Nikad ne preuzimaj s $site$",
@@ -108,7 +108,7 @@
     }
   },
   "popup_open": {
-    "message": "Otvori Mister Download Manager"
+    "message": "Otvori tnctr download manager"
   },
   "popup_options": {
     "message": "Mogućnosti..."
@@ -117,7 +117,7 @@
     "message": "Pomoć"
   },
   "popup_support": {
-    "message": "Podržite MDM"
+    "message": "Podržite tnctr download manager"
   },
   "popup_fix": {
     "message": "Kako to popraviti"
@@ -195,7 +195,7 @@
     "message": "Ovo računalo"
   },
   "popup_send_remote": {
-    "message": "Drugi Mister Download Manager (poslužitelj)"
+    "message": "Drugi tnctr download manager (poslužitelj)"
   },
   "popup_remote_code": {
     "message": "Kôd za uparivanje"

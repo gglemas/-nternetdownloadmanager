@@ -1,4 +1,4 @@
-﻿; Mister Download Manager's installer in Georgian: tools/installer/languages.py
+﻿; tnctr download manager's installer in Georgian: tools/installer/languages.py
 ; (machine-translated; a native speaker may correct any line).
 
 [LangOptions]
@@ -291,8 +291,8 @@ ShutdownBlockReasonUninstallingApp=%1-ის დეინსტალაცი�
 
 [CustomMessages]
 TaskBrowser=დააყენეთ &ბრაუზერის ინტეგრაცია (Chrome, Edge, Brave, Firefox)
-TaskTorrents=.&torrent ფაილების და მაგნიტური ბმულების გახსნა Mister Download Manager-ით
-TaskStartup=Mister Download Manager-ის გაშვება &Windows-ის გაშვებისას
+TaskTorrents=.&torrent ფაილების და მაგნიტური ბმულების გახსნა tnctr download manager-ით
+TaskStartup=tnctr download manager-ის გაშვება &Windows-ის გაშვებისას
 TaskGroupOther=სხვა:
-Launch=გაუშვით Mister Download Manager
+Launch=გაუშვით tnctr download manager
 KeepData=ასევე წაიშალოს თქვენი ჩამოტვირთვების სია და პარამეტრები?%n%nთქვენს ჩამოტვირთულ ფაილებს არ შეეხება არც ერთი გზით.

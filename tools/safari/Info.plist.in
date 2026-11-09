@@ -2,8 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-  <key>CFBundleName</key><string>Mister Download Manager Extension</string>
-  <key>CFBundleDisplayName</key><string>Mister Download Manager</string>
+  <key>CFBundleName</key><string>tnctr download manager</string>
+  <key>CFBundleDisplayName</key><string>tnctr download manager</string>
   <key>CFBundleIdentifier</key><string>@BUNDLE_ID@</string>
   <key>CFBundleExecutable</key><string>MisterDownloadManagerExtension</string>
   <key>CFBundlePackageType</key><string>XPC!</string>

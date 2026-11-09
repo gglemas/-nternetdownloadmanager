@@ -11,7 +11,7 @@
 #ifndef AppVersion
   #define AppVersion "0.5.1"
 #endif
-#define AppName "Mister Download Manager"
+#define AppName "tnctr download manager"
 #define AppExe "misterdownloadmanager.exe"
 #define HostExe "misterdownloadmanager-nmhost.exe"
 #define Root "..\.."
@@ -28,7 +28,7 @@ AppPublisherURL=https://github.com/anefzaoui/misterdownloadmanager
 AppSupportURL=https://github.com/anefzaoui/misterdownloadmanager/issues
 AppUpdatesURL=https://github.com/anefzaoui/misterdownloadmanager/releases
 AppCopyright=Copyright (C) 2026 Ahmed Nefzaoui
-DefaultDirName={autopf}\{#AppName}
+DefaultDirName={autopf}\Mister Download Manager
 DisableProgramGroupPage=yes
 PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog

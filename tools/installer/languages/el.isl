@@ -1,4 +1,4 @@
-﻿; Mister Download Manager's installer in Greek: tools/installer/languages.py
+﻿; tnctr download manager's installer in Greek: tools/installer/languages.py
 ; (machine-translated; a native speaker may correct any line).
 
 [LangOptions]
@@ -291,8 +291,8 @@ ShutdownBlockReasonUninstallingApp=Απεγκατάσταση %1.
 
 [CustomMessages]
 TaskBrowser=Ρύθμιση ενσωμάτωσης &προγράμματος περιήγησης (Chrome, Edge, Brave, Firefox)
-TaskTorrents=Άνοιγμα αρχείων .&torrent και συνδέσεων magnet με το Mister Download Manager
-TaskStartup=Εκκίνηση του Mister Download Manager όταν ξεκινά το &Windows
+TaskTorrents=Άνοιγμα αρχείων .&torrent και συνδέσεων magnet με το tnctr download manager
+TaskStartup=Εκκίνηση του tnctr download manager όταν ξεκινά το &Windows
 TaskGroupOther=Άλλα:
-Launch=Εκκίνηση του Mister Download Manager
+Launch=Εκκίνηση του tnctr download manager
 KeepData=Να διαγραφεί επίσης η λίστα λήψεων και οι ρυθμίσεις σας;%n%nΤα αρχεία που έχετε κατεβάσει δεν επηρεάζονται σε καμία περίπτωση.
