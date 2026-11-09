@@ -307,7 +307,6 @@
 #, machine
 	Add them without starting them	Idagdag ang mga ito nang hindi sinisimulan ang mga ito
 #. message or event log entry in the main window; text in the Link grabber window
-#. Link grabber button: add the ticked links to the download queue without starting them (IDM's OK)
 #, machine
 	Add to queue	Idagdag sa queue
 #. text in a dialog box
@@ -803,7 +802,6 @@
 #, machine
 	Change folder for "{category}" category on last selected	Baguhin ang folder para sa kategoryang "{category}" sa huling napili
 #. text in the Link grabber window
-#. Link grabber button (IDM's): tick every link
 #, machine
 	Check all	Lagyan ng tsek ang lahat
 #. text in rssdlg.rs
@@ -1919,7 +1917,6 @@
 #, machine
 	Hide to the notification area	Itago sa lugar ng notification
 #. checkbox in the Link grabber window; text in the Link grabber window; checkbox in the Options window
-#. Link grabber check box (IDM's "Hide HTML files"): links to web pages are not shown
 #, machine
 	Hide web pages	Itago ang mga web page
 #. text in the Options window
@@ -2332,7 +2329,6 @@
 #, machine
 	Login	Login
 #. checkbox in the Options window
-#. Options → Archives → Link grabber check box (IDM's Download all links looks every link up)
 #, machine
 	Look links up when they arrive (name, size, online)	Hanapin ang mga link kapag dumating ang mga ito (pangalan, laki, online)
 #. text in the Add torrent window; button in the Download video window
@@ -4842,7 +4838,6 @@
 #, machine
 	Ukraine	Ukraine
 #. text in the Link grabber window
-#. Link grabber button (IDM's): untick every link
 #, machine
 	Uncheck all	Alisin sa pagkakapili ang lahat
 #. item in the Categories tree in the main window; text in remote.rs
@@ -6163,7 +6158,6 @@ menu	C&ustomize URL List...	I-c&ustomize ang Listahan ng URL...
 #, machine
 menu	Check for &updates...	Tingnan kung may mga &update...
 #. menu command in the main window
-#. View → Theme: MDM's own look, the default (IDM's layout, Windows 11's controls)
 #, machine
 menu	Classic	Klasiko
 #. menu command in the main window
@@ -6242,7 +6236,7 @@ menu	Font	Font
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
 #, machine
-menu	From &IDM export file...	Mula sa &IDM export file...
+menu	From &legacy export file...	From &legacy export file...
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
@@ -6442,7 +6436,7 @@ menu	Theme	Tema
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
 #, machine
-menu	To &IDM export file...	Sa &IDM export file...
+menu	To &legacy export file...	To &legacy export file...
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
