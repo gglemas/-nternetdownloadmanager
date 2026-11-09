@@ -352,8 +352,8 @@ pub fn part_path(dest: &Path) -> PathBuf {
     PathBuf::from(s)
 }
 
-/// `dir/name`, or `dir/stem (N).ext` with the lowest N that is free — IDM's default for a
-/// duplicate link is "add the duplicate with a numbered file name" (notes/ENGINE.md §6).
+/// Return `dir/name`, or the lowest available `dir/stem (N).ext` for a duplicate name
+/// (notes/ENGINE.md §6).
 pub fn unique_path(dir: &Path, name: &str) -> PathBuf {
     let taken = |p: &Path| p.exists() || part_path(p).exists() || is_reserved(p);
     let first = dir.join(name);

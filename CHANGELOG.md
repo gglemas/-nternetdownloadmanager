@@ -369,7 +369,7 @@ This release tightens what MDM accepts from torrents.
   archive's volumes together, the other links of a page together, the rest in "Various files".
   Each link is looked up for its name, size and whether the server has it (Offline links come
   unticked), and each package has its folder, an archive password, "Extract when done" and
-  "Delete archives after extracting". **Start** or **Add to queue** (IDM's import, unchanged:
+  "Delete archives after extracting". **Start** or **Add to queue** (import behavior unchanged:
   an `.ef2` file still brings each download's referrer and cookies). MDM extracts ZIP (AES and
   Deflate64 too), TAR, TAR.GZ, TAR.XZ, GZ and XZ itself; 7z and RAR need 7-Zip (split `.7z.001`
   and `.partN.rar` too), and a window says so when it isn't installed. It extracts when a package
@@ -884,7 +884,7 @@ This release tightens what MDM accepts from torrents.
   contrast WCAG asks for (4.5:1) on every dark surface, Options' failed checks no longer use light
   mode's dark red on the dark dialog, and an editable drop-down's arrow is tinted dark under the
   pointer.
-- **Download complete shows above other programs' windows**, as IDM's does, so the end of a
+- **Download complete shows above other programs' windows**, so the end of a
   download isn't missed ([#77](https://github.com/anefzaoui/misterdownloadmanager/issues/77)):
   it doesn't take the keyboard from the program being typed in, and once clicked it is a window
   like any other. **Options opened from the extension's Button settings... comes to the front**
@@ -1546,8 +1546,8 @@ menus and text boxes work as in any desktop program; and MDM works with AI assis
 
 ## [0.1.0] - 2026-10-30
 
-The first release: a free download manager for Windows, laid out the way Internet Download
-Manager users expect, with experimental builds for macOS and Linux.
+The first release: a free download manager for Windows with a compact desktop interface
+and experimental builds for macOS and Linux.
 
 - **The download engine**: up to 32 connections per file, re-splitting the slowest part until
   the last byte, and crash-safe resume after a restart or a dropped connection. HTTP, HTTPS,
@@ -1572,7 +1572,7 @@ Manager users expect, with experimental builds for macOS and Linux.
   browser extension speaks your browser's (50 languages).
 - **Options → Regional**: dates and times as your region writes them, or your own way (day, month
   or year first, 12- or 24-hour clock, the week's first day); the list and the Scheduler follow.
-- **[Command line and automation](docs/command-line.md)**: IDM's switches (`/d /p /f /a /n /s`),
+- **[Command line and automation](docs/command-line.md)**: command-line switches (`/d /p /f /a /n /s`),
   `misterdownloadmanager-cli` (files, videos, torrents) and a local, token-protected automation
   API that lists, pauses, starts, removes and deletes downloads.
 - **Downloads**: the Windows installer, a portable zip and a plain zip, the browser extension on

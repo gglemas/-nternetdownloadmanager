@@ -1,5 +1,5 @@
 # Lists the visible top-level windows of a process (title and rect).
-param([string]$ProcName = "IDMan")
+param([string]$ProcName = "misterdownloadmanager")
 Add-Type @"
 using System; using System.Text; using System.Runtime.InteropServices;
 public static class WL {

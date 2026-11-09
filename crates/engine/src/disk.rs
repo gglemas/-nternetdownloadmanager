@@ -1,5 +1,4 @@
-//! Disk preflight: will a download fit where it is going? (notes/PLAN.md "Disk preflight";
-//! lessons from AB Download Manager, Motrix, JDownloader, aria2.)
+//! Disk preflight: checks whether a download can fit at its destination (notes/PLAN.md).
 
 use std::path::{Path, PathBuf};
 use std::sync::{Arc, OnceLock};
@@ -312,7 +311,7 @@ pub fn check(volume: &Volume, size: u64) -> Result<(), Refusal> {
     Ok(())
 }
 
-/// A size for messages: `512 bytes`, `1.5 MB`, `4.00 GB` (binary units, as IDM shows them).
+/// Format a byte count for display using binary units, such as `1.50 KB` or `4.00 GB`.
 pub fn human(bytes: u64) -> String {
     const UNITS: [&str; 5] = ["KB", "MB", "GB", "TB", "PB"];
     if bytes < 1024 {
@@ -379,7 +378,7 @@ mod tests {
     }
 
     #[test]
-    fn sizes_read_like_idms() {
+    fn sizes_use_binary_units() {
         assert_eq!(human(512), "512 bytes");
         assert_eq!(human(1536), "1.50 KB");
         assert_eq!(human(4 << 30), "4.00 GB");

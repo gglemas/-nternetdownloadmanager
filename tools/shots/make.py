@@ -339,7 +339,7 @@ def budget() -> list[str]:
             and f.rsplit(".", 1)[-1].lower() in ("png", "webp", "jpg", "jpeg", "gif") and (ROOT / f).is_file()]
     corpus = []
     for f in files:
-        if f.endswith(TEXT) and not f.startswith(("i18n/", "docs/bench/")) and (ROOT / f).is_file():
+        if f.endswith(TEXT) and not f.startswith("i18n/") and (ROOT / f).is_file():
             corpus.append((ROOT / f).read_text("utf-8", errors="replace"))
     text = "\n".join(corpus)
     bad = []

@@ -1517,10 +1517,6 @@ const CASES = {
       [`e2e-bare-${t.name}.pdf`, "inline=bare", "Documents", "1M"],
       [`e2e-song-${t.name}.mp3`, "inline=1", "Music", "512K"],
     ]) {
-      if (idmRunning && file.endsWith(".pdf") && query === "inline=1") {
-        left.push(`pdf ${query} (left out: IDM runs and takes it)`);
-        continue;
-      }
       const p = `/gen/${size}/${file}`;
       await t.session.navigate(`${LAB}/page?link=none`);
       await t.session.navigate(`${LAB}${p}?${query}`, { download: true });
@@ -2031,11 +2027,6 @@ function testHost(name, browsers, nmhost) {
   };
 }
 
-// Is Internet Download Manager running (E2E_IDM_OK=1)? Even with its 127.0.0.1 exception it takes
-// a PDF sent "inline; filename=..." at the network level (the browser gets "204 No Content",
-// IDM downloads the file itself), so that case is left out while it runs.
-let idmRunning = false;
-
 async function run() {
   const args = process.argv.slice(2);
   const only = (args.find((a) => a.startsWith("--only=")) || "").slice(7).split(",").filter(Boolean);
@@ -2045,14 +2036,6 @@ async function run() {
     return wanted.length || BROWSERS[n][1].some((p) => fs.existsSync(p));
   });
   for (const c of only) if (!CASES[c]) throw new Error(`unknown case ${c} (${Object.keys(CASES).join(", ")})`);
-  // IDM's browser integration takes browsers' downloads at the network level (the browser gets
-  // "204 No Content"): it would take the test's files and show its own windows. E2E_IDM_OK=1 when
-  // IDM leaves 127.0.0.1 alone (an exception for it in its options).
-  if (process.platform === "win32") {
-    const idm = spawnSync("tasklist", ["/FI", "IMAGENAME eq IDMan.exe", "/NH"], { encoding: "utf8" }).stdout;
-    idmRunning = /IDMan\.exe/i.test(idm);
-    if (idmRunning && process.env.E2E_IDM_OK !== "1") throw new Error("Internet Download Manager is running: quit it first (it takes the browsers' downloads), or set E2E_IDM_OK=1 if it leaves 127.0.0.1 alone");
-  }
   for (const p of [appExe, exe("misterdownloadmanager-nmhost"), exe("labserver")]) {
     if (!fs.existsSync(p)) throw new Error(`build it first: ${p}`);
   }

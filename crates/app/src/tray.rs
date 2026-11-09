@@ -1,7 +1,4 @@
-//! The notification-area icon (IDM: "IDM menu pops up when you right click on IDM icon"
-//! [IDM-doc]). Left click brings the window back; right click shows the menu. The menu's
-//! contents are ours ([unknown] IDM's exact items, lab). Windows, macOS (menu bar) and Linux
-//! (StatusNotifierItem over D-Bus: KDE, GNOME with its AppIndicator extension).
+//! The notification-area icon, using StatusNotifierItem on supported Linux desktops.
 
 use std::sync::mpsc::{Receiver, Sender, channel};
 use std::sync::{Arc, Mutex};
