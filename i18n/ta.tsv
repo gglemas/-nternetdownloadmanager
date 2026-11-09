@@ -307,7 +307,6 @@
 #, machine
 	Add them without starting them	அவற்றைத் தொடங்காமல் சேர்
 #. message or event log entry in the main window; text in the Link grabber window
-#. Link grabber button: add the ticked links to the download queue without starting them (IDM's OK)
 #, machine
 	Add to queue	வரிசையில் சேர்
 #. text in a dialog box
@@ -803,7 +802,6 @@
 #, machine
 	Change folder for "{category}" category on last selected	கடைசியாகத் தேர்ந்தெடுக்கப்பட்டதில் "{category}" வகையின் கோப்புறையை மாற்றவும்
 #. text in the Link grabber window
-#. Link grabber button (IDM's): tick every link
 #, machine
 	Check all	அனைத்தையும் சரிபார்க்கவும்
 #. text in rssdlg.rs
@@ -1919,7 +1917,6 @@
 #, machine
 	Hide to the notification area	அறிவிப்புப் பகுதிக்கு மறைக்கவும்
 #. checkbox in the Link grabber window; text in the Link grabber window; checkbox in the Options window
-#. Link grabber check box (IDM's "Hide HTML files"): links to web pages are not shown
 #, machine
 	Hide web pages	வலைப்பக்கங்களை மறைத்தல்
 #. text in the Options window
@@ -2332,7 +2329,6 @@
 #, machine
 	Login	உள்நுழைவு
 #. checkbox in the Options window
-#. Options → Archives → Link grabber check box (IDM's Download all links looks every link up)
 #, machine
 	Look links up when they arrive (name, size, online)	இணைப்புகள் வரும்போது அவற்றைப் பார்க்கவும் (பெயர், அளவு, ஆன்லைனில்)
 #. text in the Add torrent window; button in the Download video window
@@ -4842,7 +4838,6 @@
 #, machine
 	Ukraine	உக்ரைன்
 #. text in the Link grabber window
-#. Link grabber button (IDM's): untick every link
 #, machine
 	Uncheck all	அனைத்தையும் தேர்வுநீக்கவும்
 #. item in the Categories tree in the main window; text in remote.rs
@@ -6163,7 +6158,6 @@ menu	C&ustomize URL List...	URL பட்டியலைத் &தனிப்�
 #, machine
 menu	Check for &updates...	&புதுப்பிப்புகளைச் சரிபார்க்கவும்...
 #. menu command in the main window
-#. View → Theme: MDM's own look, the default (IDM's layout, Windows 11's controls)
 #, machine
 menu	Classic	கிளாசிக்
 #. menu command in the main window
@@ -6242,7 +6236,7 @@ menu	Font	எழுத்துரு
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
 #, machine
-menu	From &IDM export file...	&IDM ஏற்றுமதி கோப்பிலிருந்து...
+menu	From &legacy export file...	From &legacy export file...
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
@@ -6442,7 +6436,7 @@ menu	Theme	தீம்
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
 #, machine
-menu	To &IDM export file...	&IDM ஏற்றுமதி கோப்பிற்கு...
+menu	To &legacy export file...	To &legacy export file...
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it

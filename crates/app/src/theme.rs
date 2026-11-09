@@ -11,8 +11,6 @@ use crate::palette::{CLASSIC, Metrics, Palette, Theme};
 
 static DARK: AtomicBool = AtomicBool::new(true);
 
-/// Is the UI in dark mode? IDM: dark when "View → Dark Mode support" is on and Windows' app
-/// mode is dark (IDM 6.37); light otherwise. It picks the active theme's dark or light variant
 /// ([`colors`]); whether that variant is a dark surface is [`dark_surface`].
 pub fn dark() -> bool {
     DARK.load(Ordering::Relaxed)
@@ -391,7 +389,6 @@ fn font_dir() -> std::path::PathBuf {
     return std::path::PathBuf::from("/System/Library/Fonts");
 }
 
-/// The interface font: Segoe UI as IDM has it on Windows, the system's own elsewhere.
 fn ui_font() -> Option<Vec<u8>> {
     #[cfg(windows)]
     return std::fs::read(font_dir().join("segoeui.ttf")).ok();
@@ -552,7 +549,6 @@ fn load_fonts(ctx: &egui::Context, all: bool) {
     });
 }
 
-/// IDM draws with Segoe UI 9 pt (12 px at 100 %): the system's own copy, nothing bundled
 /// (elsewhere the system's interface font, [`ui_font`]; else egui's default font). Every family
 /// falls back to it (Tahoma has no Armenian or Georgian), then to the script fonts for `code`
 /// (all with `all`).

@@ -156,11 +156,11 @@ To add every link in a text file:
 ![Link grabber listing the links of a page in packages, with their names, sizes and whether they are online](images/help/link-grabber.webp)
 *Link grabber: untick what you don't want, then Add to queue.*
 
-The downloads join the **Main download queue**, ready to start (**Start** starts it too). **Tasks → Import → From IDM export file** reads an `.ef2` file, with each download's referrer and cookies.
+The downloads join the **Main download queue**, ready to start (**Start** starts it too). **Tasks → Import → From EF2 export file** reads an `.ef2` file, with each download's referrer and cookies.
 
 **Tasks → Link grabber...** opens the same window empty: paste text with links in it (**Ctrl+V**). See [Link grabber and archives](link-grabber.md) for the packages, the archive password and extracting archives when they are downloaded.
 
-To save your own list, use **Tasks → Export → To text file** (one address per line) or **To IDM export file**.
+To save your own list, use **Tasks → Export → To text file** (one address per line) or **To EF2 export file**.
 
 ## When the address is already in the list
 
