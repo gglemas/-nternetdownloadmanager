@@ -307,7 +307,6 @@
 #, machine
 	Add them without starting them	انہیں شروع کیے بغیر شامل کریں
 #. message or event log entry in the main window; text in the Link grabber window
-#. Link grabber button: add the ticked links to the download queue without starting them (IDM's OK)
 #, machine
 	Add to queue	قطار میں شامل کریں
 #. text in a dialog box
@@ -803,7 +802,6 @@
 #, machine
 	Change folder for "{category}" category on last selected	آخری منتخب کردہ پر "{category}" زمرہ کے لیے فولڈر تبدیل کریں
 #. text in the Link grabber window
-#. Link grabber button (IDM's): tick every link
 #, machine
 	Check all	سب کو چیک کریں
 #. text in rssdlg.rs
@@ -1919,7 +1917,6 @@
 #, machine
 	Hide to the notification area	اطلاع کے علاقے میں چھپائیں
 #. checkbox in the Link grabber window; text in the Link grabber window; checkbox in the Options window
-#. Link grabber check box (IDM's "Hide HTML files"): links to web pages are not shown
 #, machine
 	Hide web pages	ویب صفحات چھپائیں
 #. text in the Options window
@@ -2332,7 +2329,6 @@
 #, machine
 	Login	لاگ ان
 #. checkbox in the Options window
-#. Options → Archives → Link grabber check box (IDM's Download all links looks every link up)
 #, machine
 	Look links up when they arrive (name, size, online)	لنکس آنے پر انہیں تلاش کریں (نام، سائز، آن لائن)
 #. text in the Add torrent window; button in the Download video window
@@ -4842,7 +4838,6 @@
 #, machine
 	Ukraine	یوکرین
 #. text in the Link grabber window
-#. Link grabber button (IDM's): untick every link
 #, machine
 	Uncheck all	سب کو غیر منتخب کریں
 #. item in the Categories tree in the main window; text in remote.rs
@@ -6163,7 +6158,6 @@ menu	C&ustomize URL List...	URL فہرست کو حسب ضرورت بنائیں(&
 #, machine
 menu	Check for &updates...	اپ ڈیٹس کی جانچ کریں(&u)...
 #. menu command in the main window
-#. View → Theme: MDM's own look, the default (IDM's layout, Windows 11's controls)
 #, machine
 menu	Classic	کلاسک
 #. menu command in the main window
@@ -6242,7 +6236,7 @@ menu	Font	فونٹ
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
 #, machine
-menu	From &IDM export file...	IDM برآمدی فائل سے(&I)...
+menu	From &legacy export file...	From &legacy export file...
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
@@ -6442,7 +6436,7 @@ menu	Theme	تھیم
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
 #, machine
-menu	To &IDM export file...	IDM ایکسپورٹ فائل میں(&I)...
+menu	To &legacy export file...	To &legacy export file...
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it

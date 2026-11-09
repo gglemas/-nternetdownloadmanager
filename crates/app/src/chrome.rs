@@ -1,7 +1,5 @@
-//! The main window's chrome painted to IDM 6.42's pixels (notes/ui-spec/main-window.md,
 //! notes/ui-spec/menus.md): menu bar, popup menus, toolbar, Categories tree, shell icons.
 //!
-//! Our client area also holds the menu bar (IDM's is non-client), so every main-window
 //! spec y is shifted by `MENU_H` = 20. Main-window spec "baseline" is origin + ascent (the row
 //! under the glyphs); `winui::text_font` takes the last ink row, i.e. spec baseline − 1.
 
@@ -11,7 +9,6 @@ use crate::icons::Icon;
 use crate::scrollbar;
 use crate::winui::{self, text_font, text_width_font};
 
-/// Height of our menu bar band incl. its #f0f0f0 bottom line (IDM: non-client y −20…−1).
 pub const MENU_H: f32 = 20.0;
 
 const fn rgb(r: u8, g: u8, b: u8) -> Color32 {
@@ -68,7 +65,6 @@ pub enum IconKey {
     Themed(&'static str, &'static str),
 }
 
-/// The embedded Silk icons (XP-era look, like IDM's tree icons).
 fn silk(name: &str) -> Option<egui::ImageSource<'static>> {
     macro_rules! icons {
         ($($n:literal),*) => {
@@ -161,7 +157,6 @@ pub fn paint_image(ui: &Ui, painter: &egui::Painter, src: egui::ImageSource<'sta
 
 /// Top-level menus: label, item rect x and width, text x (measured, "Ta" kerned by the font):
 /// the standard Win32 bar (text at item.x + 7, width = text + 14; light-main.md), in both modes
-/// (user decision 2026-11-01: dark mode only changes colours, never sizes or places; IDM's dark
 /// bar was wider).
 const MENUS: [(&str, f32, f32, f32); 5] = [
     ("&Tasks", 0.0, 42.0, 7.0),
@@ -305,7 +300,6 @@ pub enum MenuBarEvent {
     /// opened by a screen reader's Expand.
     Title { i: usize, released: bool },
     /// The pointer over title `i`, no click: while another menu is open, that one's menu opens
-    /// instead (Windows' menu bars, and IDM's); otherwise nothing.
     Hover(usize),
     /// The open menu shut itself (Escape, a press outside it, the app losing the focus);
     /// `press_on_title`: the press that shut it went down on a title of the bar.
@@ -431,7 +425,6 @@ pub fn key_label(spec: &'static str) -> String {
     }
 }
 
-/// A menu label without the shortcut IDM writes into some labels ("Find (Ctrl-F)"), when the
 /// menu shows the shortcut in its own column.
 fn without_shortcut(text: &str) -> &str {
     let t = text.trim_end();
@@ -862,7 +855,6 @@ pub fn popup_surface(p: &egui::Painter, rc: egui::Rect) {
 }
 
 /// A menu label's width as Win32 sizes menus: GDI's whole-pixel width (egui's advances differ
-/// by up to a pixel either way: IDM's menus are 236, 291 wide where egui gives 237, 290), or the
 /// width it is drawn at when that is wider by more (a script drawn in a fallback font, such as
 /// Japanese).
 fn menu_width(p: &egui::Painter, label: &str) -> f32 {
@@ -1450,7 +1442,6 @@ pub fn toolbar(
     for (i, (icon, label, enabled)) in buttons.iter().enumerate() {
         let full = crate::i18n::tc("toolbar", label);
         let dropdown = is_dropdown(icon);
-        // IDM's buttons are 66 px; ours grow only when a full label needs it (user
         // decision), up to the cap that keeps the toolbar inside the window.
         let full_ext = text_width_font(&p, font.clone(), full).round();
         let bw = base_w.max((full_ext + 12.0).min(cap));
@@ -1473,11 +1464,8 @@ pub fn toolbar(
         let resp = if cut { resp.on_hover_text(full) } else { resp };
         let past_button = |q: Pos2| winui::mx(q.x) >= x + bw;
         if *enabled && resp.hovered() {
-            // Hover (IDM 6.42, captured 2026-10-30): the button's own width, from the band's top,
             // square. Dark: a flat #33414d. Light: Windows' hot button, #e5f3ff with a 1 px
             // #cce8ff border. As much room under the label as above the icon (user request
-            // 2026-11-01: IDM's 61 px left the label on the bottom edge): 65 tall, inside the
-            // band. Beyond IDM (which lights only the button part, user
             // request 2026-10-29): a drop-down is a split button — the part under the pointer is
             // lit (pressed while the mouse is down), the other part faintly, a 1 px divider between.
             let h = 65.0;
@@ -1535,7 +1523,6 @@ pub fn toolbar(
         // Placed, not mirrored: an icon keeps its look.
         icon.image(*enabled).paint_at(ui, winui::rect(icon_rect));
         // Label: x = btn.x + floor((w − ext)/2), +1 for drop-downs, last ink row 58. Every label
-        // on one line (IDM draws the drop-downs' 1 px lower: in one row it read as a mistake).
         let mut lx = x + ((bw - ext) / 2.0).floor();
         if dropdown {
             lx += 1.0;
@@ -1667,7 +1654,6 @@ pub enum TreeEvent {
     Context(usize, Pos2),
 }
 
-/// The Categories pane: frame x 6 .. `right` (IDM: 148, resizable by the splitter), caption, close "x", tree (rows 16 px, indent 19).
 pub fn categories(
     ui: &mut Ui,
     icons: &mut ShellIcons,
@@ -1781,7 +1767,6 @@ pub fn categories(
     let tp = p.with_clip_rect(winui::rect(area));
     let row_top = |k: usize| area.top() + 16.0 * (k as f32 - first_row);
     // Blank space (registered first, so the rows sit above it): the selected node's menu, at
-    // the pointer (IDM places it beside the node; user decision: at the pointer).
     let blank = ui.interact(
         winui::rect(area),
         egui::Id::unique("tree-blank"),
@@ -2423,7 +2408,6 @@ mod tests {
     }
 
     /// With a menu open, the pointer moves it from title to title, as in Windows' menu bars
-    /// (and IDM's); on its own title it stays.
     #[test]
     fn with_a_menu_open_the_pointer_switches_menus() {
         use MenuBarEvent::{Hover, Title};

@@ -1,4 +1,3 @@
-//! Tasks → Show drop target (D-021): IDM's small floating box that takes links dragged onto
 //! it. Always on top, moved by dragging it, double-click brings the main window back,
 //! right-click hides it. Browsers hand dragged links over through OLE drag and drop (the
 //! "UniformResourceLocatorW" format, else text), which egui doesn't expose (it only takes

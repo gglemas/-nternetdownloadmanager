@@ -136,7 +136,7 @@ Play a sound for **Download complete**, **Download failed**, **Queue processing 
 
 How dates and times are written in the list of downloads and the Scheduler.
 
-- **As the system's region writes them** (the default) — Windows' region settings (Settings → Time & language → Region); on macOS and Linux, your language's usual way. In English the list keeps IDM's own date text.
+- **As the system's region writes them** (the default) — Windows' region settings (Settings → Time & language → Region); on macOS and Linux, your language's usual way. In English the list keeps the compact date format.
 - **My own way** — choose the **date order** (day, month, year; month, day, year; or year, month, day), a **12- or 24-hour clock**, and the **first day of the week** in the Scheduler's calendar. **Example** shows the result.
 
 ## Archives
