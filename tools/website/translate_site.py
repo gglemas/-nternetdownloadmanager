@@ -53,7 +53,6 @@ BATCH_WORDS = 1400
 KEEP = sorted(set(tr.KEEP + ["macOS", "Linux", "Rust", "YouTube", "Vimeo", "Tonec", "Ahmed Nefzaoui",
                              "Statcounter", "OpenRouter", "Gemini", "Homebrew", "AppImage", "Flatpak",
                              "Chromium", "Vivaldi", "Safari", "MCP", "GPL",
-                             # The other download managers idm-alternative.html compares.
                              "Free Download Manager", "AB Download Manager", "Motrix",
                              "Neat Download Manager", "Prism", "JDownloader 2", "JDownloader",
                              "Xtreme Download Manager", "Gopeed", "DOWNitUP", "PyIDM", "aria2",
@@ -113,11 +112,10 @@ PRICE_IN, PRICE_OUT = 0.30, 2.50
 
 RULES = """You translate the website of Mister Download Manager (MDM) from English into {english}
 ({native}, language code {code}). MDM is a free, open-source download manager for Windows (macOS
-and Linux builds are experimental). It looks and works like Internet Download Manager (IDM), the
-paid download manager many people know, but it is a separate program, written from scratch.
+and Linux builds are experimental), written from scratch in Rust.
 
 The readers are ordinary computer users who want faster, safer downloads, and people looking for
-an IDM alternative. Many are not technical.
+a free, open-source download manager. Many are not technical.
 
 How to write:
 - Simple words, short sentences, direct and to the point, as a careful native writer would put it
@@ -146,8 +144,8 @@ Rules:
 3. When a text names a part of MDM (a menu, a button, a window, a setting; often in bold or joined
    with →), use MDM's own translation from "ui" when it is there.
 4. Numbers in Latin digits 0-9. HTML entities like &amp; and &lt; stay as they are.
-5. IDM and Internet Download Manager belong to another company (Tonec). Never suggest MDM is IDM
-   or made by its makers.
+5. Third-party names and marks belong to their respective owners. Preserve required legal
+   attribution and never imply affiliation.
 6. No line breaks, notes, explanations or quotes around the translation.
 """
 

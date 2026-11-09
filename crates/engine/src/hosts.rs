@@ -1,4 +1,3 @@
-//! Learned per-host connection limits (beyond IDM, D-012): when a host refuses extra connections
 //! while others to it are receiving data, it allows at least those — the most ever seen working
 //! at a refusal is the cap (counting connections still connecting, or keeping the smallest
 //! count, learned 1 for a host that allows 2: benchmark 2026-10-30). After two such observations the

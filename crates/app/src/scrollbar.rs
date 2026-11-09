@@ -1,4 +1,3 @@
-//! Windows 11 dark-mode scroll bars, as IDM's list and tree show them
 //! (notes/ui-spec/scrollbars.md): 17 px thick, collapsed to a 2 px line until the pointer is
 //! over the bar, then a 6 px rounded thumb with arrows. Win32 thumb sizing.
 
