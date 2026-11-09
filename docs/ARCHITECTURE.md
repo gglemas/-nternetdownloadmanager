@@ -207,4 +207,3 @@ photos are committed in `art/contributors/`, since GitHub can't round a picture 
 
 `cargo test` runs unit tests and end-to-end downloads against `mdm-labserver` with injected
 faults (slow, dropped and refused connections, servers without ranges, changing files).
-`tools/bench` runs the published speed comparison; its raw data is in `docs/bench/`.
