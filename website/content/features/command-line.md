@@ -1,10 +1,10 @@
 ---
 name: Command line
 title: Download manager command line and automation API
-headline: Scripts welcome. IDM's switches included.
-line: IDM's command-line switches, a terminal downloader with JSON output, and a local API for other programs.
-lede: MDM takes IDM's command-line switches, so scripts written for IDM can hand it their downloads. A separate tool downloads in a terminal, and a local API lets other programs see and control the running app.
-description: Mister Download Manager's command line: IDM's /d /p /f /a /n /s switches, a terminal downloader with --json, and a local automation API.
+headline: Scripts welcome. Legacy switches included.
+line: Legacy command-line switches, a terminal downloader with JSON output, and a local API for other programs.
+lede: MDM accepts common legacy download-manager switches, so existing scripts can hand it downloads. A separate tool downloads in a terminal, and a local API lets other programs see and control the running app.
+description: Mister Download Manager's command line: /d /p /f /a /n /s switches, a terminal downloader with --json, and a local automation API.
 group: app
 order: 360
 since: 0.1.0
@@ -12,12 +12,11 @@ where: `misterdownloadmanager-cli`, in MDM's folder
 help: command-line.md
 ---
 
-## IDM's switches, unchanged
+## Legacy switches, unchanged
 
-The app understands the same switches as IDM: `/d` for the address, `/p` for the folder, `/f`
+The app understands these established switches: `/d` for the address, `/p` for the folder, `/f`
 for the file name, `/a` to queue it without starting, `/n` to skip the **Download File Info**
-window, and `/s` to start the main download queue. A batch file or another program that drives
-IDM this way can drive MDM by changing the program's name.
+window, and `/s` to start the main download queue. A batch file or another program using these switches can drive MDM by changing the program name.
 
 ```
 misterdownloadmanager.exe /d https://example.com/files/report.pdf /p D:\Reports /n
