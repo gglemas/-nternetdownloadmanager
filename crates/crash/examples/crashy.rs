@@ -34,7 +34,17 @@ fn main() {
     let r = reporter.clone();
     let handler = Arc::new(
         CrashHandler::attach(unsafe {
-            make_crash_event(move |cc| CrashEventResult::Handled(r.dump(cc)))
+            make_crash_event(move |cc| {
+                #[cfg(target_os = "linux")]
+                eprintln!(
+                    "monitor: crash context pid={}, app pid={}",
+                    cc.pid,
+                    std::process::id()
+                );
+                let written = r.dump(cc);
+                eprintln!("monitor: dump request acknowledged={written}");
+                CrashEventResult::Handled(written)
+            })
         })
         .unwrap(),
     );
@@ -129,7 +139,9 @@ fn run_monitor(m: mdm_crash::MonitorArgs) {
     let (tx, rx) = std::sync::mpsc::channel();
     let (socket, data) = (m.socket.clone(), m.data.clone());
     std::thread::spawn(move || {
-        let _ = monitor::serve(&socket, &data, tx);
+        if let Err(error) = monitor::serve(&socket, &data, tx) {
+            eprintln!("monitor: server failed: {error}");
+        }
     });
     while let Ok(e) = rx.recv() {
         match e {
