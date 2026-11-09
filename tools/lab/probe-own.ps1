@@ -16,7 +16,7 @@ param(
   [int]$ToX = -1, [int]$ToY = -1,
   # Only move the pointer there (hover states); no click.
   [switch]$NoClick,
-  # Whose windows to capture (cap-own -ProcName), e.g. IDMan.
+  # Whose windows to capture (cap-own -ProcName), e.g. misterdownloadmanager.
   [string]$CapProc = "misterdownloadmanager",
   [int]$IdleMs = 2000,
   # Only this process's windows (a test instance next to the user's own, same titles).

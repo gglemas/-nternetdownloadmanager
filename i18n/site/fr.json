@@ -1010,10 +1010,6 @@
    "source": "When the browser keeps a download, the extension's button says which of these left it there, with the file's name, and MDM's log has a line for each one (<x1/> in <g2>MDM's data folder</g2>).",
    "text": "Quand le navigateur garde un téléchargement, le bouton de l'extension indique lequel l'a laissé là, avec le nom du fichier, et le journal de MDM a une ligne pour chacun (<x1/> dans le <g2>dossier de données de MDM</g2>)."
   },
-  "124b0c52791ff7a4": {
-   "source": "Mister Download Manager (MDM) is a free download manager for Windows and Linux (and, still experimental, macOS). It is laid out the way Internet Download…",
-   "text": "Mister Download Manager (MDM) est un gestionnaire de téléchargement gratuit pour Windows et Linux (et, encore expérimental, macOS). Son interface est conçue pour les utilisateurs d’Internet Download…"
-  },
   "1253f3ce3529a664": {
    "source": "<g1>Firefox</g1> works on every system. If you signed in only moments ago with Firefox open, close it once so it writes the sign-in to its files.",
    "text": "<g1>Firefox</g1> fonctionne sur tous les systèmes. Si vous vous êtes connecté il y a quelques instants avec Firefox ouvert, fermez-le une fois pour qu'il écrive la connexion dans ses fichiers."
@@ -14401,10 +14397,6 @@
   "fa5f14a1aee829e9": {
    "source": "first when the download goes through a debrid account, then a <x1/> line every half second, then <x2/>, or <x3/> after <x4/> (<x5/> is the file <x6/> takes).",
    "text": "d’abord lorsque le téléchargement passe par un compte de débridage, puis une ligne <x1/> toutes les demi-secondes, puis <x2/>, ou <x3/> après <x4/> (<x5/> est le fichier utilisé par <x6/>)."
-  },
-  "fa6a5141054cb2c6": {
-   "source": "The layout is familiar on purpose: the toolbar, the categories, the download list, the progress window with every connection, queues and the scheduler. The…",
-   "text": "L'interface est volontairement familière : la barre d'outils, les catégories, la liste des téléchargements, la fenêtre de progression avec chaque connexion, les files d'attente et le planificateur. Les…"
   },
   "fa6b75cd98cf135f": {
    "source": "<g1>Options → General → Use advanced browser integration</g1> is on, and your browser is ticked under <g2>Capture downloads from the following browsers</g2>.",

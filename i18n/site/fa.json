@@ -1010,10 +1010,6 @@
    "source": "When the browser keeps a download, the extension's button says which of these left it there, with the file's name, and MDM's log has a line for each one (<x1/> in <g2>MDM's data folder</g2>).",
    "text": "وقتی مرورگر دانلودی را نگه می‌دارد، دکمه افزونه با نام فایل نشان می‌دهد کدام یک از این‌ها آن را در آنجا گذاشته است، و گزارش MDM برای هر کدام یک خط دارد (<x1/> در <g2>پوشه داده MDM</g2>)."
   },
-  "124b0c52791ff7a4": {
-   "source": "Mister Download Manager (MDM) is a free download manager for Windows and Linux (and, still experimental, macOS). It is laid out the way Internet Download…",
-   "text": "Mister Download Manager (MDM) یک مدیر بارگیری رایگان برای Windows و Linux (و macOS که هنوز در حال آزمایش است) است. چیدمان آن همان چیزی است که کاربران Internet Download Manager انتظار دارند…"
-  },
   "1253f3ce3529a664": {
    "source": "<g1>Firefox</g1> works on every system. If you signed in only moments ago with Firefox open, close it once so it writes the sign-in to its files.",
    "text": "<g1>Firefox</g1> روی هر سیستمی کار می‌کند. اگر فقط لحظاتی پیش با Firefox باز وارد شدید، یک بار آن را ببندید تا اطلاعات ورود را در فایل‌های خود بنویسد."
@@ -14397,10 +14393,6 @@
   "fa5f14a1aee829e9": {
    "source": "first when the download goes through a debrid account, then a <x1/> line every half second, then <x2/>, or <x3/> after <x4/> (<x5/> is the file <x6/> takes).",
    "text": "ابتدا وقتی بارگیری از طریق حساب debrid انجام می‌شود، سپس هر نیم‌ثانیه یک خط <x1/>، بعد <x2/> یا پس از <x4/>، <x3/> (<x5/> فایلی است که <x6/> دریافت می‌کند)."
-  },
-  "fa6a5141054cb2c6": {
-   "source": "The layout is familiar on purpose: the toolbar, the categories, the download list, the progress window with every connection, queues and the scheduler. The…",
-   "text": "طرح‌بندی عمدا آشناست: نوار ابزار، دسته‌بندی‌ها، فهرست بارگیری، پنجره پیشرفت با هر اتصال، صف‌ها و زمان‌بندی. تفاوت‌ها: MDM رایگان و متن‌باز است، پیوندهای BitTorrent و magnet را در همان فهرست بارگیری می‌کند، در معیار ما سریع‌تر به پایان رسید، به 86 زبان صحبت می‌کند و نسخه‌های آزمایشی برای macOS و Linux دارد. IDM محصولی بالغ‌تر است که طی سال‌ها بهبود یافته است. مقایسه کامل را ببینید."
   },
   "fa6b75cd98cf135f": {
    "source": "<g1>Options → General → Use advanced browser integration</g1> is on, and your browser is ticked under <g2>Capture downloads from the following browsers</g2>.",

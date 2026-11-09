@@ -1010,10 +1010,6 @@
    "source": "When the browser keeps a download, the extension's button says which of these left it there, with the file's name, and MDM's log has a line for each one (<x1/> in <g2>MDM's data folder</g2>).",
    "text": "عندما يحتفظ المتصفح بتنزيل، يخبر زر الإضافة أي من هذه تركه هناك، مع اسم الملف، ويحتوي سجل MDM على سطر لكل منها (<x1/> في <g2>مجلد بيانات MDM</g2>)."
   },
-  "124b0c52791ff7a4": {
-   "source": "Mister Download Manager (MDM) is a free download manager for Windows and Linux (and, still experimental, macOS). It is laid out the way Internet Download…",
-   "text": "Mister Download Manager (MDM) هو مدير تنزيلات مجاني لأنظمة Windows وLinux (وmacOS، الذي لا يزال قيد التجربة). وهو مصمم بالطريقة التي يتوقعها مستخدمو Internet Download…"
-  },
   "1253f3ce3529a664": {
    "source": "<g1>Firefox</g1> works on every system. If you signed in only moments ago with Firefox open, close it once so it writes the sign-in to its files.",
    "text": "<g1>Firefox</g1> يعمل على كل الأنظمة. إذا سجلت الدخول قبل لحظات فقط وكان Firefox مفتوحا، أغلقه مرة واحدة ليكتب معلومات تسجيل الدخول إلى ملفاته."
@@ -14397,10 +14393,6 @@
   "fa5f14a1aee829e9": {
    "source": "first when the download goes through a debrid account, then a <x1/> line every half second, then <x2/>, or <x3/> after <x4/> (<x5/> is the file <x6/> takes).",
    "text": "أولا عندما يمر التنزيل عبر حساب Debrid، ثم سطر <x1/> كل نصف ثانية، ثم <x2/>، أو <x3/> بعد <x4/> (<x5/> هو الملف الذي يأخذه <x6/>)."
-  },
-  "fa6a5141054cb2c6": {
-   "source": "The layout is familiar on purpose: the toolbar, the categories, the download list, the progress window with every connection, queues and the scheduler. The…",
-   "text": "التصميم مألوف عن قصد: شريط الأدوات، الفئات، قائمة التنزيلات، نافذة التقدم مع كل اتصال، قوائم الانتظار والمجدول. الـ..."
   },
   "fa6b75cd98cf135f": {
    "source": "<g1>Options → General → Use advanced browser integration</g1> is on, and your browser is ticked under <g2>Capture downloads from the following browsers</g2>.",

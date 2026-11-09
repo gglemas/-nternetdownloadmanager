@@ -1010,10 +1010,6 @@
    "source": "When the browser keeps a download, the extension's button says which of these left it there, with the file's name, and MDM's log has a line for each one (<x1/> in <g2>MDM's data folder</g2>).",
    "text": "ブラウザがダウンロードを保持している場合、拡張機能のボタンには、どのダウンロードが残されたか、ファイル名とともに表示され、MDMのログにはそれぞれのエントリがあります（<g2>MDMのデータフォルダ</g2>内の<x1/>）。"
   },
-  "124b0c52791ff7a4": {
-   "source": "Mister Download Manager (MDM) is a free download manager for Windows and Linux (and, still experimental, macOS). It is laid out the way Internet Download…",
-   "text": "Mister Download Manager (MDM) は、Windows および Linux 用の無料ダウンロード マネージャーです (macOS 版はまだ実験段階です)。Internet Download…"
-  },
   "1253f3ce3529a664": {
    "source": "<g1>Firefox</g1> works on every system. If you signed in only moments ago with Firefox open, close it once so it writes the sign-in to its files.",
    "text": "<g1>Firefox</g1> はすべてのシステムで動作します。Firefox を開いた状態で数分前にサインインしたばかりの場合は、一度閉じてサインイン情報をファイルに書き込ませてください。"
@@ -14389,10 +14385,6 @@
   "fa5f14a1aee829e9": {
    "source": "first when the download goes through a debrid account, then a <x1/> line every half second, then <x2/>, or <x3/> after <x4/> (<x5/> is the file <x6/> takes).",
    "text": "ダウンロードがデブリットアカウントを経由する場合に最初に、次に0.5秒ごとに<x1/>行、次に<x2/>、または<x3/>の後に<x4/>（<x5/>は<x6/>が取得するファイルです）。"
-  },
-  "fa6a5141054cb2c6": {
-   "source": "The layout is familiar on purpose: the toolbar, the categories, the download list, the progress window with every connection, queues and the scheduler. The…",
-   "text": "ツールバー、カテゴリ、ダウンロードリスト、各接続の進捗ウィンドウ、キュー、スケジューラなど、レイアウトは意図的に馴染みのあるものになっています。…"
   },
   "fa6b75cd98cf135f": {
    "source": "<g1>Options → General → Use advanced browser integration</g1> is on, and your browser is ticked under <g2>Capture downloads from the following browsers</g2>.",

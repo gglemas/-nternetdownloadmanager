@@ -1010,10 +1010,6 @@
    "source": "When the browser keeps a download, the extension's button says which of these left it there, with the file's name, and MDM's log has a line for each one (<x1/> in <g2>MDM's data folder</g2>).",
    "text": "Khi trình duyệt giữ một lượt tải xuống, nút của tiện ích mở rộng sẽ cho biết lượt tải xuống đó do trình duyệt nào để lại, cùng với tên tệp và nhật ký của MDM có một dòng cho mỗi lượt tải xuống (<x1/> trong <g2>thư mục dữ liệu của MDM</g2>)."
   },
-  "124b0c52791ff7a4": {
-   "source": "Mister Download Manager (MDM) is a free download manager for Windows and Linux (and, still experimental, macOS). It is laid out the way Internet Download…",
-   "text": "Mister Download Manager (MDM) là trình quản lý tải xuống miễn phí dành cho Windows và Linux (và macOS, vẫn đang thử nghiệm). Giao diện được bố trí theo cách Internet Download Manager..."
-  },
   "1253f3ce3529a664": {
    "source": "<g1>Firefox</g1> works on every system. If you signed in only moments ago with Firefox open, close it once so it writes the sign-in to its files.",
    "text": "<g1>Firefox</g1> hoạt động trên mọi hệ thống. Nếu bạn vừa đăng nhập cách đây ít phút khi Firefox đang mở, hãy đóng nó một lần để nó ghi thông tin đăng nhập vào các tệp của nó."
@@ -14389,10 +14385,6 @@
   "fa5f14a1aee829e9": {
    "source": "first when the download goes through a debrid account, then a <x1/> line every half second, then <x2/>, or <x3/> after <x4/> (<x5/> is the file <x6/> takes).",
    "text": "đầu tiên nếu lượt tải xuống đi qua tài khoản debrid, sau đó xuất một dòng <x1/> mỗi nửa giây, rồi <x2/>, hoặc <x3/> sau <x4/> (<x5/> là tệp mà <x6/> tải xuống)."
-  },
-  "fa6a5141054cb2c6": {
-   "source": "The layout is familiar on purpose: the toolbar, the categories, the download list, the progress window with every connection, queues and the scheduler. The…",
-   "text": "Giao diện quen thuộc là có chủ ý: thanh công cụ, các danh mục, danh sách tải xuống, cửa sổ tiến trình hiển thị từng kết nối, hàng đợi và bộ lập lịch. Điểm khác biệt: MDM miễn phí và mã nguồn mở, hỗ trợ tải BitTorrent và liên kết magnet trong cùng một danh sách, hoàn tất nhanh hơn trong bài kiểm tra hiệu năng của chúng tôi, hỗ trợ 86 ngôn ngữ và có các bản thử nghiệm cho macOS và Linux. IDM là sản phẩm hoàn thiện hơn, được trau chuốt qua nhiều năm. Xem bài so sánh đầy đủ."
   },
   "fa6b75cd98cf135f": {
    "source": "<g1>Options → General → Use advanced browser integration</g1> is on, and your browser is ticked under <g2>Capture downloads from the following browsers</g2>.",

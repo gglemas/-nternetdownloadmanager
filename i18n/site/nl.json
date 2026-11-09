@@ -1010,10 +1010,6 @@
    "source": "When the browser keeps a download, the extension's button says which of these left it there, with the file's name, and MDM's log has a line for each one (<x1/> in <g2>MDM's data folder</g2>).",
    "text": "Als de browser een download behoudt, geeft de knop van de extensie aan welke extensie de download daar heeft achtergelaten, samen met de bestandsnaam, en het logboek van MDM bevat een regel voor elke download (<x1/> in de <g2>MDM-gegevensmap</g2>)."
   },
-  "124b0c52791ff7a4": {
-   "source": "Mister Download Manager (MDM) is a free download manager for Windows and Linux (and, still experimental, macOS). It is laid out the way Internet Download…",
-   "text": "Mister Download Manager (MDM) is een gratis downloadmanager voor Windows en Linux (en, nog experimenteel, macOS). De indeling is zoals gebruikers van Internet Download Manager verwachten: een werkbalk, categorieën aan de linkerkant, één lijst met downloads en een browserextensie die downloads aan MDM doorgeeft."
-  },
   "1253f3ce3529a664": {
    "source": "<g1>Firefox</g1> works on every system. If you signed in only moments ago with Firefox open, close it once so it writes the sign-in to its files.",
    "text": "<g1>Firefox</g1> werkt op elk systeem. Als u zich net hebt aangemeld terwijl Firefox open was, sluit het dan één keer zodat het de aanmelding naar zijn bestanden schrijft."
@@ -14401,10 +14397,6 @@
   "fa5f14a1aee829e9": {
    "source": "first when the download goes through a debrid account, then a <x1/> line every half second, then <x2/>, or <x3/> after <x4/> (<x5/> is the file <x6/> takes).",
    "text": "eerst wanneer de download via een debrid-account gaat, dan elke halve seconde een <x1/>-regel, dan <x2/>, of <x3/> na <x4/> (<x5/> is het bestand dat <x6/> neemt)."
-  },
-  "fa6a5141054cb2c6": {
-   "source": "The layout is familiar on purpose: the toolbar, the categories, the download list, the progress window with every connection, queues and the scheduler. The…",
-   "text": "De lay-out is bewust vertrouwd: de werkbalk, de categorieën, de downloadlijst, het voortgangsvenster met elke verbinding, wachtrijen en de planner. De…"
   },
   "fa6b75cd98cf135f": {
    "source": "<g1>Options → General → Use advanced browser integration</g1> is on, and your browser is ticked under <g2>Capture downloads from the following browsers</g2>.",

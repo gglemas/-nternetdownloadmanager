@@ -1010,10 +1010,6 @@
    "source": "When the browser keeps a download, the extension's button says which of these left it there, with the file's name, and MDM's log has a line for each one (<x1/> in <g2>MDM's data folder</g2>).",
    "text": "브라우저가 다운로드를 유지하면 확장 프로그램 버튼에 파일 이름과 함께 다운로드를 남긴 항목이 표시되며, MDM 로그에는 각 항목에 대한 줄이 있습니다(<g2>MDM 데이터 폴더</g2>의 <x1/>)."
   },
-  "124b0c52791ff7a4": {
-   "source": "Mister Download Manager (MDM) is a free download manager for Windows and Linux (and, still experimental, macOS). It is laid out the way Internet Download…",
-   "text": "Mister Download Manager(MDM)는 Windows 및 Linux용 무료 다운로드 관리자이며, macOS 버전은 아직 실험 단계입니다. 이 프로그램은 Internet Download Manager 사용자들이 기대하는 방식대로 구성되어 있습니다.…"
-  },
   "1253f3ce3529a664": {
    "source": "<g1>Firefox</g1> works on every system. If you signed in only moments ago with Firefox open, close it once so it writes the sign-in to its files.",
    "text": "<g1>Firefox</g1>는 모든 시스템에서 작동합니다. Firefox를 열어둔 채로 방금 로그인했다면, 파일을 기록하도록 한 번 닫았다가 다시 여세요."
@@ -14393,10 +14389,6 @@
   "fa5f14a1aee829e9": {
    "source": "first when the download goes through a debrid account, then a <x1/> line every half second, then <x2/>, or <x3/> after <x4/> (<x5/> is the file <x6/> takes).",
    "text": "다운로드가 디브리드 계정을 통해 진행되면 먼저, 0.5초마다 <x1/> 줄을 출력한 다음 <x2/>를 출력합니다. 또는 <x4/> 후에 <x3/>를 출력합니다(<x5/>는 <x6/>가 사용하는 파일입니다)."
-  },
-  "fa6a5141054cb2c6": {
-   "source": "The layout is familiar on purpose: the toolbar, the categories, the download list, the progress window with every connection, queues and the scheduler. The…",
-   "text": "도구 모음, 카테고리, 다운로드 목록, 모든 연결이 표시되는 진행 창, 대기열 및 스케줄러 등 익숙한 레이아웃은 의도된 것입니다. …"
   },
   "fa6b75cd98cf135f": {
    "source": "<g1>Options → General → Use advanced browser integration</g1> is on, and your browser is ticked under <g2>Capture downloads from the following browsers</g2>.",

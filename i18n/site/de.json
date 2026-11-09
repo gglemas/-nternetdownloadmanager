@@ -1010,10 +1010,6 @@
    "source": "When the browser keeps a download, the extension's button says which of these left it there, with the file's name, and MDM's log has a line for each one (<x1/> in <g2>MDM's data folder</g2>).",
    "text": "Wenn der Browser einen Download behält, zeigt die Erweiterungsschaltfläche an, welche davon ihn dort gelassen hat, zusammen mit dem Dateinamen, und das MDM-Protokoll enthält für jeden eine Zeile (<x1/> im <g2>MDM-Datenordner</g2>)."
   },
-  "124b0c52791ff7a4": {
-   "source": "Mister Download Manager (MDM) is a free download manager for Windows and Linux (and, still experimental, macOS). It is laid out the way Internet Download…",
-   "text": "Mister Download Manager (MDM) ist ein kostenloser Download-Manager für Windows und Linux (und, noch experimentell, macOS). Er ist so aufgebaut, wie es Internet Download Manager-Nutzer erwarten: eine Symbolleiste, Kategorien auf der linken Seite, eine Liste von Downloads und eine Browser-Erweiterung, die Downloads an ihn übergibt."
-  },
   "1253f3ce3529a664": {
    "source": "<g1>Firefox</g1> works on every system. If you signed in only moments ago with Firefox open, close it once so it writes the sign-in to its files.",
    "text": "<g1>Firefox</g1> funktioniert auf jedem System. Wenn Sie sich erst vor wenigen Augenblicken bei geöffnetem Firefox angemeldet haben, schließen Sie ihn einmal, damit die Anmeldung in seine Dateien geschrieben wird."
@@ -14397,10 +14393,6 @@
   "fa5f14a1aee829e9": {
    "source": "first when the download goes through a debrid account, then a <x1/> line every half second, then <x2/>, or <x3/> after <x4/> (<x5/> is the file <x6/> takes).",
    "text": "zuerst, wenn der Download über ein Debrid-Konto läuft, dann alle halbe Sekunde eine <x1/>-Zeile, dann <x2/> oder <x3/> nach <x4/> (<x5/> ist die Datei, die <x6/> verwendet)."
-  },
-  "fa6a5141054cb2c6": {
-   "source": "The layout is familiar on purpose: the toolbar, the categories, the download list, the progress window with every connection, queues and the scheduler. The…",
-   "text": "Das Layout ist bewusst vertraut: die Symbolleiste, die Kategorien, die Download-Liste, das Fortschrittsfenster mit allen Verbindungen, Warteschlangen und der Scheduler. Die…"
   },
   "fa6b75cd98cf135f": {
    "source": "<g1>Options → General → Use advanced browser integration</g1> is on, and your browser is ticked under <g2>Capture downloads from the following browsers</g2>.",

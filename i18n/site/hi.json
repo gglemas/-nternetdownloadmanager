@@ -1010,10 +1010,6 @@
    "source": "When the browser keeps a download, the extension's button says which of these left it there, with the file's name, and MDM's log has a line for each one (<x1/> in <g2>MDM's data folder</g2>).",
    "text": "जब ब्राउज़र किसी डाउनलोड को रखता है, तो एक्सटेंशन का बटन बताता है कि इनमें से किसने उसे वहाँ छोड़ा है, फ़ाइल के नाम के साथ, और MDM के लॉग में हर एक के लिए एक लाइन होती है (<x1/> <g2>MDM के डेटा फ़ोल्डर</g2> में)।"
   },
-  "124b0c52791ff7a4": {
-   "source": "Mister Download Manager (MDM) is a free download manager for Windows and Linux (and, still experimental, macOS). It is laid out the way Internet Download…",
-   "text": "Mister Download Manager (MDM) Windows और Linux (और, अभी भी प्रायोगिक, macOS) के लिए एक मुफ्त डाउनलोड मैनेजर है। इसे Internet Download Manager के उपयोगकर्ताओं की अपेक्षा के अनुसार डिज़ाइन किया गया है…"
-  },
   "1253f3ce3529a664": {
    "source": "<g1>Firefox</g1> works on every system. If you signed in only moments ago with Firefox open, close it once so it writes the sign-in to its files.",
    "text": "<g1>Firefox</g1> हर सिस्टम पर काम करता है। यदि आपने अभी-अभी Firefox खुला होने पर साइन इन किया है, तो इसे एक बार बंद कर दें ताकि यह साइन-इन को अपनी फ़ाइलों में लिख दे।"
@@ -14401,10 +14397,6 @@
   "fa5f14a1aee829e9": {
    "source": "first when the download goes through a debrid account, then a <x1/> line every half second, then <x2/>, or <x3/> after <x4/> (<x5/> is the file <x6/> takes).",
    "text": "पहले जब डाउनलोड एक डीब्रिड खाते के माध्यम से जाता है, फिर हर आधे सेकंड में एक <x1/> लाइन, फिर <x2/>, या <x3/> <x4/> के बाद (<x5/> वह फ़ाइल है जिसे <x6/> लेता है)।"
-  },
-  "fa6a5141054cb2c6": {
-   "source": "The layout is familiar on purpose: the toolbar, the categories, the download list, the progress window with every connection, queues and the scheduler. The…",
-   "text": "लेआउट जान-बूझकर परिचित रखा गया है: टूलबार, श्रेणियाँ, डाउनलोड सूची, हर कनेक्शन के साथ प्रगति विंडो, कतारें और शेड्यूलर।..."
   },
   "fa6b75cd98cf135f": {
    "source": "<g1>Options → General → Use advanced browser integration</g1> is on, and your browser is ticked under <g2>Capture downloads from the following browsers</g2>.",

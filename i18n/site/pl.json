@@ -1010,10 +1010,6 @@
    "source": "When the browser keeps a download, the extension's button says which of these left it there, with the file's name, and MDM's log has a line for each one (<x1/> in <g2>MDM's data folder</g2>).",
    "text": "Gdy przeglądarka zachowuje pobieranie, przycisk rozszerzenia informuje, które z nich je tam zostawiło, wraz z nazwą pliku, a dziennik MDM zawiera wiersz dla każdego z nich (<x1/> w <g2>folderze danych MDM</g2>)."
   },
-  "124b0c52791ff7a4": {
-   "source": "Mister Download Manager (MDM) is a free download manager for Windows and Linux (and, still experimental, macOS). It is laid out the way Internet Download…",
-   "text": "Mister Download Manager (MDM) to darmowy menedżer pobierania dla systemów Windows i Linux (oraz, wciąż eksperymentalnie, macOS). Jego układ jest taki, jakiego oczekują użytkownicy Internet Download Manager…"
-  },
   "1253f3ce3529a664": {
    "source": "<g1>Firefox</g1> works on every system. If you signed in only moments ago with Firefox open, close it once so it writes the sign-in to its files.",
    "text": "<g1>Firefox</g1> działa na każdym systemie. Jeśli zalogowano się przed chwilą, gdy przeglądarka Firefox była otwarta, zamknij ją raz, aby zapisała dane logowania do swoich plików."
@@ -14385,10 +14381,6 @@
   "fa5f14a1aee829e9": {
    "source": "first when the download goes through a debrid account, then a <x1/> line every half second, then <x2/>, or <x3/> after <x4/> (<x5/> is the file <x6/> takes).",
    "text": "najpierw, gdy pobieranie odbywa się przez konto debrid, następnie linia <x1/> co pół sekundy, potem <x2/>, lub <x3/> po <x4/> (<x5/> to plik, który <x6/> pobiera)."
-  },
-  "fa6a5141054cb2c6": {
-   "source": "The layout is familiar on purpose: the toolbar, the categories, the download list, the progress window with every connection, queues and the scheduler. The…",
-   "text": "Układ jest celowo znajomy: pasek narzędzi, kategorie, lista pobierania, okno postępu z każdym połączeniem, kolejki i harmonogram. The…"
   },
   "fa6b75cd98cf135f": {
    "source": "<g1>Options → General → Use advanced browser integration</g1> is on, and your browser is ticked under <g2>Capture downloads from the following browsers</g2>.",

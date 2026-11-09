@@ -1010,10 +1010,6 @@
    "source": "When the browser keeps a download, the extension's button says which of these left it there, with the file's name, and MDM's log has a line for each one (<x1/> in <g2>MDM's data folder</g2>).",
    "text": "当浏览器保留某个下载时，扩展程序按钮会显示是哪个下载留下了它，以及文件名。MDM 的日志中会为每个下载生成一行记录（<x1/> 在<g2>MDM 的数据文件夹</g2>中）。"
   },
-  "124b0c52791ff7a4": {
-   "source": "Mister Download Manager (MDM) is a free download manager for Windows and Linux (and, still experimental, macOS). It is laid out the way Internet Download…",
-   "text": "Mister Download Manager (MDM) 是一款适用于 Windows 和 Linux（macOS 版本仍在实验中）的免费下载管理器。它的布局与 Internet Download…"
-  },
   "1253f3ce3529a664": {
    "source": "<g1>Firefox</g1> works on every system. If you signed in only moments ago with Firefox open, close it once so it writes the sign-in to its files.",
    "text": "<g1>Firefox</g1>可在所有系统上运行。如果您刚登录 Firefox，请关闭一次浏览器，以便它将登录信息写入文件。"
@@ -14397,10 +14393,6 @@
   "fa5f14a1aee829e9": {
    "source": "first when the download goes through a debrid account, then a <x1/> line every half second, then <x2/>, or <x3/> after <x4/> (<x5/> is the file <x6/> takes).",
    "text": "首先当下载通过网盘服务帐户时，然后每半秒一行<x1/>，然后<x2/>，或者在<x4/>之后<x3/>（<x5/>是<x6/>获取的文件）。"
-  },
-  "fa6a5141054cb2c6": {
-   "source": "The layout is familiar on purpose: the toolbar, the categories, the download list, the progress window with every connection, queues and the scheduler. The…",
-   "text": "布局特意设计得很熟悉：工具栏、类别、下载列表、显示每个连接的进度窗口、队列和调度程序。..."
   },
   "fa6b75cd98cf135f": {
    "source": "<g1>Options → General → Use advanced browser integration</g1> is on, and your browser is ticked under <g2>Capture downloads from the following browsers</g2>.",

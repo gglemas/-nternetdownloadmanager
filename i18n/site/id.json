@@ -1010,10 +1010,6 @@
    "source": "When the browser keeps a download, the extension's button says which of these left it there, with the file's name, and MDM's log has a line for each one (<x1/> in <g2>MDM's data folder</g2>).",
    "text": "Ketika peramban menyimpan unduhan, tombol ekstensi akan menunjukkan mana di antara ini yang meninggalkannya di sana, dengan nama berkas, dan log MDM memiliki baris untuk setiap unduhan (<x1/> di <g2>folder data MDM</g2>)."
   },
-  "124b0c52791ff7a4": {
-   "source": "Mister Download Manager (MDM) is a free download manager for Windows and Linux (and, still experimental, macOS). It is laid out the way Internet Download…",
-   "text": "Mister Download Manager (MDM) adalah pengelola unduhan gratis untuk Windows dan Linux (dan, masih eksperimental, macOS). Tampilannya seperti yang diharapkan pengguna Internet Download…"
-  },
   "1253f3ce3529a664": {
    "source": "<g1>Firefox</g1> works on every system. If you signed in only moments ago with Firefox open, close it once so it writes the sign-in to its files.",
    "text": "<g1>Firefox</g1> berfungsi di setiap sistem. Jika Anda baru saja masuk dengan Firefox terbuka, tutup sekali agar Firefox menulis informasi masuk ke file-nya."
@@ -14393,10 +14389,6 @@
   "fa5f14a1aee829e9": {
    "source": "first when the download goes through a debrid account, then a <x1/> line every half second, then <x2/>, or <x3/> after <x4/> (<x5/> is the file <x6/> takes).",
    "text": "pertama saat unduhan melalui akun debrid, lalu baris <x1/> setiap setengah detik, kemudian <x2/>, atau <x3/> setelah <x4/> (<x5/> adalah file yang diambil <x6/>)."
-  },
-  "fa6a5141054cb2c6": {
-   "source": "The layout is familiar on purpose: the toolbar, the categories, the download list, the progress window with every connection, queues and the scheduler. The…",
-   "text": "Tata letak sengaja dibuat familiar: bilah alat, kategori, daftar unduhan, jendela progres dengan setiap koneksi, antrean, dan penjadwal. Perbedaannya: MDM gratis dan sumber terbuka, mengunduh BitTorrent dan tautan magnet di daftar yang sama, selesai lebih cepat dalam tolok ukur kami, berbicara 86 bahasa, dan memiliki versi eksperimental untuk macOS dan Linux. IDM adalah produk yang lebih matang, disempurnakan selama bertahun-tahun. Lihat perbandingan lengkapnya."
   },
   "fa6b75cd98cf135f": {
    "source": "<g1>Options → General → Use advanced browser integration</g1> is on, and your browser is ticked under <g2>Capture downloads from the following browsers</g2>.",

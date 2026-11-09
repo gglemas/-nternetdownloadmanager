@@ -1010,10 +1010,6 @@
    "source": "When the browser keeps a download, the extension's button says which of these left it there, with the file's name, and MDM's log has a line for each one (<x1/> in <g2>MDM's data folder</g2>).",
    "text": "เมื่อเบราว์เซอร์เก็บไฟล์ดาวน์โหลด ปุ่มของส่วนขยายจะบอกว่าไฟล์นั้นมาจากที่ใด พร้อมชื่อไฟล์ และบันทึกของ MDM จะมีหนึ่งบรรทัดสำหรับแต่ละรายการ (<x1/> ใน <g2>โฟลเดอร์ข้อมูลของ MDM</g2>)"
   },
-  "124b0c52791ff7a4": {
-   "source": "Mister Download Manager (MDM) is a free download manager for Windows and Linux (and, still experimental, macOS). It is laid out the way Internet Download…",
-   "text": "Mister Download Manager (MDM) เป็นโปรแกรมช่วยดาวน์โหลดฟรีสำหรับ Windows และ Linux (และ macOS ซึ่งยังอยู่ในขั้นทดลอง) มีการจัดวางที่ผู้ใช้ Internet Download…"
-  },
   "1253f3ce3529a664": {
    "source": "<g1>Firefox</g1> works on every system. If you signed in only moments ago with Firefox open, close it once so it writes the sign-in to its files.",
    "text": "<g1>Firefox</g1> ใช้งานได้กับทุกระบบ หากคุณเพิ่งลงชื่อเข้าใช้เมื่อไม่กี่นาทีที่ผ่านมาโดยเปิด Firefox อยู่ ให้ปิดหนึ่งครั้งเพื่อให้ Firefox บันทึกการลงชื่อเข้าใช้ลงในไฟล์"
@@ -14389,10 +14385,6 @@
   "fa5f14a1aee829e9": {
    "source": "first when the download goes through a debrid account, then a <x1/> line every half second, then <x2/>, or <x3/> after <x4/> (<x5/> is the file <x6/> takes).",
    "text": "อันดับแรกเมื่อการดาวน์โหลดผ่านบัญชี debrid จากนั้นเป็นบรรทัด <x1/> ทุกครึ่งวินาที จากนั้น <x2/> หรือ <x3/> หลังจาก <x4/> (<x5/> คือไฟล์ที่ <x6/> ใช้)"
-  },
-  "fa6a5141054cb2c6": {
-   "source": "The layout is familiar on purpose: the toolbar, the categories, the download list, the progress window with every connection, queues and the scheduler. The…",
-   "text": "เค้าโครงคุ้นตาโดยตั้งใจ: แถบเครื่องมือ หมวดหมู่ รายการดาวน์โหลด หน้าต่างแสดงความคืบหน้าพร้อมการเชื่อมต่อทั้งหมด คิว และเครื่องมือจัดตารางเวลา ความ..."
   },
   "fa6b75cd98cf135f": {
    "source": "<g1>Options → General → Use advanced browser integration</g1> is on, and your browser is ticked under <g2>Capture downloads from the following browsers</g2>.",

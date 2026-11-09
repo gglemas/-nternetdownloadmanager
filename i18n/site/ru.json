@@ -1010,10 +1010,6 @@
    "source": "When the browser keeps a download, the extension's button says which of these left it there, with the file's name, and MDM's log has a line for each one (<x1/> in <g2>MDM's data folder</g2>).",
    "text": "Когда браузер оставляет загрузку, кнопка расширения показывает, какое из них это сделало, с именем файла, а в журнале MDM есть строка для каждой (<x1/> в <g2>папке данных MDM</g2>)."
   },
-  "124b0c52791ff7a4": {
-   "source": "Mister Download Manager (MDM) is a free download manager for Windows and Linux (and, still experimental, macOS). It is laid out the way Internet Download…",
-   "text": "Mister Download Manager (MDM) — это бесплатный менеджер загрузок для Windows и Linux (а также, пока экспериментально, для macOS). Он устроен так, как ожидают пользователи Internet Download Manager: панель инструментов, категории слева, единый список загрузок и расширение для браузера, которое передает ему загрузки."
-  },
   "1253f3ce3529a664": {
    "source": "<g1>Firefox</g1> works on every system. If you signed in only moments ago with Firefox open, close it once so it writes the sign-in to its files.",
    "text": "<g1>Firefox</g1> работает на любой системе. Если вы вошли в систему всего несколько минут назад при открытом Firefox, закройте его один раз, чтобы он записал данные для входа в свои файлы."
@@ -14369,10 +14365,6 @@
   "fa5f14a1aee829e9": {
    "source": "first when the download goes through a debrid account, then a <x1/> line every half second, then <x2/>, or <x3/> after <x4/> (<x5/> is the file <x6/> takes).",
    "text": "сначала, когда загрузка идет через учетную запись дебрида, затем строка <x1/> каждые полсекунды, затем <x2/>, или <x3/> после <x4/> (<x5/> — это файл, который принимает <x6/>)."
-  },
-  "fa6a5141054cb2c6": {
-   "source": "The layout is familiar on purpose: the toolbar, the categories, the download list, the progress window with every connection, queues and the scheduler. The…",
-   "text": "Интерфейс намеренно сделан знакомым: панель инструментов, категории, список загрузок, окно хода выполнения с каждым соединением, очереди и планировщик. …"
   },
   "fa6b75cd98cf135f": {
    "source": "<g1>Options → General → Use advanced browser integration</g1> is on, and your browser is ticked under <g2>Capture downloads from the following browsers</g2>.",
