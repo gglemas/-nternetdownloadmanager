@@ -8,7 +8,7 @@
 //!   sizes, row heights). Where a window puts its controls stays the window's layout.
 //! - [`IconStyle`]: how the toolbar's and Options' outline icons are inked.
 //!
-//! [`CLASSIC`] is MDM's own look (IDM's classic layout, Windows 11 controls, accent #0078D4),
+//! [`CLASSIC`] is MDM's own look (the classic layout, Windows 11 controls, accent #0078D4),
 //! written out with the exact values the painters had before themes: the default, unchanged.
 
 use std::borrow::Cow;
@@ -34,7 +34,7 @@ pub struct Segments {
     pub start: [Color32; 13],
 }
 
-/// The classic bar, measured from IDM's (spec "Segment bar"), as (missing, done, start) rows.
+/// The classic bar, measured from the (spec "Segment bar"), as (missing, done, start) rows.
 const SEG_ROWS: [(u32, u32, u32); 13] = [
     (0xfafafc, 0xbfc6f3, 0xf67566),
     (0xf7f8fa, 0xa4aae7, 0xf46a5e),
@@ -87,15 +87,15 @@ const fn classic_segments(dark: bool) -> Segments {
 macro_rules! palette {
     ($($field:ident: $key:literal, $doc:literal = $dark:expr, $light:expr;)*) => {
         /// One variant's colours (light or dark), by role, plus the few switches that differ
-        /// between IDM's light and dark looks.
+        /// between the light and dark looks.
         #[derive(Clone, Copy, Debug, PartialEq)]
         pub struct Palette {
             /// A dark surface: light-on-dark glyph rendering and the dark window caption.
             pub dark: bool,
-            /// A focused text box's accent line: straight (IDM's dark look) or curving into the
+            /// A focused text box's accent line: straight (the dark look) or curving into the
             /// box's rounded corners (Windows 11's).
             pub focus_line_straight: bool,
-            /// Access letters are always underlined (IDM's dark look), not only once the keyboard
+            /// Access letters are always underlined (the dark look), not only once the keyboard
             /// is in use (Windows' rule).
             pub access_keys_always: bool,
             /// The category tree's expanders: chevrons (dark look) or classic +/- boxes.
@@ -804,7 +804,7 @@ mod tests {
     }
 
     /// The style themes' keyboard focus ring is seen (WCAG 2.1 non-text contrast, 3:1) on the
-    /// window and on the boxes, light and dark, its transparency included. Classic keeps IDM's
+    /// window and on the boxes, light and dark, its transparency included. Classic keeps the
     /// dotted grey rectangle.
     #[test]
     fn style_themes_focus_rings_are_seen() {

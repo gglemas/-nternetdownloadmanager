@@ -1,4 +1,4 @@
-//! Tasks → Download video from a page… (M9, ours: IDM's video panel is fed by its browser
+//! Tasks → Download video from a page… (M9, ours: the video panel is fed by its browser
 //! module, which comes with M8). Paste a page, look it up with yt-dlp, pick a quality, choose
 //! where it goes. yt-dlp is installed (verified, D-011) from here on first use, and ffmpeg (the
 //! LGPL build) when the best qualities need merging. It follows the app's mode, like Add torrent.

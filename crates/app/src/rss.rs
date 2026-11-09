@@ -1,4 +1,4 @@
-//! RSS feeds with auto-download rules (#39; beyond IDM). A feed is fetched every so often (RSS
+//! RSS feeds with auto-download rules (#39; additional). A feed is fetched every so often (RSS
 //! 2.0 or Atom); its articles are listed in the RSS feeds window, where any of them can be
 //! downloaded by hand; and each article new since the last fetch goes through the download
 //! rules: one a rule takes is added as a torrent, to the rule's folder, at once.

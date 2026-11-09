@@ -7,17 +7,37 @@ Fonts are Windows' own Segoe UI (rendered into the picture, not shipped).
 """
 
 from pathlib import Path
+import shutil
+import subprocess
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parents[2]
-FONTS = Path("C:/Windows/Fonts")
+WINDOWS_FONTS = Path("C:/Windows/Fonts")
+FONT_FAMILIES = {
+    "segoeuib.ttf": "Segoe UI:style=Bold",
+    "segoeui.ttf": "Segoe UI:style=Regular",
+}
 W, H = 1280, 640
 INK, MUTED, ACCENT = (31, 35, 40), (89, 99, 110), (42, 120, 214)
 
 
 def font(name, size):
-    return ImageFont.truetype(str(FONTS / name), size)
+    windows_font = WINDOWS_FONTS / name
+    if windows_font.is_file():
+        return ImageFont.truetype(str(windows_font), size)
+
+    fc_match = shutil.which("fc-match")
+    if not fc_match:
+        raise RuntimeError(f"font {name} is unavailable and fc-match was not found")
+    family = FONT_FAMILIES[name]
+    result = subprocess.run(
+        [fc_match, "-f", "%{file}", family], check=True, capture_output=True, text=True
+    )
+    matched_font = result.stdout.strip()
+    if not matched_font:
+        raise RuntimeError(f"fc-match did not find an installed font for {family}")
+    return ImageFont.truetype(matched_font, size)
 
 
 def main():
@@ -40,7 +60,7 @@ def main():
     icon = Image.open(ROOT / "art/Mister Download Manager.png").convert("RGBA").resize((112, 112), Image.LANCZOS)
     card.paste(icon, (64, 56), icon)
     draw.text((196, 58), "Mister Download Manager", font=font("segoeuib.ttf", 56), fill=INK)
-    draw.text((198, 132), "Downloads faster than IDM. Free, forever.", font=font("segoeui.ttf", 34), fill=ACCENT)
+    draw.text((198, 132), "Manage your downloads. Free, forever.", font=font("segoeui.ttf", 34), fill=ACCENT)
     draw.text((66, 196), "Windows, macOS and Linux  ·  86 languages  ·  no ads, no trial, no sign-up",
               font=font("segoeui.ttf", 24), fill=MUTED)
 

@@ -141,7 +141,7 @@ fn load_from(p: &Path, empty: Loaded) -> Loaded {
             }
             if f.version < 2 {
                 // Before version 2 nothing could set "files at the same time" (no Scheduler),
-                // so every 1 there is the old default: IDM's (and our) default is 4.
+                // so every 1 there is the old default: the (and our) default is 4.
                 for q in f.queues.iter_mut().filter(|q| q.files_at_once == 1) {
                     q.files_at_once = 4;
                 }

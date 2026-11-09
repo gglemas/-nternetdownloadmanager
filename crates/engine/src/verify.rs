@@ -1,4 +1,4 @@
-//! Whole-file checksums (beyond IDM, D-015): verify a finished download when its hash is known —
+//! Whole-file checksums (additional, D-015): verify a finished download when its hash is known —
 //! given by the user, or announced by the server (`Digest`, `Repr-Digest`, `Content-MD5`,
 //! `x-goog-hash`). The overlap check catches a *changed* file; this catches a *corrupt* one.
 

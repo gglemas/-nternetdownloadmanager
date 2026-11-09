@@ -30,7 +30,7 @@ pub struct Added {
 }
 
 impl Batch {
-    /// Pre-filled from the clipboard when it holds an http(s) or ftp(s) address, as IDM's.
+    /// Pre-filled from the clipboard when it holds an http(s) or ftp(s) address, as configured.
     pub fn new(from_clipboard: bool) -> Self {
         let address = if from_clipboard {
             crate::clipboard_text()

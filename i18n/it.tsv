@@ -236,7 +236,7 @@
 #. RSS feeds window, Download rules: add the torrents to the list without starting them
 	Add them without starting them	Aggiungili senza avviarli
 #. message or event log entry in the main window; text in the Link grabber window
-#. Link grabber button: add the ticked links to the download queue without starting them (IDM's OK)
+#. Link grabber button: add the ticked links to the download queue without starting them (the OK)
 	Add to queue	Aggiungi alla coda
 #. text in a dialog box
 	Add to queue:	Aggiungi alla coda:
@@ -603,7 +603,7 @@
 #. {category} = a category name such as "Music" (keep the braces as they are)
 	Change folder for "{category}" category on last selected	Imposta come cartella della categoria "{category}" l'ultima selezionata
 #. text in the Link grabber window
-#. Link grabber button (IDM's): tick every link
+#. Link grabber button (the): tick every link
 	Check all	Seleziona tutti
 #. text in rssdlg.rs
 #. RSS feeds window, at the bottom: "Check feeds every [30] minutes"
@@ -1423,7 +1423,7 @@
 #. tooltip of a button in a download's progress window: hides the window to the notification area (system tray); the download goes on
 	Hide to the notification area	Nascondi nell'area di notifica
 #. checkbox in the Link grabber window; text in the Link grabber window; checkbox in the Options window
-#. Link grabber check box (IDM's "Hide HTML files"): links to web pages are not shown
+#. Link grabber check box (the "Hide HTML files"): links to web pages are not shown
 	Hide web pages	Nascondi le pagine web
 #. text in the Options window
 	Hold Alt while clicking a link to let the browser download it instead of tnctr download manager.	Tieni premuto Alt mentre fai clic su un collegamento per farlo scaricare al browser invece che a tnctr download manager.
@@ -1730,7 +1730,7 @@
 #. noun: the user name and password section
 	Login	Accesso
 #. checkbox in the Options window
-#. Options → Archives → Link grabber check box (IDM's Download all links looks every link up)
+#. Options → Archives → Link grabber check box (the Download all links looks every link up)
 	Look links up when they arrive (name, size, online)	Analizza i collegamenti all'arrivo (nome, dimensione, online)
 #. text in the Add torrent window; button in the Download video window
 	Look up	Cerca
@@ -3585,7 +3585,7 @@
 #. a country's name (where a download's server is)
 	Ukraine	Ucraina
 #. text in the Link grabber window
-#. Link grabber button (IDM's): untick every link
+#. Link grabber button (the): untick every link
 	Uncheck all	Deseleziona tutti
 #. item in the Categories tree in the main window; text in remote.rs
 #. adjective: the downloads that are not complete yet
@@ -4578,7 +4578,7 @@ menu	C&ustomize URL List...	Personalizza elenco &URL...
 #. the trailing ... means it opens a window: keep it
 menu	Check for &updates...	Verifica &aggiornamenti...
 #. menu command in the main window
-#. View → Theme: MDM's own look, the default (IDM's layout, Windows 11's controls)
+#. View → Theme: MDM's own look, the default (the layout, Windows 11's controls)
 menu	Classic	Classico
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
@@ -4636,7 +4636,7 @@ menu	Font	Carattere
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
-menu	From &IDM export file...	Da file di esportazione &IDM...
+menu	From &legacy export file...	From &legacy export file...
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
@@ -4786,7 +4786,7 @@ menu	Theme	Tema
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
-menu	To &IDM export file...	In file di esportazione &IDM...
+menu	To &legacy export file...	To &legacy export file...
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
