@@ -966,7 +966,7 @@ fn wrap_lines(p: &Painter, s: &str, room: f32) -> Vec<String> {
                     n = k + 1;
                 }
                 let latin = |k: usize| g[k].chars().all(|c| c.is_ascii_alphanumeric());
-                // Not inside a Latin word ("Mister Download Manager" in Japanese): before it.
+                // Not inside a Latin word ("tnctr download manager" in Japanese): before it.
                 if n > 0
                     && n < g.len()
                     && latin(n - 1)

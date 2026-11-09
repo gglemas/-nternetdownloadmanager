@@ -1,4 +1,4 @@
-//! The only Windows FFI in Mister Download Manager (D-008): IDM's dialog frame for our dialog windows, and the
+//! The only Windows FFI in tnctr download manager (D-008): IDM's dialog frame for our dialog windows, and the
 //! shell's own small file-type icons (the ones Explorer and IDM show — Windows' artwork, not IDM's),
 //! and the drop target's OLE `IDropTarget` (`ole`).
 #![allow(unsafe_code)]
@@ -2676,7 +2676,7 @@ fn startup_outdated(value: &str, exe: &std::path::Path) -> bool {
         .any(|a| a.eq_ignore_ascii_case(mdm_ipc::STARTUP))
 }
 
-/// Is Mister Download Manager in the user's Run key (set by Options or by the installer's
+/// Is tnctr download manager in the user's Run key (set by Options or by the installer's
 /// "Start when Windows starts")? The registry is the truth for Options → "Launch on startup".
 pub fn run_at_startup() -> bool {
     run_value().is_some_and(|name| {

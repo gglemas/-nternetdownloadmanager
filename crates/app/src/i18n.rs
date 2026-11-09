@@ -255,6 +255,23 @@ mod tests {
     }
 
     #[test]
+    fn application_name_is_consistent_in_every_language() {
+        let name = "tnctr download manager";
+        assert_eq!(
+            crate::MAIN_TITLE,
+            format!("{name} {}", env!("CARGO_PKG_VERSION"))
+        );
+        for &(code, _) in catalogs() {
+            let lang = i18n().from_code(code).expect(code);
+            assert_eq!(
+                craft_i18n::strip_isolates(i18n().t(lang, name)),
+                name,
+                "{code}"
+            );
+        }
+    }
+
+    #[test]
     fn data_goes_in_as_isolates() {
         // A path or an address reads left to right; a file name takes its own direction.
         assert_eq!(ltr(r"C:\dl\a.zip"), format!(r"{LRI}C:\dl\a.zip{PDI}"));

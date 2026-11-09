@@ -127,7 +127,7 @@ impl Extension {
             ctx,
             "extension",
             // i18n: title of the window that offers the browser extension
-            "Add Mister Download Manager to your browser",
+            "Add tnctr download manager to your browser",
             [W, h + extra],
             false,
             winui::BG(),
@@ -275,7 +275,7 @@ impl Extension {
                 o.x + 18.0,
                 o.y + y,
                 crate::i18n::t(
-                    "Browser integration isn't set up on this computer, so no browser can reach Mister Download Manager yet.",
+                    "Browser integration isn't set up on this computer, so no browser can reach tnctr download manager yet.",
                 ),
                 winui::ERROR(),
                 o.x + fix_x - 10.0,
@@ -495,7 +495,7 @@ const STEPS: [&str; 8] = [
     // i18n: step 7 of turning on the Safari extension; the quoted tab name is what Safari's settings show in this language: use Apple's own word for it, or keep the English name when unsure
     "Switch to the \"Extensions\" tab (the puzzle piece).",
     // i18n: step 8 of turning on the Safari extension
-    "Turn on \"Mister Download Manager\" and allow it on all websites.",
+    "Turn on \"tnctr download manager\" and allow it on all websites.",
 ];
 
 /// The browsers whose extension reached the app, by Options' names.
@@ -626,7 +626,7 @@ pub fn checks(settings: &crate::settings::Settings) -> Vec<Check> {
         Registration::Ready | Registration::Missing => check(
             registration == Registration::Ready,
             // i18n: a check of Test browser integration: the browsers find MDM's helper program
-            "The browsers can find Mister Download Manager",
+            "The browsers can find tnctr download manager",
             Some("not-installed"),
         ),
         Registration::NoBrowser => check(

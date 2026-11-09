@@ -1,12 +1,12 @@
 {
   "name": {
-    "message": "Mister Download Manager"
+    "message": "tnctr download manager"
   },
   "description": {
-    "message": "ማውረዶችን ከብሮውዘር ወደ Mister Download Manager ያስተላልፋል።"
+    "message": "ማውረዶችን ከብሮውዘር ወደ tnctr download manager ያስተላልፋል።"
   },
   "menu": {
-    "message": "በMister Download Manager ያውርዱ"
+    "message": "በtnctr download manager ያውርዱ"
   },
   "video_download": {
     "message": "ቪዲዮ አውርድ"
@@ -30,25 +30,25 @@
     "message": "የአዝራር ቅንብሮች..."
   },
   "video_sent": {
-    "message": "ወደ Mister Download Manager ተልኳል"
+    "message": "ወደ tnctr download manager ተልኳል"
   },
   "video_failed": {
-    "message": "Mister Download Manager አልተጫነም ወይም አልጀመረም"
+    "message": "tnctr download manager አልተጫነም ወይም አልጀመረም"
   },
   "video_drag": {
     "message": "በቪዲዮው ጠርዝ ላይ ለማንቀሳቀስ ይጎትቱ"
   },
   "menu_selected": {
-    "message": "የተመረጡ አገናኞችን በMister Download Manager ያውርዱ"
+    "message": "የተመረጡ አገናኞችን በtnctr download manager ያውርዱ"
   },
   "menu_all": {
-    "message": "ሁሉንም አገናኞች በMister Download Manager ያውርዱ"
+    "message": "ሁሉንም አገናኞች በtnctr download manager ያውርዱ"
   },
   "status_connected": {
-    "message": "ከMister Download Manager ጋር ተገናኝቷል"
+    "message": "ከtnctr download manager ጋር ተገናኝቷል"
   },
   "status_connected_version": {
-    "message": "ከMister Download Manager $version$ ጋር ተገናኝቷል",
+    "message": "ከtnctr download manager $version$ ጋር ተገናኝቷል",
     "placeholders": {
       "version": {
         "content": "$1",
@@ -60,22 +60,22 @@
     "message": "ባለበት ቆሟል፦ ውርዶች በአሳሹ ይቀራሉ"
   },
   "status_not_installed": {
-    "message": "Mister Download Manager አልተጫነም፣ ወይም የአሳሽ ውህደቱ አልተዘጋጀም"
+    "message": "tnctr download manager አልተጫነም፣ ወይም የአሳሽ ውህደቱ አልተዘጋጀም"
   },
   "status_forbidden": {
-    "message": "Mister Download Manager የዚህን ቅጥያ ቅጂ አይቀበልም"
+    "message": "tnctr download manager የዚህን ቅጥያ ቅጂ አይቀበልም"
   },
   "status_not_running": {
-    "message": "Mister Download Manager በጊዜ አልጀመረም"
+    "message": "tnctr download manager በጊዜ አልጀመረም"
   },
   "status_host_failed": {
-    "message": "ከMister Download Manager ጋር ያለው ግንኙነት አልተሳካም"
+    "message": "ከtnctr download manager ጋር ያለው ግንኙነት አልተሳካም"
   },
   "status_too_large": {
     "message": "የዚህ ውርድ ዝርዝሮች ለማስተላለፍ በጣም ትልቅ ነበሩ"
   },
   "status_update_app": {
-    "message": "ይህ ቅጥያ የሚያቀርበውን ሁሉ ለመጠቀም Mister Download Managerን ያዘምኑ"
+    "message": "ይህ ቅጥያ የሚያቀርበውን ሁሉ ለመጠቀም tnctr download managerን ያዘምኑ"
   },
   "popup_take": {
     "message": "ውርዶችን ከዚህ አሳሽ ይውሰዱ"
@@ -84,10 +84,10 @@
     "message": "ውርዶችን በዚህ አሳሽ ፕሮክሲ ወይም ቪፒኤን ቅጥያ በኩል ይላኩ"
   },
   "popup_proxy_title": {
-    "message": "Mister Download Manager ከዚያ በዚህ አሳሽ ከሚጠቀምበት ፕሮክሲ በኩል ያወርዳል። አሳሹ አንድ ጊዜ እንዲፈቅዱ ይጠይቅዎታል፤ ይህን ማጥፋት ፈቃዱን ይሽራል።"
+    "message": "tnctr download manager ከዚያ በዚህ አሳሽ ከሚጠቀምበት ፕሮክሲ በኩል ያወርዳል። አሳሹ አንድ ጊዜ እንዲፈቅዱ ይጠይቅዎታል፤ ይህን ማጥፋት ፈቃዱን ይሽራል።"
   },
   "popup_proxy_title_chromium": {
-    "message": "Mister Download Manager ከዚያም በዚህ አሳሽ በኩል በተመሳሳይ ፕሮክሲ ያወርዳል። ይህ ሲጠፋ፣ ቅጥያው የአሳሹን ፕሮክሲ አያነብም።"
+    "message": "tnctr download manager ከዚያም በዚህ አሳሽ በኩል በተመሳሳይ ፕሮክሲ ያወርዳል። ይህ ሲጠፋ፣ ቅጥያው የአሳሹን ፕሮክሲ አያነብም።"
   },
   "popup_exclude_site": {
     "message": "ከ$site$ የሚመጡ ውርዶችን ዳግም አትውሰዱ",
@@ -108,7 +108,7 @@
     }
   },
   "popup_open": {
-    "message": "Mister Download Managerን ይክፈቱ"
+    "message": "tnctr download managerን ይክፈቱ"
   },
   "popup_options": {
     "message": "አማራጮች..."
@@ -195,7 +195,7 @@
     "message": "ይህ ኮምፒውተር"
   },
   "popup_send_remote": {
-    "message": "ሌላ Mister Download Manager (አገልጋይ)"
+    "message": "ሌላ tnctr download manager (አገልጋይ)"
   },
   "popup_remote_code": {
     "message": "የማጣመሪያ ኮድ"

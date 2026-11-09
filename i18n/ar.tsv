@@ -1,4 +1,4 @@
-# Mister Download Manager in Arabic (العربية): tools/i18n/translate.py
+# tnctr download manager in Arabic (العربية): tools/i18n/translate.py
 # writes the rows marked '#, machine'; a native speaker deletes that line after checking.
 # context	source	translation (craft-i18n format, rows as in en.tsv)
 @id	language.name	العربية
@@ -9,7 +9,7 @@
 #. count in a dialog box
 #. never shown for a single download
 #. {n} = a number (keep the braces as they are)
-@plural	Are you sure you want to delete {n} download from Mister Download Manager list of downloads?|Are you sure you want to delete these {n} downloads from Mister Download Manager list of downloads?	هل أنت متأكد من حذف {n} تنزيل من قائمة تنزيلات Mister Download Manager؟|هل أنت متأكد من حذف {n} تنزيل من قائمة تنزيلات Mister Download Manager؟|هل أنت متأكد من حذف {n} تنزيلين من قائمة تنزيلات Mister Download Manager؟|هل أنت متأكد من حذف {n} تنزيلات من قائمة تنزيلات Mister Download Manager؟|هل أنت متأكد من حذف {n} تنزيلا من قائمة تنزيلات Mister Download Manager؟|هل أنت متأكد من حذف {n} تنزيل من قائمة تنزيلات Mister Download Manager؟
+@plural	Are you sure you want to delete {n} download from tnctr download manager list of downloads?|Are you sure you want to delete these {n} downloads from tnctr download manager list of downloads?	هل أنت متأكد من حذف {n} تنزيل من قائمة تنزيلات tnctr download manager؟|هل أنت متأكد من حذف {n} تنزيل من قائمة تنزيلات tnctr download manager؟|هل أنت متأكد من حذف {n} تنزيلين من قائمة تنزيلات tnctr download manager؟|هل أنت متأكد من حذف {n} تنزيلات من قائمة تنزيلات tnctr download manager؟|هل أنت متأكد من حذف {n} تنزيلا من قائمة تنزيلات tnctr download manager؟|هل أنت متأكد من حذف {n} تنزيل من قائمة تنزيلات tnctr download manager؟
 #. count in the Add torrent window
 #. while a magnet link's file list is fetched; {n} = peers that answered
 #. {n} = a number (keep the braces as they are)
@@ -176,7 +176,7 @@
 #. why an archive wasn't extracted (after "Couldn't extract {name}: ")
 	a volume of it is missing	أحد مجلداته مفقود
 #. window title in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-	About Mister Download Manager	حول Mister Download Manager
+	About tnctr download manager	حول tnctr download manager
 #. text in whereis.rs
 #. a download's server's round trip: {ms} a number of milliseconds, {reach} near, medium or far
 	about {ms} ms ({reach})	حوالي {ms} مللي ثانية ({reach})
@@ -218,7 +218,7 @@
 	Add many downloads	إضافة العديد من التنزيلات
 #. window title in extension.rs
 #. title of the window that offers the browser extension
-	Add Mister Download Manager to your browser	أضف Mister Download Manager إلى مستعرضك
+	Add tnctr download manager to your browser	أضف tnctr download manager إلى مستعرضك
 #. message or event log entry in the main window; text in the tray icon's menu
 #. link in the empty download list: opens Add URL
 	Add new download	إضافة تنزيل جديد
@@ -346,7 +346,7 @@
 #. Options → Archives: where extracted files go
 	Always into a folder named after it	دائما في مجلد يحمل اسمه
 #. checkbox in a dialog box
-	Always turn on Speed Limiter on Mister Download Manager startup	تشغيل محدد السرعة دائما عند بدء تشغيل Mister Download Manager
+	Always turn on Speed Limiter on tnctr download manager startup	تشغيل محدد السرعة دائما عند بدء تشغيل tnctr download manager
 #. text in regional.rs; text in the Scheduler window
 #. before noon, after a time of day (12-hour clock). Its pair is "PM": write both the same way (this language's own short marks, or both kept as AM and PM)
 	AM	ص
@@ -396,7 +396,7 @@
 	Archives and Link grabber	الأرشيفات وملتقط الروابط
 #. text in a dialog box
 #. {name} = a file name (keep the braces as they are)
-	Are you sure you want to delete "{name}" from Mister Download Manager list of downloads?	هل أنت متأكد من حذف "{name}" من قائمة تنزيلات Mister Download Manager؟
+	Are you sure you want to delete "{name}" from tnctr download manager list of downloads?	هل أنت متأكد من حذف "{name}" من قائمة تنزيلات tnctr download manager؟
 #. text in countries.rs
 #. a country's name (where a download's server is)
 	Argentina	الأرجنتين
@@ -522,7 +522,7 @@
 #. the trailing ... means it opens a window: keep it
 	Browse...	استعراض...
 #. text in extension.rs
-	Browser integration isn't set up on this computer, so no browser can reach Mister Download Manager yet.	لم يتم إعداد الربط بالمستعرض على هذا الكمبيوتر، لذلك لا يمكن لأي مستعرض الوصول إلى Mister Download Manager بعد.
+	Browser integration isn't set up on this computer, so no browser can reach tnctr download manager yet.	لم يتم إعداد الربط بالمستعرض على هذا الكمبيوتر، لذلك لا يمكن لأي مستعرض الوصول إلى tnctr download manager بعد.
 #. page title in the Options window
 	Browser/System Integration	الربط بالمستعرض/النظام
 #. text in countries.rs
@@ -666,7 +666,7 @@
 #. text in langpick.rs
 	Choose a language	اختيار لغة
 #. text in langpick.rs
-	Choose the language Mister Download Manager shows its windows in:	اختر اللغة التي يعرض بها برنامج Mister Download Manager نوافذه:
+	Choose the language tnctr download manager shows its windows in:	اختر اللغة التي يعرض بها برنامج tnctr download manager نوافذه:
 #. text in the Options window
 #. Options → Sites Logins → Cookies for video sites: the title of the window, and the tooltip of the button, that pick a browser profile's folder
 	Choose the profile's folder	اختر مجلد ملف التعريف
@@ -1126,7 +1126,7 @@
 #. verb: quit the app
 	Exit	إنهاء
 #. checkbox in a download's progress window; checkbox in the Scheduler window
-	Exit Mister Download Manager when done	الخروج من Mister Download Manager عند الانتهاء
+	Exit tnctr download manager when done	الخروج من tnctr download manager عند الانتهاء
 #. text in the Checksum window
 	Expected checksum (MD5, SHA-1, SHA-256, SHA-512 or CRC32):	بصمة ملف متوقعة (MD5 أو SHA-1 أو SHA-256 أو SHA-512 أو CRC32):
 #. message or event log entry in the main window
@@ -1445,7 +1445,7 @@
 #. Link grabber check box (IDM's "Hide HTML files"): links to web pages are not shown
 	Hide web pages	إخفاء صفحات الويب
 #. text in the Options window
-	Hold Alt while clicking a link to let the browser download it instead of Mister Download Manager.	اضغط على Alt أثناء النقر فوق ارتباط للسماح للمستعرض بتنزيله بدلا من Mister Download Manager.
+	Hold Alt while clicking a link to let the browser download it instead of tnctr download manager.	اضغط على Alt أثناء النقر فوق ارتباط للسماح للمستعرض بتنزيله بدلا من tnctr download manager.
 #. link (opens a web page) in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 	Home page	الصفحة الرئيسية
 #. text in countries.rs
@@ -1472,7 +1472,7 @@
 #. a country's name (where a download's server is)
 	Hungary	هنغاريا
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-	I download with Mister Download Manager: fast, free, and it looks like the download manager you already know. {link}	أستخدم Mister Download Manager في التنزيل: سريع ومجاني ويبدو كمدير التنزيل الذي تعرفه بالفعل. {link}
+	I download with tnctr download manager: fast, free, and it looks like the download manager you already know. {link}	أستخدم tnctr download manager في التنزيل: سريع ومجاني ويبدو كمدير التنزيل الذي تعرفه بالفعل. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 	Iceland	آيسلندا
@@ -1675,7 +1675,7 @@
 #. a country's name (where a download's server is)
 	Latvia	لاتفيا
 #. text in the Options window
-	Launch Mister Download Manager on startup	تشغيل Mister Download Manager عند بدء التشغيل
+	Launch tnctr download manager on startup	تشغيل tnctr download manager عند بدء التشغيل
 #. text in countries.rs
 #. a country's name (where a download's server is)
 	Lebanon	لبنان
@@ -1899,44 +1899,44 @@
 #. legend: pieces not downloaded yet
 	Missing	مفقود
 #. message or event log entry in the main window; window title in a dialog box; text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-	Mister Download Manager	Mister Download Manager
+	tnctr download manager	tnctr download manager
 #. text in unix.rs
 #. Linux, at start, on the terminal and in a message box: a library the window needs isn't installed; {libraries} = its file names (libxkbcommon-x11.so.0…), left as they are
 #, machine
-	Mister Download Manager can't open its window: this system lacks {libraries}.	لا يمكن لـ Mister Download Manager فتح نافذته: يفتقر هذا النظام إلى {libraries}.
+	tnctr download manager can't open its window: this system lacks {libraries}.	لا يمكن لـ tnctr download manager فتح نافذته: يفتقر هذا النظام إلى {libraries}.
 #. text in crashui.rs
 #. crash report window heading: MDM crashed and is gone
-	Mister Download Manager closed unexpectedly	توقف Mister Download Manager بشكل غير متوقع
+	tnctr download manager closed unexpectedly	توقف tnctr download manager بشكل غير متوقع
 #. window title in the Options window
-	Mister Download Manager Configuration	إعدادات Mister Download Manager
+	tnctr download manager Configuration	إعدادات tnctr download manager
 #. text in crashui.rs
-	Mister Download Manager crash report	تقرير تعطل Mister Download Manager
+	tnctr download manager crash report	تقرير تعطل tnctr download manager
 #. text in crashui.rs
 #. crash report window heading: an internal error, MDM still running
-	Mister Download Manager hit an internal error	واجه Mister Download Manager خطأ داخليا
+	tnctr download manager hit an internal error	واجه tnctr download manager خطأ داخليا
 #. text in wake.rs
 #. why the computer isn't going to sleep, in the system's list of programs that keep it awake; {queue} = the queue's name
 #. {queue} = a queue name such as "Main queue" (keep the braces as they are)
-	Mister Download Manager is running the queue "{queue}"	يدير Mister Download Manager قائمة الانتظار "{queue}"
+	tnctr download manager is running the queue "{queue}"	يدير tnctr download manager قائمة الانتظار "{queue}"
 #. text in crashui.rs
 #. crash report window heading: MDM's window doesn't answer (frozen)
-	Mister Download Manager stopped responding	توقف Mister Download Manager عن الاستجابة
+	tnctr download manager stopped responding	توقف tnctr download manager عن الاستجابة
 #. text in crashui.rs
-	Mister Download Manager stopped responding for a while	توقف Mister Download Manager عن الاستجابة لبعض الوقت
+	tnctr download manager stopped responding for a while	توقف tnctr download manager عن الاستجابة لبعض الوقت
 #. text in the Options window
 #. \\n starts a new line: break lines where they fit the translation
-	Mister Download Manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.	يكتب Mister Download Manager كل اتصال مباشرة في الملف\nالنهائي (ملف جزء متفرق بجانبه)، لذلك لا يلزم وجود مجلد مؤقت ولا\nخطوة تجميع.
+	tnctr download manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.	يكتب tnctr download manager كل اتصال مباشرة في الملف\nالنهائي (ملف جزء متفرق بجانبه)، لذلك لا يلزم وجود مجلد مؤقت ولا\nخطوة تجميع.
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {version} = a version number (keep the braces as they are)
-	Mister Download Manager {version} is available (released {date}).	يتوفر Mister Download Manager {version} (تم إصداره في {date}).
+	tnctr download manager {version} is available (released {date}).	يتوفر tnctr download manager {version} (تم إصداره في {date}).
 #. text in helpers.rs
 #. Video helpers: {version} = the version of MDM's own copy
 #. {version} = a version number (keep the braces as they are)
-	Mister Download Manager's own copy, version {version}	نسخة Mister Download Manager الخاصة، الإصدار {version}
+	tnctr download manager's own copy, version {version}	نسخة tnctr download manager الخاصة، الإصدار {version}
 #. text in unix.rs
 #. Linux, at start, on the terminal: the libraries an X11 window needs aren't installed, so the window opens through Wayland instead, where menus can't be placed under what was clicked; {libraries} = their file names, left as they are
 #, machine
-	Mister Download Manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.	تحتاج نافذة X11 لـMister Download Manager إلى {libraries}، وهي غير متوفرة على هذا النظام، لذا تفتح على Wayland بدلا من ذلك، حيث قد تفتح قوائمها بعيدا عن عناوينها.
+	tnctr download manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.	تحتاج نافذة X11 لـtnctr download manager إلى {libraries}، وهي غير متوفرة على هذا النظام، لذا تفتح على Wayland بدلا من ذلك، حيث قد تفتح قوائمها بعيدا عن عناوينها.
 #. text in the Scheduler window
 #. Monday, as short as a calendar's column head (two letters in English)
 	Mo	الاثنين
@@ -2313,9 +2313,9 @@
 #. crash report window button: show the report's file in its folder
 	Open folder	فتح المجلد
 #. checkbox in the Add torrent window
-	Open magnet links and .torrent files with Mister Download Manager	فتح روابط مغناطيسية وملفات .torrent باستخدام Mister Download Manager
+	Open magnet links and .torrent files with tnctr download manager	فتح روابط مغناطيسية وملفات .torrent باستخدام tnctr download manager
 #. text in the tray icon's menu
-	Open Mister Download Manager	فتح Mister Download Manager
+	Open tnctr download manager	فتح tnctr download manager
 #. text in extension.rs
 #. step 2 of turning on the Safari extension; Cmd is the Command key
 #, machine
@@ -2373,7 +2373,7 @@
 #. text in remote.rs
 #. remote control page (on a phone): title of the pairing screen
 #, machine
-	Pair with Mister Download Manager	إقران مع Mister Download Manager
+	Pair with tnctr download manager	إقران مع tnctr download manager
 #. text in the Options window
 #. column title: when the device was paired
 #, machine
@@ -2742,7 +2742,7 @@
 #. what a keyboard shortcut does in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 	Select or unselect the download with the dotted outline	تحديد أو إلغاء تحديد التنزيل ذي الإطار المنقط
 #. group box title in the Options window
-	Select sounds for Mister Download Manager events	تحديد الأصوات لأحداث Mister Download Manager
+	Select sounds for tnctr download manager events	تحديد الأصوات لأحداث tnctr download manager
 #. what a keyboard shortcut does in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 	Select the downloads in the box	تحديد التنزيلات في المربع
 #. what a keyboard shortcut does in the Help menu's windows (About, updates, shortcuts, Tell a friend)
@@ -2981,7 +2981,7 @@
 #. text in the Scheduler window; checkbox in the Scheduler window
 	Start download at	بدء التنزيل في
 #. checkbox in the Scheduler window
-	Start download on Mister Download Manager startup	بدء التنزيل عند بدء تشغيل Mister Download Manager
+	Start download on tnctr download manager startup	بدء التنزيل عند بدء تشغيل tnctr download manager
 #. checkbox in the Options window
 	Start downloading immediately while displaying "Download File Info" dialog	بدء التنزيل فورا أثناء عرض مربع حوار "معلومات ملف التنزيل"
 #. text in the tray icon's menu
@@ -3008,7 +3008,7 @@
 #. the same tooltip where no notification area (system tray) shows MDM's icon (some Linux desktops): its window starts minimized instead
 	Started with the computer, it starts minimized: no notification area shows its icon here	عند بدء التشغيل مع الكمبيوتر، يبدأ مصغرا: لا توجد منطقة إشعارات تعرض أيقونته هنا
 #. text in the Options window
-#. tooltip of "Launch Mister Download Manager on startup": started with the computer, MDM's window stays hidden, its icon in the notification area (system tray)
+#. tooltip of "Launch tnctr download manager on startup": started with the computer, MDM's window stays hidden, its icon in the notification area (system tray)
 	Started with the computer, it waits in the notification area	عند بدء التشغيل مع الكمبيوتر، ينتظر في منطقة الإشعارات
 #. message or event log entry in the main window
 #. {version} = a version number; {format} = a video format code (keep the braces as they are)
@@ -3174,7 +3174,7 @@
 	the browser's proxy (a VPN or proxy extension) asks for a login only that extension has: use the VPN's own app, or choose its network adapter in Options → Proxy / Socks	وكيل المستعرض (VPN أو ملحق وكيل) يطلب تسجيل دخول لا يملكه سوى هذا الملحق: استخدم تطبيق VPN الخاص به، أو اختر محول الشبكة الخاص به في الخيارات ← الوكيل/Socks
 #. text in extension.rs
 #. a check of Test browser integration: the browsers find MDM's helper program
-	The browsers can find Mister Download Manager	يمكن للمستعرضات العثور على Mister Download Manager
+	The browsers can find tnctr download manager	يمكن للمستعرضات العثور على tnctr download manager
 #. text in the Options window
 #. Options → Remote → Status: the settings were changed; they apply on OK
 #, machine
@@ -3193,7 +3193,7 @@
 	The computer could not be turned off: {error}	تعذر إيقاف تشغيل الكمبيوتر: {error}
 #. text in the Scheduler window
 #. tooltip on the Scheduler's "Wake the computer to run this queue"
-	The computer is woken a minute before the start time and kept awake while the queue runs. Mister Download Manager has to be running (it can wait in the notification area).	يتم إيقاظ الكمبيوتر قبل دقيقة واحدة من وقت البدء ويظل مستيقظا أثناء تشغيل قائمة الانتظار. يجب أن يكون Mister Download Manager قيد التشغيل (يمكنه الانتظار في منطقة الإشعارات).
+	The computer is woken a minute before the start time and kept awake while the queue runs. tnctr download manager has to be running (it can wait in the notification area).	يتم إيقاظ الكمبيوتر قبل دقيقة واحدة من وقت البدء ويظل مستيقظا أثناء تشغيل قائمة الانتظار. يجب أن يكون tnctr download manager قيد التشغيل (يمكنه الانتظار في منطقة الإشعارات).
 #. text in the Scheduler window
 #. the Scheduler, under "Wake the computer to run this queue": when it will happen; {date} = e.g. 06/11/2026, {time} = e.g. 22:59:00
 #. {time} = a time of day (keep the braces as they are)
@@ -3320,7 +3320,7 @@
 	the secure connection failed	فشل الاتصال الآمن
 #. text in a dialog box
 #. \\n starts a new line: break lines where they fit the translation
-	The selected download is not complete. Are you sure you want to delete\nit from Mister Download Manager list of downloads?	التنزيل المحدد غير مكتمل. هل أنت متأكد من حذفه\nمن قائمة تنزيلات Mister Download Manager؟
+	The selected download is not complete. Are you sure you want to delete\nit from tnctr download manager list of downloads?	التنزيل المحدد غير مكتمل. هل أنت متأكد من حذفه\nمن قائمة تنزيلات tnctr download manager؟
 #. text in errors.rs
 	the server answered {status}	أجاب الخادم {status}
 #. text in errors.rs
@@ -3595,7 +3595,7 @@
 #. text in extension.rs
 #. step 8 of turning on the Safari extension
 #, machine
-	Turn on "Mister Download Manager" and allow it on all websites.	شغل «Mister Download Manager» واسمح به على جميع المواقع الإلكترونية.
+	Turn on "tnctr download manager" and allow it on all websites.	شغل «tnctr download manager» واسمح به على جميع المواقع الإلكترونية.
 #. text in extension.rs
 #. step 4 of turning on the Safari extension; the quoted switch name is what Safari's settings show in this language: use Apple's own words for it, or keep the English name when unsure
 #, machine
@@ -3909,7 +3909,7 @@
 	Yes, download them (recommended)	نعم، ابدأ تنزيلهما (موصى به)
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {version} = a version number (keep the braces as they are)
-	You have the latest version of Mister Download Manager ({version}).	لديك أحدث إصدار من Mister Download Manager ({version}).
+	You have the latest version of tnctr download manager ({version}).	لديك أحدث إصدار من tnctr download manager ({version}).
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. Check for updates, under the new version's line, when MDM was installed by the Linux system's package manager (pacman, ...), which MDM can't update itself
 #. {version} = a version number (keep the braces as they are)
@@ -4202,15 +4202,15 @@ column	Time left	الوقت المتبقي
 #. column title in the download list in the download list
 column	Transfer rate	معدل النقل
 #. text in the browser extension
-#. choice under Send downloads to: an MDM running on another computer of the network, such as a home server; keep the name Mister Download Manager as it is
+#. choice under Send downloads to: an MDM running on another computer of the network, such as a home server; keep the name tnctr download manager as it is
 #, machine
-extension	Another Mister Download Manager (a server)	Mister Download Manager آخر (خادم)
+extension	Another tnctr download manager (a server)	tnctr download manager آخر (خادم)
 #. text in the browser extension
 #. the name this browser gets in the other MDM's list of paired devices
 #, machine
 extension	Browser extension	ملحق المتصفح
 #. text in the browser extension
-#. menu command of the download button over a video: opens its settings in Mister Download Manager
+#. menu command of the download button over a video: opens its settings in tnctr download manager
 #. the trailing ... means it is still going on: keep it
 extension	Button settings...	إعدادات الزر...
 #. text in the browser extension
@@ -4218,27 +4218,27 @@ extension	Button settings...	إعدادات الزر...
 #, machine
 extension	Can't tell which video this is: open its own page and try there	تعذّر تحديد هذا الفيديو: افتح صفحته الخاصة وحاول من هناك
 #. text in the browser extension
-#. the toolbar button's status when the browser reaches the app; keep the name Mister Download Manager as it is
-extension	Connected to Mister Download Manager	متصل بـ Mister Download Manager
+#. the toolbar button's status when the browser reaches the app; keep the name tnctr download manager as it is
+extension	Connected to tnctr download manager	متصل بـ tnctr download manager
 #. text in the browser extension
-#. the toolbar button's status when the browser reaches the app, with the app's version number; keep the name Mister Download Manager as it is
+#. the toolbar button's status when the browser reaches the app, with the app's version number; keep the name tnctr download manager as it is
 #. {version} = a version number (keep the braces as they are)
-extension	Connected to Mister Download Manager {version}	متصل بـ Mister Download Manager {version}
+extension	Connected to tnctr download manager {version}	متصل بـ tnctr download manager {version}
 #. text in the browser extension
 #. button beside a video, sound or stream in the toolbar button's popup: download it with the app; verb; short
 extension	Download	تنزيل
 #. text in the browser extension
-#. command in the browser's right-click menu on a page: download the links of the whole page; keep the name Mister Download Manager as it is
-extension	Download all links with Mister Download Manager	تنزيل جميع الروابط باستخدام Mister Download Manager
+#. command in the browser's right-click menu on a page: download the links of the whole page; keep the name tnctr download manager as it is
+extension	Download all links with tnctr download manager	تنزيل جميع الروابط باستخدام tnctr download manager
 #. text in the browser extension
-#. command in the browser's right-click menu on selected text: download the links in the selection; keep the name Mister Download Manager as it is
-extension	Download selected links with Mister Download Manager	تنزيل الروابط المحددة باستخدام Mister Download Manager
+#. command in the browser's right-click menu on selected text: download the links in the selection; keep the name tnctr download manager as it is
+extension	Download selected links with tnctr download manager	تنزيل الروابط المحددة باستخدام tnctr download manager
 #. text in the browser extension
 #. the button over a video on a web page that downloads it; verb; short (it sits on the video)
 extension	Download video	تنزيل الفيديو
 #. text in the browser extension
-#. command in the browser's right-click menu on a link, picture, video or sound; keep the name Mister Download Manager as it is
-extension	Download with Mister Download Manager	تنزيل باستخدام Mister Download Manager
+#. command in the browser's right-click menu on a link, picture, video or sound; keep the name tnctr download manager as it is
+extension	Download with tnctr download manager	تنزيل باستخدام tnctr download manager
 #. text in the browser extension
 #. shown in the toolbar button's popup after the site was excluded
 #. {site} = a web site's name such as "example.com" (keep the braces as they are)
@@ -4255,8 +4255,8 @@ extension	Drag to move it along the video's edge	اسحب لتحريكه على 
 #, machine
 extension	Enter its https:// address.	أدخل عنوان https:// الخاص به.
 #. text in the browser extension
-#. the extension's description in the browser's list of extensions; keep the name Mister Download Manager as it is
-extension	Hands downloads from the browser to Mister Download Manager.	يسلم التنزيلات من المستعرض إلى Mister Download Manager.
+#. the extension's description in the browser's list of extensions; keep the name tnctr download manager as it is
+extension	Hands downloads from the browser to tnctr download manager.	يسلم التنزيلات من المستعرض إلى tnctr download manager.
 #. text in the browser extension
 #. link in the toolbar button's popup to the help page
 extension	Help	تعليمات
@@ -4305,27 +4305,27 @@ extension	Live	مباشر
 #. heading in the toolbar button's popup over the list of the videos, sounds and streams the current web page has loaded
 extension	Media on this page	الوسائط في هذه الصفحة
 #. text in the browser extension
-#. the extension's name in the browser's list of extensions and on its toolbar button; keep the name Mister Download Manager as it is
-extension	Mister Download Manager	Mister Download Manager
+#. the extension's name in the browser's list of extensions and on its toolbar button; keep the name tnctr download manager as it is
+extension	tnctr download manager	tnctr download manager
 #. text in the browser extension
-#. status when the app was started for a download but didn't answer in time; keep the name Mister Download Manager as it is
-extension	Mister Download Manager didn't start in time	لم يبدأ Mister Download Manager في الوقت المحدد
+#. status when the app was started for a download but didn't answer in time; keep the name tnctr download manager as it is
+extension	tnctr download manager didn't start in time	لم يبدأ tnctr download manager في الوقت المحدد
 #. text in the browser extension
-#. status when the app refuses this copy of the extension (another copy is installed, or it came from another store); keep the name Mister Download Manager as it is
-extension	Mister Download Manager doesn't accept this copy of the extension	لا يقبل Mister Download Manager هذه النسخة من الملحق
+#. status when the app refuses this copy of the extension (another copy is installed, or it came from another store); keep the name tnctr download manager as it is
+extension	tnctr download manager doesn't accept this copy of the extension	لا يقبل tnctr download manager هذه النسخة من الملحق
 #. text in the browser extension
-#. shown briefly on the download button when the app could not be reached; keep the name Mister Download Manager as it is
-extension	Mister Download Manager isn't installed or didn't start	لم يتم تثبيت Mister Download Manager أو لم يبدأ
+#. shown briefly on the download button when the app could not be reached; keep the name tnctr download manager as it is
+extension	tnctr download manager isn't installed or didn't start	لم يتم تثبيت tnctr download manager أو لم يبدأ
 #. text in the browser extension
-#. status when the browser can't find the app's connection; keep the name Mister Download Manager as it is
-extension	Mister Download Manager isn't installed, or its browser integration isn't set up	لم يتم تثبيت Mister Download Manager، أو لم يتم إعداد الربط بالمستعرض الخاص به
+#. status when the browser can't find the app's connection; keep the name tnctr download manager as it is
+extension	tnctr download manager isn't installed, or its browser integration isn't set up	لم يتم تثبيت tnctr download manager، أو لم يتم إعداد الربط بالمستعرض الخاص به
 #. text in the browser extension
-#. tooltip of the switch Send downloads through this browser's proxy or VPN extension; keep the name Mister Download Manager as it is
-extension	Mister Download Manager then downloads through the same proxy as this browser. The browser asks you once to allow it; turning this off takes that back.	يجري Mister Download Manager التنزيل بعد ذلك عبر الوكيل نفسه الذي يستخدمه هذا المستعرض. يطلب منك المستعرض مرة واحدة السماح بذلك؛ وإيقاف هذا يلغي ذلك.
+#. tooltip of the switch Send downloads through this browser's proxy or VPN extension; keep the name tnctr download manager as it is
+extension	tnctr download manager then downloads through the same proxy as this browser. The browser asks you once to allow it; turning this off takes that back.	يجري tnctr download manager التنزيل بعد ذلك عبر الوكيل نفسه الذي يستخدمه هذا المستعرض. يطلب منك المستعرض مرة واحدة السماح بذلك؛ وإيقاف هذا يلغي ذلك.
 #. text in the browser extension
-#. tooltip of the switch Send downloads through this browser's proxy or VPN extension in Chrome, Edge and the other Chromium browsers (they ask for no permission at the switch); keep the name Mister Download Manager as it is
+#. tooltip of the switch Send downloads through this browser's proxy or VPN extension in Chrome, Edge and the other Chromium browsers (they ask for no permission at the switch); keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager then downloads through the same proxy as this browser. While this is off, the extension doesn't read the browser's proxy.	يجري Mister Download Manager التنزيل بعد ذلك عبر الوكيل نفسه الذي يستخدمه هذا المستعرض. عندما يكون هذا الخيار متوقفا، لا يقرأ الملحق وكيل المستعرض.
+extension	tnctr download manager then downloads through the same proxy as this browser. While this is off, the extension doesn't read the browser's proxy.	يجري tnctr download manager التنزيل بعد ذلك عبر الوكيل نفسه الذي يستخدمه هذا المستعرض. عندما يكون هذا الخيار متوقفا، لا يقرأ الملحق وكيل المستعرض.
 #. text in the browser extension
 #. the small arrow next to the Download video button that opens its menu (read aloud by screen readers)
 extension	More options	المزيد من الخيارات
@@ -4353,8 +4353,8 @@ extension	Open it	افتحه
 #, machine
 extension	Open its address once and accept its certificate, then enter a code from its Options, Remote, Pair a device (or misterdownloadmanager-cli pair).	افتح عنوانه مرة واحدة واقبل شهادته، ثم أدخل رمزا من خياراته، عن بعد، إقران جهاز (أو misterdownloadmanager-cli pair).
 #. text in the browser extension
-#. button in the toolbar button's popup; keep the name Mister Download Manager as it is
-extension	Open Mister Download Manager	فتح Mister Download Manager
+#. button in the toolbar button's popup; keep the name tnctr download manager as it is
+extension	Open tnctr download manager	فتح tnctr download manager
 #. text in the browser extension
 #. button in the toolbar button's popup: open the app's Options
 #. the trailing ... means it is still going on: keep it
@@ -4384,8 +4384,8 @@ extension	Send downloads through this browser's proxy or VPN extension	إرسا�
 #, machine
 extension	Send downloads to	إرسال التنزيلات إلى
 #. text in the browser extension
-#. shown briefly on the download button after it was clicked; keep the name Mister Download Manager as it is
-extension	Sent to Mister Download Manager	تم الإرسال إلى Mister Download Manager
+#. shown briefly on the download button after it was clicked; keep the name tnctr download manager as it is
+extension	Sent to tnctr download manager	تم الإرسال إلى tnctr download manager
 #. text in the browser extension
 #. link at the foot of the toolbar button's popup to the creator's GitHub Sponsors page (MDM is free; this is an optional donation)
 extension	Support MDM	ادعم MDM
@@ -4397,8 +4397,8 @@ extension	Take downloads from this browser	تلقي التنزيلات من هذ
 #, machine
 extension	The Chrome Web Store's rules keep this copy of the add-on away from this site's videos. Help says what you can do.	تُبقي قواعد سوق Chrome الإلكتروني هذه النسخة من الإضافة بعيدة عن مقاطع هذا الموقع. يوضّح قسم «تعليمات» ما يمكنك فعله.
 #. text in the browser extension
-#. status when the connection to the app broke off (often security software blocking it); keep the name Mister Download Manager as it is
-extension	The connection to Mister Download Manager failed	فشل الاتصال بـ Mister Download Manager
+#. status when the connection to the app broke off (often security software blocking it); keep the name tnctr download manager as it is
+extension	The connection to tnctr download manager failed	فشل الاتصال بـ tnctr download manager
 #. text in the browser extension
 #. shown briefly on the download button over a video when the app's settings keep the button off on this web site
 extension	The download button is off on this site	زر التنزيل معطل في هذا الموقع
@@ -4415,7 +4415,7 @@ extension	The last download was left to the browser.	تم ترك آخر تنزي
 #, machine
 extension	This browser isn't ticked in Options → General.	لم يتم تحديد هذا المتصفح في خيارات ← عام.
 #. text in the browser extension
-#. choice under Send downloads to: the Mister Download Manager on this computer
+#. choice under Send downloads to: the tnctr download manager on this computer
 #, machine
 extension	This computer	هذا الكمبيوتر
 #. text in the browser extension
@@ -4426,8 +4426,8 @@ extension	This download's details were too large to hand over	كانت تفاص�
 #, machine
 extension	This page's player streams its video in pieces, so there's no file to list. Point at the video and use its Download video button.	يبثّ مشغّل هذه الصفحة الفيديو على أجزاء، فلا يوجد ملف لعرضه هنا. أشِر إلى الفيديو واستخدم زر «تنزيل الفيديو» عليه.
 #. text in the browser extension
-#. status when the app is older than the extension; keep the name Mister Download Manager as it is
-extension	Update Mister Download Manager to use everything this extension offers	قم بتحديث Mister Download Manager لاستخدام كل ما يوفره هذا الملحق
+#. status when the app is older than the extension; keep the name tnctr download manager as it is
+extension	Update tnctr download manager to use everything this extension offers	قم بتحديث tnctr download manager لاستخدام كل ما يوفره هذا الملحق
 #. text in the browser extension
 #. why a download stayed with the browser: the app's setting 'Use advanced browser integration' is off; keep the setting's name as the app shows it
 #, machine
@@ -4519,7 +4519,7 @@ key	Type a name	اكتب اسما
 key	Up / Down	لأعلى/لأسفل
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
-menu	&About Mister Download Manager	&حول Mister Download Manager
+menu	&About tnctr download manager	&حول tnctr download manager
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 menu	&Add new download	&إضافة تنزيل جديد
@@ -4790,7 +4790,7 @@ menu	Metal didn't start here: OpenGL draws	لم يبدأ Metal هنا: الرس�
 menu	Metro	مترو
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
-menu	Mister Download Manager &Home Page	الصفحة ال&رئيسية لـ Mister Download Manager
+menu	tnctr download manager &Home Page	الصفحة ال&رئيسية لـ tnctr download manager
 #. menu command in the main window
 menu	Move/Rename (Ctrl-M)	نقل/إعادة تسمية (Ctrl+M)
 #. menu command in the main window
@@ -4876,7 +4876,7 @@ menu	Select &all	تحديد ال&كل
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 menu	Show &drop target	إظهار هدف الإ&فلات
 #. menu command in the main window
-menu	Show Mister Download Manager	إظهار Mister Download Manager
+menu	Show tnctr download manager	إظهار tnctr download manager
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 menu	Speed &Limiter	محدد ال&سرعة
