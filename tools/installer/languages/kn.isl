@@ -1,4 +1,4 @@
-﻿; Mister Download Manager's installer in Kannada: tools/installer/languages.py
+﻿; tnctr download manager's installer in Kannada: tools/installer/languages.py
 ; (machine-translated; a native speaker may correct any line).
 
 [LangOptions]
@@ -291,8 +291,8 @@ ShutdownBlockReasonUninstallingApp=%1 ಅನ್ನು ಅನ್‌ಇನ್‌�
 
 [CustomMessages]
 TaskBrowser=ಬ್ರೌಸರ್ ಇಂಟಿಗ್ರೇಶನ್ ಅನ್ನು ಹೊಂದಿಸಿ (&b) (Chrome, Edge, Brave, Firefox)
-TaskTorrents=Mister Download Manager ನೊಂದಿಗೆ .&torrent ಫೈಲ್‌ಗಳು ಮತ್ತು ಮ್ಯಾಗ್ನೆಟ್ ಲಿಂಕ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ
-TaskStartup=Windows ಪ್ರಾರಂಭವಾದಾಗ Mister Download Manager ಅನ್ನು &ಪ್ರಾರಂಭಿಸಿ
+TaskTorrents=tnctr download manager ನೊಂದಿಗೆ .&torrent ಫೈಲ್‌ಗಳು ಮತ್ತು ಮ್ಯಾಗ್ನೆಟ್ ಲಿಂಕ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ
+TaskStartup=Windows ಪ್ರಾರಂಭವಾದಾಗ tnctr download manager ಅನ್ನು &ಪ್ರಾರಂಭಿಸಿ
 TaskGroupOther=ಇತರೆ:
-Launch=Mister Download Manager ಅನ್ನು ಪ್ರಾರಂಭಿಸಿ
+Launch=tnctr download manager ಅನ್ನು ಪ್ರಾರಂಭಿಸಿ
 KeepData=ನಿಮ್ಮ ಡೌನ್‌ಲೋಡ್ ಪಟ್ಟಿ ಮತ್ತು ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಸಹ ಅಳಿಸುವುದೇ?%n%nನಿಮ್ಮ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿದ ಫೈಲ್‌ಗಳನ್ನು ಯಾವುದೇ ರೀತಿಯಲ್ಲಿ ಸ್ಪರ್ಶಿಸಲಾಗುವುದಿಲ್ಲ.

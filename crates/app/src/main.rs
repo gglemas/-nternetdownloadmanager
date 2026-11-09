@@ -71,7 +71,7 @@ mod winui;
 mod xdgicons;
 
 /// The main window's title (dialogs find their owner by it).
-pub const MAIN_TITLE: &str = concat!("Mister Download Manager ", env!("CARGO_PKG_VERSION"));
+pub const MAIN_TITLE: &str = concat!("tnctr download manager ", env!("CARGO_PKG_VERSION"));
 
 /// The app icon (art/, made with ChatGPT; sizes by tools/icon/build_icon.py), for windows that
 /// show one as IDM's do: the 256 px size, which the system scales down for the title bar, the
@@ -322,7 +322,7 @@ fn app() -> eframe::Result {
     if let Some(data) = mdm_ipc::data_dir() {
         mdm_crash::logs::init(&data, mdm_crash::logs::APP);
         tracing::info!(
-            "Mister Download Manager {} ({}) starting",
+            "tnctr download manager {} ({}) starting",
             help::VERSION,
             help::COMMIT
         );

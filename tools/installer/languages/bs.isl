@@ -1,4 +1,4 @@
-﻿; Mister Download Manager's installer in Bosnian: tools/installer/languages.py
+﻿; tnctr download manager's installer in Bosnian: tools/installer/languages.py
 ; (machine-translated; a native speaker may correct any line).
 
 [LangOptions]
@@ -291,8 +291,8 @@ ShutdownBlockReasonUninstallingApp=Deinstaliranje %1.
 
 [CustomMessages]
 TaskBrowser=Postavi integraciju &preglednika (Chrome, Edge, Brave, Firefox)
-TaskTorrents=Otvorite .&torrent datoteke i magnet veze pomoću Mister Download Manager
-TaskStartup=Pokrenite Mister Download Manager kada se pokrene &Windows
+TaskTorrents=Otvorite .&torrent datoteke i magnet veze pomoću tnctr download manager
+TaskStartup=Pokrenite tnctr download manager kada se pokrene &Windows
 TaskGroupOther=Ostalo:
-Launch=Pokrenite Mister Download Manager
+Launch=Pokrenite tnctr download manager
 KeepData=Izbrisati i listu preuzimanja i postavke?%n%nPreuzete datoteke se ne diraju u svakom slučaju.

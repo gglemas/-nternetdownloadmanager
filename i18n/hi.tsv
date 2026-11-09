@@ -1,4 +1,4 @@
-# Mister Download Manager in Hindi (हिन्दी): tools/i18n/translate.py
+# tnctr download manager in Hindi (हिन्दी): tools/i18n/translate.py
 # writes the rows marked '#, machine'; a native speaker deletes that line after checking.
 # context	source	translation (craft-i18n format, rows as in en.tsv)
 @id	language.name	हिन्दी
@@ -11,7 +11,7 @@
 #. never shown for a single download
 #. {n} = a number (keep the braces as they are)
 #, machine
-@plural	Are you sure you want to delete {n} download from Mister Download Manager list of downloads?|Are you sure you want to delete these {n} downloads from Mister Download Manager list of downloads?	क्या आप Mister Download Manager की डाउनलोड सूची से {n} डाउनलोड हटाना चाहते हैं?|क्या आप Mister Download Manager की डाउनलोड सूची से ये {n} डाउनलोड हटाना चाहते हैं?
+@plural	Are you sure you want to delete {n} download from tnctr download manager list of downloads?|Are you sure you want to delete these {n} downloads from tnctr download manager list of downloads?	क्या आप tnctr download manager की डाउनलोड सूची से {n} डाउनलोड हटाना चाहते हैं?|क्या आप tnctr download manager की डाउनलोड सूची से ये {n} डाउनलोड हटाना चाहते हैं?
 #. count in the Add torrent window
 #. while a magnet link's file list is fetched; {n} = peers that answered
 #. {n} = a number (keep the braces as they are)
@@ -226,7 +226,7 @@
 	a volume of it is missing	इसका एक वॉल्यूम गुम है
 #. window title in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	About Mister Download Manager	Mister Download Manager के बारे में
+	About tnctr download manager	tnctr download manager के बारे में
 #. text in whereis.rs
 #. a download's server's round trip: {ms} a number of milliseconds, {reach} near, medium or far
 #, machine
@@ -280,7 +280,7 @@
 #. window title in extension.rs
 #. title of the window that offers the browser extension
 #, machine
-	Add Mister Download Manager to your browser	Mister Download Manager को अपने ब्राउज़र में जोड़ें
+	Add tnctr download manager to your browser	tnctr download manager को अपने ब्राउज़र में जोड़ें
 #. message or event log entry in the main window; text in the tray icon's menu
 #. link in the empty download list: opens Add URL
 #, machine
@@ -447,7 +447,7 @@
 	Always into a folder named after it	हमेशा इसके नाम के फ़ोल्डर में
 #. checkbox in a dialog box
 #, machine
-	Always turn on Speed Limiter on Mister Download Manager startup	Mister Download Manager स्टार्टअप पर हमेशा स्पीड लिमिटर चालू करें
+	Always turn on Speed Limiter on tnctr download manager startup	tnctr download manager स्टार्टअप पर हमेशा स्पीड लिमिटर चालू करें
 #. text in regional.rs; text in the Scheduler window
 #. before noon, after a time of day (12-hour clock). Its pair is "PM": write both the same way (this language's own short marks, or both kept as AM and PM)
 #, machine
@@ -513,7 +513,7 @@
 #. text in a dialog box
 #. {name} = a file name (keep the braces as they are)
 #, machine
-	Are you sure you want to delete "{name}" from Mister Download Manager list of downloads?	क्या आप Mister Download Manager की डाउनलोड सूची से "{name}" हटाना चाहते हैं?
+	Are you sure you want to delete "{name}" from tnctr download manager list of downloads?	क्या आप tnctr download manager की डाउनलोड सूची से "{name}" हटाना चाहते हैं?
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -682,7 +682,7 @@
 	Browse...	ब्राउज़ करें...
 #. text in extension.rs
 #, machine
-	Browser integration isn't set up on this computer, so no browser can reach Mister Download Manager yet.	इस कंप्यूटर पर ब्राउज़र एकीकरण सेट अप नहीं है, इसलिए कोई भी ब्राउज़र अभी तक Mister Download Manager तक नहीं पहुँच सकता है।
+	Browser integration isn't set up on this computer, so no browser can reach tnctr download manager yet.	इस कंप्यूटर पर ब्राउज़र एकीकरण सेट अप नहीं है, इसलिए कोई भी ब्राउज़र अभी तक tnctr download manager तक नहीं पहुँच सकता है।
 #. page title in the Options window
 #, machine
 	Browser/System Integration	ब्राउज़र/सिस्टम एकीकरण
@@ -874,7 +874,7 @@
 	Choose a language	कोई भाषा चुनें
 #. text in langpick.rs
 #, machine
-	Choose the language Mister Download Manager shows its windows in:	Mister Download Manager अपनी विंडोज़ जिस भाषा में दिखाता है, उसे चुनें:
+	Choose the language tnctr download manager shows its windows in:	tnctr download manager अपनी विंडोज़ जिस भाषा में दिखाता है, उसे चुनें:
 #. text in the Options window
 #. Options → Sites Logins → Cookies for video sites: the title of the window, and the tooltip of the button, that pick a browser profile's folder
 #, machine
@@ -1493,7 +1493,7 @@
 	Exit	बाहर निकलें
 #. checkbox in a download's progress window; checkbox in the Scheduler window
 #, machine
-	Exit Mister Download Manager when done	पूरा होने पर Mister Download Manager से बाहर निकलें
+	Exit tnctr download manager when done	पूरा होने पर tnctr download manager से बाहर निकलें
 #. text in the Checksum window
 #, machine
 	Expected checksum (MD5, SHA-1, SHA-256, SHA-512 or CRC32):	अपेक्षित चेकसम (MD5, SHA-1, SHA-256, SHA-512 या CRC32):
@@ -1924,7 +1924,7 @@
 	Hide web pages	वेब पेज छिपाएँ
 #. text in the Options window
 #, machine
-	Hold Alt while clicking a link to let the browser download it instead of Mister Download Manager.	Mister Download Manager के बजाय ब्राउज़र को डाउनलोड करने देने के लिए किसी लिंक पर क्लिक करते समय Alt दबाए रखें।
+	Hold Alt while clicking a link to let the browser download it instead of tnctr download manager.	tnctr download manager के बजाय ब्राउज़र को डाउनलोड करने देने के लिए किसी लिंक पर क्लिक करते समय Alt दबाए रखें।
 #. link (opens a web page) in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Home page	मुखपृष्ठ
@@ -1960,7 +1960,7 @@
 	Hungary	हंगरी
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	I download with Mister Download Manager: fast, free, and it looks like the download manager you already know. {link}	मैं Mister Download Manager से डाउनलोड करता हूँ: तेज़, मुफ़्त, और यह उस डाउनलोड मैनेजर जैसा दिखता है जिसे आप पहले से जानते हैं। {link}
+	I download with tnctr download manager: fast, free, and it looks like the download manager you already know. {link}	मैं tnctr download manager से डाउनलोड करता हूँ: तेज़, मुफ़्त, और यह उस डाउनलोड मैनेजर जैसा दिखता है जिसे आप पहले से जानते हैं। {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2231,7 +2231,7 @@
 	Latvia	लातविया
 #. text in the Options window
 #, machine
-	Launch Mister Download Manager on startup	स्टार्टअप पर Mister Download Manager लॉन्च करें
+	Launch tnctr download manager on startup	स्टार्टअप पर tnctr download manager लॉन्च करें
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2518,54 +2518,54 @@
 	Missing	शेष
 #. message or event log entry in the main window; window title in a dialog box; text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	Mister Download Manager	Mister Download Manager
+	tnctr download manager	tnctr download manager
 #. text in unix.rs
 #. Linux, at start, on the terminal and in a message box: a library the window needs isn't installed; {libraries} = its file names (libxkbcommon-x11.so.0…), left as they are
 #, machine
-	Mister Download Manager can't open its window: this system lacks {libraries}.	Mister Download Manager अपनी विंडो नहीं खोल सकता: इस सिस्टम में {libraries} इंस्टॉल नहीं हैं।
+	tnctr download manager can't open its window: this system lacks {libraries}.	tnctr download manager अपनी विंडो नहीं खोल सकता: इस सिस्टम में {libraries} इंस्टॉल नहीं हैं।
 #. text in crashui.rs
 #. crash report window heading: MDM crashed and is gone
 #, machine
-	Mister Download Manager closed unexpectedly	Mister Download Manager अप्रत्याशित रूप से बंद हो गया
+	tnctr download manager closed unexpectedly	tnctr download manager अप्रत्याशित रूप से बंद हो गया
 #. window title in the Options window
 #, machine
-	Mister Download Manager Configuration	Mister Download Manager कॉन्फ़िगरेशन
+	tnctr download manager Configuration	tnctr download manager कॉन्फ़िगरेशन
 #. text in crashui.rs
 #, machine
-	Mister Download Manager crash report	Mister Download Manager क्रैश रिपोर्ट
+	tnctr download manager crash report	tnctr download manager क्रैश रिपोर्ट
 #. text in crashui.rs
 #. crash report window heading: an internal error, MDM still running
 #, machine
-	Mister Download Manager hit an internal error	Mister Download Manager में एक आंतरिक त्रुटि हुई
+	tnctr download manager hit an internal error	tnctr download manager में एक आंतरिक त्रुटि हुई
 #. text in wake.rs
 #. why the computer isn't going to sleep, in the system's list of programs that keep it awake; {queue} = the queue's name
 #. {queue} = a queue name such as "Main queue" (keep the braces as they are)
 #, machine
-	Mister Download Manager is running the queue "{queue}"	Mister Download Manager "{queue}" कतार चला रहा है
+	tnctr download manager is running the queue "{queue}"	tnctr download manager "{queue}" कतार चला रहा है
 #. text in crashui.rs
 #. crash report window heading: MDM's window doesn't answer (frozen)
 #, machine
-	Mister Download Manager stopped responding	Mister Download Manager ने प्रतिक्रिया देना बंद कर दिया
+	tnctr download manager stopped responding	tnctr download manager ने प्रतिक्रिया देना बंद कर दिया
 #. text in crashui.rs
 #, machine
-	Mister Download Manager stopped responding for a while	Mister Download Manager ने कुछ समय के लिए प्रतिक्रिया देना बंद कर दिया
+	tnctr download manager stopped responding for a while	tnctr download manager ने कुछ समय के लिए प्रतिक्रिया देना बंद कर दिया
 #. text in the Options window
 #. \\n starts a new line: break lines where they fit the translation
 #, machine
-	Mister Download Manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.	Mister Download Manager हर कनेक्शन को सीधे अंतिम फ़ाइल में लिखता है\n(उसके बगल में एक स्पार्स पार्ट फ़ाइल), इसलिए किसी अस्थायी निर्देशिका और किसी\nअसेंबलिंग चरण की आवश्यकता नहीं होती है।
+	tnctr download manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.	tnctr download manager हर कनेक्शन को सीधे अंतिम फ़ाइल में लिखता है\n(उसके बगल में एक स्पार्स पार्ट फ़ाइल), इसलिए किसी अस्थायी निर्देशिका और किसी\nअसेंबलिंग चरण की आवश्यकता नहीं होती है।
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	Mister Download Manager {version} is available (released {date}).	Mister Download Manager {version} उपलब्ध है ({date} को जारी किया गया)।
+	tnctr download manager {version} is available (released {date}).	tnctr download manager {version} उपलब्ध है ({date} को जारी किया गया)।
 #. text in helpers.rs
 #. Video helpers: {version} = the version of MDM's own copy
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	Mister Download Manager's own copy, version {version}	Mister Download Manager की अपनी कॉपी, संस्करण {version}
+	tnctr download manager's own copy, version {version}	tnctr download manager की अपनी कॉपी, संस्करण {version}
 #. text in unix.rs
 #. Linux, at start, on the terminal: the libraries an X11 window needs aren't installed, so the window opens through Wayland instead, where menus can't be placed under what was clicked; {libraries} = their file names, left as they are
 #, machine
-	Mister Download Manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.	Mister Download Manager की X11 विंडो के लिए {libraries} ज़रूरी हैं, जो इस सिस्टम में इंस्टॉल नहीं हैं: इसके बजाय विंडो Wayland पर खुलती है, जहाँ मेनू अपने शीर्षकों से दूर खुल सकते हैं।
+	tnctr download manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.	tnctr download manager की X11 विंडो के लिए {libraries} ज़रूरी हैं, जो इस सिस्टम में इंस्टॉल नहीं हैं: इसके बजाय विंडो Wayland पर खुलती है, जहाँ मेनू अपने शीर्षकों से दूर खुल सकते हैं।
 #. text in the Scheduler window
 #. Monday, as short as a calendar's column head (two letters in English)
 #, machine
@@ -3070,10 +3070,10 @@
 	Open folder	फ़ोल्डर खोलें
 #. checkbox in the Add torrent window
 #, machine
-	Open magnet links and .torrent files with Mister Download Manager	Mister Download Manager के साथ मैग्नेट लिंक और .torrent फ़ाइलें खोलें
+	Open magnet links and .torrent files with tnctr download manager	tnctr download manager के साथ मैग्नेट लिंक और .torrent फ़ाइलें खोलें
 #. text in the tray icon's menu
 #, machine
-	Open Mister Download Manager	Mister Download Manager खोलें
+	Open tnctr download manager	tnctr download manager खोलें
 #. text in extension.rs
 #. step 2 of turning on the Safari extension; Cmd is the Command key
 #, machine
@@ -3144,7 +3144,7 @@
 #. text in remote.rs
 #. remote control page (on a phone): title of the pairing screen
 #, machine
-	Pair with Mister Download Manager	Mister Download Manager के साथ युग्मित करें
+	Pair with tnctr download manager	tnctr download manager के साथ युग्मित करें
 #. text in the Options window
 #. column title: when the device was paired
 #, machine
@@ -3630,7 +3630,7 @@
 	Select or unselect the download with the dotted outline	बिंदीदार रूपरेखा वाले डाउनलोड को चुनें या अचयनित करें
 #. group box title in the Options window
 #, machine
-	Select sounds for Mister Download Manager events	Mister Download Manager इवेंट के लिए ध्वनियाँ चुनें
+	Select sounds for tnctr download manager events	tnctr download manager इवेंट के लिए ध्वनियाँ चुनें
 #. what a keyboard shortcut does in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Select the downloads in the box	बॉक्स में डाउनलोड चुनें
@@ -3955,7 +3955,7 @@
 	Start download at	डाउनलोड इस पर प्रारंभ करें
 #. checkbox in the Scheduler window
 #, machine
-	Start download on Mister Download Manager startup	Mister Download Manager स्टार्टअप पर डाउनलोड प्रारंभ करें
+	Start download on tnctr download manager startup	tnctr download manager स्टार्टअप पर डाउनलोड प्रारंभ करें
 #. checkbox in the Options window
 #, machine
 	Start downloading immediately while displaying "Download File Info" dialog	"फ़ाइल जानकारी डाउनलोड करें" संवाद प्रदर्शित करते समय तुरंत डाउनलोड करना प्रारंभ करें
@@ -3990,7 +3990,7 @@
 #, machine
 	Started with the computer, it starts minimized: no notification area shows its icon here	कंप्यूटर के साथ शुरू होने पर, यह छोटा होकर शुरू होता है: यहाँ कोई सूचना क्षेत्र इसका आइकन नहीं दिखाता है
 #. text in the Options window
-#. tooltip of "Launch Mister Download Manager on startup": started with the computer, MDM's window stays hidden, its icon in the notification area (system tray)
+#. tooltip of "Launch tnctr download manager on startup": started with the computer, MDM's window stays hidden, its icon in the notification area (system tray)
 #, machine
 	Started with the computer, it waits in the notification area	कंप्यूटर के साथ शुरू होने पर, यह सूचना क्षेत्र में प्रतीक्षा करता है
 #. message or event log entry in the main window
@@ -4211,7 +4211,7 @@
 #. text in extension.rs
 #. a check of Test browser integration: the browsers find MDM's helper program
 #, machine
-	The browsers can find Mister Download Manager	ब्राउज़र Mister Download Manager को ढूँढ सकते हैं
+	The browsers can find tnctr download manager	ब्राउज़र tnctr download manager को ढूँढ सकते हैं
 #. text in the Options window
 #. Options → Remote → Status: the settings were changed; they apply on OK
 #, machine
@@ -4235,7 +4235,7 @@
 #. text in the Scheduler window
 #. tooltip on the Scheduler's "Wake the computer to run this queue"
 #, machine
-	The computer is woken a minute before the start time and kept awake while the queue runs. Mister Download Manager has to be running (it can wait in the notification area).	कंप्यूटर को शुरू होने के समय से एक मिनट पहले जगाया जाता है और कतार चलने के दौरान जगाए रखा जाता है। Mister Download Manager को चलना होगा (यह सूचना क्षेत्र में प्रतीक्षा कर सकता है)।
+	The computer is woken a minute before the start time and kept awake while the queue runs. tnctr download manager has to be running (it can wait in the notification area).	कंप्यूटर को शुरू होने के समय से एक मिनट पहले जगाया जाता है और कतार चलने के दौरान जगाए रखा जाता है। tnctr download manager को चलना होगा (यह सूचना क्षेत्र में प्रतीक्षा कर सकता है)।
 #. text in the Scheduler window
 #. the Scheduler, under "Wake the computer to run this queue": when it will happen; {date} = e.g. 06/11/2026, {time} = e.g. 22:59:00
 #. {time} = a time of day (keep the braces as they are)
@@ -4406,7 +4406,7 @@
 #. text in a dialog box
 #. \\n starts a new line: break lines where they fit the translation
 #, machine
-	The selected download is not complete. Are you sure you want to delete\nit from Mister Download Manager list of downloads?	चयनित डाउनलोड पूरा नहीं हुआ है। क्या आप वाकई इसे Mister Download Manager की डाउनलोड सूची से हटाना चाहते हैं?
+	The selected download is not complete. Are you sure you want to delete\nit from tnctr download manager list of downloads?	चयनित डाउनलोड पूरा नहीं हुआ है। क्या आप वाकई इसे tnctr download manager की डाउनलोड सूची से हटाना चाहते हैं?
 #. text in errors.rs
 #, machine
 	the server answered {status}	सर्वर ने {status} का उत्तर दिया
@@ -4765,7 +4765,7 @@
 #. text in extension.rs
 #. step 8 of turning on the Safari extension
 #, machine
-	Turn on "Mister Download Manager" and allow it on all websites.	“Mister Download Manager” को चालू करें और इसे सभी वेबसाइट पर अनुमति दें।
+	Turn on "tnctr download manager" and allow it on all websites.	“tnctr download manager” को चालू करें और इसे सभी वेबसाइट पर अनुमति दें।
 #. text in extension.rs
 #. step 4 of turning on the Safari extension; the quoted switch name is what Safari's settings show in this language: use Apple's own words for it, or keep the English name when unsure
 #, machine
@@ -5178,7 +5178,7 @@
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	You have the latest version of Mister Download Manager ({version}).	आपके पास Mister Download Manager ({version}) का नवीनतम संस्करण है।
+	You have the latest version of tnctr download manager ({version}).	आपके पास tnctr download manager ({version}) का नवीनतम संस्करण है।
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. Check for updates, under the new version's line, when MDM was installed by the Linux system's package manager (pacman, ...), which MDM can't update itself
 #. {version} = a version number (keep the braces as they are)
@@ -5557,15 +5557,15 @@ column	Time left	शेष समय
 #, machine
 column	Transfer rate	स्थानांतरण दर
 #. text in the browser extension
-#. choice under Send downloads to: an MDM running on another computer of the network, such as a home server; keep the name Mister Download Manager as it is
+#. choice under Send downloads to: an MDM running on another computer of the network, such as a home server; keep the name tnctr download manager as it is
 #, machine
-extension	Another Mister Download Manager (a server)	कोई अन्य Mister Download Manager (एक सर्वर)
+extension	Another tnctr download manager (a server)	कोई अन्य tnctr download manager (एक सर्वर)
 #. text in the browser extension
 #. the name this browser gets in the other MDM's list of paired devices
 #, machine
 extension	Browser extension	ब्राउज़र एक्सटेंशन
 #. text in the browser extension
-#. menu command of the download button over a video: opens its settings in Mister Download Manager
+#. menu command of the download button over a video: opens its settings in tnctr download manager
 #. the trailing ... means it is still going on: keep it
 #, machine
 extension	Button settings...	बटन सेटिंग्स...
@@ -5574,34 +5574,34 @@ extension	Button settings...	बटन सेटिंग्स...
 #, machine
 extension	Can't tell which video this is: open its own page and try there	पता नहीं चल पा रहा कि यह कौन-सा वीडियो है: इसका अपना पेज खोलकर वहाँ आज़माएँ
 #. text in the browser extension
-#. the toolbar button's status when the browser reaches the app; keep the name Mister Download Manager as it is
+#. the toolbar button's status when the browser reaches the app; keep the name tnctr download manager as it is
 #, machine
-extension	Connected to Mister Download Manager	Mister Download Manager से कनेक्ट है
+extension	Connected to tnctr download manager	tnctr download manager से कनेक्ट है
 #. text in the browser extension
-#. the toolbar button's status when the browser reaches the app, with the app's version number; keep the name Mister Download Manager as it is
+#. the toolbar button's status when the browser reaches the app, with the app's version number; keep the name tnctr download manager as it is
 #. {version} = a version number (keep the braces as they are)
 #, machine
-extension	Connected to Mister Download Manager {version}	Mister Download Manager {version} से कनेक्ट है
+extension	Connected to tnctr download manager {version}	tnctr download manager {version} से कनेक्ट है
 #. text in the browser extension
 #. button beside a video, sound or stream in the toolbar button's popup: download it with the app; verb; short
 #, machine
 extension	Download	डाउनलोड करें
 #. text in the browser extension
-#. command in the browser's right-click menu on a page: download the links of the whole page; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on a page: download the links of the whole page; keep the name tnctr download manager as it is
 #, machine
-extension	Download all links with Mister Download Manager	Mister Download Manager के साथ सभी लिंक डाउनलोड करें
+extension	Download all links with tnctr download manager	tnctr download manager के साथ सभी लिंक डाउनलोड करें
 #. text in the browser extension
-#. command in the browser's right-click menu on selected text: download the links in the selection; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on selected text: download the links in the selection; keep the name tnctr download manager as it is
 #, machine
-extension	Download selected links with Mister Download Manager	Mister Download Manager के साथ चयनित लिंक डाउनलोड करें
+extension	Download selected links with tnctr download manager	tnctr download manager के साथ चयनित लिंक डाउनलोड करें
 #. text in the browser extension
 #. the button over a video on a web page that downloads it; verb; short (it sits on the video)
 #, machine
 extension	Download video	वीडियो डाउनलोड करें
 #. text in the browser extension
-#. command in the browser's right-click menu on a link, picture, video or sound; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on a link, picture, video or sound; keep the name tnctr download manager as it is
 #, machine
-extension	Download with Mister Download Manager	Mister Download Manager से डाउनलोड करें
+extension	Download with tnctr download manager	tnctr download manager से डाउनलोड करें
 #. text in the browser extension
 #. shown in the toolbar button's popup after the site was excluded
 #. {site} = a web site's name such as "example.com" (keep the braces as they are)
@@ -5620,9 +5620,9 @@ extension	Drag to move it along the video's edge	इसे वीडियो �
 #, machine
 extension	Enter its https:// address.	इसका https:// पता दर्ज करें।
 #. text in the browser extension
-#. the extension's description in the browser's list of extensions; keep the name Mister Download Manager as it is
+#. the extension's description in the browser's list of extensions; keep the name tnctr download manager as it is
 #, machine
-extension	Hands downloads from the browser to Mister Download Manager.	ब्राउज़र से Mister Download Manager पर डाउनलोड भेजता है।
+extension	Hands downloads from the browser to tnctr download manager.	ब्राउज़र से tnctr download manager पर डाउनलोड भेजता है।
 #. text in the browser extension
 #. link in the toolbar button's popup to the help page
 #, machine
@@ -5677,33 +5677,33 @@ extension	Live	लाइव
 #, machine
 extension	Media on this page	इस पृष्ठ का मीडिया
 #. text in the browser extension
-#. the extension's name in the browser's list of extensions and on its toolbar button; keep the name Mister Download Manager as it is
+#. the extension's name in the browser's list of extensions and on its toolbar button; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager	Mister Download Manager
+extension	tnctr download manager	tnctr download manager
 #. text in the browser extension
-#. status when the app was started for a download but didn't answer in time; keep the name Mister Download Manager as it is
+#. status when the app was started for a download but didn't answer in time; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager didn't start in time	Mister Download Manager समय पर शुरू नहीं हुआ
+extension	tnctr download manager didn't start in time	tnctr download manager समय पर शुरू नहीं हुआ
 #. text in the browser extension
-#. status when the app refuses this copy of the extension (another copy is installed, or it came from another store); keep the name Mister Download Manager as it is
+#. status when the app refuses this copy of the extension (another copy is installed, or it came from another store); keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager doesn't accept this copy of the extension	Mister Download Manager एक्सटेंशन की इस कॉपी को स्वीकार नहीं करता है
+extension	tnctr download manager doesn't accept this copy of the extension	tnctr download manager एक्सटेंशन की इस कॉपी को स्वीकार नहीं करता है
 #. text in the browser extension
-#. shown briefly on the download button when the app could not be reached; keep the name Mister Download Manager as it is
+#. shown briefly on the download button when the app could not be reached; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager isn't installed or didn't start	Mister Download Manager स्थापित नहीं है या शुरू नहीं हुआ
+extension	tnctr download manager isn't installed or didn't start	tnctr download manager स्थापित नहीं है या शुरू नहीं हुआ
 #. text in the browser extension
-#. status when the browser can't find the app's connection; keep the name Mister Download Manager as it is
+#. status when the browser can't find the app's connection; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager isn't installed, or its browser integration isn't set up	Mister Download Manager स्थापित नहीं है, या इसका ब्राउज़र एकीकरण सेट अप नहीं है
+extension	tnctr download manager isn't installed, or its browser integration isn't set up	tnctr download manager स्थापित नहीं है, या इसका ब्राउज़र एकीकरण सेट अप नहीं है
 #. text in the browser extension
-#. tooltip of the switch Send downloads through this browser's proxy or VPN extension; keep the name Mister Download Manager as it is
+#. tooltip of the switch Send downloads through this browser's proxy or VPN extension; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager then downloads through the same proxy as this browser. The browser asks you once to allow it; turning this off takes that back.	Mister Download Manager तब इसी ब्राउज़र के प्रॉक्सी के ज़रिए डाउनलोड करता है। ब्राउज़र एक बार इसकी अनुमति माँगता है; इसे बंद करने से वह अनुमति वापस ले ली जाती है।
+extension	tnctr download manager then downloads through the same proxy as this browser. The browser asks you once to allow it; turning this off takes that back.	tnctr download manager तब इसी ब्राउज़र के प्रॉक्सी के ज़रिए डाउनलोड करता है। ब्राउज़र एक बार इसकी अनुमति माँगता है; इसे बंद करने से वह अनुमति वापस ले ली जाती है।
 #. text in the browser extension
-#. tooltip of the switch Send downloads through this browser's proxy or VPN extension in Chrome, Edge and the other Chromium browsers (they ask for no permission at the switch); keep the name Mister Download Manager as it is
+#. tooltip of the switch Send downloads through this browser's proxy or VPN extension in Chrome, Edge and the other Chromium browsers (they ask for no permission at the switch); keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager then downloads through the same proxy as this browser. While this is off, the extension doesn't read the browser's proxy.	Mister Download Manager फिर इसी ब्राउज़र के प्रॉक्सी के माध्यम से डाउनलोड करता है। जब यह बंद होता है, तो एक्सटेंशन ब्राउज़र के प्रॉक्सी को नहीं पढ़ता है।
+extension	tnctr download manager then downloads through the same proxy as this browser. While this is off, the extension doesn't read the browser's proxy.	tnctr download manager फिर इसी ब्राउज़र के प्रॉक्सी के माध्यम से डाउनलोड करता है। जब यह बंद होता है, तो एक्सटेंशन ब्राउज़र के प्रॉक्सी को नहीं पढ़ता है।
 #. text in the browser extension
 #. the small arrow next to the Download video button that opens its menu (read aloud by screen readers)
 #, machine
@@ -5735,9 +5735,9 @@ extension	Open it	इसे खोलें
 #, machine
 extension	Open its address once and accept its certificate, then enter a code from its Options, Remote, Pair a device (or misterdownloadmanager-cli pair).	इसका पता एक बार खोलें और इसके प्रमाणपत्र को स्वीकार करें, फिर इसके विकल्प, रिमोट, एक डिवाइस युग्मित करें (या misterdownloadmanager-cli pair) से एक कोड दर्ज करें।
 #. text in the browser extension
-#. button in the toolbar button's popup; keep the name Mister Download Manager as it is
+#. button in the toolbar button's popup; keep the name tnctr download manager as it is
 #, machine
-extension	Open Mister Download Manager	Mister Download Manager खोलें
+extension	Open tnctr download manager	tnctr download manager खोलें
 #. text in the browser extension
 #. button in the toolbar button's popup: open the app's Options
 #. the trailing ... means it is still going on: keep it
@@ -5772,13 +5772,13 @@ extension	Send downloads through this browser's proxy or VPN extension	इस �
 #, machine
 extension	Send downloads to	डाउनलोड यहां भेजें
 #. text in the browser extension
-#. shown briefly on the download button after it was clicked; keep the name Mister Download Manager as it is
+#. shown briefly on the download button after it was clicked; keep the name tnctr download manager as it is
 #, machine
-extension	Sent to Mister Download Manager	Mister Download Manager को भेजा गया
+extension	Sent to tnctr download manager	tnctr download manager को भेजा गया
 #. text in the browser extension
 #. link at the foot of the toolbar button's popup to the creator's GitHub Sponsors page (MDM is free; this is an optional donation)
 #, machine
-extension	Support MDM	MDM का समर्थन करें
+extension	Support tnctr download manager	tnctr download manager का समर्थन करें
 #. text in the browser extension
 #. check box in the toolbar button's popup: on, downloads go to the app; off, the browser keeps them
 #, machine
@@ -5788,9 +5788,9 @@ extension	Take downloads from this browser	इस ब्राउज़र स�
 #, machine
 extension	The Chrome Web Store's rules keep this copy of the add-on away from this site's videos. Help says what you can do.	Chrome Web Store के नियम ऐड-ऑन की इस कॉपी को इस साइट के वीडियो से दूर रखते हैं। आप क्या कर सकते हैं, यह «सहायता» में बताया गया है।
 #. text in the browser extension
-#. status when the connection to the app broke off (often security software blocking it); keep the name Mister Download Manager as it is
+#. status when the connection to the app broke off (often security software blocking it); keep the name tnctr download manager as it is
 #, machine
-extension	The connection to Mister Download Manager failed	Mister Download Manager से कनेक्शन विफल रहा
+extension	The connection to tnctr download manager failed	tnctr download manager से कनेक्शन विफल रहा
 #. text in the browser extension
 #. shown briefly on the download button over a video when the app's settings keep the button off on this web site
 #, machine
@@ -5808,7 +5808,7 @@ extension	The last download was left to the browser.	पिछला डाउ�
 #, machine
 extension	This browser isn't ticked in Options → General.	यह ब्राउज़र विकल्प → सामान्य में टिक नहीं किया गया है।
 #. text in the browser extension
-#. choice under Send downloads to: the Mister Download Manager on this computer
+#. choice under Send downloads to: the tnctr download manager on this computer
 #, machine
 extension	This computer	यह कंप्यूटर
 #. text in the browser extension
@@ -5820,9 +5820,9 @@ extension	This download's details were too large to hand over	इस डाउ�
 #, machine
 extension	This page's player streams its video in pieces, so there's no file to list. Point at the video and use its Download video button.	इस पेज का प्लेयर वीडियो को टुकड़ों में स्ट्रीम करता है, इसलिए सूची में दिखाने के लिए कोई फ़ाइल नहीं है। वीडियो पर पॉइंटर ले जाएँ और उसका «वीडियो डाउनलोड करें» बटन इस्तेमाल करें।
 #. text in the browser extension
-#. status when the app is older than the extension; keep the name Mister Download Manager as it is
+#. status when the app is older than the extension; keep the name tnctr download manager as it is
 #, machine
-extension	Update Mister Download Manager to use everything this extension offers	इस एक्सटेंशन द्वारा प्रदान की जाने वाली सभी चीज़ों का उपयोग करने के लिए Mister Download Manager को अपडेट करें
+extension	Update tnctr download manager to use everything this extension offers	इस एक्सटेंशन द्वारा प्रदान की जाने वाली सभी चीज़ों का उपयोग करने के लिए tnctr download manager को अपडेट करें
 #. text in the browser extension
 #. why a download stayed with the browser: the app's setting 'Use advanced browser integration' is off; keep the setting's name as the app shows it
 #, machine
@@ -5938,7 +5938,7 @@ key	Up / Down	ऊपर / नीचे
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
-menu	&About Mister Download Manager	Mister Download Manager के &बारे में
+menu	&About tnctr download manager	tnctr download manager के &बारे में
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
@@ -6290,7 +6290,7 @@ menu	Metro	मेट्रो
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
-menu	Mister Download Manager &Home Page	Mister Download Manager होम पेज(&H)
+menu	tnctr download manager &Home Page	tnctr download manager होम पेज(&H)
 #. menu command in the main window
 #, machine
 menu	Move/Rename (Ctrl-M)	स्थानांतरित करें/नाम बदलें (Ctrl-M)
@@ -6403,7 +6403,7 @@ menu	Select &all	सभी चुनें(&A)
 menu	Show &drop target	ड्रॉप लक्ष्य दिखाएँ(&d)
 #. menu command in the main window
 #, machine
-menu	Show Mister Download Manager	Mister Download Manager दिखाएँ
+menu	Show tnctr download manager	tnctr download manager दिखाएँ
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine

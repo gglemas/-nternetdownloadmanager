@@ -1,12 +1,12 @@
 {
   "name": {
-    "message": "Mister Download Manager"
+    "message": "tnctr download manager"
   },
   "description": {
-    "message": "Annab allalaadimised brauserist rakendusele Mister Download Manager."
+    "message": "Annab allalaadimised brauserist rakendusele tnctr download manager."
   },
   "menu": {
-    "message": "Laadi alla rakendusega Mister Download Manager"
+    "message": "Laadi alla rakendusega tnctr download manager"
   },
   "video_download": {
     "message": "Laadi video alla"
@@ -30,25 +30,25 @@
     "message": "Nupu sätted..."
   },
   "video_sent": {
-    "message": "Saadetud rakendusse Mister Download Manager"
+    "message": "Saadetud rakendusse tnctr download manager"
   },
   "video_failed": {
-    "message": "Mister Download Manager pole installitud või ei käivitunud"
+    "message": "tnctr download manager pole installitud või ei käivitunud"
   },
   "video_drag": {
     "message": "Lohista video serva mööda, et seda liigutada"
   },
   "menu_selected": {
-    "message": "Laadi valitud lingid alla rakendusega Mister Download Manager"
+    "message": "Laadi valitud lingid alla rakendusega tnctr download manager"
   },
   "menu_all": {
-    "message": "Laadi kõik lingid alla rakendusega Mister Download Manager"
+    "message": "Laadi kõik lingid alla rakendusega tnctr download manager"
   },
   "status_connected": {
-    "message": "Ühendatud rakendusega Mister Download Manager"
+    "message": "Ühendatud rakendusega tnctr download manager"
   },
   "status_connected_version": {
-    "message": "Ühendatud rakendusega Mister Download Manager $version$",
+    "message": "Ühendatud rakendusega tnctr download manager $version$",
     "placeholders": {
       "version": {
         "content": "$1",
@@ -60,22 +60,22 @@
     "message": "Peatatud: allalaadimised jäävad brauserisse"
   },
   "status_not_installed": {
-    "message": "Mister Download Manager pole installitud või selle brauseri integreerimine pole seadistatud"
+    "message": "tnctr download manager pole installitud või selle brauseri integreerimine pole seadistatud"
   },
   "status_forbidden": {
-    "message": "Mister Download Manager ei aktsepteeri seda laienduse koopiat"
+    "message": "tnctr download manager ei aktsepteeri seda laienduse koopiat"
   },
   "status_not_running": {
-    "message": "Mister Download Manager ei käivitunud õigel ajal"
+    "message": "tnctr download manager ei käivitunud õigel ajal"
   },
   "status_host_failed": {
-    "message": "Ühenduse loomine rakendusega Mister Download Manager nurjus"
+    "message": "Ühenduse loomine rakendusega tnctr download manager nurjus"
   },
   "status_too_large": {
     "message": "Selle allalaadimise üksikasjad olid edastamiseks liiga suured"
   },
   "status_update_app": {
-    "message": "Värskendage rakendust Mister Download Manager, et kasutada kõiki laienduse võimalusi"
+    "message": "Värskendage rakendust tnctr download manager, et kasutada kõiki laienduse võimalusi"
   },
   "popup_take": {
     "message": "Suuna allalaadimised sellest brauserist rakendusse"
@@ -84,10 +84,10 @@
     "message": "Suuna allalaadimised selle brauseri puhverserveri või VPN-laienduse kaudu"
   },
   "popup_proxy_title": {
-    "message": "Mister Download Manager laadib seejärel alla sama puhverserveri kaudu, mida see brauser kasutab. Brauser küsib teilt selleks ühe korra luba; selle väljalülitamisel luba tühistatakse."
+    "message": "tnctr download manager laadib seejärel alla sama puhverserveri kaudu, mida see brauser kasutab. Brauser küsib teilt selleks ühe korra luba; selle väljalülitamisel luba tühistatakse."
   },
   "popup_proxy_title_chromium": {
-    "message": "Mister Download Manager laadib seejärel alla sama puhverserveri kaudu, mida see brauser kasutab. Kui see on välja lülitatud, ei loe laiendus brauseri puhverserverit."
+    "message": "tnctr download manager laadib seejärel alla sama puhverserveri kaudu, mida see brauser kasutab. Kui see on välja lülitatud, ei loe laiendus brauseri puhverserverit."
   },
   "popup_exclude_site": {
     "message": "Ära võta enam allalaadimisi saidilt $site$",
@@ -108,7 +108,7 @@
     }
   },
   "popup_open": {
-    "message": "Ava Mister Download Manager"
+    "message": "Ava tnctr download manager"
   },
   "popup_options": {
     "message": "Suvandid..."
@@ -117,7 +117,7 @@
     "message": "Abi"
   },
   "popup_support": {
-    "message": "Toeta MDM-i"
+    "message": "Toeta tnctr download manager-i"
   },
   "popup_fix": {
     "message": "Kuidas seda parandada"
@@ -195,7 +195,7 @@
     "message": "See arvuti"
   },
   "popup_send_remote": {
-    "message": "Muu Mister Download Manager (server)"
+    "message": "Muu tnctr download manager (server)"
   },
   "popup_remote_code": {
     "message": "Sidumiskood"
