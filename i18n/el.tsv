@@ -307,7 +307,6 @@
 #, machine
 	Add them without starting them	Προσθήκη χωρίς εκκίνηση
 #. message or event log entry in the main window; text in the Link grabber window
-#. Link grabber button: add the ticked links to the download queue without starting them (IDM's OK)
 #, machine
 	Add to queue	Προσθήκη στην ουρά
 #. text in a dialog box
@@ -803,7 +802,6 @@
 #, machine
 	Change folder for "{category}" category on last selected	Αλλαγή φακέλου για την κατηγορία «{category}» στην τελευταία επιλεγμένη
 #. text in the Link grabber window
-#. Link grabber button (IDM's): tick every link
 #, machine
 	Check all	Επιλογή όλων
 #. text in rssdlg.rs
@@ -1919,7 +1917,6 @@
 #, machine
 	Hide to the notification area	Απόκρυψη στην περιοχή ειδοποιήσεων
 #. checkbox in the Link grabber window; text in the Link grabber window; checkbox in the Options window
-#. Link grabber check box (IDM's "Hide HTML files"): links to web pages are not shown
 #, machine
 	Hide web pages	Απόκρυψη ιστοσελίδων
 #. text in the Options window
@@ -2332,7 +2329,6 @@
 #, machine
 	Login	Σύνδεση
 #. checkbox in the Options window
-#. Options → Archives → Link grabber check box (IDM's Download all links looks every link up)
 #, machine
 	Look links up when they arrive (name, size, online)	Αναζήτηση συνδέσμων κατά την άφιξή τους (όνομα, μέγεθος, online)
 #. text in the Add torrent window; button in the Download video window
@@ -4842,7 +4838,6 @@
 #, machine
 	Ukraine	Ουκρανία
 #. text in the Link grabber window
-#. Link grabber button (IDM's): untick every link
 #, machine
 	Uncheck all	Κατάργηση επιλογής όλων
 #. item in the Categories tree in the main window; text in remote.rs
@@ -6163,7 +6158,6 @@ menu	C&ustomize URL List...	&Προσαρμογή λίστας URL...
 #, machine
 menu	Check for &updates...	Έλεγχος για &ενημερώσεις...
 #. menu command in the main window
-#. View → Theme: MDM's own look, the default (IDM's layout, Windows 11's controls)
 #, machine
 menu	Classic	Κλασικό
 #. menu command in the main window
@@ -6242,7 +6236,7 @@ menu	Font	Γραμματοσειρά
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
 #, machine
-menu	From &IDM export file...	Από αρχείο εξαγωγής &IDM...
+menu	From &EF2 export file...	Από αρχείο εξαγωγής &EF2...
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
@@ -6442,7 +6436,7 @@ menu	Theme	Θέμα
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
 #, machine
-menu	To &IDM export file...	Σε αρχείο εξαγωγής &IDM...
+menu	To &EF2 export file...	Σε αρχείο εξαγωγής &EF2...
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
