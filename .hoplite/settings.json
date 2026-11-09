@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "ports": {
+    "preview": 3000,
+    "additional": {}
+  },
+  "scripts": {
+    "setup": {
+      "enabled": true,
+      "command": "uv venv --allow-existing target/site-venv && uv pip install --python target/site-venv/bin/python markdown==3.10"
+    },
+    "run": {
+      "enabled": true,
+      "command": "target/site-venv/bin/python tools/website/build.py && target/site-venv/bin/python -m http.server 3000 --bind 0.0.0.0 --directory target/site"
+    }
+  }
+}

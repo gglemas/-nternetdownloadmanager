@@ -53,7 +53,6 @@ BATCH_WORDS = 1400
 KEEP = sorted(set(tr.KEEP + ["macOS", "Linux", "Rust", "YouTube", "Vimeo", "Tonec", "Ahmed Nefzaoui",
                              "Statcounter", "OpenRouter", "Gemini", "Homebrew", "AppImage", "Flatpak",
                              "Chromium", "Vivaldi", "Safari", "MCP", "GPL",
-                             # The other download managers idm-alternative.html compares.
                              "Free Download Manager", "AB Download Manager", "Motrix",
                              "Neat Download Manager", "Prism", "JDownloader 2", "JDownloader",
                              "Xtreme Download Manager", "Gopeed", "DOWNitUP", "PyIDM", "aria2",

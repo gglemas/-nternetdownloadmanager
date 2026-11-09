@@ -307,7 +307,6 @@
 #, machine
 	Add them without starting them	開始せずにそれらを追加する
 #. message or event log entry in the main window; text in the Link grabber window
-#. Link grabber button: add the ticked links to the download queue without starting them (IDM's OK)
 #, machine
 	Add to queue	キューに追加
 #. text in a dialog box
@@ -803,7 +802,6 @@
 #, machine
 	Change folder for "{category}" category on last selected	最後に選択した「{category}」カテゴリのフォルダーを変更する
 #. text in the Link grabber window
-#. Link grabber button (IDM's): tick every link
 #, machine
 	Check all	すべてチェック
 #. text in rssdlg.rs
@@ -1919,7 +1917,6 @@
 #, machine
 	Hide to the notification area	通知領域に隠す
 #. checkbox in the Link grabber window; text in the Link grabber window; checkbox in the Options window
-#. Link grabber check box (IDM's "Hide HTML files"): links to web pages are not shown
 #, machine
 	Hide web pages	Web ページを非表示にする
 #. text in the Options window
@@ -2332,7 +2329,6 @@
 #, machine
 	Login	ログイン
 #. checkbox in the Options window
-#. Options → Archives → Link grabber check box (IDM's Download all links looks every link up)
 #, machine
 	Look links up when they arrive (name, size, online)	リンクの到着時に情報を検索する (名前、サイズ、オンライン)
 #. text in the Add torrent window; button in the Download video window
@@ -4842,7 +4838,6 @@
 #, machine
 	Ukraine	ウクライナ
 #. text in the Link grabber window
-#. Link grabber button (IDM's): untick every link
 #, machine
 	Uncheck all	すべて選択解除
 #. item in the Categories tree in the main window; text in remote.rs
@@ -6163,7 +6158,6 @@ menu	C&ustomize URL List...	URL リストをカスタマイズ(&C)...
 #, machine
 menu	Check for &updates...	更新プログラムの確認(&U)...
 #. menu command in the main window
-#. View → Theme: MDM's own look, the default (IDM's layout, Windows 11's controls)
 #, machine
 menu	Classic	クラシック
 #. menu command in the main window
@@ -6242,7 +6236,7 @@ menu	Font	フォント
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
 #, machine
-menu	From &IDM export file...	IDM エクスポート ファイルから(&I)...
+menu	From &legacy export file...	From &legacy export file...
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
@@ -6442,7 +6436,7 @@ menu	Theme	テーマ
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
 #, machine
-menu	To &IDM export file...	IDM エクスポート ファイルへ(&I)...
+menu	To &legacy export file...	To &legacy export file...
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
