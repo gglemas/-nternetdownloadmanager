@@ -599,7 +599,7 @@ async fn no_range_server_uses_one_connection() {
         .expect("every request ends");
     let log = s.log();
     assert_eq!(size, 3 << 20);
-    // Like IDM (lab S6): range attempts get 200 and are dropped; the probe finishes alone.
+    // as observed (lab S6): range attempts get 200 and are dropped; the probe finishes alone.
     let complete: Vec<_> = log.iter().filter(|e| e.outcome == "complete").collect();
     let requests: Vec<_> = log
         .iter()
@@ -1313,7 +1313,7 @@ async fn changed_file_fails() {
 
 #[tokio::test]
 async fn speed_limit_caps_the_whole_download() {
-    // 8 connections, but the limit is per download (IDM: "for one file").
+    // 8 connections, but the limit is per download ( "for one file").
     let s = server("").await;
     // The download alone is timed, not the wait for the server's log (#201: `fetch` waits for
     // it, which a starved CPU stretched to seconds).

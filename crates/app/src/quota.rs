@@ -1,6 +1,6 @@
-//! Scheduler → Download limits: "Download no more than N MBytes every H hours". IDM "will
+//! Scheduler → Download limits: "Download no more than N MBytes every H hours". the app "will
 //! download the maximum it can under the quota, and then resume automatically at a later
-//! time" [IDM-doc]. Bytes are counted from every download's progress over a sliding window.
+//! time" [published documentation]. Bytes are counted from every download's progress over a sliding window.
 
 use std::collections::{HashMap, VecDeque};
 use std::time::{Duration, Instant};

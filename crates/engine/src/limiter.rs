@@ -1,4 +1,4 @@
-//! Per-download speed limiter (IDM: "Maximum download speed for one file", notes/ENGINE.md §4).
+//! Per-download speed limiter ( "Maximum download speed for one file", notes/ENGINE.md §4).
 //! A token bucket shared by all of a download's connections; the limit can change while the
 //! download runs. Throttling the socket reads makes TCP slow the server down.
 
