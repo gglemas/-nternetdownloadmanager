@@ -541,8 +541,8 @@ pub struct App {
     /// The zoom (View → Interface size, #262) the windows were last drawn at: a change is saved,
     /// and the windows that don't follow by themselves are made to (`follow_zoom`).
     zoom: f32,
-    /// The main window was brought inside the screen after the start (scale::fit_window).
-    fitted: bool,
+    /// Fits the main window after startup, zoom and monitor DPI changes.
+    fitted: crate::scale::WindowFit,
     /// View → Theme's choices (#45), and when the themes folder last changed (read again then).
     theme_list: Vec<crate::themefile::Entry>,
     themes_changed: Option<std::time::SystemTime>,
@@ -1016,7 +1016,7 @@ impl App {
             saver: store::Saver::new(),
             theme_checked: None,
             zoom,
-            fitted: false,
+            fitted: Default::default(),
             theme_list: crate::themefile::list(),
             themes_changed: crate::themefile::changed(),
             pywal_there: crate::themefile::pywal_file().is_some_and(|p| p.is_file()),
@@ -6990,9 +6990,8 @@ impl App {
         crate::scale::keys(ctx);
         let zoom = ctx.zoom_factor();
         let settled = zoom == self.zoom;
-        if settled && !self.fitted && ctx.input(|i| i.viewport().outer_rect).is_some() {
-            self.fitted = true;
-            crate::scale::fit_window(ctx, MIN, None);
+        if settled {
+            self.fitted.update(ctx, MIN, None);
         }
         // Saved whatever changed it, and kept when Options, opened before, hands back its copy
         // of the settings.
@@ -7006,7 +7005,7 @@ impl App {
         }
         let ratio = self.zoom / zoom;
         self.zoom = zoom;
-        self.fitted = false;
+        self.fitted.reset();
         tracing::info!("interface size {percent}%");
         ctx.send_viewport_cmd(egui::ViewportCommand::MinInnerSize(MIN));
         if let Some((x, y)) = self.settings.drop_target_pos {
