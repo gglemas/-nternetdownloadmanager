@@ -1,14 +1,12 @@
-//! Download queues (notes/ENGINE.md §5, IDM's scheduler help): a queue downloads N files at a
-//! time in list order; a file that fails moves to the end and is retried 30 s later (or up to
-//! a retry limit); finished files leave download queues; a queue with nothing left to start or
-//! running stops.
+//! Run queued files in list order up to the concurrency limit. Failed files move to the end
+//! and retry after 30 seconds, subject to a retry limit. Stop when no files remain active or
+//! pending.
 
 use std::time::{Duration, Instant};
 
 use serde::{Deserialize, Serialize};
 
-/// IDM: "If the file that IDM cannot download is left alone in the queue, IDM will retry …
-/// with 30 seconds interval".
+/// Retry a lone failed queue item after 30 seconds.
 pub const RETRY_DELAY: Duration = Duration::from_secs(30);
 
 #[derive(Clone, Debug, PartialEq, Eq, Serialize, Deserialize)]
@@ -45,7 +43,6 @@ pub struct WhenDone {
     pub force: bool,
 }
 
-/// "Turn off computer when done" modes, in IDM's combo order.
 #[derive(Clone, Copy, Debug, PartialEq, Eq, Serialize, Deserialize)]
 pub enum TurnOff {
     ShutDown,
@@ -87,7 +84,6 @@ impl TurnOff {
 
 impl Default for Schedule {
     fn default() -> Self {
-        // IDM's defaults: unchecked, 11:00:00 PM / 7:30:00 AM, all days, 10 retries when enabled.
         Schedule {
             start_on_startup: false,
             start_at: None,
@@ -124,7 +120,6 @@ impl Queue {
     pub fn new(name: &str, sync: bool) -> Self {
         Queue {
             name: name.into(),
-            // "Download 4 files at the same time", as the user's IDM shows (D-012).
             files_at_once: 4,
             items: Vec::new(),
             sync,

@@ -1,6 +1,4 @@
-//! The only Windows FFI in tnctr download manager (D-008): IDM's dialog frame for our dialog windows, and the
-//! shell's own small file-type icons (the ones Explorer and IDM show — Windows' artwork, not IDM's),
-//! and the drop target's OLE `IDropTarget` (`ole`).
+//! Windows-specific integration, including the OLE drop target.
 #![allow(unsafe_code)]
 
 use std::ffi::c_void;
@@ -229,11 +227,9 @@ unsafe fn above_others(hwnd: HWND) {
     }
 }
 
-/// Give our window titled `title` IDM's modal-dialog frame (WS_EX_DLGMODALFRAME, no sizing
-/// frame: 3 px borders, 26 px caption) and resize it so the client stays `client` points, at
-/// `scale` pixels per point (the display's scaling times any zoom), with the frame measured for
-/// the window's own DPI. `light` dialogs get a light caption.
-/// Returns true once applied (call again each frame until it is).
+/// Apply fixed dialog-frame metrics while keeping the client at client points and scale
+/// pixels per point. Measure the frame for the window’s DPI and use a light caption when requested.
+/// Return true once applied; retry each frame until then.
 pub fn dialog_frame(title: &str, client: [f32; 2], light: bool, scale: f32) -> bool {
     use windows_sys::Win32::Graphics::Dwm::{DWMWA_USE_IMMERSIVE_DARK_MODE, DwmSetWindowAttribute};
     use windows_sys::Win32::UI::HiDpi::{AdjustWindowRectExForDpi, GetDpiForWindow};
@@ -241,7 +237,6 @@ pub fn dialog_frame(title: &str, client: [f32; 2], light: bool, scale: f32) -> b
         return false;
     };
     unsafe {
-        // IDM's light dialogs keep a light caption even in dark mode.
         let dark: i32 = (!light).into();
         DwmSetWindowAttribute(
             hwnd,
@@ -249,7 +244,6 @@ pub fn dialog_frame(title: &str, client: [f32; 2], light: bool, scale: f32) -> b
             &dark as *const i32 as *const c_void,
             size_of::<i32>() as u32,
         );
-        // Owned by the main window, as IDM's dialogs are: no taskbar button, kept above it.
         if let Some(main) = find_own_window(crate::MAIN_TITLE) {
             use windows_sys::Win32::UI::WindowsAndMessaging::{GWLP_HWNDPARENT, WS_EX_APPWINDOW};
             SetWindowLongPtrW(hwnd, GWLP_HWNDPARENT, main as isize);
@@ -280,8 +274,7 @@ pub fn dialog_frame(title: &str, client: [f32; 2], light: bool, scale: f32) -> b
     true
 }
 
-/// How much of the standard 8 px sizing border IDM's progress window does not have: its frame
-/// is 2 px (1 px border + 1 px frame line) left, right and bottom (spec "Conventions").
+/// Use 2 px client borders on the left, right, and bottom.
 const THIN_TRIM: i32 = 6;
 
 /// Hit-test results (winuser.h).
@@ -363,11 +356,8 @@ fn frame_hit(x: i32, y: i32, hits: &CaptionHits) -> LRESULT {
     }
 }
 
-/// IDM's progress-window frame (2 px borders, fixed size) with the title bar ours (#63, the
-/// approach Windows Terminal, Zed and WezTerm take): the window keeps its system frame and
-/// WS_CAPTION (Aero Snap, shake, the system menu and Alt+Space, the DWM shadow and rounded
-/// corners), its caption given to the client, which draws it; the hit test reads where the
-/// drawn parts are.
+/// Keep the system frame and WS_CAPTION for native snapping, system menus, shadows, and
+/// rounded corners while drawing the caption in the client area. Hit-test the drawn controls.
 unsafe extern "system" fn thin_frame_proc(
     hwnd: HWND,
     msg: u32,
@@ -404,7 +394,6 @@ unsafe extern "system" fn thin_frame_proc(
     }
     let res = unsafe { DefSubclassProc(hwnd, msg, wparam, lparam) };
     if msg == WM_NCHITTEST {
-        // Fixed size, like IDM's: the sizing edges (HTLEFT..HTBOTTOMRIGHT) act as plain border.
         if (10..=17).contains(&res) {
             return HTBORDER;
         }
@@ -662,12 +651,9 @@ pub fn drawn_frame(title: &str, on: bool) -> Option<isize> {
     Some(hwnd as isize)
 }
 
-/// Give our window titled `title` IDM's thin progress-window frame with its title bar drawn by
-/// us (winui::caption, #63): 2 px borders, no system caption, the client staying `client`
-/// points (the drawn title bar included) at `scale` pixels per point. With `hide_item` (the
-/// translated "Hide to the notification area"), the system menu gets it, Alt+Space reaching it
-/// from the keyboard; None takes it out. Call while the window is still hidden, and again when
-/// the size, the scale or the item changes. Returns the window, once applied.
+/// Configure the custom progress caption and 2 px borders, preserving the client size at
+/// the requested scale. Add the localized hide-to-tray system-menu item when supplied.
+/// Apply while hidden and whenever the size, scale, or menu item changes.
 pub fn thin_frame(
     title: &str,
     client: [f32; 2],
@@ -770,8 +756,7 @@ pub(crate) fn drawn_style(style: u32, kind: Drawn) -> u32 {
     }
 }
 
-/// Its extended styles: without the edges that add to a frame (IDM's dialog frame among them).
-/// The rest stays: a taskbar button where it had one, never-activate in an off-screen test copy.
+/// Preserve the taskbar button and the never-activate behavior of off-screen test windows.
 pub(crate) fn drawn_ex_style(ex: u32) -> u32 {
     use windows_sys::Win32::UI::WindowsAndMessaging::{WS_EX_CLIENTEDGE, WS_EX_STATICEDGE};
     ex & !(WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | WS_EX_STATICEDGE)
@@ -1251,7 +1236,6 @@ mod caption_less_tests {
         // Applied again (winit setting its own styles once more), nothing changes.
         assert_eq!(drawn_style(fixed, Drawn::Fixed), fixed);
         assert_eq!(drawn_style(sizable, Drawn::Sizable), sizable);
-        // IDM's dialog frame goes; the taskbar button stays.
         let ex = drawn_ex_style(WINIT_EX | WS_EX_DLGMODALFRAME);
         assert_eq!(ex & WS_EX_DLGMODALFRAME, 0);
         assert_ne!(ex & WS_EX_APPWINDOW, 0);
@@ -2023,11 +2007,8 @@ impl raw_window_handle::HasWindowHandle for OwnWindow {
     }
 }
 
-/// Start dragging `file` out of our window (to Explorer, a mail, a chat…), like IDM's Download
-/// complete grip. The drag preview is the file's shell icon. The window is the one holding the
-/// mouse (the button is down on its grip: winit captured the mouse for it), so it is the right
-/// one when several show the same title; else our window titled `title`, given in the interface
-/// language, as it shows.
+/// Drag the completed file with its shell icon as the preview. Prefer the window holding
+/// the mouse capture; fall back to the localized title when needed.
 pub fn drag_file_out(title: &str, file: &std::path::Path) -> Result<(), String> {
     let hwnd = own_capture()
         .or_else(|| find_own_window(title))
@@ -3066,7 +3047,6 @@ unsafe fn dib_rgba(
     }
 }
 
-/// Windows' own "open folder" (Download complete's, as IDM shows), as its system image list index.
 fn open_folder_index() -> Option<i32> {
     use windows_sys::Win32::UI::Shell::{
         SHGSI_SYSICONINDEX, SHGetStockIconInfo, SHSTOCKICONINFO, SIID_FOLDEROPEN,

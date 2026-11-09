@@ -1,7 +1,5 @@
-//! The RSS feeds window (#39; beyond IDM): Tasks → RSS feeds… and the Add Torrent button's
-//! arrow. Two tabs: **Feeds** (subscribe, each feed's articles, download one by hand) and
-//! **Download rules** (what is added by itself as feeds bring new articles). It edits the app's
-//! `rss::Store` in place and says what the app must do (`Act`).
+//! The RSS window has Feeds and Download rules tabs. It edits rss::Store in place and
+//! returns actions for the application to perform.
 
 use std::collections::HashSet;
 

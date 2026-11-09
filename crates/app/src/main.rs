@@ -73,11 +73,9 @@ mod xdgicons;
 /// The main window's title (dialogs find their owner by it).
 pub const MAIN_TITLE: &str = concat!("tnctr download manager ", env!("CARGO_PKG_VERSION"));
 
-/// The app icon (art/, made with ChatGPT; sizes by tools/icon/build_icon.py), for windows that
-/// show one as IDM's do: the 256 px size, which the system scales down for the title bar, the
-/// taskbar and Alt+Tab at any display scaling. On macOS none: the Dock keeps the app bundle's own
-/// icon (AppIcon.icns, every size, tools/installer/build-macos.sh), which an icon set at run
-/// time would replace.
+/// The app icon (art/, sized by tools/icon/build_icon.py) for windows shown in the taskbar and
+/// Alt+Tab at any display scaling. On macOS, leave it unset so the Dock keeps the app bundle's
+/// AppIcon.icns.
 pub fn app_icon() -> std::sync::Arc<egui::IconData> {
     static ICON: std::sync::OnceLock<std::sync::Arc<egui::IconData>> = std::sync::OnceLock::new();
     ICON.get_or_init(|| {
@@ -256,7 +254,6 @@ fn app() -> eframe::Result {
         default_hook(info);
     }));
 
-    // IDM-style command line; hand it to a running instance if there is one.
     let args: Vec<String> = std::env::args().skip(1).collect();
     let cmd = mdm_ipc::parse_args(&args);
     // Started by an update (update.rs): the old copy may still be closing; this one waits for
