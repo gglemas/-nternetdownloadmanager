@@ -239,7 +239,6 @@
 #. RSS feeds window, Download rules: add the torrents to the list without starting them
 	Add them without starting them	إضافتها دون بدء تشغيلها
 #. message or event log entry in the main window; text in the Link grabber window
-#. Link grabber button: add the ticked links to the download queue without starting them (IDM's OK)
 	Add to queue	إضافة إلى قائمة الانتظار
 #. text in a dialog box
 	Add to queue:	إضافة إلى قائمة الانتظار:
@@ -612,7 +611,6 @@
 #. {category} = a category name such as "Music" (keep the braces as they are)
 	Change folder for "{category}" category on last selected	تغيير مجلد فئة "{category}" للعنصر المحدد الأخير
 #. text in the Link grabber window
-#. Link grabber button (IDM's): tick every link
 	Check all	تحديد الكل
 #. text in rssdlg.rs
 #. RSS feeds window, at the bottom: "Check feeds every [30] minutes"
@@ -1442,7 +1440,6 @@
 #. tooltip of a button in a download's progress window: hides the window to the notification area (system tray); the download goes on
 	Hide to the notification area	إخفاء إلى منطقة الإشعارات
 #. checkbox in the Link grabber window; text in the Link grabber window; checkbox in the Options window
-#. Link grabber check box (IDM's "Hide HTML files"): links to web pages are not shown
 	Hide web pages	إخفاء صفحات الويب
 #. text in the Options window
 	Hold Alt while clicking a link to let the browser download it instead of tnctr download manager.	اضغط على Alt أثناء النقر فوق ارتباط للسماح للمستعرض بتنزيله بدلا من tnctr download manager.
@@ -1754,7 +1751,6 @@
 #. noun: the user name and password section
 	Login	تسجيل الدخول
 #. checkbox in the Options window
-#. Options → Archives → Link grabber check box (IDM's Download all links looks every link up)
 	Look links up when they arrive (name, size, online)	البحث عن الروابط عند وصولها (الاسم، الحجم، متاح)
 #. text in the Add torrent window; button in the Download video window
 	Look up	بحث
@@ -3656,7 +3652,6 @@
 #. a country's name (where a download's server is)
 	Ukraine	أوكرانيا
 #. text in the Link grabber window
-#. Link grabber button (IDM's): untick every link
 	Uncheck all	إلغاء تحديد الكل
 #. item in the Categories tree in the main window; text in remote.rs
 #. adjective: the downloads that are not complete yet
@@ -4695,7 +4690,6 @@ menu	C&ustomize URL List...	ت&خصيص قائمة URL...
 #. the trailing ... means it opens a window: keep it
 menu	Check for &updates...	التحقق من ال&تحديثات...
 #. menu command in the main window
-#. View → Theme: MDM's own look, the default (IDM's layout, Windows 11's controls)
 menu	Classic	كلاسيكي
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
@@ -4753,7 +4747,7 @@ menu	Font	الخط
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
-menu	From &IDM export file...	من ملف تصدير &IDM...
+menu	From &legacy export file...	From &legacy export file...
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
@@ -4905,7 +4899,7 @@ menu	Theme	السمة
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
-menu	To &IDM export file...	إلى ملف تصدير &IDM...
+menu	To &legacy export file...	To &legacy export file...
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it

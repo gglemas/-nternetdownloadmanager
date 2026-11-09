@@ -1,4 +1,3 @@
-//! Downloads → Find (Ctrl-F) / Find Next (F3): IDM's "Find file" dialog
 //! (notes/ui-spec/scheduler-and-misc.md §4).
 
 use egui::vec2;

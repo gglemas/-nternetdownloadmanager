@@ -7,7 +7,6 @@
 
 use serde::Deserialize;
 
-/// Options → File types defaults: IDM 6.42's; TORRENT (a .torrent the browser hands over opens
 /// Add torrent, #39); and today's installers, packages and archives (macOS DMG and PKG, Linux
 /// DEB, RPM and AppImage, Windows MSIX, APPX and CAB, Java's JAR, XZ, Zstandard and their tarballs)
 /// and open audio and video formats (WEBM, FLAC, OPUS; #208); and what people fetch by the
@@ -16,7 +15,6 @@ use serde::Deserialize;
 /// everyday browsing (pages, scripts, plain text, web images) or installs itself (XPI, CRX).
 pub const DEFAULT_AUTO_TYPES: &str = "00* 3DM 3DS 3GP 3MF 7Z AAB AAC ABC ACE AFDESIGN AFPHOTO AI AIF AIFF APE APK APKM APKS APPIMAGE APPX APPXBUNDLE ARJ ARROW ARW ASF AU AVI AVRO AZW AZW3 BAK BAM BIN BLEND BZ BZ2 C4D CAB CAF CBR CBZ CCD CHD CKPT CPIO CR2 CR3 CRAM CSO DAE DAT DCM DDS DEB DFF DIVX DJVU DMG DNG DOC DOCX DSF DWG DXF EPS EPUB EXE EXR F3D F4V FASTA FASTQ FB2 FBX FEATHER FIG FITS FLAC FLATPAK FQ GCODE GCZ GEM GGML GGUF GLB GLTF GPKG GRIB GRIB2 GZ GZIP H5 HDF5 HDR IGES IGS IMG INDD IPA ISO ISZ JAR JOBLIB JSONL KERAS KRA LAS LAZ LLAMAFILE LWO LZ LZ4 LZH LZMA M2T M2TS M2V M4A M4B M4V MA MAT MAX MB MBTILES MDF MDS MID MIDI MKA MKV MLMODEL MOBI MOV MP3 MP4 MPA MPE MPEG MPG MSI MSIX MSIXBUNDLE MSP MSU MTS MXF NC NDJSON NEF NEMO NII NPY NPZ NRG NSP NSZ NUPKG OBJ ODP ODS ODT OGG OGM OGV ONNX OPUS ORC ORF OTF OVA OVF PAK PARQUET PB PBF PDF PICKLE PK3 PK4 PKG PKL PLJ PLY POTX PPS PPSX PPT PPTX PSB PSD PT PTH QCOW QCOW2 QT R0* R1* R2* R3* R4* R5* R6* R7* R8* R9* RA RAF RAR RDS RM RMVB RPM RTF RUN RVZ RW2 SAFETENSORS SEA SF2 SFZ SHP SIT SITX SKETCH SKP SLDASM SLDPRT SNAP SQLITE SQLITE3 STEP STL STP TAR TBZ TBZ2 TFLITE TGA TGZ TIF TIFF TLZ TORRENT TTA TTC TTF TXZ TZST UNITYPACKAGE USD USDA USDC USDZ VDB VDI VHD VHDX VMDK VOB VPK VSIX WAV WBFS WEBM WHL WIM WMA WMV WRL WTV WUA WV X3D XAPK XCF XCI XLS XLSB XLSM XLSX XZ Z Z0* ZIP ZIPX ZPR ZST ZTL";
 
-/// The lists earlier versions started with: IDM 6.42's (MDM 0.2.x), with TORRENT (#39), then
 /// with today's packages and open formats (#208). A saved list equal to one of them was never edited, and becomes today's (`upgraded_types`).
 const EARLIER_AUTO_TYPES: [&str; 3] = [
     "3GP 7Z AAC ACE AIF APK ARJ ASF AVI BIN BZ2 EXE GZ GZIP IMG ISO LZH M4A M4V MKV MOV MP3 MP4 MPA MPE MPEG MPG MSI MSU OGG OGV PDF PLJ PPS PPT QT R0* R1* RA RAR RM RMVB SEA SIT SITX TAR TIF TIFF WAV WMA WMV Z ZIP",
@@ -368,7 +366,6 @@ pub fn clipboard_type(types: &str, name: &str) -> bool {
     !browser_only && type_listed(&own.join(" "), name)
 }
 
-/// `*` matches any run of characters (IDM's address patterns).
 fn wildcard(pattern: &str, text: &str) -> bool {
     let parts: Vec<&str> = pattern.split('*').collect();
     if parts.len() == 1 {
