@@ -594,19 +594,9 @@
         "purpose": "The language dialog opening."
       },
       {
-        "name": "bar-grow",
-        "value": "1.3s cubic-bezier(.16, 1, .3, 1); staggered by --d",
-        "purpose": "Benchmark speed-up bars growing into view."
-      },
-      {
         "name": "press",
         "value": ".15s cubic-bezier(.16, 1, .3, 1); translateY(1px)",
         "purpose": "Button press."
-      },
-      {
-        "name": "race",
-        "value": "real time (requestAnimationFrame), no easing",
-        "purpose": "The tracking race plays at the benchmark's measured times; reduced motion shows the finish at once."
       }
     ],
     "breakpoints": [
@@ -625,24 +615,7 @@
         "value": "720px",
         "purpose": "Field grids stack (the waybill keeps two), segmented tabs stack, comparison rows stack."
       }
-    ],
-    "chartPalette": {
-      "light": {
-        "bench-idm": "#6b7280",
-        "bench-mdm": "#2f9a33",
-        "bench-startup": "#b7791f",
-        "bench-transfer": "#2563c9",
-        "bench-finish": "#7d4fc0"
-      },
-      "dark": {
-        "bench-idm": "#98a1b1",
-        "bench-mdm": "#57cc5a",
-        "bench-startup": "#e0a53a",
-        "bench-transfer": "#7aa9f5",
-        "bench-finish": "#b48cf2"
-      },
-      "purpose": "Read by bench.js for the benchmark page's charts only."
-    }
+    ]
   },
   "components": [
     {
@@ -706,7 +679,7 @@
       "kind": "nav",
       "refersTo": "header",
       "description": "The board's slim sticky header: brand, links, language, the green Download.",
-      "html": "<header class=\"ds-top\"><b class=\"ds-brand\">Mister Download Manager</b><nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Features</a><a href=\"#\">Download</a><a href=\"#\">Help</a><a href=\"#\">Benchmark</a></nav><a class=\"ds-langs\" href=\"#\">English</a><a class=\"ds-top-dl\" href=\"#\">Download</a></header>",
+      "html": "<header class=\"ds-top\"><b class=\"ds-brand\">Mister Download Manager</b><nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Features</a><a href=\"#\">Download</a><a href=\"#\">Help</a></nav><a class=\"ds-langs\" href=\"#\">English</a><a class=\"ds-top-dl\" href=\"#\">Download</a></header>",
       "css": ".ds-top { display: flex; align-items: center; gap: 24px; height: 68px; padding: 0 24px; background: var(--board, #1f63d6); color: var(--on-board, #ffffff); border-bottom: 1px solid var(--board-edge, #3b78e0); font-family: Archivo, 'Segoe UI', system-ui, sans-serif; } .ds-brand { font-size: 18px; font-weight: 800; font-stretch: 80%; } .ds-nav { display: flex; gap: 4px; } .ds-nav a, .ds-langs { padding: 8px 10px; border-radius: 6px; color: inherit; font-size: 15px; font-weight: 600; text-decoration: none; } .ds-nav a:hover, .ds-langs:hover { background: color-mix(in srgb, currentColor 12%, transparent); } .ds-nav a[aria-current] { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 8px; } .ds-langs { margin-inline-start: auto; border-radius: 8px; box-shadow: inset 0 0 0 1.5px color-mix(in srgb, currentColor 55%, transparent); } .ds-top-dl { display: inline-flex; align-items: center; height: 40px; padding: 0 16px; border-radius: 8px; background: var(--go, #57cc5a); color: var(--go-ink, #08200b); font-weight: 700; font-size: 15px; text-decoration: none; box-shadow: inset 0 -3px 0 rgba(0,0,0,.18), 0 0 0 1.5px rgba(4,32,10,.55); } .ds-top-dl:hover { background: var(--go-hover, #47b94a); } .ds-top a:focus-visible { outline: 3px solid var(--link, #0d58c9); outline-offset: 2px; }"
     },
     {
@@ -720,12 +693,12 @@
   ],
   "narrative": {
     "northStar": "The Waybill on the Parcel",
-    "overview": "A download is a delivery. The page is the board the parcel sits on, in the logo's blue; the real app window is the parcel; what the visitor reads is printed on thermal-label sheets stuck to it, in black ink with hairline field rules, ranked like a courier label: who sends it, the headline, the fine print, the fields, a real barcode. The benchmark is tracking: two shipments scanned event by event to the measured times, each event showing its rate as well as its time.\n\nThe world is the owner's choice. The blue board (#1f63d6) replaced kraft brown after four rendered options; dark theme is a navy depot where the same labels print in reverse (near-black stock, cool white ink). Density is a label's, not a brochure's: few elements, each one a field with a name and a value, numbers in tabular figures. Every screenshot is the real, unretouched app, shown at full content width; the site never draws a fake window, a glowing mock-up or a row of icon cards. Reading pages (help, FAQ, news, legal) take the same world with restraint: the board above, one sheet to read.\n\nThe site ships in 21 languages, Arabic and Persian right to left. Every direction-bound value is a logical property; labels tilt the other way in RTL; only native language names are isolated with `bdi`.",
+    "overview": "A download is a delivery. The page is the board the parcel sits on, in the logo's blue; the real app window is the parcel; what the visitor reads is printed on thermal-label sheets stuck to it, in black ink with hairline field rules, ranked like a courier label: who sends it, the headline, the fine print, the fields, a real barcode.\n\nThe world is the owner's choice. The blue board (#1f63d6) replaced kraft brown after four rendered options; dark theme is a navy depot where the same labels print in reverse (near-black stock, cool white ink). Density is a label's, not a brochure's: few elements, each one a field with a name and a value, numbers in tabular figures. Every screenshot is the real, unretouched app, shown at full content width; the site never draws a fake window, a glowing mock-up or a row of icon cards. Reading pages (help, FAQ, news, legal) take the same world with restraint: the board above, one sheet to read.\n\nThe site ships in 21 languages, Arabic and Persian right to left. Every direction-bound value is a logical property; labels tilt the other way in RTL; only native language names are isolated with `bdi`.",
     "keyCharacteristics": [
       "Blue board, white label stock, black ink; green only for Download and delivered.",
       "One self-hosted face, Archivo, condensed by its width axis for headings and field names.",
       "Fields, not cards: name over value, ink rules between.",
-      "Real artefacts only: the unretouched app, a scannable Code 128 barcode, the benchmark's own times.",
+      "Real artefacts only: the unretouched app and a scannable Code 128 barcode.",
       "Motion is mechanical and rare: the label feeds out once, progress moves in real time, a stamp lands."
     ],
     "rules": [
@@ -744,11 +717,7 @@
         "body": "Reading text stays ink. Colour belongs to the board, the action, the stamp and links, not to paragraphs or headings.",
         "section": "colors"
       },
-      {
-        "name": "The Tabular Figures Rule",
-        "body": "Every number that can be compared (times, sizes, ratios, versions, dates) is set in tabular figures.",
-        "section": "typography"
-      },
+      "Numbers use tabular figures for quick scanning.",
       {
         "name": "The Condense, Don't Swap Rule",
         "body": "Hierarchy comes from Archivo's width and weight axes, never from a second display face. Scripts Archivo lacks fall back to the system's face, without condensing, tracking or uppercase.",
@@ -776,7 +745,7 @@
       "Don't add a second typeface for display; condense Archivo instead.",
       "Don't set a field name above a section headline as a kicker; field names name fields, table columns and nav groups.",
       "Don't add elevations beyond Sheet, Lift and the Download sticker edge (screenshots inside prose take a lighter contact shadow), and never a glow.",
-      "Don't draw a mock window, retouch a screenshot or use IDM artwork; IDM appears only as a named, text-marked comparison.",
+      "Do not draw mock windows, retouch screenshots, or use third-party artwork without attribution.",
       "Don't animate anything on entry except the label's single feed and progress moving into place (the race, the speed-up bars, the connection grids)."
     ]
   }

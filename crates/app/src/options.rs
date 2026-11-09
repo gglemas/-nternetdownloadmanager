@@ -1,5 +1,3 @@
-//! Options (Downloads → Options, the toolbar's Options): IDM's configuration dialog, nine pages
-//! in a two-row tab control (notes/ui-spec/options-dialog.md). Light in both modes, as IDM's.
 //! It edits a copy of the settings: OK applies it, the close box and Escape discard it.
 
 use egui::{Pos2, Rect, Sense, Ui, pos2, vec2};
@@ -476,8 +474,6 @@ impl OptionsDialog {
         let tray = crate::tray::available();
         for (i, (y, v, label)) in checks.into_iter().enumerate() {
             // Portable: nothing is written to the registry, so no start with Windows. Manifest 2
-            // extensions: an IDM-era Chrome policy with no meaning for MDM's extension (MV3):
-            // shown as IDM has it, greyed (D-021).
             let enabled = !(portable && i == 0) && i != 2 && (i != 5 || tray);
             let check = winui::checkbox_light(ui, o + vec2(30.0, y), v, label, enabled);
             // Where a start with the session leaves the window (#226).
@@ -537,7 +533,6 @@ impl OptionsDialog {
                 .type_to(ui, "browsers", browsers.len(), |i| browsers[i].0.clone());
         }
         // Adding browsers and the browser menu editor are the extension's settings (M8): shown as
-        // IDM has them, not yet available.
         let off = |ui: &mut Ui, rc: Rect, label: &str| {
             winui::button_light(ui, rc, label, ButtonKind::Disabled, false);
         };
@@ -787,7 +782,6 @@ impl OptionsDialog {
             crate::i18n::t("Category"),
             LIGHT_TEXT(),
         );
-        // IDM's, Torrents and the user's (the registry follows this dialog's edits).
         let cats = Category::all();
         self.category = self.category.min(cats.len() - 1);
         let names: Vec<String> = cats.iter().map(|c| c.label().into_owned()).collect();
@@ -1137,7 +1131,6 @@ impl OptionsDialog {
         if cut {
             winui::full_on_hover(ui, rect, "max-conns", label);
         }
-        // Typed, or stepped with the arrows (IDM's drop-down offered 1 to 32; issue #12).
         winui::spin_box(
             ui,
             r(o, 268.0, 112.0, 101.0, 21.0),
@@ -1410,7 +1403,6 @@ impl OptionsDialog {
             "",
             true,
         );
-        // The checkbox's caption, in two lines as IDM has it (clicking it ticks the box).
         let lines = winui::paragraph(
             &p,
             o.x + 46.0,
@@ -2181,7 +2173,6 @@ impl OptionsDialog {
             ui,
             o + vec2(30.0, 318.0),
             &mut s.grabber_check,
-            // i18n: Options → Archives → Link grabber check box (IDM's Download all links looks every link up)
             "Look links up when they arrive (name, size, online)",
             true,
         );
@@ -3427,7 +3418,6 @@ pub fn play_sound(file: &str) {
     crate::unix::play_sound(file);
 }
 
-/// A folder as the dialogs show it: the full path, as IDM's Options shows it, ending in the
 /// system's separator (a backslash on Windows).
 fn display_dir(dir: &std::path::Path) -> String {
     let s = dir.display().to_string();
@@ -3906,7 +3896,6 @@ fn ok_cancel(ui: &mut Ui, o: Pos2, x: f32, y: f32, valid: bool) -> Outcome<()> {
     }
 }
 
-/// A row of tabs as shown: IDM's measured tabs in English; a translation's sized by its labels
 /// (each label centred, the room left over shared out), so the row keeps its span (x 8..419)
 /// and no label is cut.
 fn tab_row(
@@ -3914,7 +3903,6 @@ fn tab_row(
     row: &[(usize, &'static str, f32, f32, f32)],
     measured: bool,
 ) -> Vec<(usize, &'static str, f32, f32, f32)> {
-    // `measured`: the row's English positions are IDM's (a row of ours is sized as a translation).
     if measured && row.iter().all(|t| crate::i18n::t(t.1) == t.1) {
         return row.to_vec();
     }
@@ -3972,7 +3960,6 @@ fn tabs(ui: &mut Ui, o: Pos2, page: usize) -> Option<usize> {
             390.0,
         ),
     ];
-    // IDM's Dial Up / VPN tab is gone (D-021: no modem support; it did nothing); ours, Regional
     // (how dates and times are written), Accounts (#44, debrid services) and Archives (#37) share
     // the row, sized by their labels.
     const P: [(usize, &str, f32, f32, f32); 6] = [
@@ -4143,7 +4130,6 @@ fn tabs(ui: &mut Ui, o: Pos2, page: usize) -> Option<usize> {
     clicked
 }
 
-/// Page header: the icon, the title (bold, right-aligned as IDM's) and the etched rule.
 #[allow(clippy::too_many_arguments)]
 fn header(
     ui: &mut Ui,
@@ -4166,7 +4152,6 @@ fn header(
     winui::etched_h(&p, o.x + rule_x0, o.y + 78.0, rule_x1 - rule_x0 + 2.0);
 }
 
-/// A page title, right-aligned as IDM's: English at its measured pen `x`, a translation ending
 /// where the English ends (in RTL: starting there, at the mirrored edge).
 fn page_title(p: &egui::Painter, font: egui::FontId, x: f32, baseline: f32, english: &str) {
     let shown = crate::i18n::t(english);
@@ -4235,7 +4220,6 @@ fn group(ui: &Ui, o: Pos2, x: f32, y: f32, w: f32, h: f32, caption: &str) {
     }
 }
 
-/// A label (translated here) that IDM greys out with the classic embossed look when its
 /// controls are off.
 fn disabled_label(p: &egui::Painter, x: f32, base: f32, s: &str, enabled: bool, right: bool) {
     let s = crate::i18n::t(s);
@@ -4371,7 +4355,6 @@ fn multiline(ui: &mut Ui, rc: Rect, value: &mut String, id: &str, enabled: bool)
     winui::multiline_light(ui, rc, value, id, enabled);
 }
 
-/// A read-only field (the page colour, as IDM's): the shared one, so it can be copied.
 fn readonly(ui: &mut Ui, rc: Rect, value: &str) {
     winui::readonly_field(
         ui,

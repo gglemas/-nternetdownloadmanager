@@ -1,4 +1,3 @@
-//! Right-click → Verify checksum… (beyond IDM, D-015): paste the published hash; a finished file
 //! is checked at once, an unfinished one when its download ends (the engine verifies it before
 //! the final rename). The dialog is ours; it uses the light dialog style.
 
