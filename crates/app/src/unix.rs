@@ -96,7 +96,7 @@ fn startup_entry(exe: &Path, macos: bool) -> String {
             })
             .collect();
         format!(
-            "[Desktop Entry]\nType=Application\nName=Mister Download Manager\n\
+            "[Desktop Entry]\nType=Application\nName=tnctr download manager\n\
              Exec=\"{quoted}\" {arg}\nIcon=misterdownloadmanager\nTerminal=false\n\
              X-GNOME-Autostart-enabled=true\n"
         )
@@ -468,7 +468,7 @@ pub fn show_in_folder(path: &Path) {
     });
 }
 
-/// Options → Downloads → open magnet links and .torrent files with Mister Download Manager:
+/// Options → Downloads → open magnet links and .torrent files with tnctr download manager:
 /// Linux records it with xdg-mime for the desktop entry the packages install (turning it off
 /// leaves the choice to the desktop's settings). Not on macOS yet: it hands links to an app as
 /// open-URL events, which the app doesn't receive.
@@ -1362,11 +1362,11 @@ pub fn missing_text(libs: &[&WindowLib], opening: bool) -> String {
     let names = ltr(&names.join(", "));
     let what = if opening {
         // i18n: Linux, at start, on the terminal and in a message box: a library the window needs isn't installed; {libraries} = its file names (libxkbcommon-x11.so.0…), left as they are
-        t("Mister Download Manager can't open its window: this system lacks {libraries}.")
+        t("tnctr download manager can't open its window: this system lacks {libraries}.")
     } else {
         // i18n: Linux, at start, on the terminal: the libraries an X11 window needs aren't installed, so the window opens through Wayland instead, where menus can't be placed under what was clicked; {libraries} = their file names, left as they are
         t(
-            "Mister Download Manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.",
+            "tnctr download manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.",
         )
     };
     let what = fmt(what, &[("libraries", &names)]);
@@ -1389,7 +1389,7 @@ pub fn missing_text(libs: &[&WindowLib], opening: bool) -> String {
 pub fn tell_window_failed(text: &str) {
     eprintln!("{text}");
     tracing::error!("{text}");
-    let title = "Mister Download Manager";
+    let title = "tnctr download manager";
     let boxes: [(&str, Vec<&str>); 2] = [
         (
             "zenity",
@@ -1848,7 +1848,7 @@ pub fn mark_downloaded(path: &Path, url: &str, referrer: Option<&str>) {
         set_xattr(
             path,
             "com.apple.quarantine",
-            &format!("0081;{now:x};Mister Download Manager;"),
+            &format!("0081;{now:x};tnctr download manager;"),
         );
         let _ = url;
     }
@@ -2869,7 +2869,7 @@ pub fn keep_awake(reason: Option<&str>) -> bool {
         )?;
         logind.call(
             "Inhibit",
-            &("sleep:idle", "Mister Download Manager", reason, "block"),
+            &("sleep:idle", "tnctr download manager", reason, "block"),
         )
     };
     match take() {

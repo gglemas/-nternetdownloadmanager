@@ -66,14 +66,14 @@ pub fn main(args: Vec<String>) -> ExitCode {
     }
     let Some(_instance) = mdm_ipc::instance_lock() else {
         eprintln!(
-            "Another Mister Download Manager uses the data folder {}.",
+            "Another tnctr download manager uses the data folder {}.",
             data.display()
         );
         return ExitCode::FAILURE;
     };
     mdm_crash::logs::init(&data, mdm_crash::logs::APP);
     tracing::info!(
-        "Mister Download Manager {} ({}) starting without a window",
+        "tnctr download manager {} ({}) starting without a window",
         crate::help::VERSION,
         crate::help::COMMIT
     );
