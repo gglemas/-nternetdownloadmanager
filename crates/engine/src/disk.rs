@@ -312,7 +312,6 @@ pub fn check(volume: &Volume, size: u64) -> Result<(), Refusal> {
     Ok(())
 }
 
-/// A size for messages: `512 bytes`, `1.5 MB`, `4.00 GB` (binary units, as IDM shows them).
 pub fn human(bytes: u64) -> String {
     const UNITS: [&str; 5] = ["KB", "MB", "GB", "TB", "PB"];
     if bytes < 1024 {
