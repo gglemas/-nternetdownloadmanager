@@ -1,5 +1,4 @@
 //! Choosing the interface language (D-019): on the first start when the installer didn't say
-//! (IDM asks in its setup), and from View → Language... (86 languages are too many for a
 //! submenu). Every language of i18n/languages.tsv by its flag, its own name and its English
 //! name; typing filters the list; the arrows, Page Up/Down, Home/End move; Enter or a double
 //! click chooses.

@@ -1,4 +1,3 @@
-//! The per-download progress dialog, painted to IDM 6.42's pixels
 //! (notes/ui-spec/progress-dialog.md). Coordinates are client pixels from the spec.
 
 use egui::{Color32, Pos2, Ui, ViewportBuilder, ViewportId, vec2};
@@ -27,7 +26,6 @@ const TITLE_H: f32 = if cfg!(windows) {
 type Framed = ([f32; 2], u32, Option<String>);
 
 /// The title bar's buttons, from the window's end: Close, Maximize (greyed: a fixed size, as
-/// IDM's), Minimize, and with a tray our "hide to the notification area". None where the system
 /// draws the title bar.
 fn caption_buttons(tray: bool) -> Vec<(CaptionButton, bool)> {
     if !cfg!(windows) {
@@ -68,7 +66,6 @@ fn disabled() -> Color32 {
 }
 
 /// The segment / piece bar's 13 rows, top to bottom: (not here yet, here, a connection's
-/// start), from the theme (IDM's gradients in the classic look; its dark variant dims the
 /// "not here yet" rows, a bright white strip in the dark window).
 fn seg_rows() -> impl Iterator<Item = (Color32, Color32, Color32)> {
     let s = &crate::theme::colors().segments;
@@ -225,7 +222,6 @@ impl Progress {
             .size
             .filter(|t| *t > 0)
             .map_or(0.0, |t| (item.downloaded as f64 / t as f64).clamp(0.0, 1.0));
-        // IDM truncates the percentage in the title (44.51 % → "44%").
         // The name keeps its own direction (an Arabic one doesn't pull the percentage after it).
         let title = format!(
             "{}% {}",
@@ -237,8 +233,6 @@ impl Progress {
         } else {
             [548.0, 241.0]
         };
-        // Windows: the title bar is ours (#63), drawn in the client above IDM's layout, so the
-        // hide button sits in it, left of Minimize, as in IDM. Elsewhere the system draws it.
         let client = [body[0], body[1] + TITLE_H];
         // As large as the screen allows at the interface size (#262): the rest scrolls.
         let shown = crate::dialogs::shown_size(ctx, client);
@@ -251,7 +245,6 @@ impl Progress {
             .with_visible(false)
             .with_title(title)
             .with_inner_size(shown)
-            // IDM's progress window has 2 px borders and a fixed size. On Windows the sizing
             // frame is asked for and win32::progress_frame trims its borders, disables resizing
             // and gives the caption to the client, which draws it; elsewhere the window is simply
             // not resizable (its contents are laid out for one size: Show/Hide details switches
@@ -411,7 +404,6 @@ impl Progress {
             }
         }
 
-        // The progress bar: IDM's green on the shared, themed track.
         winui::meter(&p, r(o, 17.0, 180.0, 513.0, 16.0), frac as f32);
 
         let mut action = if hide { Action::Hide } else { Action::None };
@@ -548,7 +540,6 @@ impl Progress {
         if let Some(i) = winui::tabs_light(ui, o, r(o, 18.0, 8.0, 514.0, 165.0), &light, current) {
             self.tab = tabs[i].0;
         }
-        // MDM's (#63): IDM puts this in its title bar, which here is the system's own (it takes
         // no buttons of ours), so it sits at the tab row's end, over the page's corner.
         tab_button
             && winui::to_tray_button(
@@ -944,7 +935,7 @@ fn status_page(ui: &Ui, o: Pos2, item: &Item, snap: Option<&Snapshot>, frac: f64
             96.0,
             135.0,
             if crate::i18n::code() == "en" {
-                format!("{} ( {:.2} % )", size3(item.downloaded), frac * 100.0) // not translated: English path (IDM's spacing)
+                format!("{} ( {:.2} % )", size3(item.downloaded), frac * 100.0) // not translated: English path (display spacing)
             } else {
                 format!(
                     "{} ( {} )",
@@ -1586,7 +1577,6 @@ fn connections(ui: &mut Ui, p: &egui::Painter, o: Pos2, snap: Option<&Snapshot>)
         o.y + 274.0,
         o.x + 528.0,
         o.y + 399.0,
-        // Every list's background (IDM's light one is mauve, #beb4be: the only one of its kind).
         winui::FIELD(),
     );
     fill(
@@ -1627,7 +1617,6 @@ fn connections(ui: &mut Ui, p: &egui::Painter, o: Pos2, snap: Option<&Snapshot>)
     head(55.0, 146.0, crate::i18n::t("Downloaded"));
     // i18n: column title: what the connection is doing
     head(155.0, 496.0, crate::i18n::t("Info"));
-    // Listed by connection number, like IDM (the engine reports them in arrival order).
     let mut conns: Vec<_> = snap
         .map(|s| s.connections.iter().collect())
         .unwrap_or_default();

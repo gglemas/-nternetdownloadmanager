@@ -194,7 +194,7 @@ PY
       import -silent -window root -crop "${SW}x40+0+0" +repage "$dir/topbar.png"
     fi
   fi
-  # Ended as a person would (/exit, IDM's switch): a signal reads as a crash to its monitor.
+  # Request a graceful exit; a signal reads as a crash to its monitor.
   timeout 20 "$app" /exit >/dev/null 2>&1
   for _ in $(seq 20); do pgrep -f "^$app$" >/dev/null || break; sleep 0.5; done
   pkill -f "^$app$"

@@ -192,8 +192,8 @@ pub fn state_path(dest: &Path) -> PathBuf {
     PathBuf::from(s)
 }
 
-/// Downloads started under the app's former codename keep `<dest>.idmnext.json` and
-/// `<dest>.idmnext.part`: rename them to today's names (only if those don't exist yet), so
+/// Older downloads may have legacy sidecars (`<dest>.idmnext.json` and
+/// `<dest>.idmnext.part`); rename them only when current state files don't exist, so
 /// they resume. Returns true when something was renamed.
 pub fn migrate_legacy(dest: &Path) -> bool {
     let legacy = |suffix: &str| {

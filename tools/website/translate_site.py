@@ -53,7 +53,6 @@ BATCH_WORDS = 1400
 KEEP = sorted(set(tr.KEEP + ["macOS", "Linux", "Rust", "YouTube", "Vimeo", "Tonec", "Ahmed Nefzaoui",
                              "Statcounter", "OpenRouter", "Gemini", "Homebrew", "AppImage", "Flatpak",
                              "Chromium", "Vivaldi", "Safari", "MCP", "GPL",
-                             # The other download managers idm-alternative.html compares.
                              "Free Download Manager", "AB Download Manager", "Motrix",
                              "Neat Download Manager", "Prism", "JDownloader 2", "JDownloader",
                              "Xtreme Download Manager", "Gopeed", "DOWNitUP", "PyIDM", "aria2",
@@ -117,7 +116,7 @@ and Linux builds are experimental). It looks and works like Internet Download Ma
 paid download manager many people know, but it is a separate program, written from scratch.
 
 The readers are ordinary computer users who want faster, safer downloads, and people looking for
-an IDM alternative. Many are not technical.
+a free, open-source download manager. Many are not technical.
 
 How to write:
 - Simple words, short sentences, direct and to the point, as a careful native writer would put it
