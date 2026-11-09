@@ -1,4 +1,4 @@
-# Mister Download Manager: every English text of the interface (tools/i18n/extract.py).
+# tnctr download manager: every English text of the interface (tools/i18n/extract.py).
 # context	source	translation; a catalog for another language has the same rows.
 # A '#.' line is the translator note for the row under it.
 @id	language.name	English
@@ -9,7 +9,7 @@
 #. count in a dialog box
 #. never shown for a single download
 #. {n} = a number (keep the braces as they are)
-@plural	Are you sure you want to delete {n} download from Mister Download Manager list of downloads?|Are you sure you want to delete these {n} downloads from Mister Download Manager list of downloads?	Are you sure you want to delete {n} download from Mister Download Manager list of downloads?|Are you sure you want to delete these {n} downloads from Mister Download Manager list of downloads?
+@plural	Are you sure you want to delete {n} download from tnctr download manager list of downloads?|Are you sure you want to delete these {n} downloads from tnctr download manager list of downloads?	Are you sure you want to delete {n} download from tnctr download manager list of downloads?|Are you sure you want to delete these {n} downloads from tnctr download manager list of downloads?
 #. count in the Add torrent window
 #. while a magnet link's file list is fetched; {n} = peers that answered
 #. {n} = a number (keep the braces as they are)
@@ -175,7 +175,7 @@
 #. why an archive wasn't extracted (after "Couldn't extract {name}: ")
 	a volume of it is missing	a volume of it is missing
 #. window title in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-	About Mister Download Manager	About Mister Download Manager
+	About tnctr download manager	About tnctr download manager
 #. text in whereis.rs
 #. a download's server's round trip: {ms} a number of milliseconds, {reach} near, medium or far
 	about {ms} ms ({reach})	about {ms} ms ({reach})
@@ -213,9 +213,6 @@
 #. text in playlistdlg.rs
 #. title of the question asked before a playlist adds many downloads
 	Add many downloads	Add many downloads
-#. window title in extension.rs
-#. title of the window that offers the browser extension
-	Add Mister Download Manager to your browser	Add Mister Download Manager to your browser
 #. message or event log entry in the main window; text in the tray icon's menu
 #. link in the empty download list: opens Add URL
 	Add new download	Add new download
@@ -234,6 +231,9 @@
 #. text in rssdlg.rs
 #. RSS feeds window, Download rules: add the torrents to the list without starting them
 	Add them without starting them	Add them without starting them
+#. window title in extension.rs
+#. title of the window that offers the browser extension
+	Add tnctr download manager to your browser	Add tnctr download manager to your browser
 #. message or event log entry in the main window; text in the Link grabber window
 #. Link grabber button: add the ticked links to the download queue without starting them (IDM's OK)
 	Add to queue	Add to queue
@@ -338,7 +338,7 @@
 #. Options → Archives: where extracted files go
 	Always into a folder named after it	Always into a folder named after it
 #. checkbox in a dialog box
-	Always turn on Speed Limiter on Mister Download Manager startup	Always turn on Speed Limiter on Mister Download Manager startup
+	Always turn on Speed Limiter on tnctr download manager startup	Always turn on Speed Limiter on tnctr download manager startup
 #. text in regional.rs; text in the Scheduler window
 #. before noon, after a time of day (12-hour clock). Its pair is "PM": write both the same way (this language's own short marks, or both kept as AM and PM)
 	AM	AM
@@ -388,7 +388,7 @@
 	Archives and Link grabber	Archives and Link grabber
 #. text in a dialog box
 #. {name} = a file name (keep the braces as they are)
-	Are you sure you want to delete "{name}" from Mister Download Manager list of downloads?	Are you sure you want to delete "{name}" from Mister Download Manager list of downloads?
+	Are you sure you want to delete "{name}" from tnctr download manager list of downloads?	Are you sure you want to delete "{name}" from tnctr download manager list of downloads?
 #. text in countries.rs
 #. a country's name (where a download's server is)
 	Argentina	Argentina
@@ -513,7 +513,7 @@
 #. the trailing ... means it opens a window: keep it
 	Browse...	Browse...
 #. text in extension.rs
-	Browser integration isn't set up on this computer, so no browser can reach Mister Download Manager yet.	Browser integration isn't set up on this computer, so no browser can reach Mister Download Manager yet.
+	Browser integration isn't set up on this computer, so no browser can reach tnctr download manager yet.	Browser integration isn't set up on this computer, so no browser can reach tnctr download manager yet.
 #. page title in the Options window
 	Browser/System Integration	Browser/System Integration
 #. text in countries.rs
@@ -655,7 +655,7 @@
 #. text in langpick.rs
 	Choose a language	Choose a language
 #. text in langpick.rs
-	Choose the language Mister Download Manager shows its windows in:	Choose the language Mister Download Manager shows its windows in:
+	Choose the language tnctr download manager shows its windows in:	Choose the language tnctr download manager shows its windows in:
 #. text in the Options window
 #. Options → Sites Logins → Cookies for video sites: the title of the window, and the tooltip of the button, that pick a browser profile's folder
 	Choose the profile's folder	Choose the profile's folder
@@ -1109,7 +1109,7 @@
 #. verb: quit the app
 	Exit	Exit
 #. checkbox in a download's progress window; checkbox in the Scheduler window
-	Exit Mister Download Manager when done	Exit Mister Download Manager when done
+	Exit tnctr download manager when done	Exit tnctr download manager when done
 #. text in the Checksum window
 	Expected checksum (MD5, SHA-1, SHA-256, SHA-512 or CRC32):	Expected checksum (MD5, SHA-1, SHA-256, SHA-512 or CRC32):
 #. message or event log entry in the main window
@@ -1425,7 +1425,7 @@
 #. Link grabber check box (IDM's "Hide HTML files"): links to web pages are not shown
 	Hide web pages	Hide web pages
 #. text in the Options window
-	Hold Alt while clicking a link to let the browser download it instead of Mister Download Manager.	Hold Alt while clicking a link to let the browser download it instead of Mister Download Manager.
+	Hold Alt while clicking a link to let the browser download it instead of tnctr download manager.	Hold Alt while clicking a link to let the browser download it instead of tnctr download manager.
 #. link (opens a web page) in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 	Home page	Home page
 #. text in countries.rs
@@ -1451,7 +1451,7 @@
 #. a country's name (where a download's server is)
 	Hungary	Hungary
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-	I download with Mister Download Manager: fast, free, and it looks like the download manager you already know. {link}	I download with Mister Download Manager: fast, free, and it looks like the download manager you already know. {link}
+	I download with tnctr download manager: fast, free, and it looks like the download manager you already know. {link}	I download with tnctr download manager: fast, free, and it looks like the download manager you already know. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 	Iceland	Iceland
@@ -1651,7 +1651,7 @@
 #. a country's name (where a download's server is)
 	Latvia	Latvia
 #. text in the Options window
-	Launch Mister Download Manager on startup	Launch Mister Download Manager on startup
+	Launch tnctr download manager on startup	Launch tnctr download manager on startup
 #. text in countries.rs
 #. a country's name (where a download's server is)
 	Lebanon	Lebanon
@@ -1864,43 +1864,6 @@
 #. text in a download's progress window
 #. legend: pieces not downloaded yet
 	Missing	Missing
-#. message or event log entry in the main window; window title in a dialog box; text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-	Mister Download Manager	Mister Download Manager
-#. text in unix.rs
-#. Linux, at start, on the terminal and in a message box: a library the window needs isn't installed; {libraries} = its file names (libxkbcommon-x11.so.0…), left as they are
-	Mister Download Manager can't open its window: this system lacks {libraries}.	Mister Download Manager can't open its window: this system lacks {libraries}.
-#. text in crashui.rs
-#. crash report window heading: MDM crashed and is gone
-	Mister Download Manager closed unexpectedly	Mister Download Manager closed unexpectedly
-#. window title in the Options window
-	Mister Download Manager Configuration	Mister Download Manager Configuration
-#. text in crashui.rs
-	Mister Download Manager crash report	Mister Download Manager crash report
-#. text in crashui.rs
-#. crash report window heading: an internal error, MDM still running
-	Mister Download Manager hit an internal error	Mister Download Manager hit an internal error
-#. text in wake.rs
-#. why the computer isn't going to sleep, in the system's list of programs that keep it awake; {queue} = the queue's name
-#. {queue} = a queue name such as "Main queue" (keep the braces as they are)
-	Mister Download Manager is running the queue "{queue}"	Mister Download Manager is running the queue "{queue}"
-#. text in crashui.rs
-#. crash report window heading: MDM's window doesn't answer (frozen)
-	Mister Download Manager stopped responding	Mister Download Manager stopped responding
-#. text in crashui.rs
-	Mister Download Manager stopped responding for a while	Mister Download Manager stopped responding for a while
-#. text in the Options window
-#. \\n starts a new line: break lines where they fit the translation
-	Mister Download Manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.	Mister Download Manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.
-#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
-#. {version} = a version number (keep the braces as they are)
-	Mister Download Manager {version} is available (released {date}).	Mister Download Manager {version} is available (released {date}).
-#. text in helpers.rs
-#. Video helpers: {version} = the version of MDM's own copy
-#. {version} = a version number (keep the braces as they are)
-	Mister Download Manager's own copy, version {version}	Mister Download Manager's own copy, version {version}
-#. text in unix.rs
-#. Linux, at start, on the terminal: the libraries an X11 window needs aren't installed, so the window opens through Wayland instead, where menus can't be placed under what was clicked; {libraries} = their file names, left as they are
-	Mister Download Manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.	Mister Download Manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.
 #. text in the Scheduler window
 #. Monday, as short as a calendar's column head (two letters in English)
 	Mo	Mo
@@ -2267,9 +2230,7 @@
 #. crash report window button: show the report's file in its folder
 	Open folder	Open folder
 #. checkbox in the Add torrent window
-	Open magnet links and .torrent files with Mister Download Manager	Open magnet links and .torrent files with Mister Download Manager
-#. text in the tray icon's menu
-	Open Mister Download Manager	Open Mister Download Manager
+	Open magnet links and .torrent files with tnctr download manager	Open magnet links and .torrent files with tnctr download manager
 #. text in extension.rs
 #. step 2 of turning on the Safari extension; Cmd is the Command key
 	Open Safari's settings (Cmd+,).	Open Safari's settings (Cmd+,).
@@ -2290,6 +2251,8 @@
 	Open the selected download	Open the selected download
 #. what a keyboard shortcut does in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 	Open the selected download's menu	Open the selected download's menu
+#. text in the tray icon's menu
+	Open tnctr download manager	Open tnctr download manager
 #. message or event log entry in the main window; text in the Add torrent window
 	Open torrent file	Open torrent file
 #. button in a dialog box
@@ -2321,7 +2284,7 @@
 	Pair a device...	Pair a device...
 #. text in remote.rs
 #. remote control page (on a phone): title of the pairing screen
-	Pair with Mister Download Manager	Pair with Mister Download Manager
+	Pair with tnctr download manager	Pair with tnctr download manager
 #. text in the Options window
 #. column title: when the device was paired
 	Paired	Paired
@@ -2682,7 +2645,7 @@
 #. what a keyboard shortcut does in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 	Select or unselect the download with the dotted outline	Select or unselect the download with the dotted outline
 #. group box title in the Options window
-	Select sounds for Mister Download Manager events	Select sounds for Mister Download Manager events
+	Select sounds for tnctr download manager events	Select sounds for tnctr download manager events
 #. what a keyboard shortcut does in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 	Select the downloads in the box	Select the downloads in the box
 #. what a keyboard shortcut does in the Help menu's windows (About, updates, shortcuts, Tell a friend)
@@ -2920,7 +2883,7 @@
 #. text in the Scheduler window; checkbox in the Scheduler window
 	Start download at	Start download at
 #. checkbox in the Scheduler window
-	Start download on Mister Download Manager startup	Start download on Mister Download Manager startup
+	Start download on tnctr download manager startup	Start download on tnctr download manager startup
 #. checkbox in the Options window
 	Start downloading immediately while displaying "Download File Info" dialog	Start downloading immediately while displaying "Download File Info" dialog
 #. text in the tray icon's menu
@@ -2946,7 +2909,7 @@
 #. the same tooltip where no notification area (system tray) shows MDM's icon (some Linux desktops): its window starts minimized instead
 	Started with the computer, it starts minimized: no notification area shows its icon here	Started with the computer, it starts minimized: no notification area shows its icon here
 #. text in the Options window
-#. tooltip of "Launch Mister Download Manager on startup": started with the computer, MDM's window stays hidden, its icon in the notification area (system tray)
+#. tooltip of "Launch tnctr download manager on startup": started with the computer, MDM's window stays hidden, its icon in the notification area (system tray)
 	Started with the computer, it waits in the notification area	Started with the computer, it waits in the notification area
 #. message or event log entry in the main window
 #. {version} = a version number; {format} = a video format code (keep the braces as they are)
@@ -3109,7 +3072,7 @@
 	the browser's proxy (a VPN or proxy extension) asks for a login only that extension has: use the VPN's own app, or choose its network adapter in Options → Proxy / Socks	the browser's proxy (a VPN or proxy extension) asks for a login only that extension has: use the VPN's own app, or choose its network adapter in Options → Proxy / Socks
 #. text in extension.rs
 #. a check of Test browser integration: the browsers find MDM's helper program
-	The browsers can find Mister Download Manager	The browsers can find Mister Download Manager
+	The browsers can find tnctr download manager	The browsers can find tnctr download manager
 #. text in the Options window
 #. Options → Remote → Status: the settings were changed; they apply on OK
 	The changes apply when you click OK.	The changes apply when you click OK.
@@ -3127,7 +3090,7 @@
 	The computer could not be turned off: {error}	The computer could not be turned off: {error}
 #. text in the Scheduler window
 #. tooltip on the Scheduler's "Wake the computer to run this queue"
-	The computer is woken a minute before the start time and kept awake while the queue runs. Mister Download Manager has to be running (it can wait in the notification area).	The computer is woken a minute before the start time and kept awake while the queue runs. Mister Download Manager has to be running (it can wait in the notification area).
+	The computer is woken a minute before the start time and kept awake while the queue runs. tnctr download manager has to be running (it can wait in the notification area).	The computer is woken a minute before the start time and kept awake while the queue runs. tnctr download manager has to be running (it can wait in the notification area).
 #. text in the Scheduler window
 #. the Scheduler, under "Wake the computer to run this queue": when it will happen; {date} = e.g. 06/11/2026, {time} = e.g. 22:59:00
 #. {time} = a time of day (keep the braces as they are)
@@ -3251,7 +3214,7 @@
 	the secure connection failed	the secure connection failed
 #. text in a dialog box
 #. \\n starts a new line: break lines where they fit the translation
-	The selected download is not complete. Are you sure you want to delete\nit from Mister Download Manager list of downloads?	The selected download is not complete. Are you sure you want to delete\nit from Mister Download Manager list of downloads?
+	The selected download is not complete. Are you sure you want to delete\nit from tnctr download manager list of downloads?	The selected download is not complete. Are you sure you want to delete\nit from tnctr download manager list of downloads?
 #. text in errors.rs
 	the server answered {status}	the server answered {status}
 #. text in errors.rs
@@ -3428,6 +3391,43 @@
 #. text in countries.rs
 #. a country's name (where a download's server is)
 	Timor-Leste	Timor-Leste
+#. message or event log entry in the main window; window title in a dialog box; text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
+	tnctr download manager	tnctr download manager
+#. text in unix.rs
+#. Linux, at start, on the terminal and in a message box: a library the window needs isn't installed; {libraries} = its file names (libxkbcommon-x11.so.0…), left as they are
+	tnctr download manager can't open its window: this system lacks {libraries}.	tnctr download manager can't open its window: this system lacks {libraries}.
+#. text in crashui.rs
+#. crash report window heading: MDM crashed and is gone
+	tnctr download manager closed unexpectedly	tnctr download manager closed unexpectedly
+#. window title in the Options window
+	tnctr download manager Configuration	tnctr download manager Configuration
+#. text in crashui.rs
+	tnctr download manager crash report	tnctr download manager crash report
+#. text in crashui.rs
+#. crash report window heading: an internal error, MDM still running
+	tnctr download manager hit an internal error	tnctr download manager hit an internal error
+#. text in wake.rs
+#. why the computer isn't going to sleep, in the system's list of programs that keep it awake; {queue} = the queue's name
+#. {queue} = a queue name such as "Main queue" (keep the braces as they are)
+	tnctr download manager is running the queue "{queue}"	tnctr download manager is running the queue "{queue}"
+#. text in crashui.rs
+#. crash report window heading: MDM's window doesn't answer (frozen)
+	tnctr download manager stopped responding	tnctr download manager stopped responding
+#. text in crashui.rs
+	tnctr download manager stopped responding for a while	tnctr download manager stopped responding for a while
+#. text in the Options window
+#. \\n starts a new line: break lines where they fit the translation
+	tnctr download manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.	tnctr download manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.
+#. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
+#. {version} = a version number (keep the braces as they are)
+	tnctr download manager {version} is available (released {date}).	tnctr download manager {version} is available (released {date}).
+#. text in helpers.rs
+#. Video helpers: {version} = the version of MDM's own copy
+#. {version} = a version number (keep the braces as they are)
+	tnctr download manager's own copy, version {version}	tnctr download manager's own copy, version {version}
+#. text in unix.rs
+#. Linux, at start, on the terminal: the libraries an X11 window needs aren't installed, so the window opens through Wayland instead, where menus can't be placed under what was clicked; {libraries} = their file names, left as they are
+	tnctr download manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.	tnctr download manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.
 #. text in unix.rs
 #. Linux, after a missing library's name: {command} = the terminal command that installs it ("sudo apt install libxkbcommon-x11-0"), left as it is
 	To install what's missing: {command}	To install what's missing: {command}
@@ -3516,11 +3516,11 @@
 #. step 6 of turning on the Safari extension; the quoted switch name is what Safari's settings show in this language: use Apple's own words for it, or keep the English name when unsure
 	Turn on "Allow unsigned extensions".	Turn on "Allow unsigned extensions".
 #. text in extension.rs
-#. step 8 of turning on the Safari extension
-	Turn on "Mister Download Manager" and allow it on all websites.	Turn on "Mister Download Manager" and allow it on all websites.
-#. text in extension.rs
 #. step 4 of turning on the Safari extension; the quoted switch name is what Safari's settings show in this language: use Apple's own words for it, or keep the English name when unsure
 	Turn on "Show features for web developers".	Turn on "Show features for web developers".
+#. text in extension.rs
+#. step 8 of turning on the Safari extension
+	Turn on "tnctr download manager" and allow it on all websites.	Turn on "tnctr download manager" and allow it on all websites.
 #. text in extension.rs
 #. the headline of the window that shows how to turn on the Safari extension
 	Turn on the extension in Safari	Turn on the extension in Safari
@@ -3822,7 +3822,7 @@
 	Yes, download them (recommended)	Yes, download them (recommended)
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {version} = a version number (keep the braces as they are)
-	You have the latest version of Mister Download Manager ({version}).	You have the latest version of Mister Download Manager ({version}).
+	You have the latest version of tnctr download manager ({version}).	You have the latest version of tnctr download manager ({version}).
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. Check for updates, under the new version's line, when MDM was installed by the Linux system's package manager (pacman, ...), which MDM can't update itself
 #. {version} = a version number (keep the braces as they are)
@@ -4396,7 +4396,7 @@ key	Type a name	Type a name
 key	Up / Down	Up / Down
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
-menu	&About Mister Download Manager	&About Mister Download Manager
+menu	&About tnctr download manager	&About tnctr download manager
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 menu	&Add new download	&Add new download
@@ -4661,9 +4661,6 @@ menu	Metal didn't start here: OpenGL draws	Metal didn't start here: OpenGL draws
 #. View → Theme: a style theme's name (Windows 8's flat look); keep "Metro" unless your language writes it otherwise
 menu	Metro	Metro
 #. menu command in the main window
-#. & marks the keyboard shortcut letter: keep one & before a letter of the translation
-menu	Mister Download Manager &Home Page	Mister Download Manager &Home Page
-#. menu command in the main window
 menu	Move/Rename (Ctrl-M)	Move/Rename (Ctrl-M)
 #. menu command in the main window
 #. View → Theme: the system's own colours (its accent colour, its high contrast)
@@ -4747,7 +4744,7 @@ menu	Select &all	Select &all
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 menu	Show &drop target	Show &drop target
 #. menu command in the main window
-menu	Show Mister Download Manager	Show Mister Download Manager
+menu	Show tnctr download manager	Show tnctr download manager
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 menu	Speed &Limiter	Speed &Limiter
@@ -4773,6 +4770,9 @@ menu	The graphics card was lost twice in 10 minutes	The graphics card was lost t
 #. menu command in the main window
 #. View menu: submenu choosing MDM's look (colours, sizes, icons): Classic, Native…
 menu	Theme	Theme
+#. menu command in the main window
+#. & marks the keyboard shortcut letter: keep one & before a letter of the translation
+menu	tnctr download manager &Home Page	tnctr download manager &Home Page
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it

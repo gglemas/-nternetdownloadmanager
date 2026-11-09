@@ -1,4 +1,4 @@
-# Mister Download Manager in Quechua (Runasimi): tools/i18n/translate.py
+# tnctr download manager in Quechua (Runasimi): tools/i18n/translate.py
 # writes the rows marked '#, machine'; a native speaker deletes that line after checking.
 # context	source	translation (craft-i18n format, rows as in en.tsv)
 @id	language.name	Runasimi
@@ -11,7 +11,7 @@
 #. never shown for a single download
 #. {n} = a number (keep the braces as they are)
 #, machine
-@plural	Are you sure you want to delete {n} download from Mister Download Manager list of downloads?|Are you sure you want to delete these {n} downloads from Mister Download Manager list of downloads?	¿Mister Download Manager uraykachiykunapa listanmanta {n} uraykachiyta pichayta munankichu?
+@plural	Are you sure you want to delete {n} download from tnctr download manager list of downloads?|Are you sure you want to delete these {n} downloads from tnctr download manager list of downloads?	¿tnctr download manager uraykachiykunapa listanmanta {n} uraykachiyta pichayta munankichu?
 #. count in the Add torrent window
 #. while a magnet link's file list is fetched; {n} = peers that answered
 #. {n} = a number (keep the braces as they are)
@@ -226,7 +226,7 @@
 	a volume of it is missing	huknin mana kanchu
 #. window title in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	About Mister Download Manager	Mister Download Managermanta
+	About tnctr download manager	tnctr download managermanta
 #. text in whereis.rs
 #. a download's server's round trip: {ms} a number of milliseconds, {reach} near, medium or far
 #, machine
@@ -280,7 +280,7 @@
 #. window title in extension.rs
 #. title of the window that offers the browser extension
 #, machine
-	Add Mister Download Manager to your browser	Mister Download Managerta wamp'uqniykiman yapay
+	Add tnctr download manager to your browser	tnctr download managerta wamp'uqniykiman yapay
 #. message or event log entry in the main window; text in the tray icon's menu
 #. link in the empty download list: opens Add URL
 #, machine
@@ -447,7 +447,7 @@
 	Always into a folder named after it	Sutinwan huk qillqaqman sapa kuti
 #. checkbox in a dialog box
 #, machine
-	Always turn on Speed Limiter on Mister Download Manager startup	Sapa kuti Mister Download Manager qallariptin Utqaylla Limitaqta k'umuykachiy
+	Always turn on Speed Limiter on tnctr download manager startup	Sapa kuti tnctr download manager qallariptin Utqaylla Limitaqta k'umuykachiy
 #. text in regional.rs; text in the Scheduler window
 #. before noon, after a time of day (12-hour clock). Its pair is "PM": write both the same way (this language's own short marks, or both kept as AM and PM)
 #, machine
@@ -513,7 +513,7 @@
 #. text in a dialog box
 #. {name} = a file name (keep the braces as they are)
 #, machine
-	Are you sure you want to delete "{name}" from Mister Download Manager list of downloads?	¿Cheqachu "{name}"ta Mister Download Manager uraykuchiykuna listamanta pichayta munanki?
+	Are you sure you want to delete "{name}" from tnctr download manager list of downloads?	¿Cheqachu "{name}"ta tnctr download manager uraykuchiykuna listamanta pichayta munanki?
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -682,7 +682,7 @@
 	Browse...	Maskay...
 #. text in extension.rs
 #, machine
-	Browser integration isn't set up on this computer, so no browser can reach Mister Download Manager yet.	Kay antañiqiqpiqa manaraqmi wamp'uqwan t'inkiy kachkanchu, chayrayku manaraqmi mayqin wamp'uqpas Mister Download Managerta aypayta atinchu.
+	Browser integration isn't set up on this computer, so no browser can reach tnctr download manager yet.	Kay antañiqiqpiqa manaraqmi wamp'uqwan t'inkiy kachkanchu, chayrayku manaraqmi mayqin wamp'uqpas tnctr download managerta aypayta atinchu.
 #. page title in the Options window
 #, machine
 	Browser/System Integration	Wampunapaq/Sistema Imaymana
@@ -874,7 +874,7 @@
 	Choose a language	Rimay simita akllay
 #. text in langpick.rs
 #, machine
-	Choose the language Mister Download Manager shows its windows in:	Akllay imayna rimay simipi Mister Download Manager qhawachinqa ventanankunata:
+	Choose the language tnctr download manager shows its windows in:	Akllay imayna rimay simipi tnctr download manager qhawachinqa ventanankunata:
 #. text in the Options window
 #. Options → Sites Logins → Cookies for video sites: the title of the window, and the tooltip of the button, that pick a browser profile's folder
 #, machine
@@ -1493,7 +1493,7 @@
 	Exit	Lluqsiy
 #. checkbox in a download's progress window; checkbox in the Scheduler window
 #, machine
-	Exit Mister Download Manager when done	Mister Download Manager lloqsiy tukusqa kaqtin
+	Exit tnctr download manager when done	tnctr download manager lloqsiy tukusqa kaqtin
 #. text in the Checksum window
 #, machine
 	Expected checksum (MD5, SHA-1, SHA-256, SHA-512 or CRC32):	Suyasqa checksum (MD5, SHA-1, SHA-256, SHA-512 utaq CRC32):
@@ -1924,7 +1924,7 @@
 	Hide web pages	Web p'anqakunata pakay
 #. text in the Options window
 #, machine
-	Hold Alt while clicking a link to let the browser download it instead of Mister Download Manager.	Altta ñit'iy t'inkita ñit'ispa, wamp'uq chayta uraykachinanpaq Mister Download Managerpa rantinpi.
+	Hold Alt while clicking a link to let the browser download it instead of tnctr download manager.	Altta ñit'iy t'inkita ñit'ispa, wamp'uq chayta uraykachinanpaq tnctr download managerpa rantinpi.
 #. link (opens a web page) in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Home page	Qallariy p'anqa
@@ -1960,7 +1960,7 @@
 	Hungary	Hungría
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	I download with Mister Download Manager: fast, free, and it looks like the download manager you already know. {link}	Mister Download Managerwanmi uraykachini: utqaylla, qullqinnaq, hinaspapas qanpa riqsisqayki uraykachiy kamachiq hinam rikch'akun. {link}
+	I download with tnctr download manager: fast, free, and it looks like the download manager you already know. {link}	tnctr download managerwanmi uraykachini: utqaylla, qullqinnaq, hinaspapas qanpa riqsisqayki uraykachiy kamachiq hinam rikch'akun. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2231,7 +2231,7 @@
 	Latvia	Letonia
 #. text in the Options window
 #, machine
-	Launch Mister Download Manager on startup	Mister Download Managerta qallariypi kicharichiy
+	Launch tnctr download manager on startup	tnctr download managerta qallariypi kicharichiy
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2518,54 +2518,54 @@
 	Missing	Pisi
 #. message or event log entry in the main window; window title in a dialog box; text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	Mister Download Manager	Mister Download Manager
+	tnctr download manager	tnctr download manager
 #. text in unix.rs
 #. Linux, at start, on the terminal and in a message box: a library the window needs isn't installed; {libraries} = its file names (libxkbcommon-x11.so.0…), left as they are
 #, machine
-	Mister Download Manager can't open its window: this system lacks {libraries}.	Mister Download Manager mana ventanan kichayta atinchu: kay sistimapi {libraries} illan.
+	tnctr download manager can't open its window: this system lacks {libraries}.	tnctr download manager mana ventanan kichayta atinchu: kay sistimapi {libraries} illan.
 #. text in crashui.rs
 #. crash report window heading: MDM crashed and is gone
 #, machine
-	Mister Download Manager closed unexpectedly	Mister Download Manager mana suyasqallamanta wichq'akuran
+	tnctr download manager closed unexpectedly	tnctr download manager mana suyasqallamanta wichq'akuran
 #. window title in the Options window
 #, machine
-	Mister Download Manager Configuration	Mister Download Manager Allichay
+	tnctr download manager Configuration	tnctr download manager Allichay
 #. text in crashui.rs
 #, machine
-	Mister Download Manager crash report	Mister Download Manager sasachakuy willakuy
+	tnctr download manager crash report	tnctr download manager sasachakuy willakuy
 #. text in crashui.rs
 #. crash report window heading: an internal error, MDM still running
 #, machine
-	Mister Download Manager hit an internal error	Mister Download Manager huk ukhu pantayta tariran
+	tnctr download manager hit an internal error	tnctr download manager huk ukhu pantayta tariran
 #. text in wake.rs
 #. why the computer isn't going to sleep, in the system's list of programs that keep it awake; {queue} = the queue's name
 #. {queue} = a queue name such as "Main queue" (keep the braces as they are)
 #, machine
-	Mister Download Manager is running the queue "{queue}"	Mister Download Manager "{queue}" siq'ita purichishan
+	tnctr download manager is running the queue "{queue}"	tnctr download manager "{queue}" siq'ita purichishan
 #. text in crashui.rs
 #. crash report window heading: MDM's window doesn't answer (frozen)
 #, machine
-	Mister Download Manager stopped responding	Mister Download Manager manaña kutichinñachu
+	tnctr download manager stopped responding	tnctr download manager manaña kutichinñachu
 #. text in crashui.rs
 #, machine
-	Mister Download Manager stopped responding for a while	Mister Download Manager pisita manaña kutichinñachu
+	tnctr download manager stopped responding for a while	tnctr download manager pisita manaña kutichinñachu
 #. text in the Options window
 #. \\n starts a new line: break lines where they fit the translation
 #, machine
-	Mister Download Manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.	Mister Download Manager sapa t'inkinakuyta chiqap willañiqiman qillqan\n(huk pisi willañiqi chaypa manyanpi), chayrayku mana pisichay\nkaru willañiqiwan nitaq huñunakuywanpas pisichay kanchu.
+	tnctr download manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.	tnctr download manager sapa t'inkinakuyta chiqap willañiqiman qillqan\n(huk pisi willañiqi chaypa manyanpi), chayrayku mana pisichay\nkaru willañiqiwan nitaq huñunakuywanpas pisichay kanchu.
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	Mister Download Manager {version} is available (released {date}).	Mister Download Manager {version} kachkan (lluqsisqa {date}).
+	tnctr download manager {version} is available (released {date}).	tnctr download manager {version} kachkan (lluqsisqa {date}).
 #. text in helpers.rs
 #. Video helpers: {version} = the version of MDM's own copy
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	Mister Download Manager's own copy, version {version}	Mister Download Managerpa kikin churaynin, {version} laya
+	tnctr download manager's own copy, version {version}	tnctr download managerpa kikin churaynin, {version} laya
 #. text in unix.rs
 #. Linux, at start, on the terminal: the libraries an X11 window needs aren't installed, so the window opens through Wayland instead, where menus can't be placed under what was clicked; {libraries} = their file names, left as they are
 #, machine
-	Mister Download Manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.	Mister Download Managerpa X11 ventananpaq {libraries} kachun, chaytaq kay sistimapi illan: Waylandpi kichakunqa, chaypiqa menunkuna sutinkunamanta karupi kichakuyta atinqaku.
+	tnctr download manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.	tnctr download managerpa X11 ventananpaq {libraries} kachun, chaytaq kay sistimapi illan: Waylandpi kichakunqa, chaypiqa menunkuna sutinkunamanta karupi kichakuyta atinqaku.
 #. text in the Scheduler window
 #. Monday, as short as a calendar's column head (two letters in English)
 #, machine
@@ -3070,10 +3070,10 @@
 	Open folder	Karpitata kichay
 #. checkbox in the Add torrent window
 #, machine
-	Open magnet links and .torrent files with Mister Download Manager	Magnet t'inkikunata hinaspa .torrent willaykunata Mister Download Managerwan kichay
+	Open magnet links and .torrent files with tnctr download manager	Magnet t'inkikunata hinaspa .torrent willaykunata tnctr download managerwan kichay
 #. text in the tray icon's menu
 #, machine
-	Open Mister Download Manager	Mister Download Managerta kichay
+	Open tnctr download manager	tnctr download managerta kichay
 #. text in extension.rs
 #. step 2 of turning on the Safari extension; Cmd is the Command key
 #, machine
@@ -3144,7 +3144,7 @@
 #. text in remote.rs
 #. remote control page (on a phone): title of the pairing screen
 #, machine
-	Pair with Mister Download Manager	Mister Download Managerwan tupay
+	Pair with tnctr download manager	tnctr download managerwan tupay
 #. text in the Options window
 #. column title: when the device was paired
 #, machine
@@ -3630,7 +3630,7 @@
 	Select or unselect the download with the dotted outline	Chupichasqa siq'iwan uraykuchiyta akllay utaq mana akllaychu
 #. group box title in the Options window
 #, machine
-	Select sounds for Mister Download Manager events	Mister Download Manager ruwaykunapaq takikunata akllay
+	Select sounds for tnctr download manager events	tnctr download manager ruwaykunapaq takikunata akllay
 #. what a keyboard shortcut does in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Select the downloads in the box	Cajapi kaq uraykuchiykunata akllay
@@ -3955,7 +3955,7 @@
 	Start download at	Kachayta qallariy kaypi
 #. checkbox in the Scheduler window
 #, machine
-	Start download on Mister Download Manager startup	Kachayta qallariy Mister Download Manager qallariptin
+	Start download on tnctr download manager startup	Kachayta qallariy tnctr download manager qallariptin
 #. checkbox in the Options window
 #, machine
 	Start downloading immediately while displaying "Download File Info" dialog	Kachayta qallariy "Kachay Willañiqi Willay" dialogota rikuchispa
@@ -3990,7 +3990,7 @@
 #, machine
 	Started with the computer, it starts minimized: no notification area shows its icon here	Antaqa computadorawan qallarisqa, pisichasqa qallarin: kaypi mana willay k'iti kachkanchu chayta rikuchinapaq.
 #. text in the Options window
-#. tooltip of "Launch Mister Download Manager on startup": started with the computer, MDM's window stays hidden, its icon in the notification area (system tray)
+#. tooltip of "Launch tnctr download manager on startup": started with the computer, MDM's window stays hidden, its icon in the notification area (system tray)
 #, machine
 	Started with the computer, it waits in the notification area	Antaqa computadorawan qallarisqa, willay k'itipi suyachkan.
 #. message or event log entry in the main window
@@ -4211,7 +4211,7 @@
 #. text in extension.rs
 #. a check of Test browser integration: the browsers find MDM's helper program
 #, machine
-	The browsers can find Mister Download Manager	Wamp'uqkuna Mister Download Managerta tarinku
+	The browsers can find tnctr download manager	Wamp'uqkuna tnctr download managerta tarinku
 #. text in the Options window
 #. Options → Remote → Status: the settings were changed; they apply on OK
 #, machine
@@ -4235,7 +4235,7 @@
 #. text in the Scheduler window
 #. tooltip on the Scheduler's "Wake the computer to run this queue"
 #, machine
-	The computer is woken a minute before the start time and kept awake while the queue runs. Mister Download Manager has to be running (it can wait in the notification area).	Antañiqiqqa huk minututa ñawpaqta rikch'arichisqa kanqa qallariy pacha manaraq chayamuchkaptin, chaymanta rikch'arisqa kanqa siq'i purichkaptin. Mister Download Manager purichkasqa kanan (willay patapi suyayta atin).
+	The computer is woken a minute before the start time and kept awake while the queue runs. tnctr download manager has to be running (it can wait in the notification area).	Antañiqiqqa huk minututa ñawpaqta rikch'arichisqa kanqa qallariy pacha manaraq chayamuchkaptin, chaymanta rikch'arisqa kanqa siq'i purichkaptin. tnctr download manager purichkasqa kanan (willay patapi suyayta atin).
 #. text in the Scheduler window
 #. the Scheduler, under "Wake the computer to run this queue": when it will happen; {date} = e.g. 06/11/2026, {time} = e.g. 22:59:00
 #. {time} = a time of day (keep the braces as they are)
@@ -4406,7 +4406,7 @@
 #. text in a dialog box
 #. \\n starts a new line: break lines where they fit the translation
 #, machine
-	The selected download is not complete. Are you sure you want to delete\nit from Mister Download Manager list of downloads?	Akllasqa uraykachiyqa manaraq hunt'asqachu. ¿Mister Download Manager uraykachiykunapa siq'imanta chayta chinkachiyta munankichu?
+	The selected download is not complete. Are you sure you want to delete\nit from tnctr download manager list of downloads?	Akllasqa uraykachiyqa manaraq hunt'asqachu. ¿tnctr download manager uraykachiykunapa siq'imanta chayta chinkachiyta munankichu?
 #. text in errors.rs
 #, machine
 	the server answered {status}	sirwiq {status} nisqa kutichisqa
@@ -4765,7 +4765,7 @@
 #. text in extension.rs
 #. step 8 of turning on the Safari extension
 #, machine
-	Turn on "Mister Download Manager" and allow it on all websites.	"Mister Download Manager" nisqata atiyachiy hinaspa llapa web wasikunapi saqiy.
+	Turn on "tnctr download manager" and allow it on all websites.	"tnctr download manager" nisqata atiyachiy hinaspa llapa web wasikunapi saqiy.
 #. text in extension.rs
 #. step 4 of turning on the Safari extension; the quoted switch name is what Safari's settings show in this language: use Apple's own words for it, or keep the English name when unsure
 #, machine
@@ -5178,7 +5178,7 @@
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	You have the latest version of Mister Download Manager ({version}).	Mister Download Manager ({version})pa qhipa versionninta charinki.
+	You have the latest version of tnctr download manager ({version}).	tnctr download manager ({version})pa qhipa versionninta charinki.
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. Check for updates, under the new version's line, when MDM was installed by the Linux system's package manager (pacman, ...), which MDM can't update itself
 #. {version} = a version number (keep the braces as they are)
@@ -5557,15 +5557,15 @@ column	Time left	Pacha qhipaq
 #, machine
 column	Transfer rate	Chimpachiy tupu
 #. text in the browser extension
-#. choice under Send downloads to: an MDM running on another computer of the network, such as a home server; keep the name Mister Download Manager as it is
+#. choice under Send downloads to: an MDM running on another computer of the network, such as a home server; keep the name tnctr download manager as it is
 #, machine
-extension	Another Mister Download Manager (a server)	Huk Mister Download Manager (huk sirwiq)
+extension	Another tnctr download manager (a server)	Huk tnctr download manager (huk sirwiq)
 #. text in the browser extension
 #. the name this browser gets in the other MDM's list of paired devices
 #, machine
 extension	Browser extension	Wampunapaq k'askaq
 #. text in the browser extension
-#. menu command of the download button over a video: opens its settings in Mister Download Manager
+#. menu command of the download button over a video: opens its settings in tnctr download manager
 #. the trailing ... means it is still going on: keep it
 #, machine
 extension	Button settings...	Butun allinchanakuna...
@@ -5574,34 +5574,34 @@ extension	Button settings...	Butun allinchanakuna...
 #, machine
 extension	Can't tell which video this is: open its own page and try there	Mayqin video kasqanta mana riqsiy atinichu: kikin p'anqanta kichaspa chaypi yapamanta ruway
 #. text in the browser extension
-#. the toolbar button's status when the browser reaches the app; keep the name Mister Download Manager as it is
+#. the toolbar button's status when the browser reaches the app; keep the name tnctr download manager as it is
 #, machine
-extension	Connected to Mister Download Manager	Mister Download Managerwan t'inkisqa
+extension	Connected to tnctr download manager	tnctr download managerwan t'inkisqa
 #. text in the browser extension
-#. the toolbar button's status when the browser reaches the app, with the app's version number; keep the name Mister Download Manager as it is
+#. the toolbar button's status when the browser reaches the app, with the app's version number; keep the name tnctr download manager as it is
 #. {version} = a version number (keep the braces as they are)
 #, machine
-extension	Connected to Mister Download Manager {version}	Mister Download Manager {version}wan t'inkisqa
+extension	Connected to tnctr download manager {version}	tnctr download manager {version}wan t'inkisqa
 #. text in the browser extension
 #. button beside a video, sound or stream in the toolbar button's popup: download it with the app; verb; short
 #, machine
 extension	Download	Urhuy
 #. text in the browser extension
-#. command in the browser's right-click menu on a page: download the links of the whole page; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on a page: download the links of the whole page; keep the name tnctr download manager as it is
 #, machine
-extension	Download all links with Mister Download Manager	Tukuy t'inkikunata Mister Download Managerwan uraykachiy
+extension	Download all links with tnctr download manager	Tukuy t'inkikunata tnctr download managerwan uraykachiy
 #. text in the browser extension
-#. command in the browser's right-click menu on selected text: download the links in the selection; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on selected text: download the links in the selection; keep the name tnctr download manager as it is
 #, machine
-extension	Download selected links with Mister Download Manager	Akllasqa t'inkikunata Mister Download Managerwan uraykachiy
+extension	Download selected links with tnctr download manager	Akllasqa t'inkikunata tnctr download managerwan uraykachiy
 #. text in the browser extension
 #. the button over a video on a web page that downloads it; verb; short (it sits on the video)
 #, machine
 extension	Download video	Wiqawta uqhariy
 #. text in the browser extension
-#. command in the browser's right-click menu on a link, picture, video or sound; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on a link, picture, video or sound; keep the name tnctr download manager as it is
 #, machine
-extension	Download with Mister Download Manager	Mister Download Managerwan uraykachay
+extension	Download with tnctr download manager	tnctr download managerwan uraykachay
 #. text in the browser extension
 #. shown in the toolbar button's popup after the site was excluded
 #. {site} = a web site's name such as "example.com" (keep the braces as they are)
@@ -5620,9 +5620,9 @@ extension	Drag to move it along the video's edge	Astarinapaq aysay wiqawpa patan
 #, machine
 extension	Enter its https:// address.	Chaypa https:// tiyananta qillqay.
 #. text in the browser extension
-#. the extension's description in the browser's list of extensions; keep the name Mister Download Manager as it is
+#. the extension's description in the browser's list of extensions; keep the name tnctr download manager as it is
 #, machine
-extension	Hands downloads from the browser to Mister Download Manager.	Mister Download Managerman uraykachaykunata qun.
+extension	Hands downloads from the browser to tnctr download manager.	tnctr download managerman uraykachaykunata qun.
 #. text in the browser extension
 #. link in the toolbar button's popup to the help page
 #, machine
@@ -5677,33 +5677,33 @@ extension	Live	Kawsay
 #, machine
 extension	Media on this page	Kay p'anqapi willakuykuna
 #. text in the browser extension
-#. the extension's name in the browser's list of extensions and on its toolbar button; keep the name Mister Download Manager as it is
+#. the extension's name in the browser's list of extensions and on its toolbar button; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager	Mister Download Manager
+extension	tnctr download manager	tnctr download manager
 #. text in the browser extension
-#. status when the app was started for a download but didn't answer in time; keep the name Mister Download Manager as it is
+#. status when the app was started for a download but didn't answer in time; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager didn't start in time	Mister Download Manager manam pachapi qallarirqanchu
+extension	tnctr download manager didn't start in time	tnctr download manager manam pachapi qallarirqanchu
 #. text in the browser extension
-#. status when the app refuses this copy of the extension (another copy is installed, or it came from another store); keep the name Mister Download Manager as it is
+#. status when the app refuses this copy of the extension (another copy is installed, or it came from another store); keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager doesn't accept this copy of the extension	Mister Download Manager manam kay k'askachisqata chaskinchu
+extension	tnctr download manager doesn't accept this copy of the extension	tnctr download manager manam kay k'askachisqata chaskinchu
 #. text in the browser extension
-#. shown briefly on the download button when the app could not be reached; keep the name Mister Download Manager as it is
+#. shown briefly on the download button when the app could not be reached; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager isn't installed or didn't start	Mister Download Manager manam churasqachu kachkan icha manam qallarirqanchu
+extension	tnctr download manager isn't installed or didn't start	tnctr download manager manam churasqachu kachkan icha manam qallarirqanchu
 #. text in the browser extension
-#. status when the browser can't find the app's connection; keep the name Mister Download Manager as it is
+#. status when the browser can't find the app's connection; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager isn't installed, or its browser integration isn't set up	Mister Download Manager manam churasqachu kachkan, icha wamp'uqwan t'inkisqan manam ruwasqachu kachkan
+extension	tnctr download manager isn't installed, or its browser integration isn't set up	tnctr download manager manam churasqachu kachkan, icha wamp'uqwan t'inkisqan manam ruwasqachu kachkan
 #. text in the browser extension
-#. tooltip of the switch Send downloads through this browser's proxy or VPN extension; keep the name Mister Download Manager as it is
+#. tooltip of the switch Send downloads through this browser's proxy or VPN extension; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager then downloads through the same proxy as this browser. The browser asks you once to allow it; turning this off takes that back.	Mister Download Manager chaymanta kay wamp'uqpa kikin proxywanmi uraykachin. Wamp'uq huk kutillatam saqiyta mañakun; kayta wañuchispaqa chayta kutichinmi.
+extension	tnctr download manager then downloads through the same proxy as this browser. The browser asks you once to allow it; turning this off takes that back.	tnctr download manager chaymanta kay wamp'uqpa kikin proxywanmi uraykachin. Wamp'uq huk kutillatam saqiyta mañakun; kayta wañuchispaqa chayta kutichinmi.
 #. text in the browser extension
-#. tooltip of the switch Send downloads through this browser's proxy or VPN extension in Chrome, Edge and the other Chromium browsers (they ask for no permission at the switch); keep the name Mister Download Manager as it is
+#. tooltip of the switch Send downloads through this browser's proxy or VPN extension in Chrome, Edge and the other Chromium browsers (they ask for no permission at the switch); keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager then downloads through the same proxy as this browser. While this is off, the extension doesn't read the browser's proxy.	Mister Download Manager chaymanta kay wamp'uqpa kaqlla proxywan uraykachin. Kay mana kachkaspaqa, extensión mana wamp'uqpa proxyninta ñawinchanchu.
+extension	tnctr download manager then downloads through the same proxy as this browser. While this is off, the extension doesn't read the browser's proxy.	tnctr download manager chaymanta kay wamp'uqpa kaqlla proxywan uraykachin. Kay mana kachkaspaqa, extensión mana wamp'uqpa proxyninta ñawinchanchu.
 #. text in the browser extension
 #. the small arrow next to the Download video button that opens its menu (read aloud by screen readers)
 #, machine
@@ -5735,9 +5735,9 @@ extension	Open it	Kichay
 #, machine
 extension	Open its address once and accept its certificate, then enter a code from its Options, Remote, Pair a device (or misterdownloadmanager-cli pair).	Huk kutita chaypa tiyananta kichay hinaspa chaypa chawpinchayninata chaskiy, chaymanta huk mayt'uta chaypa Options, Remote, Pair a device nisqamanta qillqay (utaq misterdownloadmanager-cli pair).
 #. text in the browser extension
-#. button in the toolbar button's popup; keep the name Mister Download Manager as it is
+#. button in the toolbar button's popup; keep the name tnctr download manager as it is
 #, machine
-extension	Open Mister Download Manager	Mister Download Managerta kichay
+extension	Open tnctr download manager	tnctr download managerta kichay
 #. text in the browser extension
 #. button in the toolbar button's popup: open the app's Options
 #. the trailing ... means it is still going on: keep it
@@ -5772,9 +5772,9 @@ extension	Send downloads through this browser's proxy or VPN extension	Uraykachi
 #, machine
 extension	Send downloads to	Ura-ch'aqaykunata kachay
 #. text in the browser extension
-#. shown briefly on the download button after it was clicked; keep the name Mister Download Manager as it is
+#. shown briefly on the download button after it was clicked; keep the name tnctr download manager as it is
 #, machine
-extension	Sent to Mister Download Manager	Mister Download Manager nisqaman kachasqa
+extension	Sent to tnctr download manager	tnctr download manager nisqaman kachasqa
 #. text in the browser extension
 #. link at the foot of the toolbar button's popup to the creator's GitHub Sponsors page (MDM is free; this is an optional donation)
 #, machine
@@ -5788,9 +5788,9 @@ extension	Take downloads from this browser	Kay wampunamanta urquykunata hap’iy
 #, machine
 extension	The Chrome Web Store's rules keep this copy of the add-on away from this site's videos. Help says what you can do.	Chrome Web Storepa kamachikuyninkuna kay yapakuqta kay web wasipa videonkunamanta karunchan. Yanapana nin ima ruwayta atinki.
 #. text in the browser extension
-#. status when the connection to the app broke off (often security software blocking it); keep the name Mister Download Manager as it is
+#. status when the connection to the app broke off (often security software blocking it); keep the name tnctr download manager as it is
 #, machine
-extension	The connection to Mister Download Manager failed	Mister Download Managerwan tinkiy mana llamk’arqanchu
+extension	The connection to tnctr download manager failed	tnctr download managerwan tinkiy mana llamk’arqanchu
 #. text in the browser extension
 #. shown briefly on the download button over a video when the app's settings keep the button off on this web site
 #, machine
@@ -5808,7 +5808,7 @@ extension	The last download was left to the browser.	Qhipa uraykuchiyqa wamp'una
 #, machine
 extension	This browser isn't ticked in Options → General.	Kay wamp'unaqa manam Akllanakuna → Sapsi nisqapi markasqachu kachkan.
 #. text in the browser extension
-#. choice under Send downloads to: the Mister Download Manager on this computer
+#. choice under Send downloads to: the tnctr download manager on this computer
 #, machine
 extension	This computer	Kay antañiqiq
 #. text in the browser extension
@@ -5820,9 +5820,9 @@ extension	This download's details were too large to hand over	Kay urquy imaynan 
 #, machine
 extension	This page's player streams its video in pieces, so there's no file to list. Point at the video and use its Download video button.	Kay p'anqapa video qhawachikuqnin videota pitikuna hina apamun, chayrayku willana ruway mana kanchu. Videota rikuchispa Videota uraykachiy butunta ñit'iy.
 #. text in the browser extension
-#. status when the app is older than the extension; keep the name Mister Download Manager as it is
+#. status when the app is older than the extension; keep the name tnctr download manager as it is
 #, machine
-extension	Update Mister Download Manager to use everything this extension offers	Mister Download Managerta musuqyachiy kay mast’ariy tukuy imata qunanta llamk’achinapaq
+extension	Update tnctr download manager to use everything this extension offers	tnctr download managerta musuqyachiy kay mast’ariy tukuy imata qunanta llamk’achinapaq
 #. text in the browser extension
 #. why a download stayed with the browser: the app's setting 'Use advanced browser integration' is off; keep the setting's name as the app shows it
 #, machine
@@ -5938,7 +5938,7 @@ key	Up / Down	Up / Down
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
-menu	&About Mister Download Manager	Mister Download Manager &manta
+menu	&About tnctr download manager	tnctr download manager &manta
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
@@ -6290,7 +6290,7 @@ menu	Metro	Metro
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
-menu	Mister Download Manager &Home Page	Mister Download Manager &Qallariy P'anqa
+menu	tnctr download manager &Home Page	tnctr download manager &Qallariy P'anqa
 #. menu command in the main window
 #, machine
 menu	Move/Rename (Ctrl-M)	Kuyuchiy/Sutinchay (Ctrl-M)
@@ -6403,7 +6403,7 @@ menu	Select &all	&Tukuyta akllay
 menu	Show &drop target	&Chinkachina chimpapurana rikuchiy
 #. menu command in the main window
 #, machine
-menu	Show Mister Download Manager	Mister Download Manager rikuchiy
+menu	Show tnctr download manager	tnctr download manager rikuchiy
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine

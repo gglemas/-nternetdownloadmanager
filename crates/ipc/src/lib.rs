@@ -1,4 +1,4 @@
-//! Mister Download Manager's command channel (shared by the app, its command line and the browser host).
+//! tnctr download manager's command channel (shared by the app, its command line and the browser host).
 //! Single-instance command channel. The running app listens on a localhost port and writes
 //! `{port, token}` to `%APPDATA%\misterdownloadmanager\ipc.json`; a second launch (IDM-style command line)
 //! or the browser's native messaging host sends one JSON line per command, carrying the token.
@@ -329,7 +329,7 @@ impl std::fmt::Display for SendError {
     }
 }
 
-/// Send `cmd` to a running Mister Download Manager.
+/// Send `cmd` to a running tnctr download manager.
 pub fn send(cmd: &Command) -> Result<(), SendError> {
     let ack = exchange(cmd)?;
     if ack.trim() == "ok" {
