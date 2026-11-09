@@ -1,12 +1,12 @@
 {
   "name": {
-    "message": "Mister Download Manager"
+    "message": "tnctr download manager"
   },
   "description": {
-    "message": "Overfører downloads fra browseren til Mister Download Manager."
+    "message": "Overfører downloads fra browseren til tnctr download manager."
   },
   "menu": {
-    "message": "Download med Mister Download Manager"
+    "message": "Download med tnctr download manager"
   },
   "video_download": {
     "message": "Download video"
@@ -30,25 +30,25 @@
     "message": "Knapindstillinger..."
   },
   "video_sent": {
-    "message": "Sendt til Mister Download Manager"
+    "message": "Sendt til tnctr download manager"
   },
   "video_failed": {
-    "message": "Mister Download Manager er ikke installeret eller blev ikke startet"
+    "message": "tnctr download manager er ikke installeret eller blev ikke startet"
   },
   "video_drag": {
     "message": "Træk for at flytte den langs videoens kant"
   },
   "menu_selected": {
-    "message": "Download valgte links med Mister Download Manager"
+    "message": "Download valgte links med tnctr download manager"
   },
   "menu_all": {
-    "message": "Download alle links med Mister Download Manager"
+    "message": "Download alle links med tnctr download manager"
   },
   "status_connected": {
-    "message": "Forbundet til Mister Download Manager"
+    "message": "Forbundet til tnctr download manager"
   },
   "status_connected_version": {
-    "message": "Forbundet til Mister Download Manager $version$",
+    "message": "Forbundet til tnctr download manager $version$",
     "placeholders": {
       "version": {
         "content": "$1",
@@ -60,22 +60,22 @@
     "message": "Sat på pause: downloads forbliver i browseren"
   },
   "status_not_installed": {
-    "message": "Mister Download Manager er ikke installeret, eller dens browserintegration er ikke konfigureret"
+    "message": "tnctr download manager er ikke installeret, eller dens browserintegration er ikke konfigureret"
   },
   "status_forbidden": {
-    "message": "Mister Download Manager accepterer ikke denne kopi af udvidelsen"
+    "message": "tnctr download manager accepterer ikke denne kopi af udvidelsen"
   },
   "status_not_running": {
-    "message": "Mister Download Manager startede ikke til tiden"
+    "message": "tnctr download manager startede ikke til tiden"
   },
   "status_host_failed": {
-    "message": "Forbindelsen til Mister Download Manager mislykkedes"
+    "message": "Forbindelsen til tnctr download manager mislykkedes"
   },
   "status_too_large": {
     "message": "Oplysningerne om denne download var for store til at overføre"
   },
   "status_update_app": {
-    "message": "Opdater Mister Download Manager for at bruge alt, hvad denne udvidelse tilbyder"
+    "message": "Opdater tnctr download manager for at bruge alt, hvad denne udvidelse tilbyder"
   },
   "popup_take": {
     "message": "Overfør downloads fra denne browser"
@@ -84,10 +84,10 @@
     "message": "Send downloads gennem denne browsers proxy- eller VPN-udvidelse"
   },
   "popup_proxy_title": {
-    "message": "Mister Download Manager downloader derefter gennem den samme proxy som denne browser. Browseren spørger dig én gang, om du vil tillade det; hvis du slår dette fra, trækkes tilladelsen tilbage."
+    "message": "tnctr download manager downloader derefter gennem den samme proxy som denne browser. Browseren spørger dig én gang, om du vil tillade det; hvis du slår dette fra, trækkes tilladelsen tilbage."
   },
   "popup_proxy_title_chromium": {
-    "message": "Mister Download Manager downloader derefter via den samme proxy som denne browser. Når dette er slået fra, læser udvidelsen ikke browserens proxy."
+    "message": "tnctr download manager downloader derefter via den samme proxy som denne browser. Når dette er slået fra, læser udvidelsen ikke browserens proxy."
   },
   "popup_exclude_site": {
     "message": "Overfør aldrig downloads fra $site$",
@@ -108,7 +108,7 @@
     }
   },
   "popup_open": {
-    "message": "Åbn Mister Download Manager"
+    "message": "Åbn tnctr download manager"
   },
   "popup_options": {
     "message": "Indstillinger..."
@@ -117,7 +117,7 @@
     "message": "Hjælp"
   },
   "popup_support": {
-    "message": "Støt MDM"
+    "message": "Støt tnctr download manager"
   },
   "popup_fix": {
     "message": "Sådan løser du det"
@@ -195,7 +195,7 @@
     "message": "Denne computer"
   },
   "popup_send_remote": {
-    "message": "En anden Mister Download Manager (en server)"
+    "message": "En anden tnctr download manager (en server)"
   },
   "popup_remote_code": {
     "message": "Parringskode"
