@@ -1,4 +1,4 @@
-# Mister Download Manager in Georgian (ქართული): tools/i18n/translate.py
+# tnctr download manager in Georgian (ქართული): tools/i18n/translate.py
 # writes the rows marked '#, machine'; a native speaker deletes that line after checking.
 # context	source	translation (craft-i18n format, rows as in en.tsv)
 @id	language.name	ქართული
@@ -11,7 +11,7 @@
 #. never shown for a single download
 #. {n} = a number (keep the braces as they are)
 #, machine
-@plural	Are you sure you want to delete {n} download from Mister Download Manager list of downloads?|Are you sure you want to delete these {n} downloads from Mister Download Manager list of downloads?	გსურთ Mister Download Manager-ის ჩამოტვირთვების სიიდან {n} ჩამოტვირთვის წაშლა?|გსურთ Mister Download Manager-ის ჩამოტვირთვების სიიდან ამ {n} ჩამოტვირთვის წაშლა?
+@plural	Are you sure you want to delete {n} download from tnctr download manager list of downloads?|Are you sure you want to delete these {n} downloads from tnctr download manager list of downloads?	გსურთ tnctr download manager-ის ჩამოტვირთვების სიიდან {n} ჩამოტვირთვის წაშლა?|გსურთ tnctr download manager-ის ჩამოტვირთვების სიიდან ამ {n} ჩამოტვირთვის წაშლა?
 #. count in the Add torrent window
 #. while a magnet link's file list is fetched; {n} = peers that answered
 #. {n} = a number (keep the braces as they are)
@@ -226,7 +226,7 @@
 	a volume of it is missing	მას ერთი ტომი აკლია
 #. window title in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	About Mister Download Manager	Mister Download Manager-ის შესახებ
+	About tnctr download manager	tnctr download manager-ის შესახებ
 #. text in whereis.rs
 #. a download's server's round trip: {ms} a number of milliseconds, {reach} near, medium or far
 #, machine
@@ -280,7 +280,7 @@
 #. window title in extension.rs
 #. title of the window that offers the browser extension
 #, machine
-	Add Mister Download Manager to your browser	Mister Download Manager-ის დამატება თქვენს ბრაუზერში
+	Add tnctr download manager to your browser	tnctr download manager-ის დამატება თქვენს ბრაუზერში
 #. message or event log entry in the main window; text in the tray icon's menu
 #. link in the empty download list: opens Add URL
 #, machine
@@ -447,7 +447,7 @@
 	Always into a folder named after it	ყოველთვის მის სახელობის საქაღალდეში
 #. checkbox in a dialog box
 #, machine
-	Always turn on Speed Limiter on Mister Download Manager startup	ყოველთვის ჩართეთ სიჩქარის შემზღუდველი Mister Download Manager-ის გაშვებისას
+	Always turn on Speed Limiter on tnctr download manager startup	ყოველთვის ჩართეთ სიჩქარის შემზღუდველი tnctr download manager-ის გაშვებისას
 #. text in regional.rs; text in the Scheduler window
 #. before noon, after a time of day (12-hour clock). Its pair is "PM": write both the same way (this language's own short marks, or both kept as AM and PM)
 #, machine
@@ -513,7 +513,7 @@
 #. text in a dialog box
 #. {name} = a file name (keep the braces as they are)
 #, machine
-	Are you sure you want to delete "{name}" from Mister Download Manager list of downloads?	დარწმუნებული ხართ, რომ გსურთ „{name}“-ის წაშლა Mister Download Manager-ის ჩამოტვირთვების სიიდან?
+	Are you sure you want to delete "{name}" from tnctr download manager list of downloads?	დარწმუნებული ხართ, რომ გსურთ „{name}“-ის წაშლა tnctr download manager-ის ჩამოტვირთვების სიიდან?
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -682,7 +682,7 @@
 	Browse...	დათვალიერება...
 #. text in extension.rs
 #, machine
-	Browser integration isn't set up on this computer, so no browser can reach Mister Download Manager yet.	ბრაუზერის ინტეგრაცია ამ კომპიუტერზე არ არის დაყენებული, ამიტომ არცერთ ბრაუზერს არ შეუძლია Mister Download Manager-თან დაკავშირება.
+	Browser integration isn't set up on this computer, so no browser can reach tnctr download manager yet.	ბრაუზერის ინტეგრაცია ამ კომპიუტერზე არ არის დაყენებული, ამიტომ არცერთ ბრაუზერს არ შეუძლია tnctr download manager-თან დაკავშირება.
 #. page title in the Options window
 #, machine
 	Browser/System Integration	ბრაუზერის/სისტემის ინტეგრაცია
@@ -874,7 +874,7 @@
 	Choose a language	აირჩიეთ ენა
 #. text in langpick.rs
 #, machine
-	Choose the language Mister Download Manager shows its windows in:	აირჩიეთ ენა, რომელზეც Mister Download Manager აჩვენებს ფანჯრებს:
+	Choose the language tnctr download manager shows its windows in:	აირჩიეთ ენა, რომელზეც tnctr download manager აჩვენებს ფანჯრებს:
 #. text in the Options window
 #. Options → Sites Logins → Cookies for video sites: the title of the window, and the tooltip of the button, that pick a browser profile's folder
 #, machine
@@ -1493,7 +1493,7 @@
 	Exit	გასვლა
 #. checkbox in a download's progress window; checkbox in the Scheduler window
 #, machine
-	Exit Mister Download Manager when done	Mister Download Manager-დან გასვლა დასრულების შემდეგ
+	Exit tnctr download manager when done	tnctr download manager-დან გასვლა დასრულების შემდეგ
 #. text in the Checksum window
 #, machine
 	Expected checksum (MD5, SHA-1, SHA-256, SHA-512 or CRC32):	მოსალოდნელი საკონტროლო ჯამი (MD5, SHA-1, SHA-256, SHA-512 ან CRC32):
@@ -1924,7 +1924,7 @@
 	Hide web pages	ვებ გვერდების დამალვა
 #. text in the Options window
 #, machine
-	Hold Alt while clicking a link to let the browser download it instead of Mister Download Manager.	დააჭირეთ Alt-ს ბმულზე დაწკაპუნებისას, რათა ბრაუზერმა ჩამოტვირთოს ის Mister Download Manager-ის ნაცვლად.
+	Hold Alt while clicking a link to let the browser download it instead of tnctr download manager.	დააჭირეთ Alt-ს ბმულზე დაწკაპუნებისას, რათა ბრაუზერმა ჩამოტვირთოს ის tnctr download manager-ის ნაცვლად.
 #. link (opens a web page) in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Home page	მთავარი გვერდი
@@ -1960,7 +1960,7 @@
 	Hungary	უნგრეთი
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	I download with Mister Download Manager: fast, free, and it looks like the download manager you already know. {link}	მე ვიწერ Mister Download Manager-ით: სწრაფი, უფასო და ის ჰგავს ჩამოტვირთვის მენეჯერს, რომელიც უკვე იცით. {link}
+	I download with tnctr download manager: fast, free, and it looks like the download manager you already know. {link}	მე ვიწერ tnctr download manager-ით: სწრაფი, უფასო და ის ჰგავს ჩამოტვირთვის მენეჯერს, რომელიც უკვე იცით. {link}
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2231,7 +2231,7 @@
 	Latvia	ლატვია
 #. text in the Options window
 #, machine
-	Launch Mister Download Manager on startup	Mister Download Manager-ის გაშვება Windows-ის გაშვებისას
+	Launch tnctr download manager on startup	tnctr download manager-ის გაშვება Windows-ის გაშვებისას
 #. text in countries.rs
 #. a country's name (where a download's server is)
 #, machine
@@ -2518,54 +2518,54 @@
 	Missing	ჩამოუტვირთავი
 #. message or event log entry in the main window; window title in a dialog box; text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
-	Mister Download Manager	Mister Download Manager
+	tnctr download manager	tnctr download manager
 #. text in unix.rs
 #. Linux, at start, on the terminal and in a message box: a library the window needs isn't installed; {libraries} = its file names (libxkbcommon-x11.so.0…), left as they are
 #, machine
-	Mister Download Manager can't open its window: this system lacks {libraries}.	Mister Download Manager-ს არ შეუძლია ფანჯრის გახსნა: ამ სისტემას აკლია {libraries}.
+	tnctr download manager can't open its window: this system lacks {libraries}.	tnctr download manager-ს არ შეუძლია ფანჯრის გახსნა: ამ სისტემას აკლია {libraries}.
 #. text in crashui.rs
 #. crash report window heading: MDM crashed and is gone
 #, machine
-	Mister Download Manager closed unexpectedly	Mister Download Manager მოულოდნელად დაიხურა
+	tnctr download manager closed unexpectedly	tnctr download manager მოულოდნელად დაიხურა
 #. window title in the Options window
 #, machine
-	Mister Download Manager Configuration	Mister Download Manager-ის კონფიგურაცია
+	tnctr download manager Configuration	tnctr download manager-ის კონფიგურაცია
 #. text in crashui.rs
 #, machine
-	Mister Download Manager crash report	Mister Download Manager ავარიის ანგარიში
+	tnctr download manager crash report	tnctr download manager ავარიის ანგარიში
 #. text in crashui.rs
 #. crash report window heading: an internal error, MDM still running
 #, machine
-	Mister Download Manager hit an internal error	Mister Download Manager-ში შიდა შეცდომა მოხდა
+	tnctr download manager hit an internal error	tnctr download manager-ში შიდა შეცდომა მოხდა
 #. text in wake.rs
 #. why the computer isn't going to sleep, in the system's list of programs that keep it awake; {queue} = the queue's name
 #. {queue} = a queue name such as "Main queue" (keep the braces as they are)
 #, machine
-	Mister Download Manager is running the queue "{queue}"	Mister Download Manager ამუშავებს რიგს „{queue}“
+	tnctr download manager is running the queue "{queue}"	tnctr download manager ამუშავებს რიგს „{queue}“
 #. text in crashui.rs
 #. crash report window heading: MDM's window doesn't answer (frozen)
 #, machine
-	Mister Download Manager stopped responding	Mister Download Manager აღარ პასუხობს
+	tnctr download manager stopped responding	tnctr download manager აღარ პასუხობს
 #. text in crashui.rs
 #, machine
-	Mister Download Manager stopped responding for a while	Mister Download Manager ცოტა ხნით აღარ პასუხობდა
+	tnctr download manager stopped responding for a while	tnctr download manager ცოტა ხნით აღარ პასუხობდა
 #. text in the Options window
 #. \\n starts a new line: break lines where they fit the translation
 #, machine
-	Mister Download Manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.	Mister Download Manager ყოველ კავშირს პირდაპირ საბოლოო\nფაილში წერს (მის გვერდით არსებულ მეჩხერ ნაწილობრივ ფაილში), ამიტომ არ არის საჭირო დროებითი დირექტორია და აწყობის ეტაპი.
+	tnctr download manager writes every connection straight into the final\nfile (a sparse part file next to it), so no temporary directory and no\nassembling step are needed.	tnctr download manager ყოველ კავშირს პირდაპირ საბოლოო\nფაილში წერს (მის გვერდით არსებულ მეჩხერ ნაწილობრივ ფაილში), ამიტომ არ არის საჭირო დროებითი დირექტორია და აწყობის ეტაპი.
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	Mister Download Manager {version} is available (released {date}).	Mister Download Manager {version} ხელმისაწვდომია (გამოვიდა {date}).
+	tnctr download manager {version} is available (released {date}).	tnctr download manager {version} ხელმისაწვდომია (გამოვიდა {date}).
 #. text in helpers.rs
 #. Video helpers: {version} = the version of MDM's own copy
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	Mister Download Manager's own copy, version {version}	Mister Download Manager-ის საკუთარი ასლი, ვერსია {version}
+	tnctr download manager's own copy, version {version}	tnctr download manager-ის საკუთარი ასლი, ვერსია {version}
 #. text in unix.rs
 #. Linux, at start, on the terminal: the libraries an X11 window needs aren't installed, so the window opens through Wayland instead, where menus can't be placed under what was clicked; {libraries} = their file names, left as they are
 #, machine
-	Mister Download Manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.	Mister Download Manager-ის X11 ფანჯარას სჭირდება {libraries}, რომელიც ამ სისტემას აკლია: ის იხსნება Wayland-ზე, სადაც მისი მენიუები შეიძლება გაიხსნას მათი სათაურებისგან მოშორებით.
+	tnctr download manager's X11 window needs {libraries}, which this system lacks: it opens on Wayland instead, where its menus may open away from their titles.	tnctr download manager-ის X11 ფანჯარას სჭირდება {libraries}, რომელიც ამ სისტემას აკლია: ის იხსნება Wayland-ზე, სადაც მისი მენიუები შეიძლება გაიხსნას მათი სათაურებისგან მოშორებით.
 #. text in the Scheduler window
 #. Monday, as short as a calendar's column head (two letters in English)
 #, machine
@@ -3070,10 +3070,10 @@
 	Open folder	ფოლდერის გახსნა
 #. checkbox in the Add torrent window
 #, machine
-	Open magnet links and .torrent files with Mister Download Manager	გახსენით მაგნიტური ბმულები და .torrent ფაილები Mister Download Manager-ით
+	Open magnet links and .torrent files with tnctr download manager	გახსენით მაგნიტური ბმულები და .torrent ფაილები tnctr download manager-ით
 #. text in the tray icon's menu
 #, machine
-	Open Mister Download Manager	გახსენით Mister Download Manager
+	Open tnctr download manager	გახსენით tnctr download manager
 #. text in extension.rs
 #. step 2 of turning on the Safari extension; Cmd is the Command key
 #, machine
@@ -3144,7 +3144,7 @@
 #. text in remote.rs
 #. remote control page (on a phone): title of the pairing screen
 #, machine
-	Pair with Mister Download Manager	Mister Download Manager-თან დაწყვილება
+	Pair with tnctr download manager	tnctr download manager-თან დაწყვილება
 #. text in the Options window
 #. column title: when the device was paired
 #, machine
@@ -3630,7 +3630,7 @@
 	Select or unselect the download with the dotted outline	წერტილოვანი მონახაზის მქონე ჩამოტვირთვის არჩევა ან მოხსნა
 #. group box title in the Options window
 #, machine
-	Select sounds for Mister Download Manager events	აირჩიეთ ხმები Mister Download Manager-ის მოვლენებისთვის
+	Select sounds for tnctr download manager events	აირჩიეთ ხმები tnctr download manager-ის მოვლენებისთვის
 #. what a keyboard shortcut does in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #, machine
 	Select the downloads in the box	ჩამოტვირთვების არჩევა ველში
@@ -3955,7 +3955,7 @@
 	Start download at	ჩამოტვირთვის დაწყება
 #. checkbox in the Scheduler window
 #, machine
-	Start download on Mister Download Manager startup	ჩამოტვირთვის დაწყება Mister Download Manager-ის გაშვებისას
+	Start download on tnctr download manager startup	ჩამოტვირთვის დაწყება tnctr download manager-ის გაშვებისას
 #. checkbox in the Options window
 #, machine
 	Start downloading immediately while displaying "Download File Info" dialog	დაუყოვნებლივ დაიწყეთ ჩამოტვირთვა „ფაილის ინფორმაციის ჩამოტვირთვა“ დიალოგის ჩვენებისას
@@ -3990,7 +3990,7 @@
 #, machine
 	Started with the computer, it starts minimized: no notification area shows its icon here	კომპიუტერის გაშვებისას, ის მინიმალურ რეჟიმში ირთვება: აქ მისი ხატულა შეტყობინებების ზონაში არ ჩანს
 #. text in the Options window
-#. tooltip of "Launch Mister Download Manager on startup": started with the computer, MDM's window stays hidden, its icon in the notification area (system tray)
+#. tooltip of "Launch tnctr download manager on startup": started with the computer, MDM's window stays hidden, its icon in the notification area (system tray)
 #, machine
 	Started with the computer, it waits in the notification area	კომპიუტერის გაშვებისას, ის შეტყობინებების ზონაში ელოდება
 #. message or event log entry in the main window
@@ -4211,7 +4211,7 @@
 #. text in extension.rs
 #. a check of Test browser integration: the browsers find MDM's helper program
 #, machine
-	The browsers can find Mister Download Manager	ბრაუზერები Mister Download Manager-ს პოულობენ
+	The browsers can find tnctr download manager	ბრაუზერები tnctr download manager-ს პოულობენ
 #. text in the Options window
 #. Options → Remote → Status: the settings were changed; they apply on OK
 #, machine
@@ -4235,7 +4235,7 @@
 #. text in the Scheduler window
 #. tooltip on the Scheduler's "Wake the computer to run this queue"
 #, machine
-	The computer is woken a minute before the start time and kept awake while the queue runs. Mister Download Manager has to be running (it can wait in the notification area).	კომპიუტერი გაღვიძდება დაწყების დრომდე ერთი წუთით ადრე და გაღვიძებული დარჩება, სანამ რიგი მუშაობს. Mister Download Manager უნდა მუშაობდეს (შესაძლებელია, ის შეტყობინებების არეში იყოს მინიმიზებული).
+	The computer is woken a minute before the start time and kept awake while the queue runs. tnctr download manager has to be running (it can wait in the notification area).	კომპიუტერი გაღვიძდება დაწყების დრომდე ერთი წუთით ადრე და გაღვიძებული დარჩება, სანამ რიგი მუშაობს. tnctr download manager უნდა მუშაობდეს (შესაძლებელია, ის შეტყობინებების არეში იყოს მინიმიზებული).
 #. text in the Scheduler window
 #. the Scheduler, under "Wake the computer to run this queue": when it will happen; {date} = e.g. 06/11/2026, {time} = e.g. 22:59:00
 #. {time} = a time of day (keep the braces as they are)
@@ -4406,7 +4406,7 @@
 #. text in a dialog box
 #. \\n starts a new line: break lines where they fit the translation
 #, machine
-	The selected download is not complete. Are you sure you want to delete\nit from Mister Download Manager list of downloads?	არჩეული ჩამოტვირთვა არ არის დასრულებული. დარწმუნებული ხართ, რომ გსურთ მისი წაშლა\nMister Download Manager-ის ჩამოტვირთვების სიიდან?
+	The selected download is not complete. Are you sure you want to delete\nit from tnctr download manager list of downloads?	არჩეული ჩამოტვირთვა არ არის დასრულებული. დარწმუნებული ხართ, რომ გსურთ მისი წაშლა\ntnctr download manager-ის ჩამოტვირთვების სიიდან?
 #. text in errors.rs
 #, machine
 	the server answered {status}	სერვერმა უპასუხა {status}
@@ -4765,7 +4765,7 @@
 #. text in extension.rs
 #. step 8 of turning on the Safari extension
 #, machine
-	Turn on "Mister Download Manager" and allow it on all websites.	ჩართეთ „Mister Download Manager“ და დაუშვით ყველა ვებსაიტზე.
+	Turn on "tnctr download manager" and allow it on all websites.	ჩართეთ „tnctr download manager“ და დაუშვით ყველა ვებსაიტზე.
 #. text in extension.rs
 #. step 4 of turning on the Safari extension; the quoted switch name is what Safari's settings show in this language: use Apple's own words for it, or keep the English name when unsure
 #, machine
@@ -5178,7 +5178,7 @@
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. {version} = a version number (keep the braces as they are)
 #, machine
-	You have the latest version of Mister Download Manager ({version}).	თქვენ გაქვთ Mister Download Manager-ის უახლესი ვერსია ({version}).
+	You have the latest version of tnctr download manager ({version}).	თქვენ გაქვთ tnctr download manager-ის უახლესი ვერსია ({version}).
 #. text in the Help menu's windows (About, updates, shortcuts, Tell a friend)
 #. Check for updates, under the new version's line, when MDM was installed by the Linux system's package manager (pacman, ...), which MDM can't update itself
 #. {version} = a version number (keep the braces as they are)
@@ -5557,15 +5557,15 @@ column	Time left	დარჩენილი დრო
 #, machine
 column	Transfer rate	გადაცემის სიჩქარე
 #. text in the browser extension
-#. choice under Send downloads to: an MDM running on another computer of the network, such as a home server; keep the name Mister Download Manager as it is
+#. choice under Send downloads to: an MDM running on another computer of the network, such as a home server; keep the name tnctr download manager as it is
 #, machine
-extension	Another Mister Download Manager (a server)	სხვა Mister Download Manager (სერვერი)
+extension	Another tnctr download manager (a server)	სხვა tnctr download manager (სერვერი)
 #. text in the browser extension
 #. the name this browser gets in the other MDM's list of paired devices
 #, machine
 extension	Browser extension	ბრაუზერის გაფართოება
 #. text in the browser extension
-#. menu command of the download button over a video: opens its settings in Mister Download Manager
+#. menu command of the download button over a video: opens its settings in tnctr download manager
 #. the trailing ... means it is still going on: keep it
 #, machine
 extension	Button settings...	ღილაკის პარამეტრები...
@@ -5574,34 +5574,34 @@ extension	Button settings...	ღილაკის პარამეტრე�
 #, machine
 extension	Can't tell which video this is: open its own page and try there	ვერ დგინდება, რომელი ვიდეოა ეს: გახსენით მისი საკუთარი გვერდი და სცადეთ იქ
 #. text in the browser extension
-#. the toolbar button's status when the browser reaches the app; keep the name Mister Download Manager as it is
+#. the toolbar button's status when the browser reaches the app; keep the name tnctr download manager as it is
 #, machine
-extension	Connected to Mister Download Manager	დაკავშირებულია Mister Download Manager-თან
+extension	Connected to tnctr download manager	დაკავშირებულია tnctr download manager-თან
 #. text in the browser extension
-#. the toolbar button's status when the browser reaches the app, with the app's version number; keep the name Mister Download Manager as it is
+#. the toolbar button's status when the browser reaches the app, with the app's version number; keep the name tnctr download manager as it is
 #. {version} = a version number (keep the braces as they are)
 #, machine
-extension	Connected to Mister Download Manager {version}	დაკავშირებულია Mister Download Manager {version}-თან
+extension	Connected to tnctr download manager {version}	დაკავშირებულია tnctr download manager {version}-თან
 #. text in the browser extension
 #. button beside a video, sound or stream in the toolbar button's popup: download it with the app; verb; short
 #, machine
 extension	Download	ჩამოტვირთვა
 #. text in the browser extension
-#. command in the browser's right-click menu on a page: download the links of the whole page; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on a page: download the links of the whole page; keep the name tnctr download manager as it is
 #, machine
-extension	Download all links with Mister Download Manager	ყველა ბმულის ჩამოტვირთვა Mister Download Manager-ით
+extension	Download all links with tnctr download manager	ყველა ბმულის ჩამოტვირთვა tnctr download manager-ით
 #. text in the browser extension
-#. command in the browser's right-click menu on selected text: download the links in the selection; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on selected text: download the links in the selection; keep the name tnctr download manager as it is
 #, machine
-extension	Download selected links with Mister Download Manager	არჩეული ბმულების ჩამოტვირთვა Mister Download Manager-ით
+extension	Download selected links with tnctr download manager	არჩეული ბმულების ჩამოტვირთვა tnctr download manager-ით
 #. text in the browser extension
 #. the button over a video on a web page that downloads it; verb; short (it sits on the video)
 #, machine
 extension	Download video	ვიდეოს ჩამოტვირთვა
 #. text in the browser extension
-#. command in the browser's right-click menu on a link, picture, video or sound; keep the name Mister Download Manager as it is
+#. command in the browser's right-click menu on a link, picture, video or sound; keep the name tnctr download manager as it is
 #, machine
-extension	Download with Mister Download Manager	ჩამოტვირთვა Mister Download Manager-ით
+extension	Download with tnctr download manager	ჩამოტვირთვა tnctr download manager-ით
 #. text in the browser extension
 #. shown in the toolbar button's popup after the site was excluded
 #. {site} = a web site's name such as "example.com" (keep the braces as they are)
@@ -5620,9 +5620,9 @@ extension	Drag to move it along the video's edge	გადაათრიეთ,
 #, machine
 extension	Enter its https:// address.	შეიყვანეთ მისი https:// მისამართი.
 #. text in the browser extension
-#. the extension's description in the browser's list of extensions; keep the name Mister Download Manager as it is
+#. the extension's description in the browser's list of extensions; keep the name tnctr download manager as it is
 #, machine
-extension	Hands downloads from the browser to Mister Download Manager.	გადასცემს ჩამოტვირთვებს ბრაუზერიდან Mister Download Manager-ს.
+extension	Hands downloads from the browser to tnctr download manager.	გადასცემს ჩამოტვირთვებს ბრაუზერიდან tnctr download manager-ს.
 #. text in the browser extension
 #. link in the toolbar button's popup to the help page
 #, machine
@@ -5677,33 +5677,33 @@ extension	Live	პირდაპირი
 #, machine
 extension	Media on this page	მედია ამ გვერდზე
 #. text in the browser extension
-#. the extension's name in the browser's list of extensions and on its toolbar button; keep the name Mister Download Manager as it is
+#. the extension's name in the browser's list of extensions and on its toolbar button; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager	Mister Download Manager
+extension	tnctr download manager	tnctr download manager
 #. text in the browser extension
-#. status when the app was started for a download but didn't answer in time; keep the name Mister Download Manager as it is
+#. status when the app was started for a download but didn't answer in time; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager didn't start in time	Mister Download Manager დროულად არ დაიწყო
+extension	tnctr download manager didn't start in time	tnctr download manager დროულად არ დაიწყო
 #. text in the browser extension
-#. status when the app refuses this copy of the extension (another copy is installed, or it came from another store); keep the name Mister Download Manager as it is
+#. status when the app refuses this copy of the extension (another copy is installed, or it came from another store); keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager doesn't accept this copy of the extension	Mister Download Manager არ იღებს გაფართოების ამ ასლს
+extension	tnctr download manager doesn't accept this copy of the extension	tnctr download manager არ იღებს გაფართოების ამ ასლს
 #. text in the browser extension
-#. shown briefly on the download button when the app could not be reached; keep the name Mister Download Manager as it is
+#. shown briefly on the download button when the app could not be reached; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager isn't installed or didn't start	Mister Download Manager არ არის დაინსტალირებული ან არ დაიწყო
+extension	tnctr download manager isn't installed or didn't start	tnctr download manager არ არის დაინსტალირებული ან არ დაიწყო
 #. text in the browser extension
-#. status when the browser can't find the app's connection; keep the name Mister Download Manager as it is
+#. status when the browser can't find the app's connection; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager isn't installed, or its browser integration isn't set up	Mister Download Manager არ არის დაინსტალირებული, ან მისი ბრაუზერის ინტეგრაცია არ არის დაყენებული
+extension	tnctr download manager isn't installed, or its browser integration isn't set up	tnctr download manager არ არის დაინსტალირებული, ან მისი ბრაუზერის ინტეგრაცია არ არის დაყენებული
 #. text in the browser extension
-#. tooltip of the switch Send downloads through this browser's proxy or VPN extension; keep the name Mister Download Manager as it is
+#. tooltip of the switch Send downloads through this browser's proxy or VPN extension; keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager then downloads through the same proxy as this browser. The browser asks you once to allow it; turning this off takes that back.	Mister Download Manager შემდეგ ჩამოტვირთავს ამ ბრაუზერის მსგავსი პროქსის მეშვეობით. ბრაუზერი ერთხელ გთხოვთ ამის დაშვებას; ამის გამორთვა გააუქმებს ამ ნებართვას.
+extension	tnctr download manager then downloads through the same proxy as this browser. The browser asks you once to allow it; turning this off takes that back.	tnctr download manager შემდეგ ჩამოტვირთავს ამ ბრაუზერის მსგავსი პროქსის მეშვეობით. ბრაუზერი ერთხელ გთხოვთ ამის დაშვებას; ამის გამორთვა გააუქმებს ამ ნებართვას.
 #. text in the browser extension
-#. tooltip of the switch Send downloads through this browser's proxy or VPN extension in Chrome, Edge and the other Chromium browsers (they ask for no permission at the switch); keep the name Mister Download Manager as it is
+#. tooltip of the switch Send downloads through this browser's proxy or VPN extension in Chrome, Edge and the other Chromium browsers (they ask for no permission at the switch); keep the name tnctr download manager as it is
 #, machine
-extension	Mister Download Manager then downloads through the same proxy as this browser. While this is off, the extension doesn't read the browser's proxy.	Mister Download Manager შემდეგ ჩამოტვირთავს იმავე პროქსის მეშვეობით, როგორც ეს ბრაუზერი. სანამ ეს გამორთულია, გაფართოება არ კითხულობს ბრაუზერის პროქსის.
+extension	tnctr download manager then downloads through the same proxy as this browser. While this is off, the extension doesn't read the browser's proxy.	tnctr download manager შემდეგ ჩამოტვირთავს იმავე პროქსის მეშვეობით, როგორც ეს ბრაუზერი. სანამ ეს გამორთულია, გაფართოება არ კითხულობს ბრაუზერის პროქსის.
 #. text in the browser extension
 #. the small arrow next to the Download video button that opens its menu (read aloud by screen readers)
 #, machine
@@ -5735,9 +5735,9 @@ extension	Open it	გახსნა
 #, machine
 extension	Open its address once and accept its certificate, then enter a code from its Options, Remote, Pair a device (or misterdownloadmanager-cli pair).	გახსენით მისი მისამართი ერთხელ და მიიღეთ მისი სერტიფიკატი, შემდეგ შეიყვანეთ კოდი მისი „პარამეტრები“, „დისტანციური“, „მოწყობილობის დაწყვილება“-დან (ან misterdownloadmanager-cli pair).
 #. text in the browser extension
-#. button in the toolbar button's popup; keep the name Mister Download Manager as it is
+#. button in the toolbar button's popup; keep the name tnctr download manager as it is
 #, machine
-extension	Open Mister Download Manager	Mister Download Manager-ის გახსნა
+extension	Open tnctr download manager	tnctr download manager-ის გახსნა
 #. text in the browser extension
 #. button in the toolbar button's popup: open the app's Options
 #. the trailing ... means it is still going on: keep it
@@ -5772,13 +5772,13 @@ extension	Send downloads through this browser's proxy or VPN extension	ჩამ
 #, machine
 extension	Send downloads to	ჩამოტვირთვების გაგზავნა
 #. text in the browser extension
-#. shown briefly on the download button after it was clicked; keep the name Mister Download Manager as it is
+#. shown briefly on the download button after it was clicked; keep the name tnctr download manager as it is
 #, machine
-extension	Sent to Mister Download Manager	გაგზავნილია Mister Download Manager-ში
+extension	Sent to tnctr download manager	გაგზავნილია tnctr download manager-ში
 #. text in the browser extension
 #. link at the foot of the toolbar button's popup to the creator's GitHub Sponsors page (MDM is free; this is an optional donation)
 #, machine
-extension	Support MDM	MDM-ის მხარდაჭერა
+extension	Support tnctr download manager	tnctr download manager-ის მხარდაჭერა
 #. text in the browser extension
 #. check box in the toolbar button's popup: on, downloads go to the app; off, the browser keeps them
 #, machine
@@ -5788,9 +5788,9 @@ extension	Take downloads from this browser	ჩამოტვირთვებ�
 #, machine
 extension	The Chrome Web Store's rules keep this copy of the add-on away from this site's videos. Help says what you can do.	Chrome Web Store-ის წესების გამო გაფართოების ეს ვერსია ამ საიტის ვიდეოებთან ვერ მუშაობს. რა შეგიძლიათ გააკეთოთ, იხილეთ დახმარებაში.
 #. text in the browser extension
-#. status when the connection to the app broke off (often security software blocking it); keep the name Mister Download Manager as it is
+#. status when the connection to the app broke off (often security software blocking it); keep the name tnctr download manager as it is
 #, machine
-extension	The connection to Mister Download Manager failed	კავშირი Mister Download Manager-თან ვერ მოხერხდა
+extension	The connection to tnctr download manager failed	კავშირი tnctr download manager-თან ვერ მოხერხდა
 #. text in the browser extension
 #. shown briefly on the download button over a video when the app's settings keep the button off on this web site
 #, machine
@@ -5808,7 +5808,7 @@ extension	The last download was left to the browser.	ბოლო ჩამო�
 #, machine
 extension	This browser isn't ticked in Options → General.	ეს ბრაუზერი არ არის მონიშნული პარამეტრებში → ზოგადი.
 #. text in the browser extension
-#. choice under Send downloads to: the Mister Download Manager on this computer
+#. choice under Send downloads to: the tnctr download manager on this computer
 #, machine
 extension	This computer	ეს კომპიუტერი
 #. text in the browser extension
@@ -5820,9 +5820,9 @@ extension	This download's details were too large to hand over	ამ ჩამ�
 #, machine
 extension	This page's player streams its video in pieces, so there's no file to list. Point at the video and use its Download video button.	ამ გვერდის ფლეერი ვიდეოს ნაწილ-ნაწილ იღებს, ამიტომ საჩვენებელი ფაილი არ არის. მიუთითეთ ვიდეოზე და გამოიყენეთ მისი ღილაკი „ვიდეოს ჩამოტვირთვა“.
 #. text in the browser extension
-#. status when the app is older than the extension; keep the name Mister Download Manager as it is
+#. status when the app is older than the extension; keep the name tnctr download manager as it is
 #, machine
-extension	Update Mister Download Manager to use everything this extension offers	განაახლეთ Mister Download Manager, რათა გამოიყენოთ ყველაფერი, რასაც ეს გაფართოება გთავაზობთ
+extension	Update tnctr download manager to use everything this extension offers	განაახლეთ tnctr download manager, რათა გამოიყენოთ ყველაფერი, რასაც ეს გაფართოება გთავაზობთ
 #. text in the browser extension
 #. why a download stayed with the browser: the app's setting 'Use advanced browser integration' is off; keep the setting's name as the app shows it
 #, machine
@@ -5938,7 +5938,7 @@ key	Up / Down	ზემოთ / ქვემოთ
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
-menu	&About Mister Download Manager	Mister Download Manager-ის &შესახებ
+menu	&About tnctr download manager	tnctr download manager-ის &შესახებ
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
@@ -6290,7 +6290,7 @@ menu	Metro	მეტრო
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine
-menu	Mister Download Manager &Home Page	Mister Download Manager-ის &მთავარი გვერდი
+menu	tnctr download manager &Home Page	tnctr download manager-ის &მთავარი გვერდი
 #. menu command in the main window
 #, machine
 menu	Move/Rename (Ctrl-M)	გადატანა/გადარქმევა (Ctrl-M)
@@ -6403,7 +6403,7 @@ menu	Select &all	ყველას &არჩევა
 menu	Show &drop target	&ჩამოგდების სამიზნის ჩვენება
 #. menu command in the main window
 #, machine
-menu	Show Mister Download Manager	Mister Download Manager-ის ჩვენება
+menu	Show tnctr download manager	tnctr download manager-ის ჩვენება
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #, machine

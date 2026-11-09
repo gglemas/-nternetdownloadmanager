@@ -1123,7 +1123,7 @@ impl TorrentSettings {
                     ui,
                     pos2(o.x + 14.0, o.y + 108.0),
                     &mut self.assoc,
-                    "Open magnet links and .torrent files with Mister Download Manager",
+                    "Open magnet links and .torrent files with tnctr download manager",
                     true,
                 );
                 winui::fit(

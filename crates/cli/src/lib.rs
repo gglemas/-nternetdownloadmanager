@@ -18,8 +18,8 @@ use serde_json::json;
 #[derive(Parser)]
 #[command(
     version,
-    about = "Mister Download Manager command line",
-    long_about = "Mister Download Manager command line: downloads, videos and torrents without the \
+    about = "tnctr download manager command line",
+    long_about = "tnctr download manager command line: downloads, videos and torrents without the \
                   window, and the running app's automation API. Guide: \
                   https://misterdownloadmanager.com/help/command-line.html"
 )]
@@ -311,7 +311,7 @@ impl std::error::Error for Reported {}
 /// `{"error"}` answer fails the command.
 fn ask(cmd: mdm_ipc::Command) -> anyhow::Result<()> {
     let answer = mdm_ipc::request(&cmd)
-        .map_err(|e| anyhow::anyhow!("Mister Download Manager isn't running ({e})"))?;
+        .map_err(|e| anyhow::anyhow!("tnctr download manager isn't running ({e})"))?;
     println!("{answer}");
     if serde_json::from_str::<mdm_ipc::api::ErrorAnswer>(&answer).is_ok() {
         return Err(Reported.into());
@@ -325,7 +325,7 @@ fn pair() -> anyhow::Result<()> {
         pair: true,
         ..Default::default()
     })
-    .map_err(|e| anyhow::anyhow!("Mister Download Manager isn't running ({e})"))?;
+    .map_err(|e| anyhow::anyhow!("tnctr download manager isn't running ({e})"))?;
     match mdm_ipc::api::parse::<mdm_ipc::api::PairAnswer>(&answer).map_err(anyhow::Error::msg)? {
         Ok(a) => {
             println!("{}", a.qr);
