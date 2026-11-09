@@ -1,6 +1,4 @@
-//! Windows dark-dialog controls, painted to IDM 6.42's measured pixels
-//! (notes/ui-spec/dialogs.md "Dark dialog control styles"). Coordinates are client pixels;
-//! "baseline" is the last pixel row of cap glyphs, as in the spec.
+//! Dialog control painters use client-pixel coordinates; baseline means the last cap-glyph ink row.
 
 use egui::{
     Color32, FontFamily, FontId, Painter, Pos2, Rect, Response, Sense, Stroke, StrokeKind, Ui,
@@ -52,8 +50,7 @@ pub fn tahoma_title() -> FontId {
     )
 }
 
-/// Tahoma (IDM's dialogs), Tahoma Bold and Arial Bold from Windows' fonts folder. A family
-/// whose file isn't there (macOS, Linux) is the interface font's, so drawing with it never fails.
+/// Missing font files fall back to the interface font so drawing remains available.
 pub fn install_fonts(defs: &mut egui::FontDefinitions, font_dir: Option<&std::path::Path>) {
     let ui = defs
         .families
@@ -81,8 +78,7 @@ pub fn install_fonts(defs: &mut egui::FontDefinitions, font_dir: Option<&std::pa
 
 // ---- right to left (D-019) -----------------------------------------------------------------
 //
-// Every window is laid out to IDM's English pixels. In a right-to-left interface (Arabic,
-// Persian, Hebrew, Urdu, Uyghur) each window's client area is a mirrored *surface*: what is made
+// In right-to-left languages (Arabic, Persian, Hebrew, Urdu, Uyghur) each window's client area is a mirrored *surface*: what is made
 // for it is made at its mirrored place, so it is drawn and hit-tested there.
 //
 // - `r` and the rect helpers (`rect`) give a rect where it is on screen: `x → L + R − x − w`.
@@ -418,10 +414,8 @@ fn paint_galley(
     drawn
 }
 
-/// `MDM_FIT_AUDIT=<file>` (a check for translations, beyond IDM): every distinct text drawn past
-/// the edge of what its painter may show (the window, a box), and every two texts drawn over each
-/// other in one window, are appended to the file, so a run through the windows in each language
-/// lists what doesn't fit. Off otherwise (one env lookup).
+/// When enabled, record text outside its painting bounds and overlapping text to diagnose
+/// localization layout issues. Disabled by default, with one environment lookup.
 fn fit_audit(p: &Painter, drawn: Rect, text: &str) {
     use std::collections::{HashMap, HashSet};
     use std::io::Write;
@@ -623,9 +617,8 @@ pub fn text_in_window(
     rc
 }
 
-/// A label that leads into a control whose box starts at English `before`: at its pen `x` (IDM's
-/// place) when it fits, else ending 5 px before the box and starting earlier, down to `min_x`;
-/// cut with "..." only past that. Returns the drawn rect and whether it was cut.
+/// Fit the label before its box, moving left no further than min_x and ellipsizing only
+/// when necessary. Return the drawn rectangle and whether the text was cut.
 pub fn label_into(
     p: &Painter,
     x: f32,
@@ -864,11 +857,9 @@ pub fn scroll_text(
     ui.data_mut(|d| d.insert_temp(id, top));
 }
 
-/// A paragraph from `x` to `right`, first baseline at `baseline`, `line_h` apart; returns the
-/// lines drawn. English keeps its line breaks (broken where IDM breaks it); a translation's
-/// copy of them is flowed again (`reflow`). A line too long for the room wraps at spaces, or
-/// between any two characters in scripts written without spaces (Chinese, Japanese, Thai…).
-/// (Data, whose line breaks are its own: [`data_paragraph`].)
+/// Lay out a paragraph between x and right with line_h spacing. Reflow translated text
+/// and wrap long lines at spaces, or character boundaries for scripts without spaces.
+/// Use data_paragraph when the text’s own line breaks must be preserved.
 pub fn paragraph(
     p: &Painter,
     x: f32,
@@ -878,8 +869,7 @@ pub fn paragraph(
     right: f32,
     line_h: f32,
 ) -> usize {
-    // IDM's English is hard-wrapped; a translation's copy of those breaks is flowed again (a
-    // blank line still starts a new paragraph). English keeps its own lines.
+    // Preserve paragraph breaks; English retains its explicit line wrapping.
     let flowed;
     let s = if crate::i18n::code() == "en" {
         s
@@ -1834,12 +1824,8 @@ pub enum FieldLook {
     ReadOnly,
 }
 
-/// A text box's frame, in both themes Windows 11's: rounded as the buttons are, a quiet 1 px
-/// border and, while it can be typed in, a stronger bottom line (the focus turns it into the
-/// accent: [`focus_bottom`]). Disabled and read-only boxes are flat: a disabled one dims its
-/// text, a read-only one keeps it (it can be read and copied) on a light grey. The frame paints
-/// the box's inside too, so every kind of text box agrees (they had three insides between them,
-/// and dark mode drew IDM's bright 2 px border round every box, disabled ones included).
+/// Text boxes share rounded frames and a consistent fill. Editable boxes have a stronger
+/// bottom edge, accented on focus. Disabled text dims; read-only text stays legible and selectable.
 pub fn field_frame(p: &Painter, rc: Rect, look: FieldLook) {
     let radius = control_radius();
     let c = crate::theme::colors();
@@ -1873,8 +1859,7 @@ pub fn field_frame(p: &Painter, rc: Rect, look: FieldLook) {
     );
 }
 
-/// How far along something is, as IDM shows a download: its green fill on a track (themed: the
-/// track was light in dark mode too), the controls' rounded corners. `fraction` in 0..=1.
+/// Draw the themed progress track with rounded corners; fraction is in 0..=1.
 pub fn meter(p: &Painter, rc: Rect, fraction: f32) {
     let radius = control_radius().min(rc.height() / 4.0).floor();
     let c = crate::theme::colors();
@@ -2034,8 +2019,7 @@ pub fn edit_focus_line(ui: &Ui, resp: &Response, rc: Rect) {
     }
 }
 
-/// The 2 px accent along a focused box's bottom edge. Light: the bottom of its rounded
-/// frame, curving into the corners as Windows 11 draws it; dark: IDM's straight line.
+/// Draw the 2 px focus accent along the bottom edge of a text box.
 pub fn focus_bottom(p: &Painter, rc: Rect) {
     let h = crate::theme::metrics().focus_line;
     // GNOME: a ring inside the box, the accent half seen through.
@@ -2820,11 +2804,8 @@ pub fn button(
     button_face(ui, rc, &label, kind, focus_rect)
 }
 
-/// A button's rect `rc` widened to the left (its right edge stays: a button against the right
-/// side, with room before it) to fit its translated `label` whole, with the room [`button`]
-/// keeps inside the border, at most to `max_width`. English labels fit IDM's buttons, so
-/// English never changes; a label that would still not fit ends in "..." and shows whole on
-/// hover, as on every button. (A row of buttons: [`buttons_from_left`], [`buttons_to_right`].)
+/// Widen a right-aligned button leftward to fit its translation. Keep English geometry;
+/// ellipsize labels that still do not fit and show their full text on hover.
 pub fn button_rect_for(p: &Painter, rc: Rect, label: &str, max_width: f32) -> Rect {
     let w = button_fit_width(p, label, rc.width(), max_width);
     // Widened in English, where its right edge stays; on screen in RTL its left edge stays and
@@ -2967,17 +2948,9 @@ pub fn buttons_to_right(
     out
 }
 
-/// A row of [`button`]s at their English places, `(label, English x, English width)` from left
-/// to right (IDM's rows, their gaps not all alike), laid out for their translated labels: the row
-/// keeps its right end, and starts no further left than English x `from` (what is beside it).
-/// Each button is as wide as [`button_fit_width`] says (at most `max`), widening to the left; one
-/// that comes closer than `gap` to the one before it (its English gap, if smaller) pushes it left,
-/// and one pushed past `from` pushes those after it back right, each moved no further than it
-/// must. When the row would not fit, the buttons wider than their label needs give back that room
-/// first (to their label, at least 73 px, Windows' button), then the widest are narrowed, their
-/// labels cut with "..." (whole on hover). Their English (x, width) in the order given, for
-/// [`r`]; in English every button keeps its place. ([`button_row_from_left`]: a row that keeps
-/// its left end.)
+/// Lay out a button row from its right edge, widening leftward within from and max bounds.
+/// Keep gaps when possible, reclaim excess button width before truncating labels, and
+/// show complete labels on hover. English retains its specified geometry.
 pub fn button_row(
     p: &Painter,
     buttons: &[(&str, f32, f32)],
@@ -3111,8 +3084,7 @@ pub fn widest_label<'a>(p: &Painter, labels: &[&'a str]) -> &'a str {
         .unwrap_or("")
 }
 
-/// `label` as it fits on a button `rc`: whole, or cut with "..." (true) when it would reach the
-/// border (English labels fit IDM's buttons, so English never changes).
+/// Fit a label within its button, returning whether ellipsis was required.
 fn fit_label(p: &Painter, label: &str, rc: Rect) -> (String, bool) {
     let room = rc.width() - 4.0;
     if text_width(p, label) <= room {
@@ -3176,9 +3148,7 @@ pub fn checkbox_until(
     )
 }
 
-/// The gap a check box at English `x` leaves in a group box's top line for its caption (English
-/// pixels): IDM's measured end (`english_end`) in English, else 2 px past the translated caption
-/// (`light`: a [`checkbox_light`], caption at +16; else a [`checkbox`], at +18).
+/// Reserve a gap in the group-box border for the translated checkbox caption.
 pub fn caption_gap(
     p: &Painter,
     x: f32,
@@ -3225,8 +3195,7 @@ pub fn small_button(ui: &mut Ui, rc: Rect, glyph: &str) -> Response {
 // notes/ui-spec/scheduler-and-misc.md "Light dialog control styles".
 
 crate::theme::themed! {
-    /// The "light dialogs" (Options, Scheduler, File Properties…): IDM draws them light in both
-    /// modes; here they follow the mode, dark the dark dialogs' colours.
+    /// Use the active theme’s colors for these controls in both light and dark modes.
     pub LIGHT_BG => window;
     pub LIGHT_TEXT => text;
     pub LIGHT_DISABLED => text_disabled;
@@ -3621,12 +3590,8 @@ pub fn buttons_light_right(
     out
 }
 
-/// A push button in the current theme (dark: IDM's dark buttons; light: Windows 11's), its
-/// (translated) `label` with "&" before the access letter: the letter is underlined and
-/// Alt+letter presses it. Hot and pressed as Windows 11 draws them: a pressed button's label
-/// dims and its darker bottom edge flattens. `default_focus`: the dialog's default button, whose
-/// focus rectangle shows while no other control has the keyboard focus; any control with the
-/// focus shows it.
+/// Draw a translated access-key button. Alt+letter activates it; hot and pressed states
+/// follow the control style. Show default_focus only while no other control owns keyboard focus.
 fn button_face(
     ui: &mut Ui,
     rc: Rect,
@@ -7043,7 +7008,6 @@ mod tests {
     }
 
     fn limits_lines() -> [SentenceLine; 2] {
-        // Options → Connection's Download limits, as IDM places them.
         let line = |lead_baseline: f32, y: f32, gap: f32, baseline: f32| SentenceLine {
             lead: Lead::Right(170.0),
             lead_baseline,

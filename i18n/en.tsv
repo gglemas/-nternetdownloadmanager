@@ -235,7 +235,6 @@
 #. title of the window that offers the browser extension
 	Add tnctr download manager to your browser	Add tnctr download manager to your browser
 #. message or event log entry in the main window; text in the Link grabber window
-#. Link grabber button: add the ticked links to the download queue without starting them (IDM's OK)
 	Add to queue	Add to queue
 #. text in a dialog box
 	Add to queue:	Add to queue:
@@ -602,7 +601,6 @@
 #. {category} = a category name such as "Music" (keep the braces as they are)
 	Change folder for "{category}" category on last selected	Change folder for "{category}" category on last selected
 #. text in the Link grabber window
-#. Link grabber button (IDM's): tick every link
 	Check all	Check all
 #. text in rssdlg.rs
 #. RSS feeds window, at the bottom: "Check feeds every [30] minutes"
@@ -1422,7 +1420,6 @@
 #. tooltip of a button in a download's progress window: hides the window to the notification area (system tray); the download goes on
 	Hide to the notification area	Hide to the notification area
 #. checkbox in the Link grabber window; text in the Link grabber window; checkbox in the Options window
-#. Link grabber check box (IDM's "Hide HTML files"): links to web pages are not shown
 	Hide web pages	Hide web pages
 #. text in the Options window
 	Hold Alt while clicking a link to let the browser download it instead of tnctr download manager.	Hold Alt while clicking a link to let the browser download it instead of tnctr download manager.
@@ -1728,7 +1725,6 @@
 #. noun: the user name and password section
 	Login	Login
 #. checkbox in the Options window
-#. Options → Archives → Link grabber check box (IDM's Download all links looks every link up)
 	Look links up when they arrive (name, size, online)	Look links up when they arrive (name, size, online)
 #. text in the Add torrent window; button in the Download video window
 	Look up	Look up
@@ -3575,7 +3571,6 @@
 #. a country's name (where a download's server is)
 	Ukraine	Ukraine
 #. text in the Link grabber window
-#. Link grabber button (IDM's): untick every link
 	Uncheck all	Uncheck all
 #. item in the Categories tree in the main window; text in remote.rs
 #. adjective: the downloads that are not complete yet
@@ -3731,7 +3726,7 @@
 	Wait in {queue}	Wait in {queue}
 #. value in a column's filter list in the download list; text in the download list (sizes, speeds, status); text in a download's progress window
 #. a download's status (state it is in, not a command)
-#. a download's status (state it is in, not a command): waiting in a queue for its turn
+#. a download status, not a command: waiting in a queue for its turn.
 #. a download's status (state it is in, not a command): waiting in a queue
 	Waiting	Waiting
 #. text in the Options window
@@ -4568,7 +4563,6 @@ menu	C&ustomize URL List...	C&ustomize URL List...
 #. the trailing ... means it opens a window: keep it
 menu	Check for &updates...	Check for &updates...
 #. menu command in the main window
-#. View → Theme: MDM's own look, the default (IDM's layout, Windows 11's controls)
 menu	Classic	Classic
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
@@ -4626,7 +4620,7 @@ menu	Font	Font
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
-menu	From &IDM export file...	From &IDM export file...
+menu	From &EF2 export file...	From &EF2 export file...
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
@@ -4776,7 +4770,7 @@ menu	tnctr download manager &Home Page	tnctr download manager &Home Page
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
-menu	To &IDM export file...	To &IDM export file...
+menu	To &EF2 export file...	To &EF2 export file...
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it

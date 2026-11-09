@@ -1,7 +1,7 @@
 //! One download: probe, parallel connections driven by the planner, positional writes, progress.
 //!
-//! The first connection is also the probe: a plain `GET` (no Range, as IDM does — D-007) that
-//! keeps streaming from byte 0 while further connections split the file (notes/ENGINE.md §1).
+//! The first connection is also the probe: a plain `GET` that keeps streaming from byte 0 while
+//! further connections split the file (notes/ENGINE.md §1).
 //! Range support is learned from the first range answer: 206 confirms it; 200 means the server
 //! ignores ranges, so the file goes back to the probe connection alone.
 //! One HTTP/1.1 client per download, shared by its connections: one pool (keep-alive sockets
@@ -54,7 +54,7 @@ const INITIAL_PIECE: u64 = 64 * 1024;
 /// sooner than PREEMPT_MIN).
 const PREEMPT_TTFB: u32 = 2;
 const PREEMPT_MIN: Duration = Duration::from_millis(20);
-/// The most connections a download offers to use (IDM's ceiling too).
+/// Maximum connections offered to a download before the unlocked limit applies.
 pub const MAX_CONNECTIONS: u32 = 32;
 /// The most connections once the user allows more than `MAX_CONNECTIONS` (issue #12); the
 /// engine never opens more, whatever it is given.
@@ -62,10 +62,10 @@ pub const MAX_CONNECTIONS_UNLOCKED: u32 = 128;
 
 #[derive(Clone, Debug)]
 pub struct Options {
-    /// Max simultaneous connections. IDM's default is 8 (notes/ENGINE.md §4). Read through
-    /// [`Options::connections`], which keeps it in `1..=MAX_CONNECTIONS_UNLOCKED`.
+    /// Maximum simultaneous connections, clamped to `1..=MAX_CONNECTIONS_UNLOCKED` by
+    /// [`Options::connections`].
     pub max_connections: u32,
-    /// Smallest half a split may leave. IDM split pieces down to ≤ 12.6 KB (lab S4, D-007).
+    /// Smallest half-segment size when splitting a download.
     pub min_split: u64,
     pub connect_timeout: Duration,
     /// Max silence on a connection before it is considered dead.
@@ -73,16 +73,16 @@ pub struct Options {
     /// Consecutive failures after which a connection gives up (it retires if others are
     /// still working, otherwise the download fails).
     pub max_retries: u32,
-    /// The first retry is immediate (as IDM, lab S5); then this delay, doubling, capped at 30 s.
+    /// Initial retry delay; subsequent delays double up to 30 seconds.
     pub retry_delay: Duration,
     pub user_agent: String,
-    /// How often resume state is saved (IDM: "several times per minute").
+    /// Interval between writes of resume state.
     pub save_interval: Duration,
-    /// Speed limit for this download, bytes/s (IDM's limiter is per file). None = unlimited.
+    /// Per-download speed limit in bytes per second; `None` means unlimited.
     pub speed_limit: Option<u64>,
     /// Before continuing a segment that already has data on disk, re-fetch up to this many of
-    /// its last written bytes and compare them (IDM's resume overlap check; catches changed
-    /// files on servers without validators). 0 turns it off.
+    /// its last written bytes and compare them. This detects changed files on servers without
+    /// validators. `0` disables the check.
     pub verify_overlap: u64,
     /// Fixed addresses for host names, like hosts-file entries (tests).
     pub hosts: Vec<(String, Vec<std::net::IpAddr>)>,
@@ -102,19 +102,16 @@ pub struct Options {
     pub global: Option<Arc<Limiter>>,
     /// The finished file must have this hash (else the server's announced one, if any).
     pub checksum: Option<crate::verify::Hash>,
-    /// Reconnect a connection far slower than the others (see `SHED_*`). Beyond IDM's rule.
+    /// Reconnect a connection that is much slower than the others.
     pub shed_slow: bool,
     /// Connection caps learned per host, shared by the downloads that use the same table.
     pub host_limits: Option<Arc<crate::hosts::HostLimits>>,
-    /// Resume across a changed modification time (IDM: "Ignore file modification time changes
-    /// when resuming a download"): servers that stamp every answer with a new date would
-    /// otherwise make each resume start over. Only an ETag then tells a changed file.
+    /// Ignore a changed modification time when resuming. This helps with servers that stamp
+    /// every response with a new date; only an ETag then detects a changed file.
     pub ignore_mtime: bool,
-    /// Give the finished file the server's date (IDM: "Set file creation date as provided by
-    /// the server"): created and modified times from `Last-Modified`.
+    /// Set the completed file's creation and modification times from `Last-Modified`.
     pub server_time: bool,
-    /// FTP data connections: passive (the client connects; IDM's "Use passive mode for FTP",
-    /// on by default), else active (the server connects back).
+    /// Use passive FTP data connections (the client connects); otherwise use active mode.
     pub ftp_passive: bool,
     /// Certificates (DER) trusted besides the system's for FTPS (tests' own CA).
     pub extra_roots: Vec<Vec<u8>>,
@@ -153,7 +150,7 @@ impl std::fmt::Debug for FileHook {
 /// Which proxy downloads go through (Options → Proxy / Socks).
 #[derive(Clone, Debug, Default, PartialEq, Eq)]
 pub enum Proxy {
-    /// "No proxy/socks" (IDM's default): direct connections.
+    /// Connect directly without a proxy.
     #[default]
     None,
     /// "Use system settings": Windows' proxy (and the environment's).
@@ -177,7 +174,7 @@ pub fn supported(url: &Url) -> bool {
     matches!(url.scheme(), "http" | "https") || crate::ftp::is_ftp(url)
 }
 
-/// IDM 6.42 sends this browser-style User-Agent (lab S1, D-007).
+/// Browser-style User-Agent sent with requests by default.
 pub const DEFAULT_USER_AGENT: &str =
     "Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko";
 
@@ -399,9 +396,9 @@ impl Error {
     }
 }
 
-/// How long to wait before try number `failures + 1` after `e`: the first retry at once (IDM
-/// reconnects within ~12 ms, lab S5), then `retry_delay` doubling up to 30 s; a busy server's
-/// Retry-After wins (capped at 5 minutes). One policy for the first request and every connection.
+/// Wait before retry number `failures + 1` after `e`: the first retry is immediate, then
+/// `retry_delay` doubles up to 30 seconds. A busy server's `Retry-After` takes precedence
+/// (capped at 5 minutes). This policy applies to the first request and every connection.
 fn retry_wait(opts: &Options, failures: u32, e: &Error) -> Option<Duration> {
     match e {
         Error::Throttled(_, Some(after)) => Some((*after).min(Duration::from_secs(300))),
@@ -2147,10 +2144,8 @@ async fn segmented(
     result
 }
 
-/// While downloading, the part file is flushed (and the state rewritten) only after 1/16 of
-/// the file (1–64 MiB) has arrived or this long, at most once per save tick, and always when
-/// the connections stop. Flushing every tick stalled HDDs and churned antivirus; IDM saves
-/// "several times per minute" [IDM-doc]. A crash costs at most that much re-download.
+/// While downloading, the part file is flushed (and the state rewritten) after 1/16 of the file
+/// (1–64 MiB) has arrived or 30 seconds have elapsed, and when all connections stop.
 const SYNC_BYTES_MAX: u64 = 64 << 20;
 const SYNC_BYTES_MIN: u64 = 1 << 20;
 const SYNC_EVERY: Duration = Duration::from_secs(30);
@@ -2567,8 +2562,7 @@ async fn supervise(ctx: Arc<Ctx>, first: Option<Body>) -> Result<(), Error> {
     }
     let max = learned.map_or(wanted, |c| c.min(wanted));
     // A small file starts with fewer connections (one per INITIAL_PIECE): opened all at once
-    // they would cut it into slivers and fetch some twice (benchmark 2026-10-30: 256 KiB took
-    // 13-19 requests; IDM, which ramps up in waves, took 4). Later splits still go down to
+    // they would cut it into slivers and fetch some twice. Later splits still go down to
     // `min_split` as connections free up.
     let size = ctx.shared.with_planner(|p| p.size());
     let by_size = u32::try_from(size.div_ceil(INITIAL_PIECE)).unwrap_or(u32::MAX);

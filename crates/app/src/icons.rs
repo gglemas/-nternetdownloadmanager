@@ -1,6 +1,4 @@
-//! Toolbar icons: Lucide outlines (ISC licence, assets/icons/lucide/, v1.63.0) composed into
-//! IDM 6.42's toolbar roles, stroked with the two-tone diagonal gradients measured from IDM's
-//! "Neon" toolbar (tools/pixel/gradients.py). IDM's own images are never used (D-001).
+//! Toolbar icons use Lucide outlines (ISC license, assets/icons/lucide/, v1.63.0).
 
 use egui::{Image, ImageSource};
 
@@ -18,11 +16,9 @@ pub enum Icon {
     Scheduler,
     StartQueue,
     StopQueue,
-    /// Download complete's drag handle: drag the file out (IDM's hand-and-arrows grip). Windows
-    /// only, as the handle is (dialogs.rs).
+    /// The Windows-only Download complete drag handle; see dialogs.rs.
     #[cfg_attr(not(windows), allow(dead_code))]
     DragOut,
-    /// Options page headers (IDM draws its own artwork there; ours are Lucide outlines).
     PageGeneral,
     PageFileTypes,
     PageSaveTo,
@@ -46,7 +42,6 @@ impl Icon {
     /// SVG body (24 × 24 user space, Lucide path data).
     fn body(self) -> &'static str {
         match self {
-            // An outlined plus, like IDM's Add URL.
             Icon::AddUrl => r#"<path d="M9.5 2.5h5v7h7v5h-7v7h-5v-7h-7v-5h7z"/>"#,
             Icon::AddTorrent => concat!(
                 r#"<path d="m6 15-4-4 6.75-6.77a7.79 7.79 0 0 1 11 11L13 22l-4-4 6.39-6.36a2.14 2.14 0 0 0-3-3L6 15"/>"#,
@@ -166,7 +161,6 @@ impl Icon {
         }
     }
 
-    /// The enabled gradient, top-left → bottom-right (measured from IDM 6.42).
     fn gradient(self) -> (&'static str, &'static str) {
         match self {
             Icon::AddUrl => ("#9ad9b0", "#7fb4c0"),
@@ -178,7 +172,6 @@ impl Icon {
             Icon::Scheduler => ("#a986d2", "#c0957a"),
             Icon::StartQueue => ("#93b6f2", "#90c6b6"),
             Icon::StopQueue => ("#a2c2f2", "#c4688f"),
-            // Ours: IDM's grip has orange arrows.
             Icon::DragOut => ("#f5a623", "#d9661c"),
             Icon::PageGeneral | Icon::PageConnection => ("#3d8ee6", "#2bb3a3"),
             Icon::PageFileTypes | Icon::PageDownloads => ("#3fa864", "#2f7fcf"),
@@ -226,8 +219,7 @@ impl Icon {
         }
     }
 
-    /// The ink's two stops, top-left to bottom-right: enabled, its gradient, one colour or
-    /// the accent as the theme's icon style says; disabled, the theme's flat grey (as IDM).
+    /// Use the theme’s enabled gradient or accent; disabled icons use its flat grey.
     fn stops(self, enabled: bool) -> (String, String) {
         use crate::palette::{IconStyle, to_hex};
         let c = crate::theme::colors();

@@ -307,7 +307,6 @@
 #, machine
 	Add them without starting them	Se derbäisetzen ouni se ze starten
 #. message or event log entry in the main window; text in the Link grabber window
-#. Link grabber button: add the ticked links to the download queue without starting them (IDM's OK)
 #, machine
 	Add to queue	Op d'Schlaang setzen
 #. text in a dialog box
@@ -803,7 +802,6 @@
 #, machine
 	Change folder for "{category}" category on last selected	Classeur fir d'Kategorie „{category}“ op lescht gewielt änneren
 #. text in the Link grabber window
-#. Link grabber button (IDM's): tick every link
 #, machine
 	Check all	All auswielen
 #. text in rssdlg.rs
@@ -1919,7 +1917,6 @@
 #, machine
 	Hide to the notification area	An d'Notifikatiounsberäich miniméieren
 #. checkbox in the Link grabber window; text in the Link grabber window; checkbox in the Options window
-#. Link grabber check box (IDM's "Hide HTML files"): links to web pages are not shown
 #, machine
 	Hide web pages	Websäiten verstoppen
 #. text in the Options window
@@ -2332,7 +2329,6 @@
 #, machine
 	Login	Login
 #. checkbox in the Options window
-#. Options → Archives → Link grabber check box (IDM's Download all links looks every link up)
 #, machine
 	Look links up when they arrive (name, size, online)	Linken nokucken wann se ukommen (Numm, Gréisst, online)
 #. text in the Add torrent window; button in the Download video window
@@ -4842,7 +4838,6 @@
 #, machine
 	Ukraine	Ukrain
 #. text in the Link grabber window
-#. Link grabber button (IDM's): untick every link
 #, machine
 	Uncheck all	Alles deselektéieren
 #. item in the Categories tree in the main window; text in remote.rs
@@ -6163,7 +6158,6 @@ menu	C&ustomize URL List...	URL-Lëscht &personaliséieren...
 #, machine
 menu	Check for &updates...	No &Aktualiséierunge kucken...
 #. menu command in the main window
-#. View → Theme: MDM's own look, the default (IDM's layout, Windows 11's controls)
 #, machine
 menu	Classic	Klassesch
 #. menu command in the main window
@@ -6242,7 +6236,7 @@ menu	Font	Schrëft
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
 #, machine
-menu	From &IDM export file...	Vun &IDM Exportfichier...
+menu	From &EF2 export file...	Vun &EF2 Exportfichier...
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
@@ -6442,7 +6436,7 @@ menu	Theme	Thema
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
 #, machine
-menu	To &IDM export file...	An &IDM-Exportfichier...
+menu	To &EF2 export file...	An &EF2-Exportfichier...
 #. menu command in the main window
 #. & marks the keyboard shortcut letter: keep one & before a letter of the translation
 #. the trailing ... means it opens a window: keep it
