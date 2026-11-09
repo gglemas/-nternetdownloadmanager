@@ -378,7 +378,7 @@
         },
         "exit": {
           "default": false,
-          "description": "`/exit` (beyond IDM): the running app saves and quits (the installer, before an upgrade\nor an uninstall). Starts nothing when no app runs.",
+          "description": "`/exit` (additional): the running app saves and quits (the installer, before an upgrade\nor an uninstall). Starts nothing when no app runs.",
           "type": "boolean"
         },
         "final_url": {
@@ -480,7 +480,7 @@
         },
         "query": {
           "default": null,
-          "description": "Automation API (off by default, beyond IDM): `\"list\"` asks for every download as JSON.",
+          "description": "Automation API (off by default, additional): `\"list\"` asks for every download as JSON.",
           "type": [
             "string",
             "null"
@@ -504,7 +504,7 @@
         },
         "show": {
           "default": null,
-          "description": "`/show <window>` (beyond IDM): the running app opens one of its windows by name, for\nscreenshots and scripted checks (tools/lab/docs-shots.ps1): `addurl`, `batch`, `find`,\n`scheduler`, `about`, `language`, `shortcuts`, `speedlimit`, `properties`, `delete`,\n`progress`, `existing-files`, `video-page`, `video-helpers`, `video-subs`,\n`torrent-settings`, `add-trackers`, `menu` (the first download's right-click menu),\n`options[:general|types|saveto|downloads|connection|proxy|logins|sounds|regional|panels]`.",
+          "description": "`/show <window>` (additional): the running app opens one of its windows by name, for\nscreenshots and scripted checks (tools/lab/docs-shots.ps1): `addurl`, `batch`, `find`,\n`scheduler`, `about`, `language`, `shortcuts`, `speedlimit`, `properties`, `delete`,\n`progress`, `existing-files`, `video-page`, `video-helpers`, `video-subs`,\n`torrent-settings`, `add-trackers`, `menu` (the first download's right-click menu),\n`options[:general|types|saveto|downloads|connection|proxy|logins|sounds|regional|panels]`.",
           "type": [
             "string",
             "null"
@@ -532,7 +532,7 @@
         },
         "startup": {
           "default": false,
-          "description": "`/startup` (beyond IDM): started with the session (Options → General → Launch on\nstartup, or the installer's \"Start when Windows starts\", #226): MDM starts in the\nnotification area, its window hidden. Changes nothing in a running app.",
+          "description": "`/startup` (additional): started with the session (Options → General → Launch on\nstartup, or the installer's \"Start when Windows starts\", #226): MDM starts in the\nnotification area, its window hidden. Changes nothing in a running app.",
           "type": "boolean"
         },
         "token": {
