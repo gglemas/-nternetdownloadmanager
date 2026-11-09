@@ -58,7 +58,7 @@ Internet Download Manager and IDM are trademarks of their owner. We name them on
 
 ## 8. The site
 
-The site's content is provided for information. We try to keep it accurate, including the comparisons and benchmark figures, which are documented with their methods and raw data, but we can't guarantee it is always complete or up to date. Tell us about mistakes and we'll fix them. Links to other sites are for convenience; we don't control them.
+The site's content is provided for information. We try to keep it accurate, but cannot guarantee it is always complete or up to date. Tell us about mistakes and we'll fix them. Links to other sites are for convenience; we don't control them.
 
 ## 9. Changes
 

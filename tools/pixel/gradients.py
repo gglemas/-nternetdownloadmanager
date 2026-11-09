@@ -8,7 +8,7 @@ from PIL import Image
 
 im = np.asarray(Image.open(sys.argv[1]).convert("RGB")).astype(float)
 BG = np.array([0x39, 0x39, 0x39], float)
-# Icon boxes measured from IDM 6.42 at 929x465 (window coords), see notes/ui-spec/main-window.md.
+# Toolbar icon boxes in a 929x465 source image (window coordinates).
 BOXES = {
     "AddUrl": (28, 57), "Resume": (96, 129), "Stop": (166, 199), "StopAll": (240, 267),
     "Delete": (309, 336), "DeleteCompleted": (379, 406), "Options": (447, 478),
